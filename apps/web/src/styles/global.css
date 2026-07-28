@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  color-scheme: light dark;
+  --bg: #fcf9f8;
+  --surface: #ffffff;
+  --text: #1c1b1b;
+  --muted: #575563;
+  --line: #c7c4d8;
+  --accent: #4f46e5;
+  --accent-text: #ffffff;
+  --header-height: 4.5rem;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121212;
+  --surface: #1e1d1d;
+  --text: #f3f0ef;
+  --muted: #b9b6c4;
+  --line: #464555;
+  --accent: #7168f0;
+  --accent-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    --bg: #121212;
+    --surface: #1e1d1d;
+    --text: #f3f0ef;
+    --muted: #b9b6c4;
+    --line: #464555;
+    --accent: #7168f0;
+    --accent-text: #ffffff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+select {
+  min-height: 2.75rem;
+  border: 1px solid var(--text);
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: var(--text);
+  color: var(--bg);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 1rem;
+  padding: 0.75rem;
+  transform: translateY(-110%);
+  background: var(--text);
+  color: var(--bg);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+
+nav,
+nav label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav label span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+nav select {
+  padding: 0 2rem 0 0.75rem;
+}
+
+main > section,
+.workspace {
+  padding: clamp(3rem, 7vw, 7rem) 4vw;
+}
+
+.intro {
+  min-height: calc(78svh - var(--header-height));
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr);
+  align-items: end;
+  gap: 4rem;
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.eyebrow,
+.index,
+.product-meta {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bodoni Moda", serif;
+}
+
+h1 {
+  max-width: 12ch;
+  margin-bottom: 1.5rem;
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  line-height: 0.88;
+  letter-spacing: -0.075em;
+}
+
+.lede {
+  max-width: 38rem;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.notice {
+  max-width: 26rem;
+  padding-top: 1rem;
+  border-top: 1px solid currentColor;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(17rem, 1fr);
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading > p {
+  max-width: 30rem;
+  color: var(--muted);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  letter-spacing: -0.05em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem 1.25rem;
+}
+
+.product-image {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: var(--line);
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+article:hover .product-image img {
+  transform: scale(1.025);
+}
+
+.product-image span {
+  position: absolute;
+  inset: 0;
+  display: none;
+  place-items: center;
+  color: var(--muted);
+}
+
+.product-image.failed img {
+  display: none;
+}
+
+.product-image.failed span {
+  display: grid;
+}
+
+.product-meta,
+.product-action,
+.cart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.product-meta {
+  color: var(--muted);
+}
+
+.product-meta p {
+  margin-bottom: 0.5rem;
+}
+
+.product-grid h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+
+.product-grid article > p {
+  min-height: 3rem;
+  color: var(--muted);
+}
+
+.product-action {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+aside {
+  align-self: start;
+  position: sticky;
+  top: 1.5rem;
+  padding: 1.5rem;
+  background: var(--surface);
+}
+
+aside h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+#cart-count {
+  color: var(--accent);
+}
+
+.cart-row {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.cart-row button {
+  border: 0;
+  text-decoration: underline;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.recommendations {
+  border-top: 1px solid var(--line);
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.recommendation-grid article {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+}
+
+.recommendation-grid .product-image {
+  margin: 0;
+}
+
+.recommendation-grid h3 {
+  margin-bottom: 0.3rem;
+}
+
+.recommendation-grid p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .intro,
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    min-height: calc(100svh - var(--header-height));
+    gap: 2rem;
+  }
+
+  .product-grid,
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    position: static;
+  }
+
+  .section-heading {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  main > section,
+  .workspace {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  nav label span {
+    position: absolute;
+    width: 1px;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

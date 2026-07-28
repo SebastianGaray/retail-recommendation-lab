@@ -1,0 +1,5 @@
+.astro/
+dist/
+playwright-report/
+public/catalog.json
+test-results/

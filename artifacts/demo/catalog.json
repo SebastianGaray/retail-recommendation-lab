@@ -1,0 +1,210 @@
+[
+  {
+    "id": "prd_auris_headphones",
+    "sku": "ELC-1001",
+    "name": {
+      "en": "Auris Wireless Headphones",
+      "es": "Audífonos inalámbricos Auris"
+    },
+    "description": {
+      "en": "Balanced sound for focused days.",
+      "es": "Sonido equilibrado para días de concentración."
+    },
+    "category": "electronics",
+    "subcategory": "audio",
+    "price": "89.00",
+    "original_price": null,
+    "in_stock": true,
+    "inventory_quantity": 24,
+    "rating": 4.7,
+    "review_count": 318,
+    "image_url": "https://dummyjson.com/image/640x480/d8e7e3/17201d?text=Auris%20Wireless%20Headphones",
+    "tags": [
+      "wireless",
+      "audio"
+    ],
+    "popularity_score": 96
+  },
+  {
+    "id": "prd_marea_bottle",
+    "sku": "SPT-5001",
+    "name": {
+      "en": "Marea Insulated Bottle",
+      "es": "Botella térmica Marea"
+    },
+    "description": {
+      "en": "Cold drinks for 24 hours in a slim steel body.",
+      "es": "Bebidas frías por 24 horas en acero liviano."
+    },
+    "category": "sports",
+    "subcategory": "hydration",
+    "price": "28.00",
+    "original_price": null,
+    "in_stock": true,
+    "inventory_quantity": 47,
+    "rating": 4.7,
+    "review_count": 441,
+    "image_url": "https://dummyjson.com/image/640x480/bfd9df/17201d?text=Marea%20Insulated%20Bottle",
+    "tags": [
+      "outdoors",
+      "steel"
+    ],
+    "popularity_score": 94
+  },
+  {
+    "id": "prd_luma_lamp",
+    "sku": "HOM-3001",
+    "name": {
+      "en": "Luma Desk Lamp",
+      "es": "Lámpara de escritorio Luma"
+    },
+    "description": {
+      "en": "Warm, adjustable light with a small footprint.",
+      "es": "Luz cálida y regulable que ocupa poco espacio."
+    },
+    "category": "home",
+    "subcategory": "lighting",
+    "price": "42.00",
+    "original_price": null,
+    "in_stock": true,
+    "inventory_quantity": 31,
+    "rating": 4.8,
+    "review_count": 256,
+    "image_url": "https://dummyjson.com/image/640x480/eadfbd/17201d?text=Luma%20Desk%20Lamp",
+    "tags": [
+      "lighting",
+      "desk"
+    ],
+    "popularity_score": 92
+  },
+  {
+    "id": "prd_vento_backpack",
+    "sku": "ACC-4001",
+    "name": {
+      "en": "Vento Travel Backpack",
+      "es": "Mochila de viaje Vento"
+    },
+    "description": {
+      "en": "A weather-ready day pack with a laptop sleeve.",
+      "es": "Una mochila resistente con espacio para portátil."
+    },
+    "category": "accessories",
+    "subcategory": "bags",
+    "price": "72.00",
+    "original_price": "84.00",
+    "in_stock": true,
+    "inventory_quantity": 11,
+    "rating": 4.6,
+    "review_count": 203,
+    "image_url": "https://dummyjson.com/image/640x480/c9d5c8/17201d?text=Vento%20Travel%20Backpack",
+    "tags": [
+      "travel",
+      "laptop"
+    ],
+    "popularity_score": 90
+  },
+  {
+    "id": "prd_nexo_blender",
+    "sku": "KIT-2001",
+    "name": {
+      "en": "Nexo Compact Blender",
+      "es": "Licuadora compacta Nexo"
+    },
+    "description": {
+      "en": "A quiet blender sized for small kitchens.",
+      "es": "Una licuadora silenciosa para cocinas pequeñas."
+    },
+    "category": "kitchen",
+    "subcategory": "appliances",
+    "price": "54.00",
+    "original_price": "69.00",
+    "in_stock": true,
+    "inventory_quantity": 16,
+    "rating": 4.5,
+    "review_count": 174,
+    "image_url": "https://dummyjson.com/image/640x480/f0d9c2/17201d?text=Nexo%20Compact%20Blender",
+    "tags": [
+      "compact",
+      "kitchen"
+    ],
+    "popularity_score": 88
+  },
+  {
+    "id": "prd_calma_diffuser",
+    "sku": "HOM-3002",
+    "name": {
+      "en": "Calma Aroma Diffuser",
+      "es": "Difusor de aromas Calma"
+    },
+    "description": {
+      "en": "A compact diffuser with a soft ambient glow.",
+      "es": "Un difusor compacto con una luz ambiental suave."
+    },
+    "category": "personal care",
+    "subcategory": "wellness",
+    "price": "38.00",
+    "original_price": "45.00",
+    "in_stock": true,
+    "inventory_quantity": 19,
+    "rating": 4.5,
+    "review_count": 147,
+    "image_url": "https://dummyjson.com/image/640x480/d8d0e2/17201d?text=Calma%20Aroma%20Diffuser",
+    "tags": [
+      "wellness",
+      "home"
+    ],
+    "popularity_score": 82
+  },
+  {
+    "id": "prd_brisa_kettle",
+    "sku": "KIT-2002",
+    "name": {
+      "en": "Brisa Ceramic Kettle",
+      "es": "Hervidor cerámico Brisa"
+    },
+    "description": {
+      "en": "A calm countertop kettle with auto shut-off.",
+      "es": "Un hervidor sereno con apagado automático."
+    },
+    "category": "kitchen",
+    "subcategory": "appliances",
+    "price": "61.00",
+    "original_price": null,
+    "in_stock": false,
+    "inventory_quantity": 0,
+    "rating": 4.4,
+    "review_count": 121,
+    "image_url": "https://dummyjson.com/image/640x480/d9c7ba/17201d?text=Brisa%20Ceramic%20Kettle",
+    "tags": [
+      "tea",
+      "ceramic"
+    ],
+    "popularity_score": 75
+  },
+  {
+    "id": "prd_senda_notebook",
+    "sku": "OFF-6001",
+    "name": {
+      "en": "Senda Dotted Notebook",
+      "es": "Cuaderno punteado Senda"
+    },
+    "description": {
+      "en": "Lay-flat pages for plans, notes and sketches.",
+      "es": "Páginas planas para planes, notas y bocetos."
+    },
+    "category": "office",
+    "subcategory": "stationery",
+    "price": "16.00",
+    "original_price": null,
+    "in_stock": true,
+    "inventory_quantity": 63,
+    "rating": 4.3,
+    "review_count": 89,
+    "image_url": "https://dummyjson.com/image/640x480/e2d6cb/17201d?text=Senda%20Dotted%20Notebook",
+    "tags": [
+      "paper",
+      "planning"
+    ],
+    "popularity_score": 68
+  }
+]

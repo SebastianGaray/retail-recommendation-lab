@@ -1,0 +1,8 @@
+{
+  "extends": "../../node_modules/astro/tsconfigs/strict",
+  "compilerOptions": {
+    "lib": ["DOM", "ES2022"],
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [".astro/types.d.ts", "**/*"]
+}

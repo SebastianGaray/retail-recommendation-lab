@@ -1,0 +1,142 @@
+---
+import "../styles/global.css";
+
+import type { Locale } from "../lib/catalog";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const copy = {
+  en: {
+    skip: "Skip to catalog",
+    eyebrow: "Synthetic retail sandbox",
+    title: "Retail Recommendation Lab",
+    intro: "Explore how a transparent popularity baseline reacts to your local cart.",
+    synthetic: "All products, prices, reviews and behavior are fictional and generated for education.",
+    catalog: "Catalog",
+    catalogHint: "Add products to shape this browser-only session.",
+    cart: "Your cart",
+    empty: "Your cart is empty.",
+    recommendations: "Popular right now",
+    recommendationHint: "Deterministic baseline · excludes items already in your cart",
+    add: "Add to cart",
+    remove: "Remove",
+    soldOut: "Out of stock",
+    theme: "Theme",
+    system: "System",
+    light: "Light",
+    dark: "Dark",
+    language: "Language",
+    fallback: "Image unavailable",
+    reason: "Recommended for its synthetic popularity score.",
+    statusAdded: "added to cart",
+    statusRemoved: "removed from cart",
+  },
+  es: {
+    skip: "Ir al catálogo",
+    eyebrow: "Laboratorio de retail sintético",
+    title: "Retail Recommendation Lab",
+    intro: "Explora cómo una línea base transparente reacciona a tu carrito local.",
+    synthetic: "Todos los productos, precios, reseñas y comportamientos son ficticios y generados con fines educativos.",
+    catalog: "Catálogo",
+    catalogHint: "Agrega productos para modificar esta sesión en tu navegador.",
+    cart: "Tu carrito",
+    empty: "Tu carrito está vacío.",
+    recommendations: "Popular ahora",
+    recommendationHint: "Línea base determinista · excluye productos que ya están en tu carrito",
+    add: "Agregar al carrito",
+    remove: "Quitar",
+    soldOut: "Sin stock",
+    theme: "Tema",
+    system: "Sistema",
+    light: "Claro",
+    dark: "Oscuro",
+    language: "Idioma",
+    fallback: "Imagen no disponible",
+    reason: "Recomendado por su puntaje de popularidad sintético.",
+    statusAdded: "agregado al carrito",
+    statusRemoved: "quitado del carrito",
+  },
+}[locale];
+const otherLocale = locale === "en" ? "es" : "en";
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={copy.intro} />
+    <title>{copy.title}</title>
+    <script is:inline>
+      document.documentElement.dataset.theme = localStorage.getItem("rrl-theme") ?? "system";
+    </script>
+  </head>
+  <body
+    data-locale={locale}
+    data-catalog-url={`${base}catalog.json`}
+    data-copy={JSON.stringify(copy)}
+  >
+    <a class="skip-link" href="#catalog">{copy.skip}</a>
+    <header>
+      <a class="brand" href={`${base}${locale}/`} aria-label={copy.title}>RRL</a>
+      <nav aria-label={copy.language}>
+        <a href={`${base}${otherLocale}/`} lang={otherLocale}>{otherLocale.toUpperCase()}</a>
+        <label>
+          <span>{copy.theme}</span>
+          <select id="theme">
+            <option value="system">{copy.system}</option>
+            <option value="light">{copy.light}</option>
+            <option value="dark">{copy.dark}</option>
+          </select>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">{copy.eyebrow}</p>
+          <h1 id="page-title">{copy.title}</h1>
+          <p class="lede">{copy.intro}</p>
+        </div>
+        <p class="notice">{copy.synthetic}</p>
+      </section>
+
+      <div class="workspace">
+        <section id="catalog" aria-labelledby="catalog-title">
+          <div class="section-heading">
+            <div>
+              <p class="index">01</p>
+              <h2 id="catalog-title">{copy.catalog}</h2>
+            </div>
+            <p>{copy.catalogHint}</p>
+          </div>
+          <div id="product-grid" class="product-grid" aria-busy="true"></div>
+        </section>
+
+        <aside aria-labelledby="cart-title">
+          <p class="index">02</p>
+          <h2 id="cart-title">{copy.cart} <span id="cart-count">0</span></h2>
+          <div id="cart-list"></div>
+        </aside>
+      </div>
+
+      <section class="recommendations" aria-labelledby="recommendation-title">
+        <div class="section-heading">
+          <div>
+            <p class="index">03</p>
+            <h2 id="recommendation-title">{copy.recommendations}</h2>
+          </div>
+          <p>{copy.recommendationHint}</p>
+        </div>
+        <div id="recommendation-grid" class="recommendation-grid"></div>
+      </section>
+    </main>
+    <p id="cart-status" class="sr-only" aria-live="polite"></p>
+    <script src="../scripts/storefront.ts"></script>
+  </body>
+</html>
