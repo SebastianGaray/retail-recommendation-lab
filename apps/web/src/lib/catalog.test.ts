@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
-import { popularityBaseline, type Product } from "./catalog";
+import {
+  popularityBaseline,
+  recommendations,
+  type Candidate,
+  type Product,
+  type Strategy,
+} from "./catalog";
 
 const product = (
   id: string,
@@ -22,6 +28,50 @@ const product = (
   image_url: "https://example.com/image",
   tags: [],
   popularity_score,
+});
+
+describe("recommendations", () => {
+  const products = [
+    product("cart", 100),
+    product("match", 50),
+    product("sold", 90, false),
+  ];
+  const artifacts = {
+    popularity: [
+      { product_id: "sold", score: 99, rank: 1 },
+      { product_id: "match", score: 8, rank: 2 },
+    ],
+    "category-popularity": [],
+    "frequently-bought-together": {
+      cart: [
+        { product_id: "match", score: 3, rank: 1 },
+        { product_id: "cart", score: 2, rank: 2 },
+      ],
+    },
+    "item-similarity": {},
+  } as Record<Strategy, Candidate[] | Record<string, Candidate[]>>;
+
+  it("uses cart-aware mappings and excludes cart and stock", () => {
+    expect(
+      recommendations(
+        products,
+        new Set(["cart"]),
+        "frequently-bought-together",
+        artifacts,
+      ),
+    ).toEqual([{ product: products[1], reason: "frequently_bought_together" }]);
+  });
+
+  it("falls back deterministically for sparse mappings", () => {
+    expect(
+      recommendations(
+        products,
+        new Set(["cart"]),
+        "item-similarity",
+        artifacts,
+      )[0],
+    ).toEqual({ product: products[1], reason: "cold_start_fallback" });
+  });
 });
 
 describe("popularityBaseline", () => {

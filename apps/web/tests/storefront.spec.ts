@@ -16,3 +16,24 @@ test("cart persists and broken images use a fallback", async ({ page }) => {
   await expect(page.locator("#cart-count")).toHaveText("1");
   await expect(page.getByText("Image unavailable").first()).toBeVisible();
 });
+
+test("every offline strategy renders and excludes cart products", async ({
+  page,
+}) => {
+  await page.goto("/retail-recommendation-lab/en/");
+  const firstProduct = page.locator("#product-grid article").first();
+  const name = await firstProduct.locator("h3").innerText();
+  await firstProduct.getByRole("button", { name: "Add to cart" }).click();
+  for (const strategy of [
+    "popularity",
+    "category-popularity",
+    "frequently-bought-together",
+    "item-similarity",
+  ]) {
+    await page.locator("#strategy").selectOption(strategy);
+    await expect(page.locator("#recommendation-grid")).not.toContainText(name);
+    await expect(
+      page.locator("#recommendation-grid article").first(),
+    ).toBeVisible();
+  }
+});

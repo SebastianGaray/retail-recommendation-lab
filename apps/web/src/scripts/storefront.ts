@@ -1,8 +1,11 @@
 import {
   isProduct,
-  popularityBaseline,
+  recommendations,
+  type Artifact,
+  type Candidate,
   type Locale,
   type Product,
+  type Strategy,
 } from "../lib/catalog";
 
 type Copy = Record<
@@ -13,15 +16,27 @@ type Copy = Record<
   | "fallback"
   | "reason"
   | "statusAdded"
-  | "statusRemoved",
+  | "statusRemoved"
+  | "error"
+  | "global_popularity"
+  | "category_popularity"
+  | "frequently_bought_together"
+  | "item_similarity"
+  | "cold_start_fallback",
   string
 >;
 
 const body = document.body;
 const locale = body.dataset.locale as Locale;
 const catalogUrl = body.dataset.catalogUrl;
+const artifactBase = body.dataset.artifactBase;
 const rawCopy = body.dataset.copy;
-if (!catalogUrl || !rawCopy || (locale !== "en" && locale !== "es")) {
+if (
+  !catalogUrl ||
+  !artifactBase ||
+  !rawCopy ||
+  (locale !== "en" && locale !== "es")
+) {
   throw new Error("Storefront configuration is invalid");
 }
 const copy = JSON.parse(rawCopy) as Copy;
@@ -50,8 +65,20 @@ const cartCount = requiredElement("cart-count");
 const recommendationGrid = requiredElement("recommendation-grid");
 const cartStatus = requiredElement("cart-status");
 const theme = requiredElement<HTMLSelectElement>("theme");
+const strategy = requiredElement<HTMLSelectElement>("strategy");
+const artifactError = requiredElement("artifact-error");
 
 let products: Product[] = [];
+const artifactNames: Strategy[] = [
+  "popularity",
+  "category-popularity",
+  "frequently-bought-together",
+  "item-similarity",
+];
+let artifacts = {} as Record<
+  Strategy,
+  Candidate[] | Record<string, Candidate[]>
+>;
 
 function image(product: Product): string {
   const alt = `${product.name[locale]} — ${product.description[locale]}`;
@@ -83,10 +110,15 @@ function render(): void {
         )
         .join("")
     : `<p class="empty">${copy.empty}</p>`;
-  recommendationGrid.innerHTML = popularityBaseline(products, cart)
+  recommendationGrid.innerHTML = recommendations(
+    products,
+    cart,
+    strategy.value as Strategy,
+    artifacts,
+  )
     .map(
-      (product) =>
-        `<article>${image(product)}<div><h3>${product.name[locale]}</h3><p>${copy.reason}</p><strong>${currency.format(Number(product.price))}</strong></div></article>`,
+      ({ product, reason }) =>
+        `<article>${image(product)}<div><h3>${product.name[locale]}</h3><p>${copy[reason]}</p><strong>${currency.format(Number(product.price))}</strong></div></article>`,
     )
     .join("");
 }
@@ -113,6 +145,7 @@ theme.addEventListener("change", () => {
   document.documentElement.dataset.theme = theme.value;
   localStorage.setItem("rrl-theme", theme.value);
 });
+strategy.addEventListener("change", render);
 
 const response = await fetch(catalogUrl);
 if (!response.ok) throw new Error(`Catalog request failed: ${response.status}`);
@@ -120,6 +153,28 @@ const payload: unknown = await response.json();
 if (!Array.isArray(payload) || !payload.every(isProduct))
   throw new Error("Catalog contract is invalid");
 products = payload;
+try {
+  artifacts = Object.fromEntries(
+    await Promise.all(
+      artifactNames.map(async (name) => {
+        const artifactResponse = await fetch(`${artifactBase}${name}.json`);
+        if (!artifactResponse.ok) throw new Error(name);
+        const artifact = (await artifactResponse.json()) as Artifact<
+          Candidate[] | Record<string, Candidate[]>
+        >;
+        return [name, artifact.data];
+      }),
+    ),
+  ) as typeof artifacts;
+} catch {
+  artifactError.hidden = false;
+  artifacts = {
+    popularity: [],
+    "category-popularity": [],
+    "frequently-bought-together": {},
+    "item-similarity": {},
+  };
+}
 productGrid.setAttribute("aria-busy", "false");
 render();
 

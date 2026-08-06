@@ -19,7 +19,7 @@ const copy = {
     catalogHint: "Add products to shape this browser-only session.",
     cart: "Your cart",
     empty: "Your cart is empty.",
-    recommendations: "Popular right now",
+    recommendations: "Recommendations",
     recommendationHint: "Deterministic baseline · excludes items already in your cart",
     add: "Add to cart",
     remove: "Remove",
@@ -31,6 +31,9 @@ const copy = {
     language: "Language",
     fallback: "Image unavailable",
     reason: "Recommended for its synthetic popularity score.",
+    strategy: "Strategy", methodology: "Offline PySpark artifacts; your cart stays in this browser.", error: "Recommendation artifacts are unavailable.",
+    popularity: "Popularity", categoryPopularity: "Category popularity", frequentlyBoughtTogether: "Frequently bought together", itemSimilarity: "Item similarity",
+    global_popularity: "Popular across synthetic sessions.", category_popularity: "Popular in a cart category.", frequently_bought_together: "Frequently purchased with a cart item.", item_similarity: "Similar synthetic interaction patterns.", cold_start_fallback: "Popularity fallback for a sparse cart.",
     statusAdded: "added to cart",
     statusRemoved: "removed from cart",
   },
@@ -44,7 +47,7 @@ const copy = {
     catalogHint: "Agrega productos para modificar esta sesión en tu navegador.",
     cart: "Tu carrito",
     empty: "Tu carrito está vacío.",
-    recommendations: "Popular ahora",
+    recommendations: "Recomendaciones",
     recommendationHint: "Línea base determinista · excluye productos que ya están en tu carrito",
     add: "Agregar al carrito",
     remove: "Quitar",
@@ -56,6 +59,9 @@ const copy = {
     language: "Idioma",
     fallback: "Imagen no disponible",
     reason: "Recomendado por su puntaje de popularidad sintético.",
+    strategy: "Estrategia", methodology: "Artefactos PySpark sin conexión; tu carrito permanece en este navegador.", error: "Los artefactos de recomendación no están disponibles.",
+    popularity: "Popularidad", categoryPopularity: "Popularidad por categoría", frequentlyBoughtTogether: "Comprados juntos", itemSimilarity: "Similitud de productos",
+    global_popularity: "Popular en sesiones sintéticas.", category_popularity: "Popular en una categoría del carrito.", frequently_bought_together: "Comprado frecuentemente con un producto del carrito.", item_similarity: "Patrones de interacción sintéticos similares.", cold_start_fallback: "Popularidad de respaldo para un carrito disperso.",
     statusAdded: "agregado al carrito",
     statusRemoved: "quitado del carrito",
   },
@@ -78,6 +84,7 @@ const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
   <body
     data-locale={locale}
     data-catalog-url={`${base}catalog.json`}
+    data-artifact-base={base}
     data-copy={JSON.stringify(copy)}
   >
     <a class="skip-link" href="#catalog">{copy.skip}</a>
@@ -133,6 +140,8 @@ const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
           </div>
           <p>{copy.recommendationHint}</p>
         </div>
+        <label>{copy.strategy} <select id="strategy"><option value="popularity">{copy.popularity}</option><option value="category-popularity">{copy.categoryPopularity}</option><option value="frequently-bought-together">{copy.frequentlyBoughtTogether}</option><option value="item-similarity">{copy.itemSimilarity}</option></select></label>
+        <p>{copy.methodology}</p><p id="artifact-error" class="notice" hidden>{copy.error}</p>
         <div id="recommendation-grid" class="recommendation-grid"></div>
       </section>
     </main>
