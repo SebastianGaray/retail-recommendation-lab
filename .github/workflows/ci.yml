@@ -23,11 +23,18 @@ jobs:
         with:
           node-version: "22"
           cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
       - run: uv sync --project pipeline --locked --dev
       - run: npm ci
       - run: uv run --project pipeline generate-catalog
       - run: uv run --project pipeline validate-catalog
+      - run: uv run --project pipeline run-pipeline
+      - run: uv run --project pipeline validate-artifacts
       - run: git diff --exit-code -- artifacts/demo/catalog.json apps/web/public/catalog.json
+      - run: git diff --exit-code -- artifacts/demo apps/web/public
       - run: uv run --project pipeline ruff check pipeline
       - run: uv run --project pipeline ruff format --check pipeline
       - run: uv run --project pipeline pyright --project pipeline/pyrightconfig.json

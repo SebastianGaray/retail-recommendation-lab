@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "category": "electronics",
+      "product_id": "prd_auris_headphones",
+      "rank": 1,
+      "score": 113.0
+    },
+    {
+      "category": "home",
+      "product_id": "prd_luma_lamp",
+      "rank": 1,
+      "score": 272.0
+    },
+    {
+      "category": "office",
+      "product_id": "prd_senda_notebook",
+      "rank": 1,
+      "score": 486.0
+    },
+    {
+      "category": "personal care",
+      "product_id": "prd_calma_diffuser",
+      "rank": 1,
+      "score": 206.0
+    },
+    {
+      "category": "sports",
+      "product_id": "prd_marea_bottle",
+      "rank": 1,
+      "score": 187.0
+    }
+  ],
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

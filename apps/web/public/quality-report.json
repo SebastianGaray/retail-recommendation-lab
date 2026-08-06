@@ -1,0 +1,13 @@
+{
+  "data": {
+    "customers": 48,
+    "events": 945,
+    "interactions": 128,
+    "quarantined_events": 0,
+    "sessions": 240,
+    "valid_events": 945
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

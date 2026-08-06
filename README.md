@@ -29,6 +29,8 @@ Requirements: Python 3.12+, uv, Java 17+, Node.js 20+, and npm. PySpark uses
 ```bash
 make install        # locked Python and Node dependencies
 make generate       # generate canonical and public catalog JSON
+make pipeline       # reproduce all committed small-profile artifacts with offline PySpark
+make validate-artifacts # verify artifact contracts, checksums, copies, and size limits
 make validate       # validate both artifact copies
 make dev            # local Astro server
 make test-python    # pytest
@@ -59,4 +61,4 @@ In repository settings, select **GitHub Actions** as the Pages source.
 
 ## Limitations
 
-The catalog is deliberately small, recommendations use only synthetic popularity, cart data never leaves the browser, and image delivery relies on DummyJSON with a local visual fallback.
+The dataset is deliberately small and entirely synthetic. Offline associations do not imply production performance. PySpark never runs in the browser, no visitor behavior is collected, and cart data never leaves the device.

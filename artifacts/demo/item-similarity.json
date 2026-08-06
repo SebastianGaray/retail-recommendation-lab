@@ -1,0 +1,183 @@
+{
+  "data": {
+    "prd_auris_headphones": [
+      {
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "score": 0.465553
+      },
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 2,
+        "score": 0.192185
+      },
+      {
+        "product_id": "prd_luma_lamp",
+        "rank": 3,
+        "score": 0.121992
+      },
+      {
+        "product_id": "prd_vento_backpack",
+        "rank": 4,
+        "score": 0.119844
+      }
+    ],
+    "prd_brisa_kettle": [
+      {
+        "product_id": "prd_nexo_blender",
+        "rank": 1,
+        "score": 0.616078
+      },
+      {
+        "product_id": "prd_marea_bottle",
+        "rank": 2,
+        "score": 0.390595
+      },
+      {
+        "product_id": "prd_senda_notebook",
+        "rank": 3,
+        "score": 0.29375
+      },
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 4,
+        "score": 0.105757
+      }
+    ],
+    "prd_calma_diffuser": [
+      {
+        "product_id": "prd_vento_backpack",
+        "rank": 1,
+        "score": 0.451537
+      },
+      {
+        "product_id": "prd_marea_bottle",
+        "rank": 2,
+        "score": 0.351126
+      },
+      {
+        "product_id": "prd_auris_headphones",
+        "rank": 3,
+        "score": 0.192185
+      },
+      {
+        "product_id": "prd_brisa_kettle",
+        "rank": 4,
+        "score": 0.105757
+      }
+    ],
+    "prd_luma_lamp": [
+      {
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "score": 0.646829
+      },
+      {
+        "product_id": "prd_vento_backpack",
+        "rank": 2,
+        "score": 0.192258
+      },
+      {
+        "product_id": "prd_auris_headphones",
+        "rank": 3,
+        "score": 0.121992
+      },
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 4,
+        "score": 0.062385
+      }
+    ],
+    "prd_marea_bottle": [
+      {
+        "product_id": "prd_nexo_blender",
+        "rank": 1,
+        "score": 0.578098
+      },
+      {
+        "product_id": "prd_brisa_kettle",
+        "rank": 2,
+        "score": 0.390595
+      },
+      {
+        "product_id": "prd_vento_backpack",
+        "rank": 3,
+        "score": 0.353167
+      },
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 4,
+        "score": 0.351126
+      }
+    ],
+    "prd_nexo_blender": [
+      {
+        "product_id": "prd_brisa_kettle",
+        "rank": 1,
+        "score": 0.616078
+      },
+      {
+        "product_id": "prd_marea_bottle",
+        "rank": 2,
+        "score": 0.578098
+      },
+      {
+        "product_id": "prd_senda_notebook",
+        "rank": 3,
+        "score": 0.239351
+      },
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 4,
+        "score": 0.038421
+      }
+    ],
+    "prd_senda_notebook": [
+      {
+        "product_id": "prd_luma_lamp",
+        "rank": 1,
+        "score": 0.646829
+      },
+      {
+        "product_id": "prd_auris_headphones",
+        "rank": 2,
+        "score": 0.465553
+      },
+      {
+        "product_id": "prd_brisa_kettle",
+        "rank": 3,
+        "score": 0.29375
+      },
+      {
+        "product_id": "prd_nexo_blender",
+        "rank": 4,
+        "score": 0.239351
+      }
+    ],
+    "prd_vento_backpack": [
+      {
+        "product_id": "prd_calma_diffuser",
+        "rank": 1,
+        "score": 0.451537
+      },
+      {
+        "product_id": "prd_marea_bottle",
+        "rank": 2,
+        "score": 0.353167
+      },
+      {
+        "product_id": "prd_luma_lamp",
+        "rank": 3,
+        "score": 0.192258
+      },
+      {
+        "product_id": "prd_senda_notebook",
+        "rank": 4,
+        "score": 0.163641
+      }
+    ]
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

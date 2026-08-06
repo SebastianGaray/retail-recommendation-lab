@@ -7,3 +7,6 @@ node_modules/
 dist/
 playwright-report/
 test-results/
+data/raw/
+data/validated/
+data/curated/

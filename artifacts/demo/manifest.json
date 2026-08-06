@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "bytes": 717,
+      "name": "category-popularity.json",
+      "record_count": 5,
+      "sha256": "6debe28c44f4071ef5bf4440a7de5faaf2b0a59e1c336c2af9e5494da2efd47d"
+    },
+    {
+      "bytes": 1538,
+      "name": "frequently-bought-together.json",
+      "record_count": 7,
+      "sha256": "09dd9511e22a89949ac313fa9a725a91546c982f7c0f0749a4c3cdaef86b59e9"
+    },
+    {
+      "bytes": 3729,
+      "name": "item-similarity.json",
+      "record_count": 8,
+      "sha256": "e7430e10ebf9a4912d44fe522dff139c8b1a5d2e03727997b2cf80209e36d1c7"
+    },
+    {
+      "bytes": 439,
+      "name": "pipeline-metadata.json",
+      "record_count": 5,
+      "sha256": "2f2c2c93686508a7b10f9ab22ff287d4a6b8257e24e8c4da8673674c1041bbf8"
+    },
+    {
+      "bytes": 567,
+      "name": "popularity.json",
+      "record_count": 5,
+      "sha256": "5b6e7e639414470b6645ca1ff72daeb5bb84e17d12e9a454bf21ee438b5b467d"
+    },
+    {
+      "bytes": 247,
+      "name": "quality-report.json",
+      "record_count": 6,
+      "sha256": "9f258a61e198038b5d8a322046220beae78614c5e9abec1cb875d62a4118abaa"
+    }
+  ],
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

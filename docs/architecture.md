@@ -16,11 +16,11 @@ flowchart LR
 
 ## Offline pipeline
 
-The deterministic generator creates fictional products and validates every field with Pydantic. Future event generation, PySpark processing, model comparison, and evaluation remain offline; they will export browser-sized results through the same artifact boundary.
+The deterministic generator creates fictional customers, sessions, and behavior without personal data. PySpark reads explicit-schema Parquet, validates and quarantines rows, sessionizes with windows, aggregates weighted interactions, and exports popularity, category, co-purchase, and cosine-style item similarity results. A UTC training cutoff prevents later evaluation events from influencing artifacts.
 
 ## Artifact boundary
 
-`artifacts/demo/catalog.json` is canonical. Generation writes an identical copy to `apps/web/public/catalog.json`; validation fails if either the schema or copies diverge. This keeps deployment independent from Python and Spark.
+`artifacts/demo` is canonical. Every recommendation artifact carries schema/dataset versions and seed; the manifest records checksums, sizes, and counts. Identical copies are published under `apps/web/public`. Raw events are never public.
 
 ## Browser application
 

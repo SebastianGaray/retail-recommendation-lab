@@ -1,4 +1,4 @@
-.PHONY: install generate validate dev test-python test-web test-e2e lint typecheck build
+.PHONY: install generate generate-events pipeline validate validate-artifacts dev test-python test-pipeline test-web test-e2e lint typecheck build
 
 install:
 	uv sync --project pipeline --dev
@@ -7,14 +7,26 @@ install:
 generate:
 	uv run --project pipeline generate-catalog
 
+generate-events:
+	uv run --project pipeline generate-events
+
+pipeline: generate
+	uv run --project pipeline run-pipeline
+
 validate:
 	uv run --project pipeline validate-catalog
+
+validate-artifacts:
+	uv run --project pipeline validate-artifacts
 
 dev:
 	npm run dev
 
 test-python:
 	uv run --project pipeline pytest
+
+test-pipeline:
+	uv run --project pipeline pytest pipeline/tests
 
 test-web:
 	npm test

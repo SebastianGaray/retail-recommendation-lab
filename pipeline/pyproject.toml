@@ -12,6 +12,9 @@ dependencies = [
 [project.scripts]
 generate-catalog = "retail_recommendation_lab.catalog:generate"
 validate-catalog = "retail_recommendation_lab.catalog:validate"
+generate-events = "retail_recommendation_lab.synthetic:generate_events"
+run-pipeline = "retail_recommendation_lab.spark_pipeline:pipeline"
+validate-artifacts = "retail_recommendation_lab.spark_pipeline:validate_artifacts"
 
 [dependency-groups]
 dev = [

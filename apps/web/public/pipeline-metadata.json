@@ -1,0 +1,18 @@
+{
+  "data": {
+    "evaluation_start": "2026-07-06T00:00:00+00:00",
+    "interaction_weights": {
+      "add_to_cart": 3.0,
+      "checkout_started": 4.0,
+      "product_view": 1.0,
+      "purchase": 6.0,
+      "remove_from_cart": -1.0
+    },
+    "profile": "small",
+    "shuffle_partitions": 4,
+    "training_cutoff": "2026-07-06T00:00:00+00:00"
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

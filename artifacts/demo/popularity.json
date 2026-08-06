@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "product_id": "prd_senda_notebook",
+      "rank": 1,
+      "score": 486.0
+    },
+    {
+      "product_id": "prd_luma_lamp",
+      "rank": 2,
+      "score": 272.0
+    },
+    {
+      "product_id": "prd_calma_diffuser",
+      "rank": 3,
+      "score": 206.0
+    },
+    {
+      "product_id": "prd_marea_bottle",
+      "rank": 4,
+      "score": 187.0
+    },
+    {
+      "product_id": "prd_auris_headphones",
+      "rank": 5,
+      "score": 113.0
+    }
+  ],
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}
