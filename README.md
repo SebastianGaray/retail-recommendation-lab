@@ -23,7 +23,8 @@ Python 3.12+, uv, Pydantic, PyArrow, PySpark, pytest, Ruff, Pyright, Astro, stri
 
 ## Setup and commands
 
-Requirements: Python 3.12+, uv, Node.js 20+, and npm.
+Requirements: Python 3.12+, uv, Java 17+, Node.js 20+, and npm. PySpark uses
+`JAVA_HOME`; point it to your JDK installation if your system does not configure it automatically.
 
 ```bash
 make install        # locked Python and Node dependencies
@@ -33,6 +34,7 @@ make dev            # local Astro server
 make test-python    # pytest
 make test-web       # Vitest
 make test-e2e       # Playwright (run `npx playwright install chromium` once)
+uv run --project pipeline pre-commit install  # install Git hooks
 make lint           # Ruff, formatting, and Prettier
 make typecheck      # Pyright, Astro, and TypeScript
 make build          # static production build
