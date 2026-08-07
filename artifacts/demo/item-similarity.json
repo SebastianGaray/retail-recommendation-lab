@@ -1,183 +1,887 @@
 {
   "data": {
-    "prd_boxed_blender": [
+    "prd_dummy_001": [
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_002",
         "rank": 1,
-        "score": 0.424876
+        "score": 0.575709
       },
       {
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_004",
         "rank": 2,
-        "score": 0.349475
+        "score": 0.378639
       },
       {
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_003",
         "rank": 3,
-        "score": 0.344842
+        "score": 0.207652
       },
       {
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_018",
         "rank": 4,
-        "score": 0.251707
+        "score": 0.182569
       }
     ],
-    "prd_family_photo_frame": [
+    "prd_dummy_002": [
       {
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_001",
         "rank": 1,
-        "score": 0.56244
+        "score": 0.575709
       },
       {
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_004",
         "rank": 2,
-        "score": 0.247431
+        "score": 0.478145
       },
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_003",
         "rank": 3,
-        "score": 0.176018
+        "score": 0.265449
       },
       {
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_016",
         "rank": 4,
-        "score": 0.160325
+        "score": 0.182314
       }
     ],
-    "prd_lunch_box": [
+    "prd_dummy_003": [
       {
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_004",
         "rank": 1,
-        "score": 0.760385
+        "score": 0.369383
       },
       {
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_049",
         "rank": 2,
-        "score": 0.424876
+        "score": 0.276532
       },
       {
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_002",
         "rank": 3,
-        "score": 0.280256
+        "score": 0.265449
       },
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_001",
         "rank": 4,
-        "score": 0.238894
+        "score": 0.207652
       }
     ],
-    "prd_spice_rack": [
+    "prd_dummy_004": [
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_002",
         "rank": 1,
-        "score": 0.760385
+        "score": 0.478145
       },
       {
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_001",
         "rank": 2,
-        "score": 0.344842
+        "score": 0.378639
       },
       {
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_003",
         "rank": 3,
-        "score": 0.31904
+        "score": 0.369383
       },
       {
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_019",
         "rank": 4,
-        "score": 0.178521
+        "score": 0.258534
       }
     ],
-    "prd_table_lamp": [
+    "prd_dummy_006": [
       {
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_007",
         "rank": 1,
-        "score": 0.56244
+        "score": 0.774382
       },
       {
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_049",
         "rank": 2,
-        "score": 0.435216
+        "score": 0.308277
       },
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_008",
         "rank": 3,
-        "score": 0.240712
+        "score": 0.264992
       },
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_084",
         "rank": 4,
-        "score": 0.170162
+        "score": 0.185185
       }
     ],
-    "prd_tennis_racket": [
+    "prd_dummy_007": [
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_006",
         "rank": 1,
-        "score": 0.676939
+        "score": 0.774382
       },
       {
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_009",
         "rank": 2,
-        "score": 0.435216
+        "score": 0.276522
       },
       {
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_084",
         "rank": 3,
-        "score": 0.251707
+        "score": 0.224405
       },
       {
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_049",
         "rank": 4,
-        "score": 0.247431
+        "score": 0.201887
       }
     ],
-    "prd_volleyball": [
+    "prd_dummy_008": [
       {
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_014",
         "rank": 1,
-        "score": 0.676939
+        "score": 0.273367
       },
       {
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_006",
         "rank": 2,
-        "score": 0.240712
+        "score": 0.264992
       },
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_004",
         "rank": 3,
-        "score": 0.238894
+        "score": 0.171607
       },
       {
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_009",
         "rank": 4,
-        "score": 0.230951
+        "score": 0.164053
       }
     ],
-    "prd_white_backpack": [
+    "prd_dummy_009": [
       {
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_007",
         "rank": 1,
-        "score": 0.349475
+        "score": 0.276522
       },
       {
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_085",
         "rank": 2,
-        "score": 0.31904
+        "score": 0.199418
       },
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_008",
         "rank": 3,
-        "score": 0.280256
+        "score": 0.164053
       },
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_139",
         "rank": 4,
-        "score": 0.230951
+        "score": 0.155798
+      }
+    ],
+    "prd_dummy_011": [
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 1,
+        "score": 0.853134
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 2,
+        "score": 0.404061
+      },
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 3,
+        "score": 0.280225
+      },
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "score": 0.208564
+      }
+    ],
+    "prd_dummy_012": [
+      {
+        "product_id": "prd_dummy_014",
+        "rank": 1,
+        "score": 0.453987
+      },
+      {
+        "product_id": "prd_dummy_078",
+        "rank": 2,
+        "score": 0.302272
+      },
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 3,
+        "score": 0.29162
+      },
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 4,
+        "score": 0.223342
+      }
+    ],
+    "prd_dummy_013": [
+      {
+        "product_id": "prd_dummy_011",
+        "rank": 1,
+        "score": 0.853134
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 2,
+        "score": 0.36011
+      },
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 3,
+        "score": 0.310226
+      },
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "score": 0.292996
+      }
+    ],
+    "prd_dummy_014": [
+      {
+        "product_id": "prd_dummy_012",
+        "rank": 1,
+        "score": 0.453987
+      },
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 2,
+        "score": 0.37487
+      },
+      {
+        "product_id": "prd_dummy_008",
+        "rank": 3,
+        "score": 0.273367
+      },
+      {
+        "product_id": "prd_dummy_050",
+        "rank": 4,
+        "score": 0.195223
+      }
+    ],
+    "prd_dummy_016": [
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "score": 0.676671
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 2,
+        "score": 0.409334
+      },
+      {
+        "product_id": "prd_dummy_018",
+        "rank": 3,
+        "score": 0.357958
+      },
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 4,
+        "score": 0.310226
+      }
+    ],
+    "prd_dummy_017": [
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "score": 0.453192
+      },
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 2,
+        "score": 0.409334
+      },
+      {
+        "product_id": "prd_dummy_011",
+        "rank": 3,
+        "score": 0.404061
+      },
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 4,
+        "score": 0.36011
+      }
+    ],
+    "prd_dummy_018": [
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "score": 0.560564
+      },
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 2,
+        "score": 0.357958
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 3,
+        "score": 0.289312
+      },
+      {
+        "product_id": "prd_dummy_004",
+        "rank": 4,
+        "score": 0.189919
+      }
+    ],
+    "prd_dummy_019": [
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 1,
+        "score": 0.676671
+      },
+      {
+        "product_id": "prd_dummy_018",
+        "rank": 2,
+        "score": 0.560564
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 3,
+        "score": 0.453192
+      },
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 4,
+        "score": 0.292996
+      }
+    ],
+    "prd_dummy_043": [
+      {
+        "product_id": "prd_dummy_122",
+        "rank": 1,
+        "score": 0.576585
+      },
+      {
+        "product_id": "prd_dummy_045",
+        "rank": 2,
+        "score": 0.570339
+      },
+      {
+        "product_id": "prd_dummy_124",
+        "rank": 3,
+        "score": 0.380691
+      },
+      {
+        "product_id": "prd_dummy_046",
+        "rank": 4,
+        "score": 0.272157
+      }
+    ],
+    "prd_dummy_044": [
+      {
+        "product_id": "prd_dummy_045",
+        "rank": 1,
+        "score": 0.649569
+      },
+      {
+        "product_id": "prd_dummy_046",
+        "rank": 2,
+        "score": 0.486337
+      },
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 3,
+        "score": 0.265382
+      },
+      {
+        "product_id": "prd_dummy_121",
+        "rank": 4,
+        "score": 0.241892
+      }
+    ],
+    "prd_dummy_045": [
+      {
+        "product_id": "prd_dummy_044",
+        "rank": 1,
+        "score": 0.649569
+      },
+      {
+        "product_id": "prd_dummy_043",
+        "rank": 2,
+        "score": 0.570339
+      },
+      {
+        "product_id": "prd_dummy_046",
+        "rank": 3,
+        "score": 0.512372
+      },
+      {
+        "product_id": "prd_dummy_122",
+        "rank": 4,
+        "score": 0.40127
+      }
+    ],
+    "prd_dummy_046": [
+      {
+        "product_id": "prd_dummy_045",
+        "rank": 1,
+        "score": 0.512372
+      },
+      {
+        "product_id": "prd_dummy_044",
+        "rank": 2,
+        "score": 0.486337
+      },
+      {
+        "product_id": "prd_dummy_043",
+        "rank": 3,
+        "score": 0.272157
+      },
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 4,
+        "score": 0.239166
+      }
+    ],
+    "prd_dummy_048": [
+      {
+        "product_id": "prd_dummy_050",
+        "rank": 1,
+        "score": 0.702937
+      },
+      {
+        "product_id": "prd_dummy_051",
+        "rank": 2,
+        "score": 0.503023
+      },
+      {
+        "product_id": "prd_dummy_014",
+        "rank": 3,
+        "score": 0.37487
+      },
+      {
+        "product_id": "prd_dummy_012",
+        "rank": 4,
+        "score": 0.29162
+      }
+    ],
+    "prd_dummy_049": [
+      {
+        "product_id": "prd_dummy_051",
+        "rank": 1,
+        "score": 0.425374
+      },
+      {
+        "product_id": "prd_dummy_006",
+        "rank": 2,
+        "score": 0.308277
+      },
+      {
+        "product_id": "prd_dummy_003",
+        "rank": 3,
+        "score": 0.276532
+      },
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 4,
+        "score": 0.229791
+      }
+    ],
+    "prd_dummy_050": [
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 1,
+        "score": 0.702937
+      },
+      {
+        "product_id": "prd_dummy_051",
+        "rank": 2,
+        "score": 0.388497
+      },
+      {
+        "product_id": "prd_dummy_140",
+        "rank": 3,
+        "score": 0.229416
+      },
+      {
+        "product_id": "prd_dummy_044",
+        "rank": 4,
+        "score": 0.220508
+      }
+    ],
+    "prd_dummy_051": [
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 1,
+        "score": 0.503023
+      },
+      {
+        "product_id": "prd_dummy_049",
+        "rank": 2,
+        "score": 0.425374
+      },
+      {
+        "product_id": "prd_dummy_050",
+        "rank": 3,
+        "score": 0.388497
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 4,
+        "score": 0.186716
+      }
+    ],
+    "prd_dummy_078": [
+      {
+        "product_id": "prd_dummy_081",
+        "rank": 1,
+        "score": 0.499122
+      },
+      {
+        "product_id": "prd_dummy_079",
+        "rank": 2,
+        "score": 0.342014
+      },
+      {
+        "product_id": "prd_dummy_012",
+        "rank": 3,
+        "score": 0.302272
+      },
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "score": 0.255539
+      }
+    ],
+    "prd_dummy_079": [
+      {
+        "product_id": "prd_dummy_081",
+        "rank": 1,
+        "score": 0.443247
+      },
+      {
+        "product_id": "prd_dummy_078",
+        "rank": 2,
+        "score": 0.342014
+      },
+      {
+        "product_id": "prd_dummy_080",
+        "rank": 3,
+        "score": 0.248103
+      },
+      {
+        "product_id": "prd_dummy_138",
+        "rank": 4,
+        "score": 0.162576
+      }
+    ],
+    "prd_dummy_080": [
+      {
+        "product_id": "prd_dummy_043",
+        "rank": 1,
+        "score": 0.263094
+      },
+      {
+        "product_id": "prd_dummy_079",
+        "rank": 2,
+        "score": 0.248103
+      },
+      {
+        "product_id": "prd_dummy_081",
+        "rank": 3,
+        "score": 0.224505
+      },
+      {
+        "product_id": "prd_dummy_139",
+        "rank": 4,
+        "score": 0.215168
+      }
+    ],
+    "prd_dummy_081": [
+      {
+        "product_id": "prd_dummy_078",
+        "rank": 1,
+        "score": 0.499122
+      },
+      {
+        "product_id": "prd_dummy_079",
+        "rank": 2,
+        "score": 0.443247
+      },
+      {
+        "product_id": "prd_dummy_080",
+        "rank": 3,
+        "score": 0.224505
+      },
+      {
+        "product_id": "prd_dummy_012",
+        "rank": 4,
+        "score": 0.170275
+      }
+    ],
+    "prd_dummy_083": [
+      {
+        "product_id": "prd_dummy_085",
+        "rank": 1,
+        "score": 0.63244
+      },
+      {
+        "product_id": "prd_dummy_086",
+        "rank": 2,
+        "score": 0.400488
+      },
+      {
+        "product_id": "prd_dummy_121",
+        "rank": 3,
+        "score": 0.331964
+      },
+      {
+        "product_id": "prd_dummy_137",
+        "rank": 4,
+        "score": 0.232033
+      }
+    ],
+    "prd_dummy_084": [
+      {
+        "product_id": "prd_dummy_086",
+        "rank": 1,
+        "score": 0.417774
+      },
+      {
+        "product_id": "prd_dummy_121",
+        "rank": 2,
+        "score": 0.253285
+      },
+      {
+        "product_id": "prd_dummy_085",
+        "rank": 3,
+        "score": 0.230775
+      },
+      {
+        "product_id": "prd_dummy_007",
+        "rank": 4,
+        "score": 0.224405
+      }
+    ],
+    "prd_dummy_085": [
+      {
+        "product_id": "prd_dummy_083",
+        "rank": 1,
+        "score": 0.63244
+      },
+      {
+        "product_id": "prd_dummy_086",
+        "rank": 2,
+        "score": 0.456637
+      },
+      {
+        "product_id": "prd_dummy_084",
+        "rank": 3,
+        "score": 0.230775
+      },
+      {
+        "product_id": "prd_dummy_009",
+        "rank": 4,
+        "score": 0.199418
+      }
+    ],
+    "prd_dummy_086": [
+      {
+        "product_id": "prd_dummy_085",
+        "rank": 1,
+        "score": 0.456637
+      },
+      {
+        "product_id": "prd_dummy_084",
+        "rank": 2,
+        "score": 0.417774
+      },
+      {
+        "product_id": "prd_dummy_083",
+        "rank": 3,
+        "score": 0.400488
+      },
+      {
+        "product_id": "prd_dummy_121",
+        "rank": 4,
+        "score": 0.318904
+      }
+    ],
+    "prd_dummy_121": [
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 1,
+        "score": 0.552158
+      },
+      {
+        "product_id": "prd_dummy_083",
+        "rank": 2,
+        "score": 0.331964
+      },
+      {
+        "product_id": "prd_dummy_086",
+        "rank": 3,
+        "score": 0.318904
+      },
+      {
+        "product_id": "prd_dummy_124",
+        "rank": 4,
+        "score": 0.261615
+      }
+    ],
+    "prd_dummy_122": [
+      {
+        "product_id": "prd_dummy_043",
+        "rank": 1,
+        "score": 0.576585
+      },
+      {
+        "product_id": "prd_dummy_124",
+        "rank": 2,
+        "score": 0.529468
+      },
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 3,
+        "score": 0.441105
+      },
+      {
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "score": 0.40127
+      }
+    ],
+    "prd_dummy_123": [
+      {
+        "product_id": "prd_dummy_121",
+        "rank": 1,
+        "score": 0.552158
+      },
+      {
+        "product_id": "prd_dummy_122",
+        "rank": 2,
+        "score": 0.441105
+      },
+      {
+        "product_id": "prd_dummy_124",
+        "rank": 3,
+        "score": 0.302389
+      },
+      {
+        "product_id": "prd_dummy_044",
+        "rank": 4,
+        "score": 0.265382
+      }
+    ],
+    "prd_dummy_124": [
+      {
+        "product_id": "prd_dummy_122",
+        "rank": 1,
+        "score": 0.529468
+      },
+      {
+        "product_id": "prd_dummy_045",
+        "rank": 2,
+        "score": 0.381794
+      },
+      {
+        "product_id": "prd_dummy_043",
+        "rank": 3,
+        "score": 0.380691
+      },
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 4,
+        "score": 0.302389
+      }
+    ],
+    "prd_dummy_137": [
+      {
+        "product_id": "prd_dummy_138",
+        "rank": 1,
+        "score": 0.625177
+      },
+      {
+        "product_id": "prd_dummy_139",
+        "rank": 2,
+        "score": 0.607267
+      },
+      {
+        "product_id": "prd_dummy_017",
+        "rank": 3,
+        "score": 0.284343
+      },
+      {
+        "product_id": "prd_dummy_140",
+        "rank": 4,
+        "score": 0.260972
+      }
+    ],
+    "prd_dummy_138": [
+      {
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "score": 0.694004
+      },
+      {
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "score": 0.625177
+      },
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 3,
+        "score": 0.211931
+      },
+      {
+        "product_id": "prd_dummy_083",
+        "rank": 4,
+        "score": 0.169799
+      }
+    ],
+    "prd_dummy_139": [
+      {
+        "product_id": "prd_dummy_138",
+        "rank": 1,
+        "score": 0.694004
+      },
+      {
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "score": 0.607267
+      },
+      {
+        "product_id": "prd_dummy_140",
+        "rank": 3,
+        "score": 0.406486
+      },
+      {
+        "product_id": "prd_dummy_123",
+        "rank": 4,
+        "score": 0.25859
+      }
+    ],
+    "prd_dummy_140": [
+      {
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "score": 0.406486
+      },
+      {
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "score": 0.260972
+      },
+      {
+        "product_id": "prd_dummy_050",
+        "rank": 3,
+        "score": 0.229416
+      },
+      {
+        "product_id": "prd_dummy_080",
+        "rank": 4,
+        "score": 0.202956
       }
     ]
   },
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

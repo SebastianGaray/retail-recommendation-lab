@@ -25,7 +25,7 @@ This is an educational technical demo, not a production store. It has no checkou
 
 The project uses two clearly separated types of fictional data:
 
-1. **Product presentation.** Eight product records were manually curated from the [DummyJSON Products API](https://dummyjson.com/docs/products). Names, categories, prices, stock, ratings, tags, and image URLs are pinned in `pipeline/src/retail_recommendation_lab/catalog.py`. English descriptions were condensed and Spanish copy was written for this demo. The build never calls DummyJSON, so catalog generation remains deterministic. Only product images are loaded from the DummyJSON CDN in the visitor's browser, with a CSS fallback if they fail.
+1. **Product presentation.** Forty product records across ten categories were curated from the [DummyJSON Products API](https://dummyjson.com/docs/products). Names, categories, prices, stock, ratings, tags, and image URLs are pinned in `pipeline/src/retail_recommendation_lab/catalog.py`. English descriptions were condensed and Spanish copy was written for this demo. The build never calls DummyJSON, so catalog generation remains deterministic. Only product images are loaded from the DummyJSON CDN in the visitor's browser, with a CSS fallback if they fail.
 2. **Shopping behavior.** Customer IDs, segments, preferences, sessions, views, cart actions, and purchases are generated locally from a fixed seed. They do not represent real people or real transactions. Raw events remain outside the public web build.
 
 All prices, inventory, reviews, popularity scores, relationships, recommendations, and evaluation results must be interpreted as synthetic demo data.
@@ -191,7 +191,7 @@ Es una demostración técnica educativa, no una tienda de producción. No incluy
 
 El proyecto utiliza dos tipos de datos ficticios claramente separados:
 
-1. **Presentación de productos.** Se seleccionaron manualmente ocho registros de la [API de productos de DummyJSON](https://dummyjson.com/docs/products). Los nombres, categorías, precios, stock, calificaciones, etiquetas y URLs de imágenes están fijados en `pipeline/src/retail_recommendation_lab/catalog.py`. Las descripciones en inglés fueron resumidas y el contenido en español fue redactado para esta demostración. El build nunca consulta DummyJSON, por lo que la generación sigue siendo determinista. Solo las imágenes se cargan desde el CDN de DummyJSON en el navegador, con un fallback CSS si fallan.
+1. **Presentación de productos.** Se seleccionaron cuarenta registros de diez categorías de la [API de productos de DummyJSON](https://dummyjson.com/docs/products). Los nombres, categorías, precios, stock, calificaciones, etiquetas y URLs de imágenes están fijados en `pipeline/src/retail_recommendation_lab/catalog.py`. Las descripciones en inglés fueron resumidas y el contenido en español fue redactado para esta demostración. El build nunca consulta DummyJSON, por lo que la generación sigue siendo determinista. Solo las imágenes se cargan desde el CDN de DummyJSON en el navegador, con un fallback CSS si fallan.
 2. **Comportamiento de compra.** Los identificadores de clientes, segmentos, preferencias, sesiones, vistas, acciones de carrito y compras se generan localmente con una semilla fija. No representan personas ni transacciones reales. Los eventos crudos no forman parte del build público.
 
 Todos los precios, inventario, reseñas, puntajes de popularidad, relaciones, recomendaciones y resultados de evaluación deben interpretarse como datos sintéticos de demostración.

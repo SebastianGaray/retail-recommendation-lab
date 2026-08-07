@@ -1,210 +1,1036 @@
 [
   {
-    "id": "prd_table_lamp",
-    "sku": "HOM-0047",
+    "id": "prd_dummy_001",
+    "sku": "BEA-0001",
     "name": {
-      "en": "Table Lamp",
-      "es": "Lámpara de mesa"
+      "en": "Essence Mascara Lash Princess",
+      "es": "Máscara de pestañas Essence Lash Princess"
     },
     "description": {
-      "en": "A modern lamp that provides both ambient and task lighting.",
-      "es": "Una lámpara moderna que ofrece luz ambiental y de trabajo."
+      "en": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+      "es": "Máscara de pestañas de larga duración con efecto de volumen y alargamiento."
     },
-    "category": "home",
-    "subcategory": "home-decoration",
-    "price": "49.99",
-    "original_price": "53.80",
+    "category": "beauty",
+    "subcategory": "beauty",
+    "price": "9.99",
+    "original_price": "11.16",
     "in_stock": true,
-    "inventory_quantity": 9,
-    "rating": 3.55,
+    "inventory_quantity": 99,
+    "rating": 2.56,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
     "tags": [
-      "home decor",
-      "lighting"
+      "beauty",
+      "mascara"
+    ],
+    "popularity_score": 100
+  },
+  {
+    "id": "prd_dummy_002",
+    "sku": "BEA-0002",
+    "name": {
+      "en": "Eyeshadow Palette with Mirror",
+      "es": "Paleta de sombras con espejo"
+    },
+    "description": {
+      "en": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+      "es": "Paleta versátil de sombras con espejo incorporado para retoques fuera de casa."
+    },
+    "category": "beauty",
+    "subcategory": "beauty",
+    "price": "19.99",
+    "original_price": "24.43",
+    "in_stock": true,
+    "inventory_quantity": 34,
+    "rating": 2.86,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+    "tags": [
+      "beauty",
+      "eyeshadow"
+    ],
+    "popularity_score": 99
+  },
+  {
+    "id": "prd_dummy_003",
+    "sku": "BEA-0003",
+    "name": {
+      "en": "Powder Canister",
+      "es": "Polvo fijador"
+    },
+    "description": {
+      "en": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+      "es": "Polvo fijador ligero y translúcido que ayuda a controlar el brillo y deja un acabado mate."
+    },
+    "category": "beauty",
+    "subcategory": "beauty",
+    "price": "14.99",
+    "original_price": "16.63",
+    "in_stock": true,
+    "inventory_quantity": 89,
+    "rating": 4.64,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+    "tags": [
+      "beauty",
+      "face powder"
+    ],
+    "popularity_score": 98
+  },
+  {
+    "id": "prd_dummy_004",
+    "sku": "BEA-0004",
+    "name": {
+      "en": "Red Lipstick",
+      "es": "Labial rojo"
+    },
+    "description": {
+      "en": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+      "es": "Labial rojo cremoso y pigmentado con un acabado intenso y duradero."
+    },
+    "category": "beauty",
+    "subcategory": "beauty",
+    "price": "12.99",
+    "original_price": "14.79",
+    "in_stock": true,
+    "inventory_quantity": 91,
+    "rating": 4.36,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+    "tags": [
+      "beauty",
+      "lipstick"
+    ],
+    "popularity_score": 97
+  },
+  {
+    "id": "prd_dummy_006",
+    "sku": "FRA-0006",
+    "name": {
+      "en": "Calvin Klein CK One",
+      "es": "Calvin Klein CK One"
+    },
+    "description": {
+      "en": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "es": "Fragancia unisex clásica con aroma fresco y limpio para el uso diario."
+    },
+    "category": "fragrances",
+    "subcategory": "fragrances",
+    "price": "49.99",
+    "original_price": "50.95",
+    "in_stock": true,
+    "inventory_quantity": 29,
+    "rating": 4.37,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+    "tags": [
+      "fragrances",
+      "perfumes"
     ],
     "popularity_score": 96
   },
   {
-    "id": "prd_boxed_blender",
-    "sku": "KIT-0051",
+    "id": "prd_dummy_007",
+    "sku": "FRA-0007",
     "name": {
-      "en": "Boxed Blender",
-      "es": "Licuadora compacta"
+      "en": "Chanel Coco Noir Eau De",
+      "es": "Chanel Coco Noir Eau de"
     },
     "description": {
-      "en": "A powerful compact blender for smoothies, shakes and everyday prep.",
-      "es": "Una licuadora compacta y potente para batidos y preparaciones diarias."
+      "en": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+      "es": "Fragancia elegante con notas de pomelo, rosa y sándalo, pensada para ocasiones nocturnas."
     },
-    "category": "kitchen",
-    "subcategory": "kitchen-accessories",
-    "price": "39.99",
-    "original_price": "43.12",
+    "category": "fragrances",
+    "subcategory": "fragrances",
+    "price": "129.99",
+    "original_price": "155.70",
     "in_stock": true,
-    "inventory_quantity": 9,
-    "rating": 4.56,
+    "inventory_quantity": 58,
+    "rating": 4.26,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
     "tags": [
-      "kitchen appliances",
-      "blenders"
+      "fragrances",
+      "perfumes"
+    ],
+    "popularity_score": 95
+  },
+  {
+    "id": "prd_dummy_008",
+    "sku": "FRA-0008",
+    "name": {
+      "en": "Dior J'adore",
+      "es": "Dior J’adore"
+    },
+    "description": {
+      "en": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+      "es": "Fragancia floral con ylang-ylang, rosa y jazmín, de carácter sofisticado."
+    },
+    "category": "fragrances",
+    "subcategory": "fragrances",
+    "price": "89.99",
+    "original_price": "105.52",
+    "in_stock": true,
+    "inventory_quantity": 98,
+    "rating": 3.8,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+    "tags": [
+      "fragrances",
+      "perfumes"
     ],
     "popularity_score": 94
   },
   {
-    "id": "prd_family_photo_frame",
+    "id": "prd_dummy_009",
+    "sku": "FRA-0009",
+    "name": {
+      "en": "Dolce Shine Eau de",
+      "es": "Dolce Shine Eau de"
+    },
+    "description": {
+      "en": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+      "es": "Fragancia frutal con notas de mango, jazmín y maderas claras."
+    },
+    "category": "fragrances",
+    "subcategory": "fragrances",
+    "price": "69.99",
+    "original_price": "70.43",
+    "in_stock": true,
+    "inventory_quantity": 4,
+    "rating": 3.96,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+    "tags": [
+      "fragrances",
+      "perfumes"
+    ],
+    "popularity_score": 93
+  },
+  {
+    "id": "prd_dummy_011",
+    "sku": "FUR-0011",
+    "name": {
+      "en": "Annibale Colombo Bed",
+      "es": "Cama Annibale Colombo"
+    },
+    "description": {
+      "en": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+      "es": "Estructura de cama elegante fabricada con materiales de alta calidad."
+    },
+    "category": "furniture",
+    "subcategory": "furniture",
+    "price": "1899.99",
+    "original_price": "2078.08",
+    "in_stock": true,
+    "inventory_quantity": 88,
+    "rating": 4.77,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+    "tags": [
+      "furniture",
+      "beds"
+    ],
+    "popularity_score": 92
+  },
+  {
+    "id": "prd_dummy_012",
+    "sku": "FUR-0012",
+    "name": {
+      "en": "Annibale Colombo Sofa",
+      "es": "Sofá Annibale Colombo"
+    },
+    "description": {
+      "en": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+      "es": "Sofá cómodo con diseño sofisticado y tapizado de primera calidad."
+    },
+    "category": "furniture",
+    "subcategory": "furniture",
+    "price": "2499.99",
+    "original_price": "2920.55",
+    "in_stock": true,
+    "inventory_quantity": 60,
+    "rating": 3.92,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+    "tags": [
+      "furniture",
+      "sofas"
+    ],
+    "popularity_score": 91
+  },
+  {
+    "id": "prd_dummy_013",
+    "sku": "FUR-0013",
+    "name": {
+      "en": "Bedside Table African Cherry",
+      "es": "Mesa de noche African Cherry"
+    },
+    "description": {
+      "en": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+      "es": "Mesa de noche funcional con espacio de almacenamiento y acabado en cerezo africano."
+    },
+    "category": "furniture",
+    "subcategory": "furniture",
+    "price": "299.99",
+    "original_price": "370.77",
+    "in_stock": true,
+    "inventory_quantity": 64,
+    "rating": 2.87,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+    "tags": [
+      "furniture",
+      "bedside tables"
+    ],
+    "popularity_score": 90
+  },
+  {
+    "id": "prd_dummy_014",
+    "sku": "FUR-0014",
+    "name": {
+      "en": "Knoll Saarinen Executive Conference Chair",
+      "es": "Silla ejecutiva Knoll Saarinen"
+    },
+    "description": {
+      "en": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+      "es": "Silla ergonómica de diseño moderno para oficina o sala de reuniones."
+    },
+    "category": "furniture",
+    "subcategory": "furniture",
+    "price": "499.99",
+    "original_price": "510.25",
+    "in_stock": true,
+    "inventory_quantity": 26,
+    "rating": 4.88,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+    "tags": [
+      "furniture",
+      "office chairs"
+    ],
+    "popularity_score": 89
+  },
+  {
+    "id": "prd_dummy_016",
+    "sku": "GRO-0016",
+    "name": {
+      "en": "Apple",
+      "es": "Manzana"
+    },
+    "description": {
+      "en": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+      "es": "Manzanas frescas y crujientes para comer solas o incorporar en distintas recetas."
+    },
+    "category": "groceries",
+    "subcategory": "fruits",
+    "price": "1.99",
+    "original_price": "2.28",
+    "in_stock": true,
+    "inventory_quantity": 8,
+    "rating": 4.19,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+    "tags": [
+      "fruits"
+    ],
+    "popularity_score": 88
+  },
+  {
+    "id": "prd_dummy_017",
+    "sku": "GRO-0017",
+    "name": {
+      "en": "Beef Steak",
+      "es": "Bistec de res"
+    },
+    "description": {
+      "en": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+      "es": "Corte de carne de res apto para parrilla o cocción al punto preferido."
+    },
+    "category": "groceries",
+    "subcategory": "meat",
+    "price": "12.99",
+    "original_price": "14.37",
+    "in_stock": true,
+    "inventory_quantity": 86,
+    "rating": 4.47,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+    "tags": [
+      "meat"
+    ],
+    "popularity_score": 87
+  },
+  {
+    "id": "prd_dummy_018",
+    "sku": "GRO-0018",
+    "name": {
+      "en": "Cat Food",
+      "es": "Alimento para gatos"
+    },
+    "description": {
+      "en": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+      "es": "Alimento nutritivo formulado para cubrir las necesidades diarias de los gatos."
+    },
+    "category": "groceries",
+    "subcategory": "pet supplies",
+    "price": "8.99",
+    "original_price": "9.94",
+    "in_stock": true,
+    "inventory_quantity": 46,
+    "rating": 3.13,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+    "tags": [
+      "pet supplies",
+      "cat food"
+    ],
+    "popularity_score": 86
+  },
+  {
+    "id": "prd_dummy_019",
+    "sku": "GRO-0019",
+    "name": {
+      "en": "Chicken Meat",
+      "es": "Carne de pollo"
+    },
+    "description": {
+      "en": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+      "es": "Carne de pollo fresca y tierna para distintas preparaciones culinarias."
+    },
+    "category": "groceries",
+    "subcategory": "meat",
+    "price": "9.99",
+    "original_price": "11.58",
+    "in_stock": true,
+    "inventory_quantity": 97,
+    "rating": 3.19,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+    "tags": [
+      "meat"
+    ],
+    "popularity_score": 85
+  },
+  {
+    "id": "prd_dummy_043",
+    "sku": "HOM-0043",
+    "name": {
+      "en": "Decoration Swing",
+      "es": "Columpio decorativo"
+    },
+    "description": {
+      "en": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+      "es": "Pieza decorativa con detalles trabajados para dar un toque lúdico al hogar."
+    },
+    "category": "home-decoration",
+    "subcategory": "home decor",
+    "price": "59.99",
+    "original_price": "66.96",
+    "in_stock": true,
+    "inventory_quantity": 47,
+    "rating": 3.16,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+    "tags": [
+      "home decor",
+      "swing"
+    ],
+    "popularity_score": 84
+  },
+  {
+    "id": "prd_dummy_044",
     "sku": "HOM-0044",
     "name": {
       "en": "Family Tree Photo Frame",
       "es": "Marco de fotos familiar"
     },
     "description": {
-      "en": "A decorative family-tree frame with multiple spaces for photographs.",
-      "es": "Un marco decorativo en forma de árbol con espacios para varias fotografías."
+      "en": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+      "es": "Marco con varios espacios para exhibir fotografías y recuerdos familiares."
     },
-    "category": "home",
-    "subcategory": "home-decoration",
+    "category": "home-decoration",
+    "subcategory": "home decor",
     "price": "29.99",
     "original_price": "35.23",
     "in_stock": true,
     "inventory_quantity": 77,
     "rating": 4.53,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
     "tags": [
       "home decor",
       "photo frame"
     ],
-    "popularity_score": 92
+    "popularity_score": 83
   },
   {
-    "id": "prd_lunch_box",
-    "sku": "KIT-0065",
+    "id": "prd_dummy_045",
+    "sku": "HOM-0045",
     "name": {
-      "en": "Lunch Box",
-      "es": "Lonchera con compartimentos"
+      "en": "House Showpiece Plant",
+      "es": "Planta decorativa"
     },
     "description": {
-      "en": "A portable meal container with separate compartments for food.",
-      "es": "Un recipiente portátil con compartimentos separados para alimentos."
+      "en": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+      "es": "Planta artificial que aporta verde al espacio sin necesidad de mantenimiento."
     },
-    "category": "kitchen",
-    "subcategory": "kitchen-accessories",
-    "price": "12.99",
-    "original_price": "14.49",
+    "category": "home-decoration",
+    "subcategory": "home decor",
+    "price": "39.99",
+    "original_price": "43.21",
     "in_stock": true,
-    "inventory_quantity": 94,
-    "rating": 4.93,
+    "inventory_quantity": 28,
+    "rating": 4.67,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
     "tags": [
-      "kitchen tools",
-      "storage"
-    ],
-    "popularity_score": 90
-  },
-  {
-    "id": "prd_spice_rack",
-    "sku": "KIT-0073",
-    "name": {
-      "en": "Spice Rack",
-      "es": "Especiero organizador"
-    },
-    "description": {
-      "en": "A practical organizer that keeps spices visible and within reach.",
-      "es": "Un organizador práctico que mantiene las especias visibles y al alcance."
-    },
-    "category": "kitchen",
-    "subcategory": "kitchen-accessories",
-    "price": "19.99",
-    "original_price": "22.74",
-    "in_stock": true,
-    "inventory_quantity": 79,
-    "rating": 4.87,
-    "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/1.webp",
-    "tags": [
-      "kitchen tools",
-      "organization"
-    ],
-    "popularity_score": 88
-  },
-  {
-    "id": "prd_volleyball",
-    "sku": "SPT-0153",
-    "name": {
-      "en": "Volleyball",
-      "es": "Balón de voleibol"
-    },
-    "description": {
-      "en": "A standard ball designed for passing, setting and spiking over the net.",
-      "es": "Un balón estándar diseñado para recibir, colocar y rematar sobre la red."
-    },
-    "category": "sports",
-    "subcategory": "sports-accessories",
-    "price": "11.99",
-    "original_price": "13.66",
-    "in_stock": false,
-    "inventory_quantity": 0,
-    "rating": 3.84,
-    "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/1.webp",
-    "tags": [
-      "sports equipment",
-      "volleyball"
+      "home decor",
+      "artificial plants"
     ],
     "popularity_score": 82
   },
   {
-    "id": "prd_tennis_racket",
-    "sku": "SPT-0152",
+    "id": "prd_dummy_046",
+    "sku": "HOM-0046",
     "name": {
-      "en": "Tennis Racket",
-      "es": "Raqueta de tenis"
+      "en": "Plant Pot",
+      "es": "Macetero"
     },
     "description": {
-      "en": "A strung racket with a comfortable grip for recreational tennis.",
-      "es": "Una raqueta encordada con agarre cómodo para jugar tenis recreativo."
+      "en": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+      "es": "Macetero de diseño simple para plantas de interior o exterior."
     },
-    "category": "sports",
-    "subcategory": "sports-accessories",
-    "price": "49.99",
-    "original_price": "62.18",
+    "category": "home-decoration",
+    "subcategory": "home decor",
+    "price": "14.99",
+    "original_price": "16.09",
     "in_stock": true,
-    "inventory_quantity": 6,
-    "rating": 4.03,
+    "inventory_quantity": 59,
+    "rating": 3.01,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
     "tags": [
-      "sports equipment",
-      "tennis"
+      "home decor",
+      "plant accessories"
+    ],
+    "popularity_score": 81
+  },
+  {
+    "id": "prd_dummy_048",
+    "sku": "KIT-0048",
+    "name": {
+      "en": "Bamboo Spatula",
+      "es": "Espátula de bambú"
+    },
+    "description": {
+      "en": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
+      "es": "Utensilio de bambú para voltear, mezclar y servir alimentos."
+    },
+    "category": "kitchen-accessories",
+    "subcategory": "kitchen tools",
+    "price": "7.99",
+    "original_price": "8.22",
+    "in_stock": true,
+    "inventory_quantity": 37,
+    "rating": 3.27,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp",
+    "tags": [
+      "kitchen tools",
+      "utensils"
+    ],
+    "popularity_score": 80
+  },
+  {
+    "id": "prd_dummy_049",
+    "sku": "KIT-0049",
+    "name": {
+      "en": "Black Aluminium Cup",
+      "es": "Taza de aluminio negra"
+    },
+    "description": {
+      "en": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
+      "es": "Taza resistente para bebidas frías o calientes con acabado negro."
+    },
+    "category": "kitchen-accessories",
+    "subcategory": "drinkware",
+    "price": "5.99",
+    "original_price": "7.10",
+    "in_stock": true,
+    "inventory_quantity": 75,
+    "rating": 4.46,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp",
+    "tags": [
+      "drinkware",
+      "cups"
+    ],
+    "popularity_score": 79
+  },
+  {
+    "id": "prd_dummy_050",
+    "sku": "KIT-0050",
+    "name": {
+      "en": "Black Whisk",
+      "es": "Batidor negro"
+    },
+    "description": {
+      "en": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
+      "es": "Utensilio de cocina con mango ergonómico para batir y mezclar ingredientes."
+    },
+    "category": "kitchen-accessories",
+    "subcategory": "kitchen tools",
+    "price": "9.99",
+    "original_price": "11.13",
+    "in_stock": true,
+    "inventory_quantity": 73,
+    "rating": 3.9,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp",
+    "tags": [
+      "kitchen tools",
+      "utensils"
+    ],
+    "popularity_score": 78
+  },
+  {
+    "id": "prd_dummy_051",
+    "sku": "KIT-0051",
+    "name": {
+      "en": "Boxed Blender",
+      "es": "Licuadora compacta"
+    },
+    "description": {
+      "en": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
+      "es": "Licuadora potente y compacta para batidos y preparaciones cotidianas."
+    },
+    "category": "kitchen-accessories",
+    "subcategory": "kitchen appliances",
+    "price": "39.99",
+    "original_price": "43.12",
+    "in_stock": true,
+    "inventory_quantity": 9,
+    "rating": 4.56,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
+    "tags": [
+      "kitchen appliances",
+      "blenders"
+    ],
+    "popularity_score": 77
+  },
+  {
+    "id": "prd_dummy_078",
+    "sku": "LAP-0078",
+    "name": {
+      "en": "Apple MacBook Pro 14 Inch Space Grey",
+      "es": "Apple MacBook Pro 14 pulgadas gris espacial"
+    },
+    "description": {
+      "en": "The MacBook Pro 14 Inch in Space Grey is a powerful and sleek laptop, featuring Apple's M1 Pro chip for exceptional performance and a stunning Retina display.",
+      "es": "Portátil de 14 pulgadas con chip M1 Pro y pantalla Retina."
+    },
+    "category": "laptops",
+    "subcategory": "laptops",
+    "price": "1999.99",
+    "original_price": "2098.41",
+    "in_stock": true,
+    "inventory_quantity": 24,
+    "rating": 3.65,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
+    "tags": [
+      "laptops",
+      "apple"
+    ],
+    "popularity_score": 76
+  },
+  {
+    "id": "prd_dummy_079",
+    "sku": "LAP-0079",
+    "name": {
+      "en": "Asus Zenbook Pro Dual Screen Laptop",
+      "es": "Asus Zenbook Pro de doble pantalla"
+    },
+    "description": {
+      "en": "The Asus Zenbook Pro Dual Screen Laptop is a high-performance device with dual screens, providing productivity and versatility for creative professionals.",
+      "es": "Portátil de alto rendimiento con dos pantallas para trabajo creativo y multitarea."
+    },
+    "category": "laptops",
+    "subcategory": "laptops",
+    "price": "1799.99",
+    "original_price": "2025.65",
+    "in_stock": true,
+    "inventory_quantity": 45,
+    "rating": 3.95,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
+    "tags": [
+      "laptops"
     ],
     "popularity_score": 75
   },
   {
-    "id": "prd_white_backpack",
-    "sku": "ACC-0175",
+    "id": "prd_dummy_080",
+    "sku": "LAP-0080",
     "name": {
-      "en": "White Faux Leather Backpack",
-      "es": "Mochila blanca de cuero sintético"
+      "en": "Huawei Matebook X Pro",
+      "es": "Huawei Matebook X Pro"
     },
     "description": {
-      "en": "A practical backpack with a clean design and generous storage space.",
-      "es": "Una mochila práctica de diseño limpio y amplio espacio de almacenamiento."
+      "en": "The Huawei Matebook X Pro is a slim and stylish laptop with a high-resolution touchscreen display, offering a premium experience for users on the go.",
+      "es": "Portátil delgado con pantalla táctil de alta resolución para trabajar en movimiento."
     },
-    "category": "accessories",
-    "subcategory": "bags",
-    "price": "39.99",
-    "original_price": "47.16",
+    "category": "laptops",
+    "subcategory": "laptops",
+    "price": "1399.99",
+    "original_price": "1544.90",
     "in_stock": true,
-    "inventory_quantity": 39,
-    "rating": 3.36,
+    "inventory_quantity": 75,
+    "rating": 4.98,
     "review_count": 3,
-    "image_url": "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/1.webp",
+    "image_url": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp",
     "tags": [
-      "fashion accessories",
-      "backpacks"
+      "laptops"
+    ],
+    "popularity_score": 74
+  },
+  {
+    "id": "prd_dummy_081",
+    "sku": "LAP-0081",
+    "name": {
+      "en": "Lenovo Yoga 920",
+      "es": "Lenovo Yoga 920"
+    },
+    "description": {
+      "en": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+      "es": "Portátil convertible 2 en 1 que puede utilizarse también como tableta."
+    },
+    "category": "laptops",
+    "subcategory": "laptops",
+    "price": "1099.99",
+    "original_price": "1177.09",
+    "in_stock": true,
+    "inventory_quantity": 40,
+    "rating": 2.86,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+    "tags": [
+      "laptops"
+    ],
+    "popularity_score": 73
+  },
+  {
+    "id": "prd_dummy_083",
+    "sku": "MEN-0083",
+    "name": {
+      "en": "Blue & Black Check Shirt",
+      "es": "Camisa a cuadros azul y negra"
+    },
+    "description": {
+      "en": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions.",
+      "es": "Camisa cómoda con patrón clásico a cuadros para ocasiones casuales o semiformal."
+    },
+    "category": "mens-shirts",
+    "subcategory": "clothing",
+    "price": "29.99",
+    "original_price": "35.43",
+    "in_stock": true,
+    "inventory_quantity": 38,
+    "rating": 3.64,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp",
+    "tags": [
+      "clothing",
+      "men's shirts"
+    ],
+    "popularity_score": 72
+  },
+  {
+    "id": "prd_dummy_084",
+    "sku": "MEN-0084",
+    "name": {
+      "en": "Gigabyte Aorus Men Tshirt",
+      "es": "Camiseta Gigabyte Aorus"
+    },
+    "description": {
+      "en": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
+      "es": "Camiseta casual con logotipo Aorus para aficionados a los videojuegos."
+    },
+    "category": "mens-shirts",
+    "subcategory": "clothing",
+    "price": "24.99",
+    "original_price": "25.23",
+    "in_stock": true,
+    "inventory_quantity": 90,
+    "rating": 3.18,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+    "tags": [
+      "clothing",
+      "men's t-shirts"
+    ],
+    "popularity_score": 71
+  },
+  {
+    "id": "prd_dummy_085",
+    "sku": "MEN-0085",
+    "name": {
+      "en": "Man Plaid Shirt",
+      "es": "Camisa a cuadros para hombre"
+    },
+    "description": {
+      "en": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions.",
+      "es": "Camisa versátil de corte cómodo con diseño clásico a cuadros."
+    },
+    "category": "mens-shirts",
+    "subcategory": "clothing",
+    "price": "34.99",
+    "original_price": "43.47",
+    "in_stock": true,
+    "inventory_quantity": 82,
+    "rating": 3.46,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp",
+    "tags": [
+      "clothing",
+      "men's shirts"
+    ],
+    "popularity_score": 70
+  },
+  {
+    "id": "prd_dummy_086",
+    "sku": "MEN-0086",
+    "name": {
+      "en": "Man Short Sleeve Shirt",
+      "es": "Camisa de manga corta para hombre"
+    },
+    "description": {
+      "en": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
+      "es": "Camisa ligera de manga corta para días cálidos y uso casual."
+    },
+    "category": "mens-shirts",
+    "subcategory": "clothing",
+    "price": "19.99",
+    "original_price": "21.46",
+    "in_stock": true,
+    "inventory_quantity": 2,
+    "rating": 2.9,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
+    "tags": [
+      "clothing",
+      "men's shirts"
+    ],
+    "popularity_score": 69
+  },
+  {
+    "id": "prd_dummy_121",
+    "sku": "PHO-0121",
+    "name": {
+      "en": "iPhone 5s",
+      "es": "iPhone 5s"
+    },
+    "description": {
+      "en": "The iPhone 5s is a classic smartphone known for its compact design and advanced features during its release. While it's an older model, it still provides a reliable user experience.",
+      "es": "Smartphone compacto de Apple con las funciones representativas de su generación."
+    },
+    "category": "smartphones",
+    "subcategory": "smartphones",
+    "price": "199.99",
+    "original_price": "229.64",
+    "in_stock": true,
+    "inventory_quantity": 25,
+    "rating": 2.83,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
+    "tags": [
+      "smartphones",
+      "apple"
     ],
     "popularity_score": 68
+  },
+  {
+    "id": "prd_dummy_122",
+    "sku": "PHO-0122",
+    "name": {
+      "en": "iPhone 6",
+      "es": "iPhone 6"
+    },
+    "description": {
+      "en": "The iPhone 6 is a stylish and capable smartphone with a larger display and improved performance. It introduced new features and design elements, making it a popular choice in its time.",
+      "es": "Smartphone de Apple con pantalla amplia y un diseño clásico."
+    },
+    "category": "smartphones",
+    "subcategory": "smartphones",
+    "price": "299.99",
+    "original_price": "321.50",
+    "in_stock": true,
+    "inventory_quantity": 60,
+    "rating": 3.41,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp",
+    "tags": [
+      "smartphones",
+      "apple"
+    ],
+    "popularity_score": 67
+  },
+  {
+    "id": "prd_dummy_123",
+    "sku": "PHO-0123",
+    "name": {
+      "en": "iPhone 13 Pro",
+      "es": "iPhone 13 Pro"
+    },
+    "description": {
+      "en": "The iPhone 13 Pro is a cutting-edge smartphone with a powerful camera system, high-performance chip, and stunning display. It offers advanced features for users who demand top-notch technology.",
+      "es": "Smartphone de alto rendimiento con sistema avanzado de cámaras y pantalla de gran calidad."
+    },
+    "category": "smartphones",
+    "subcategory": "smartphones",
+    "price": "1099.99",
+    "original_price": "1213.72",
+    "in_stock": true,
+    "inventory_quantity": 56,
+    "rating": 4.12,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
+    "tags": [
+      "smartphones",
+      "apple"
+    ],
+    "popularity_score": 66
+  },
+  {
+    "id": "prd_dummy_124",
+    "sku": "PHO-0124",
+    "name": {
+      "en": "iPhone X",
+      "es": "iPhone X"
+    },
+    "description": {
+      "en": "The iPhone X is a flagship smartphone featuring a bezel-less OLED display, facial recognition technology (Face ID), and impressive performance. It represents a milestone in iPhone design and innovation.",
+      "es": "Smartphone de Apple con pantalla OLED, Face ID y diseño sin botón frontal."
+    },
+    "category": "smartphones",
+    "subcategory": "smartphones",
+    "price": "899.99",
+    "original_price": "1119.25",
+    "in_stock": true,
+    "inventory_quantity": 37,
+    "rating": 2.51,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/thumbnail.webp",
+    "tags": [
+      "smartphones",
+      "apple"
+    ],
+    "popularity_score": 65
+  },
+  {
+    "id": "prd_dummy_137",
+    "sku": "SPT-0137",
+    "name": {
+      "en": "American Football",
+      "es": "Balón de fútbol americano"
+    },
+    "description": {
+      "en": "The American Football is a classic ball used in American football games. It is designed for throwing and catching, making it an essential piece of equipment for the sport.",
+      "es": "Balón diseñado para lanzar y recibir en partidos de fútbol americano."
+    },
+    "category": "sports-accessories",
+    "subcategory": "sports equipment",
+    "price": "19.99",
+    "original_price": "21.03",
+    "in_stock": true,
+    "inventory_quantity": 53,
+    "rating": 4.91,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/thumbnail.webp",
+    "tags": [
+      "sports equipment",
+      "american football"
+    ],
+    "popularity_score": 64
+  },
+  {
+    "id": "prd_dummy_138",
+    "sku": "SPT-0138",
+    "name": {
+      "en": "Baseball Ball",
+      "es": "Pelota de béisbol"
+    },
+    "description": {
+      "en": "The Baseball Ball is a standard baseball used in baseball games. It features a durable leather cover and is designed for pitching, hitting, and fielding in the game of baseball.",
+      "es": "Pelota reglamentaria con cubierta resistente para lanzar, batear y fildear."
+    },
+    "category": "sports-accessories",
+    "subcategory": "sports equipment",
+    "price": "8.99",
+    "original_price": "9.15",
+    "in_stock": true,
+    "inventory_quantity": 100,
+    "rating": 2.57,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/thumbnail.webp",
+    "tags": [
+      "sports equipment",
+      "baseball"
+    ],
+    "popularity_score": 63
+  },
+  {
+    "id": "prd_dummy_139",
+    "sku": "SPT-0139",
+    "name": {
+      "en": "Baseball Glove",
+      "es": "Guante de béisbol"
+    },
+    "description": {
+      "en": "The Baseball Glove is a protective glove worn by baseball players. It is designed to catch and field the baseball, providing players with comfort and control during the game.",
+      "es": "Guante protector diseñado para atrapar la pelota con comodidad y control."
+    },
+    "category": "sports-accessories",
+    "subcategory": "sports equipment",
+    "price": "24.99",
+    "original_price": "25.74",
+    "in_stock": true,
+    "inventory_quantity": 22,
+    "rating": 3.96,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/thumbnail.webp",
+    "tags": [
+      "sports equipment",
+      "baseball"
+    ],
+    "popularity_score": 62
+  },
+  {
+    "id": "prd_dummy_140",
+    "sku": "SPT-0140",
+    "name": {
+      "en": "Basketball",
+      "es": "Balón de básquetbol"
+    },
+    "description": {
+      "en": "The Basketball is a standard ball used in basketball games. It is designed for dribbling, shooting, and passing in the game of basketball, suitable for both indoor and outdoor play.",
+      "es": "Balón apto para driblar, lanzar y pasar tanto en interior como al aire libre."
+    },
+    "category": "sports-accessories",
+    "subcategory": "sports equipment",
+    "price": "14.99",
+    "original_price": "16.19",
+    "in_stock": true,
+    "inventory_quantity": 75,
+    "rating": 4.66,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/thumbnail.webp",
+    "tags": [
+      "sports equipment",
+      "basketball"
+    ],
+    "popularity_score": 61
   }
 ]

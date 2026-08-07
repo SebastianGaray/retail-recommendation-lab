@@ -19,7 +19,7 @@ class Profile:
 
 
 PROFILES = {
-    "small": Profile(48, 240),
+    "small": Profile(120, 1_200),
     "medium": Profile(500, 5_000),
     "large-local": Profile(5_000, 80_000),
 }
@@ -50,10 +50,16 @@ def generate_rows(
             )
         )
     complements = {
-        "prd_table_lamp": "prd_family_photo_frame",
-        "prd_boxed_blender": "prd_lunch_box",
-        "prd_spice_rack": "prd_lunch_box",
-        "prd_tennis_racket": "prd_volleyball",
+        "prd_dummy_001": "prd_dummy_002",
+        "prd_dummy_006": "prd_dummy_007",
+        "prd_dummy_011": "prd_dummy_013",
+        "prd_dummy_016": "prd_dummy_019",
+        "prd_dummy_043": "prd_dummy_045",
+        "prd_dummy_048": "prd_dummy_050",
+        "prd_dummy_078": "prd_dummy_079",
+        "prd_dummy_083": "prd_dummy_085",
+        "prd_dummy_121": "prd_dummy_123",
+        "prd_dummy_138": "prd_dummy_139",
     }
     events: list[EventRow] = []
     event_number = 0
@@ -61,7 +67,7 @@ def generate_rows(
     for session_index in range(cfg.sessions):
         customer = customers[rng.randrange(len(customers))]
         customer_id, _, preferred, sensitivity, activity, repeat = customer
-        timestamp = start + timedelta(minutes=session_index * 43 + rng.randrange(20))
+        timestamp = start + timedelta(minutes=session_index * 10 + rng.randrange(10))
         session_id = f"sess_{timestamp:%Y%m%d}_{session_index:06d}"
         pool = [
             p

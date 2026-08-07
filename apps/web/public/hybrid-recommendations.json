@@ -5,56 +5,56 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
+          "novelty": 0.0,
+          "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_139",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.129024,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_019",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.124146,
+        "score": 0.133582,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_045",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.067561,
+        "score": 0.133582,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
           "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_050",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.06194,
         "source_product_id": null
       },
       {
@@ -65,27 +65,27 @@
           "popularity": 0.0,
           "similarity": 0.0
         },
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
         "score": 0.05,
         "source_product_id": null
       }
     ],
-    "prd_boxed_blender": [
+    "prd_dummy_001": [
       {
         "contributions": {
-          "basket": 0.25,
+          "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_002",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.829024,
-        "source_product_id": "prd_boxed_blender"
+        "score": 0.5,
+        "source_product_id": null
       },
       {
         "contributions": {
@@ -93,58 +93,274 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.1075654418516016
+          "similarity": 0.09974563768632039
         },
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_004",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.407565,
+        "score": 0.399746,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.11291628409241838
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
         },
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_139",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.162916,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_019",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.124146,
+        "score": 0.133582,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_045",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_family_photo_frame": [
+    "prd_dummy_002": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_001",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.15039896287446455
+        },
+        "product_id": "prd_dummy_004",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.450399,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_003": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_004",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.07147300146539623
+        },
+        "product_id": "prd_dummy_002",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.371473,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.08517847536959519
+        },
+        "product_id": "prd_dummy_049",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135178,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_004": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_002",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.10937976695156437
+        },
+        "product_id": "prd_dummy_001",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.40938,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_006": [
       {
         "contributions": {
           "basket": 0.25,
@@ -153,70 +369,70 @@
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_007",
         "rank": 1,
         "reason_code": "hybrid_ranker",
         "score": 0.75,
-        "source_product_id": "prd_family_photo_frame"
+        "source_product_id": "prd_dummy_006"
       },
       {
         "contributions": {
           "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
-          "similarity": 0.0
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.02709009041118676
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_008",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.129024,
+        "score": 0.32709,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.04332392474789551
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
         },
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_139",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.093324,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_019",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.067561,
+        "score": 0.133582,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_045",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_lunch_box": [
+    "prd_dummy_007": [
       {
         "contributions": {
           "basket": 0.25,
@@ -225,286 +441,214 @@
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_006",
         "rank": 1,
         "reason_code": "hybrid_ranker",
         "score": 0.75,
-        "source_product_id": "prd_lunch_box"
+        "source_product_id": "prd_dummy_007"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
-          "similarity": 0.07132702194285233
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.02607359016235949
         },
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_009",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.388888,
-        "source_product_id": "prd_lunch_box"
+        "score": 0.326074,
+        "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
+          "novelty": 0.0,
+          "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_139",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.124146,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.01586297750104988
-        },
-        "product_id": "prd_white_backpack",
-        "rank": 4,
-        "reason_code": "hybrid_ranker",
-        "score": 0.065863,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_spice_rack": [
+    "prd_dummy_008": [
       {
         "contributions": {
-          "basket": 0.25,
+          "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.18467716852370233
+        },
+        "product_id": "prd_dummy_006",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.484677,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_007",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_lunch_box",
-        "rank": 1,
-        "reason_code": "hybrid_ranker",
-        "score": 0.829024,
-        "source_product_id": "prd_spice_rack"
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.25,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
-          "similarity": 0.05716834174308773
-        },
-        "product_id": "prd_boxed_blender",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.374729,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
-          "similarity": 0.0
-        },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_014",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.124146,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.04829960265629082
-        },
-        "product_id": "prd_white_backpack",
-        "rank": 4,
-        "reason_code": "hybrid_ranker",
-        "score": 0.0983,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_139",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_table_lamp": [
+    "prd_dummy_009": [
       {
         "contributions": {
-          "basket": 0.25,
+          "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_007",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.824146,
-        "source_product_id": "prd_table_lamp"
+        "score": 0.5,
+        "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
-          "category": 0.0,
+          "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.13513579655244495
+          "similarity": 0.013675822537357963
         },
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_008",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.185136,
+        "score": 0.313676,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
+          "novelty": 0.0,
+          "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_139",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.129024,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_019",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.067561,
+        "score": 0.133582,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_white_backpack",
+        "product_id": "prd_dummy_045",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_tennis_racket": [
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.08744191027873754
-        },
-        "product_id": "prd_table_lamp",
-        "rank": 1,
-        "reason_code": "hybrid_ranker",
-        "score": 0.137442,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
-          "similarity": 0.0
-        },
-        "product_id": "prd_lunch_box",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.129024,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
-          "similarity": 0.0
-        },
-        "product_id": "prd_family_photo_frame",
-        "rank": 3,
-        "reason_code": "hybrid_ranker",
-        "score": 0.124146,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
-          "similarity": 0.0019911154157780542
-        },
-        "product_id": "prd_boxed_blender",
-        "rank": 4,
-        "reason_code": "hybrid_ranker",
-        "score": 0.069552,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.0
-        },
-        "product_id": "prd_white_backpack",
-        "rank": 5,
-        "reason_code": "hybrid_ranker",
-        "score": 0.05,
-        "source_product_id": null
-      }
-    ],
-    "prd_volleyball": [
+    "prd_dummy_011": [
       {
         "contributions": {
           "basket": 0.25,
@@ -513,124 +657,254 @@
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_013",
         "rank": 1,
         "reason_code": "hybrid_ranker",
         "score": 0.75,
-        "source_product_id": "prd_volleyball"
+        "source_product_id": "prd_dummy_011"
       },
       {
         "contributions": {
           "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
-          "similarity": 0.003561979246078373
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_012",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.132586,
-        "source_product_id": "prd_volleyball"
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
-          "similarity": 0.0
-        },
-        "product_id": "prd_family_photo_frame",
-        "rank": 3,
-        "reason_code": "hybrid_ranker",
-        "score": 0.124146,
-        "source_product_id": "prd_volleyball"
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
-          "similarity": 0.0
-        },
-        "product_id": "prd_boxed_blender",
-        "rank": 4,
-        "reason_code": "hybrid_ranker",
-        "score": 0.067561,
+        "score": 0.3,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.00437724781832696
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.054377,
+        "score": 0.133582,
         "source_product_id": null
       }
     ],
-    "prd_white_backpack": [
+    "prd_dummy_012": [
       {
         "contributions": {
           "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.04560975609756098,
-          "popularity": 0.02195121951219512,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_boxed_blender",
+        "product_id": "prd_dummy_014",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.267561,
+        "score": 0.5,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.03024390243902439,
-          "popularity": 0.09878048780487805,
-          "similarity": 0.08319833957679462
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
         },
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_011",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.212223,
+        "score": 0.3,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.03146341463414634,
-          "popularity": 0.09268292682926829,
+          "novelty": 0.0,
+          "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_family_photo_frame",
+        "product_id": "prd_dummy_139",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.124146,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_019",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_013": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_011",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_013"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_012",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_014": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_012",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_011",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
         "source_product_id": null
       },
       {
@@ -639,17 +913,2047 @@
           "category": 0.0,
           "novelty": 0.05,
           "popularity": 0.0,
+          "similarity": 0.1388500718801688
+        },
+        "product_id": "prd_dummy_048",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.18885,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
           "similarity": 0.0
         },
-        "product_id": "prd_tennis_racket",
+        "product_id": "prd_dummy_019",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.05,
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_016": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.833582,
+        "source_product_id": "prd_dummy_016"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.054091609927819986
+        },
+        "product_id": "prd_dummy_017",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.354092,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_017": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.583582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.10576480952278636
+        },
+        "product_id": "prd_dummy_016",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.405765,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.09443501428847688
+        },
+        "product_id": "prd_dummy_011",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.144435,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_018": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.583582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.09067382535849669
+        },
+        "product_id": "prd_dummy_016",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.390674,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_019": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_016",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_019"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.139476379748485
+        },
+        "product_id": "prd_dummy_018",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.439476,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_043": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.19589656667586428
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.829479,
+        "source_product_id": "prd_dummy_043"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_044",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_122",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_044": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.583582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": "prd_dummy_044"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.11992091778540366
+        },
+        "product_id": "prd_dummy_046",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.419921,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_045": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.13618178083681373
+        },
+        "product_id": "prd_dummy_043",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.686182,
+        "source_product_id": "prd_dummy_045"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_044",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_046": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.583582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.18094112135165408
+        },
+        "product_id": "prd_dummy_044",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.480941,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_048": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.76194,
+        "source_product_id": "prd_dummy_048"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.1027932227454737
+        },
+        "product_id": "prd_dummy_051",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.402793,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_049": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_051",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.31194,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_050": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_048",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_050"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.06964299409861346
+        },
+        "product_id": "prd_dummy_051",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.369643,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_051": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_048",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.1509027621898978
+        },
+        "product_id": "prd_dummy_049",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.450903,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_078": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_081",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.07100249196372486
+        },
+        "product_id": "prd_dummy_079",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.371002,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_079": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_081",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.12786358405392792
+        },
+        "product_id": "prd_dummy_078",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.427864,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_080": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.13744105495972955
+        },
+        "product_id": "prd_dummy_079",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.437441,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.03896423653131917
+        },
+        "product_id": "prd_dummy_081",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.338964,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_043",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_081": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_078",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.16601763129966216
+        },
+        "product_id": "prd_dummy_079",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.466018,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_083": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_085",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_083"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0841418856313701
+        },
+        "product_id": "prd_dummy_086",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.384142,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_084": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_086",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0065884397188794635
+        },
+        "product_id": "prd_dummy_085",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.306588,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_085": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_083",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_085"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.11880181607401008
+        },
+        "product_id": "prd_dummy_086",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.418802,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_086": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_085",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.14356762722078217
+        },
+        "product_id": "prd_dummy_084",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.443568,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_121": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_123",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_122",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_122": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.14624875224595732
+        },
+        "product_id": "prd_dummy_124",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.446249,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.045443915238285386
+        },
+        "product_id": "prd_dummy_123",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.345444,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_043",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_123": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_121",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.12255070159288087
+        },
+        "product_id": "prd_dummy_122",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.422551,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_124": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_122",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_121",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.3,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.06993601345787148
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.203518,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_137": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.19016487966941698
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.690165,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_138",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.012833980862426398
+        },
+        "product_id": "prd_dummy_017",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.062834,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_138": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.95,
+        "source_product_id": "prd_dummy_138"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.17374042597838635
+        },
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.47374,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.016074627292757607
+        },
+        "product_id": "prd_dummy_123",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.066075,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_139": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_138",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_139"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.16015883733642008
+        },
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.460159,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.06194,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_140": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.7,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.05700977742838892
+        },
+        "product_id": "prd_dummy_137",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.35701,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_019",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0291044776119403,
+          "popularity": 0.1044776119402985,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_045",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.133582,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.047014925373134335,
+          "popularity": 0.014925373134328358,
+          "similarity": 0.02600108092173145
+        },
+        "product_id": "prd_dummy_050",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.087941,
         "source_product_id": null
       }
     ]
   },
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

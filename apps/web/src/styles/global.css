@@ -488,6 +488,34 @@ main > section:not([hidden]) {
   background: var(--primary-2);
   color: var(--on-primary);
 }
+.hybrid-signals {
+  margin: -0.75rem 0 1.75rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius);
+  background: var(--surface-low);
+}
+.hybrid-signals p {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--muted);
+}
+.hybrid-signals ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+.hybrid-signals li {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font:
+    600 0.76rem "JetBrains Mono",
+    monospace;
+}
 .recommendation-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

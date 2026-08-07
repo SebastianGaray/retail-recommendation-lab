@@ -1,81 +1,117 @@
 {
   "data": {
-    "prd_boxed_blender": [
+    "prd_dummy_006": [
       {
-        "product_id": "prd_lunch_box",
+        "product_id": "prd_dummy_007",
+        "rank": 1,
+        "score": 3.0
+      }
+    ],
+    "prd_dummy_007": [
+      {
+        "product_id": "prd_dummy_006",
+        "rank": 1,
+        "score": 3.0
+      }
+    ],
+    "prd_dummy_011": [
+      {
+        "product_id": "prd_dummy_013",
+        "rank": 1,
+        "score": 4.0
+      }
+    ],
+    "prd_dummy_013": [
+      {
+        "product_id": "prd_dummy_011",
+        "rank": 1,
+        "score": 4.0
+      }
+    ],
+    "prd_dummy_016": [
+      {
+        "product_id": "prd_dummy_019",
+        "rank": 1,
+        "score": 3.0
+      }
+    ],
+    "prd_dummy_019": [
+      {
+        "product_id": "prd_dummy_016",
+        "rank": 1,
+        "score": 3.0
+      }
+    ],
+    "prd_dummy_043": [
+      {
+        "product_id": "prd_dummy_045",
         "rank": 1,
         "score": 2.0
       }
     ],
-    "prd_family_photo_frame": [
+    "prd_dummy_044": [
       {
-        "product_id": "prd_table_lamp",
+        "product_id": "prd_dummy_139",
         "rank": 1,
-        "score": 5.0
-      },
-      {
-        "product_id": "prd_volleyball",
-        "rank": 2,
         "score": 2.0
       }
     ],
-    "prd_lunch_box": [
+    "prd_dummy_045": [
       {
-        "product_id": "prd_spice_rack",
+        "product_id": "prd_dummy_043",
+        "rank": 1,
+        "score": 2.0
+      }
+    ],
+    "prd_dummy_048": [
+      {
+        "product_id": "prd_dummy_050",
+        "rank": 1,
+        "score": 2.0
+      }
+    ],
+    "prd_dummy_050": [
+      {
+        "product_id": "prd_dummy_048",
+        "rank": 1,
+        "score": 2.0
+      }
+    ],
+    "prd_dummy_083": [
+      {
+        "product_id": "prd_dummy_085",
+        "rank": 1,
+        "score": 4.0
+      }
+    ],
+    "prd_dummy_085": [
+      {
+        "product_id": "prd_dummy_083",
+        "rank": 1,
+        "score": 4.0
+      }
+    ],
+    "prd_dummy_138": [
+      {
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "score": 6.0
+      }
+    ],
+    "prd_dummy_139": [
+      {
+        "product_id": "prd_dummy_138",
         "rank": 1,
         "score": 6.0
       },
       {
-        "product_id": "prd_volleyball",
+        "product_id": "prd_dummy_044",
         "rank": 2,
-        "score": 2.0
-      },
-      {
-        "product_id": "prd_boxed_blender",
-        "rank": 3,
-        "score": 2.0
-      }
-    ],
-    "prd_spice_rack": [
-      {
-        "product_id": "prd_lunch_box",
-        "rank": 1,
-        "score": 6.0
-      }
-    ],
-    "prd_table_lamp": [
-      {
-        "product_id": "prd_family_photo_frame",
-        "rank": 1,
-        "score": 5.0
-      }
-    ],
-    "prd_tennis_racket": [
-      {
-        "product_id": "prd_volleyball",
-        "rank": 1,
-        "score": 7.0
-      }
-    ],
-    "prd_volleyball": [
-      {
-        "product_id": "prd_tennis_racket",
-        "rank": 1,
-        "score": 7.0
-      },
-      {
-        "product_id": "prd_lunch_box",
-        "rank": 2,
-        "score": 2.0
-      },
-      {
-        "product_id": "prd_family_photo_frame",
-        "rank": 3,
         "score": 2.0
       }
     ]
   },
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

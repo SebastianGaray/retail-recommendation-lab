@@ -1,32 +1,32 @@
 {
   "data": [
     {
-      "product_id": "prd_volleyball",
+      "product_id": "prd_dummy_139",
       "rank": 1,
-      "score": 362.0
+      "score": 291.0
     },
     {
-      "product_id": "prd_lunch_box",
+      "product_id": "prd_dummy_019",
       "rank": 2,
-      "score": 238.0
+      "score": 252.0
     },
     {
-      "product_id": "prd_family_photo_frame",
+      "product_id": "prd_dummy_045",
       "rank": 3,
-      "score": 233.0
+      "score": 252.0
     },
     {
-      "product_id": "prd_boxed_blender",
+      "product_id": "prd_dummy_050",
       "rank": 4,
-      "score": 175.0
+      "score": 228.0
     },
     {
-      "product_id": "prd_spice_rack",
+      "product_id": "prd_dummy_085",
       "rank": 5,
-      "score": 157.0
+      "score": 224.0
     }
   ],
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

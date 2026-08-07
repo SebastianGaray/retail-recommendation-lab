@@ -1,37 +1,37 @@
 {
   "data": [
     {
-      "category": "home",
-      "product_id": "prd_family_photo_frame",
+      "category": "groceries",
+      "product_id": "prd_dummy_019",
       "rank": 1,
-      "score": 233.0
+      "score": 252.0
     },
     {
-      "category": "kitchen",
-      "product_id": "prd_lunch_box",
+      "category": "home-decoration",
+      "product_id": "prd_dummy_045",
       "rank": 1,
-      "score": 238.0
+      "score": 252.0
     },
     {
-      "category": "kitchen",
-      "product_id": "prd_boxed_blender",
-      "rank": 2,
-      "score": 175.0
-    },
-    {
-      "category": "kitchen",
-      "product_id": "prd_spice_rack",
-      "rank": 3,
-      "score": 157.0
-    },
-    {
-      "category": "sports",
-      "product_id": "prd_volleyball",
+      "category": "kitchen-accessories",
+      "product_id": "prd_dummy_050",
       "rank": 1,
-      "score": 362.0
+      "score": 228.0
+    },
+    {
+      "category": "mens-shirts",
+      "product_id": "prd_dummy_085",
+      "rank": 1,
+      "score": 224.0
+    },
+    {
+      "category": "sports-accessories",
+      "product_id": "prd_dummy_139",
+      "rank": 1,
+      "score": 291.0
     }
   ],
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

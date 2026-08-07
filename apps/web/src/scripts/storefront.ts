@@ -20,11 +20,18 @@ type Metric = {
 };
 const body = document.body;
 const locale = body.dataset.locale as Locale;
-const { catalogUrl, artifactBase, evaluationUrl, copy: rawCopy } = body.dataset;
+const {
+  catalogUrl,
+  artifactBase,
+  evaluationUrl,
+  hybridUrl,
+  copy: rawCopy,
+} = body.dataset;
 if (
   !catalogUrl ||
   !artifactBase ||
   !evaluationUrl ||
+  !hybridUrl ||
   !rawCopy ||
   !["en", "es"].includes(locale)
 )
@@ -42,6 +49,8 @@ const productGrid = byId("product-grid"),
   recommendationGrid = byId("recommendation-grid"),
   comparison = byId("strategy-comparison"),
   artifactError = byId("artifact-error"),
+  hybridSignals = byId("hybrid-signals"),
+  hybridSignalList = byId("hybrid-signal-list"),
   status = byId("cart-status");
 const search = byId<HTMLInputElement>("search"),
   category = byId<HTMLSelectElement>("category"),
@@ -58,6 +67,7 @@ const currency = new Intl.NumberFormat(locale, {
 });
 let products: Product[] = [];
 let metrics: Metric[] = [];
+let hybridWeights: Record<string, number> = {};
 const artifactNames: Strategy[] = [
   "popularity",
   "category-popularity",
@@ -184,6 +194,27 @@ function updateCart(id: string, delta: number): void {
   renderRecommendations();
   status.textContent = `${product.name[locale]} ${delta > 0 ? copy.statusAdded : copy.statusRemoved}`;
 }
+function openCart(): void {
+  if (productDialog.open) productDialog.close();
+  if (!cartDialog.open) cartDialog.showModal();
+}
+function renderHybridSignals(): void {
+  hybridSignals.hidden = strategy.value !== "hybrid";
+  if (hybridSignals.hidden) return;
+  const labels: Record<string, string> = {
+    popularity: copy.signalPopularity,
+    category: copy.signalCategory,
+    basket: copy.signalBasket,
+    similarity: copy.signalSimilarity,
+    novelty: copy.signalNovelty,
+  };
+  hybridSignalList.innerHTML = Object.entries(labels)
+    .map(
+      ([signal, label]) =>
+        `<li>${label}: ${Math.round((hybridWeights[signal] ?? 0) * 100)}%</li>`,
+    )
+    .join("");
+}
 function showProduct(id: string): void {
   const product = products.find((item) => item.id === id);
   if (!product) return;
@@ -197,13 +228,16 @@ document.addEventListener("click", (event) => {
       ? event.target.closest<HTMLButtonElement | HTMLAnchorElement>("button,a")
       : null;
   if (!target) return;
-  if (target.dataset.add) updateCart(target.dataset.add, 1);
+  if (target.dataset.add) {
+    updateCart(target.dataset.add, 1);
+    openCart();
+  }
   if (target.dataset.remove)
     updateCart(target.dataset.remove, -(cart.get(target.dataset.remove) ?? 1));
   if (target.dataset.quantity)
     updateCart(target.dataset.quantity, Number(target.dataset.delta));
   if (target.dataset.detail) showProduct(target.dataset.detail);
-  if (target.id === "cart-open") cartDialog.showModal();
+  if (target.id === "cart-open") openCart();
   if (target.hasAttribute("data-close-cart")) cartDialog.close();
   if (target.hasAttribute("data-close-product")) productDialog.close();
 });
@@ -221,7 +255,10 @@ for (const control of [search, category, sort])
     control === search ? "input" : "change",
     renderCatalog,
   );
-strategy.addEventListener("change", renderRecommendations);
+strategy.addEventListener("change", () => {
+  renderRecommendations();
+  renderHybridSignals();
+});
 theme.value = document.documentElement.dataset.theme ?? "system";
 theme.addEventListener("change", () => {
   document.documentElement.dataset.theme = theme.value;
@@ -285,6 +322,17 @@ try {
     hybrid: {},
   };
 }
+try {
+  const result = await fetch(hybridUrl);
+  if (!result.ok) throw new Error("hybrid config");
+  const payload = (await result.json()) as {
+    data?: { weights?: Record<string, number> };
+  };
+  hybridWeights = payload.data?.weights ?? {};
+} catch {
+  hybridWeights = {};
+}
+renderHybridSignals();
 try {
   const result = await fetch(evaluationUrl);
   if (!result.ok) throw new Error("evaluation");

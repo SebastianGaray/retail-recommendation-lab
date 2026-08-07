@@ -65,6 +65,7 @@ const socialLocale = localeMetadata.ogLocale;
     data-catalog-url={`${base}catalog.json`}
     data-artifact-base={base}
     data-evaluation-url={`${base}evaluation-summary.json`}
+    data-hybrid-url={`${base}hybrid-config.json`}
     data-copy={JSON.stringify(copy)}
   >
     <a class="skip-link" href="#catalog">{copy.skip}</a>
@@ -179,7 +180,16 @@ const socialLocale = localeMetadata.ogLocale;
             ><option value="item-similarity">{copy.itemSimilarity}</option
             ><option value="hybrid">{copy.hybrid}</option></select
           ><button id="analyze-cart" type="button">{copy.analyze}</button>
-        </div><p id="artifact-error" class="error-state" hidden>
+        </div><aside
+          id="hybrid-signals"
+          class="hybrid-signals"
+          aria-labelledby="hybrid-signals-title"
+          hidden
+        >
+          <strong id="hybrid-signals-title">{copy.hybridSignalsLabel}</strong>
+          <p>{copy.hybridSignalsIntro}</p>
+          <ul id="hybrid-signal-list"></ul>
+        </aside><p id="artifact-error" class="error-state" hidden>
           {copy.error}
         </p><div id="recommendation-grid" class="recommendation-grid"></div>
       </section>

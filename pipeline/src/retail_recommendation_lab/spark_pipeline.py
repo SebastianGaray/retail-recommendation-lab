@@ -252,7 +252,7 @@ def _write(name: str, data: Mapping[str, object] | Sequence[object]) -> dict[str
         json.dumps(
             {
                 "schema_version": "1.0",
-                "dataset_version": "small-2026-08-01",
+                "dataset_version": "small-2026-08-06",
                 "seed": SEED,
                 "data": data,
             },

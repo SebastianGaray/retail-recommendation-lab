@@ -1,79 +1,79 @@
 {
   "data": [
     {
-      "bytes": 703,
+      "bytes": 729,
       "name": "category-popularity.json",
       "record_count": 5,
-      "sha256": "668147d9016155a69bd08c7221bd549a5ae90a6a7a4bb1e53641fa38823ac696"
+      "sha256": "2b643975629fa039093c7df6d934a2764c743df85a7ee27a4237a2e74f8bc96d"
     },
     {
-      "bytes": 18018,
+      "bytes": 18688,
       "name": "evaluation-by-segment.json",
       "record_count": 1,
-      "sha256": "748bb86bede9c675931349e1c7c15f04311be929ef3758af3d1a0d288cc70530"
+      "sha256": "cff75750ccc59d9d4b26c48b672039da40a3d9c90b68510872c2a9fa1f9d9400"
     },
     {
-      "bytes": 4637,
+      "bytes": 4655,
       "name": "evaluation-summary.json",
       "record_count": 6,
-      "sha256": "b4423b3f15d769980738a1d36b0ecddf72f698469c35742febf354db2fad3ffc"
+      "sha256": "064b3b59c9f2caa5083ef72b81a6a77829455d53bec122cc774125aa1f824a1d"
     },
     {
-      "bytes": 1513,
+      "bytes": 2078,
       "name": "frequently-bought-together.json",
-      "record_count": 7,
-      "sha256": "3d05f3c99abbf363b8ba08db33f6a0f7a58e41a5b183146609a05353f9c8ec78"
+      "record_count": 15,
+      "sha256": "4df6dbab030df9705a2e8fd947a09da2abf29d31428b53ea350093cfe3a47308"
     },
     {
       "bytes": 480,
       "name": "hybrid-config.json",
       "record_count": 6,
-      "sha256": "fbb4f21da779fbe9889fc1bf84418303bf3dbc2342454aa5355e832480b31ee9"
+      "sha256": "df0e213fbb78b8cd3b3a8a57b6d462e9ab942e6683831f0e31c89a91ea614f87"
     },
     {
-      "bytes": 17336,
+      "bytes": 76150,
       "name": "hybrid-recommendations.json",
-      "record_count": 9,
-      "sha256": "2f3792771043ae1cdae2b0876ba83234e10af0dd90d58592365fef38c1006203"
+      "record_count": 41,
+      "sha256": "fb63867f78f3c09cc76a5f0411dcc4c6c397fafcb4d5f544763a08e653bed1bd"
     },
     {
-      "bytes": 3681,
+      "bytes": 17416,
       "name": "item-similarity.json",
-      "record_count": 8,
-      "sha256": "c39c93b8bd06dfd331785fb995fb64fe017f3f256b60613424be7f423e2eea5a"
+      "record_count": 40,
+      "sha256": "775b176d9d104761553e3b56e87f2474bc57a7f67c5921f49656ecb213074769"
     },
     {
       "bytes": 439,
       "name": "pipeline-metadata.json",
       "record_count": 5,
-      "sha256": "2f2c2c93686508a7b10f9ab22ff287d4a6b8257e24e8c4da8673674c1041bbf8"
+      "sha256": "06341da033e0ea1560dca54600614605d7ac421a59e1fb26fc51c60343b53421"
     },
     {
-      "bytes": 562,
+      "bytes": 547,
       "name": "popularity.json",
       "record_count": 5,
-      "sha256": "47e307d563f66ee61679ec66450a453f6e3f3245c5e57d2a820e16dba7497cdc"
+      "sha256": "b8b1b00d02467b942f24d0e88c9ef54f952f2d9c4d0f404a8fefc5453e15493c"
     },
     {
-      "bytes": 247,
+      "bytes": 251,
       "name": "quality-report.json",
       "record_count": 6,
-      "sha256": "bdd498477cf14d5e504887065b87578db3a874a784ed10d40288fce95fff342b"
+      "sha256": "bffc4e8fd1a6c2b2455fb4dbcad3d76734e448d09be37ad17868f7dbca2362be"
     },
     {
       "bytes": 768,
       "name": "recommendation-system-card.json",
       "record_count": 6,
-      "sha256": "0bd4f0c01c9cf520c7706c6968c01e51f707781fdcccc4e0a6c5b5cd34320fb2"
+      "sha256": "514e61f9e901e601a6f805396b23c331347c37a4f62304581a5271a9b461a6a1"
     },
     {
       "bytes": 1122,
       "name": "strategy-comparison.json",
       "record_count": 2,
-      "sha256": "1c2e3d70efd602581a14ed6b42023cbed9b0b7a845d86d3d96bd585f9ae8d6d1"
+      "sha256": "070d4270c756f6dd3204a919432578b6365685d81a8e20dbd469977cab2150f8"
     }
   ],
-  "dataset_version": "small-2026-08-01",
+  "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",
   "seed": 20260801
 }

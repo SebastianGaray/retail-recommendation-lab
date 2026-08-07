@@ -92,6 +92,13 @@ const en = {
   rankingKicker: "02 / Ranking",
   evaluationKicker: "03 / Evaluation",
   offlineModel: "Offline model",
+  hybridSignalsLabel: "Hybrid signals",
+  hybridSignalsIntro: "The hybrid score combines these normalized signals:",
+  signalPopularity: "Overall popularity",
+  signalCategory: "Categories in the cart",
+  signalBasket: "Products bought together",
+  signalSimilarity: "Item similarity",
+  signalNovelty: "Novelty",
 } as const;
 
 export type StorefrontMessages = { [Key in keyof typeof en]: string };
@@ -193,6 +200,13 @@ const es = {
   rankingKicker: "02 / Ranking",
   evaluationKicker: "03 / Evaluación",
   offlineModel: "Modelo offline",
+  hybridSignalsLabel: "Señales del modo híbrido",
+  hybridSignalsIntro: "El puntaje híbrido combina estas señales normalizadas:",
+  signalPopularity: "Popularidad general",
+  signalCategory: "Categorías del carrito",
+  signalBasket: "Productos comprados juntos",
+  signalSimilarity: "Similitud entre productos",
+  signalNovelty: "Novedad",
 } satisfies StorefrontMessages;
 
 const catalogs: Record<Locale, StorefrontMessages> = { en, es };

@@ -50,6 +50,7 @@ test("localized routes, theme and keyboard navigation work", async ({
     }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await expect(page.locator("#product-grid article")).toHaveCount(40);
   await expect(
     page.getByRole("heading", { name: "Product catalog" }),
   ).toBeVisible();
@@ -91,7 +92,7 @@ test("cart quantities persist, recover from bad storage and reset", async ({
   await page.goto("/retail-recommendation-lab/en/");
   await page.getByRole("link", { name: "Catalog", exact: true }).click();
   await page.getByRole("button", { name: "Add to cart" }).first().click();
-  await page.getByRole("button", { name: "Open cart" }).click();
+  await expect(page.locator("#cart-dialog")).toBeVisible();
   await page.getByRole("button", { name: "Increase quantity" }).click();
   await expect(page.locator("#cart-count")).toHaveText("2");
   await page.reload();
@@ -109,9 +110,7 @@ test("every strategy excludes cart products and renders metrics", async ({
   const product = page.locator("#product-grid article").first();
   const name = await product.locator("h3").innerText();
   await product.getByRole("button", { name: "Add to cart" }).click();
-  await page
-    .getByRole("link", { name: "Recommendations", exact: true })
-    .click();
+  await page.getByRole("link", { name: "View recommendations" }).last().click();
   for (const strategy of [
     "popularity",
     "category-popularity",
@@ -125,6 +124,10 @@ test("every strategy excludes cart products and renders metrics", async ({
       page.locator("#recommendation-grid article").first(),
     ).toBeVisible();
   }
+  await expect(page.locator("#hybrid-signals")).toBeVisible();
+  await expect(page.locator("#hybrid-signals")).toContainText(
+    "Products bought together: 25%",
+  );
   await page.getByRole("link", { name: "Evaluation", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Strategy comparison" }),
@@ -166,7 +169,6 @@ test.describe("mobile", () => {
       .locator("#product-grid")
       .getByRole("button", { name: "Add to cart" })
       .click();
-    await page.getByRole("button", { name: "Open cart" }).click();
     await expect(page.locator("#cart-dialog")).toBeVisible();
     await expect(
       page.getByRole("link", { name: "View recommendations" }).last(),
