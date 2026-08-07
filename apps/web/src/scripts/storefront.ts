@@ -22,7 +22,12 @@ type Copy = Record<
   | "category_popularity"
   | "frequently_bought_together"
   | "item_similarity"
-  | "cold_start_fallback",
+  | "hybrid_ranker"
+  | "cold_start_fallback"
+  | "precision"
+  | "recall"
+  | "hitRate"
+  | "coverage",
   string
 >;
 
@@ -30,10 +35,12 @@ const body = document.body;
 const locale = body.dataset.locale as Locale;
 const catalogUrl = body.dataset.catalogUrl;
 const artifactBase = body.dataset.artifactBase;
+const evaluationUrl = body.dataset.evaluationUrl;
 const rawCopy = body.dataset.copy;
 if (
   !catalogUrl ||
   !artifactBase ||
+  !evaluationUrl ||
   !rawCopy ||
   (locale !== "en" && locale !== "es")
 ) {
@@ -67,6 +74,7 @@ const cartStatus = requiredElement("cart-status");
 const theme = requiredElement<HTMLSelectElement>("theme");
 const strategy = requiredElement<HTMLSelectElement>("strategy");
 const artifactError = requiredElement("artifact-error");
+const comparison = requiredElement("strategy-comparison");
 
 let products: Product[] = [];
 const artifactNames: Strategy[] = [
@@ -74,6 +82,7 @@ const artifactNames: Strategy[] = [
   "category-popularity",
   "frequently-bought-together",
   "item-similarity",
+  "hybrid",
 ];
 let artifacts = {} as Record<
   Strategy,
@@ -157,7 +166,8 @@ try {
   artifacts = Object.fromEntries(
     await Promise.all(
       artifactNames.map(async (name) => {
-        const artifactResponse = await fetch(`${artifactBase}${name}.json`);
+        const filename = name === "hybrid" ? "hybrid-recommendations" : name;
+        const artifactResponse = await fetch(`${artifactBase}${filename}.json`);
         if (!artifactResponse.ok) throw new Error(name);
         const artifact = (await artifactResponse.json()) as Artifact<
           Candidate[] | Record<string, Candidate[]>
@@ -173,7 +183,33 @@ try {
     "category-popularity": [],
     "frequently-bought-together": {},
     "item-similarity": {},
+    hybrid: {},
   };
+}
+try {
+  const evaluationResponse = await fetch(evaluationUrl);
+  if (!evaluationResponse.ok) throw new Error("evaluation");
+  const evaluation = (await evaluationResponse.json()) as {
+    data: {
+      metrics: Array<{
+        strategy: string;
+        k: number;
+        precision: number;
+        recall: number;
+        hit_rate: number;
+        catalog_coverage: number;
+      }>;
+    };
+  };
+  comparison.innerHTML = evaluation.data.metrics
+    .filter((row) => row.k === 3)
+    .map(
+      (row) =>
+        `<article><h3>${row.strategy}</h3><p>${copy.precision}: ${(row.precision * 100).toFixed(1)}%</p><p>${copy.recall}: ${(row.recall * 100).toFixed(1)}%</p><p>${copy.hitRate}: ${(row.hit_rate * 100).toFixed(1)}%</p><p>${copy.coverage}: ${(row.catalog_coverage * 100).toFixed(1)}%</p></article>`,
+    )
+    .join("");
+} catch {
+  comparison.innerHTML = `<p class="notice">${copy.error}</p>`;
 }
 productGrid.setAttribute("aria-busy", "false");
 render();

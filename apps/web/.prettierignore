@@ -2,4 +2,7 @@
 dist/
 playwright-report/
 public/catalog.json
+# These deterministic pipeline outputs are validated by the manifest.
+public/evaluation-summary.json
+public/hybrid-config.json
 test-results/

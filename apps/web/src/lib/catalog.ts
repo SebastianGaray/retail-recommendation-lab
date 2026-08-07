@@ -22,12 +22,14 @@ export type Strategy =
   | "popularity"
   | "category-popularity"
   | "frequently-bought-together"
-  | "item-similarity";
+  | "item-similarity"
+  | "hybrid";
 export type ReasonCode =
   | "global_popularity"
   | "category_popularity"
   | "frequently_bought_together"
   | "item_similarity"
+  | "hybrid_ranker"
   | "cold_start_fallback";
 export interface Candidate {
   product_id: string;
@@ -70,6 +72,7 @@ export function recommendations(
     "category-popularity": "category_popularity",
     "frequently-bought-together": "frequently_bought_together",
     "item-similarity": "item_similarity",
+    hybrid: "hybrid_ranker",
   };
   const seen = new Set<string>();
   const selected = candidates

@@ -33,7 +33,9 @@ const copy = {
     reason: "Recommended for its synthetic popularity score.",
     strategy: "Strategy", methodology: "Offline PySpark artifacts; your cart stays in this browser.", error: "Recommendation artifacts are unavailable.",
     popularity: "Popularity", categoryPopularity: "Category popularity", frequentlyBoughtTogether: "Frequently bought together", itemSimilarity: "Item similarity",
+    hybrid: "Hybrid",
     global_popularity: "Popular across synthetic sessions.", category_popularity: "Popular in a cart category.", frequently_bought_together: "Frequently purchased with a cart item.", item_similarity: "Similar synthetic interaction patterns.", cold_start_fallback: "Popularity fallback for a sparse cart.",
+    hybrid_ranker: "Selected by a transparent weighted hybrid.", comparison: "Offline strategy comparison", comparisonNote: "Synthetic held-out purchases after the chronological cutoff. These metrics are not a production benchmark.", precision: "Precision@3", recall: "Recall@3", hitRate: "Hit rate@3", coverage: "Catalog coverage", scoreVsRules: "Model scores combine normalized signals. Inventory, cart exclusion, category caps and stable tie-breaking determine final rank.",
     statusAdded: "added to cart",
     statusRemoved: "removed from cart",
   },
@@ -61,7 +63,9 @@ const copy = {
     reason: "Recomendado por su puntaje de popularidad sintético.",
     strategy: "Estrategia", methodology: "Artefactos PySpark sin conexión; tu carrito permanece en este navegador.", error: "Los artefactos de recomendación no están disponibles.",
     popularity: "Popularidad", categoryPopularity: "Popularidad por categoría", frequentlyBoughtTogether: "Comprados juntos", itemSimilarity: "Similitud de productos",
+    hybrid: "Híbrida",
     global_popularity: "Popular en sesiones sintéticas.", category_popularity: "Popular en una categoría del carrito.", frequently_bought_together: "Comprado frecuentemente con un producto del carrito.", item_similarity: "Patrones de interacción sintéticos similares.", cold_start_fallback: "Popularidad de respaldo para un carrito disperso.",
+    hybrid_ranker: "Seleccionado por una combinación ponderada transparente.", comparison: "Comparación offline de estrategias", comparisonNote: "Compras sintéticas retenidas después del corte cronológico. Estas métricas no son un benchmark de producción.", precision: "Precisión@3", recall: "Cobertura de relevantes@3", hitRate: "Tasa de acierto@3", coverage: "Cobertura de catálogo", scoreVsRules: "El puntaje combina señales normalizadas. Inventario, exclusión del carrito, límites por categoría y desempate estable determinan el rango final.",
     statusAdded: "agregado al carrito",
     statusRemoved: "quitado del carrito",
   },
@@ -85,6 +89,7 @@ const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
     data-locale={locale}
     data-catalog-url={`${base}catalog.json`}
     data-artifact-base={base}
+    data-evaluation-url={`${base}evaluation-summary.json`}
     data-copy={JSON.stringify(copy)}
   >
     <a class="skip-link" href="#catalog">{copy.skip}</a>
@@ -140,9 +145,13 @@ const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
           </div>
           <p>{copy.recommendationHint}</p>
         </div>
-        <label>{copy.strategy} <select id="strategy"><option value="popularity">{copy.popularity}</option><option value="category-popularity">{copy.categoryPopularity}</option><option value="frequently-bought-together">{copy.frequentlyBoughtTogether}</option><option value="item-similarity">{copy.itemSimilarity}</option></select></label>
+        <label>{copy.strategy} <select id="strategy"><option value="popularity">{copy.popularity}</option><option value="category-popularity">{copy.categoryPopularity}</option><option value="frequently-bought-together">{copy.frequentlyBoughtTogether}</option><option value="item-similarity">{copy.itemSimilarity}</option><option value="hybrid">{copy.hybrid}</option></select></label>
         <p>{copy.methodology}</p><p id="artifact-error" class="notice" hidden>{copy.error}</p>
         <div id="recommendation-grid" class="recommendation-grid"></div>
+      </section>
+      <section class="recommendations" aria-labelledby="comparison-title">
+        <div class="section-heading"><div><p class="index">04</p><h2 id="comparison-title">{copy.comparison}</h2></div><p>{copy.comparisonNote}</p></div>
+        <p>{copy.scoreVsRules}</p><div id="strategy-comparison" class="recommendation-grid" aria-live="polite"></div>
       </section>
     </main>
     <p id="cart-status" class="sr-only" aria-live="polite"></p>

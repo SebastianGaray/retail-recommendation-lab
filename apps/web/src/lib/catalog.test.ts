@@ -49,6 +49,7 @@ describe("recommendations", () => {
       ],
     },
     "item-similarity": {},
+    hybrid: {},
   } as Record<Strategy, Candidate[] | Record<string, Candidate[]>>;
 
   it("uses cart-aware mappings and excludes cart and stock", () => {

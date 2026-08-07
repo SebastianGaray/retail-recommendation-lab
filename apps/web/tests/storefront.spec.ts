@@ -29,6 +29,7 @@ test("every offline strategy renders and excludes cart products", async ({
     "category-popularity",
     "frequently-bought-together",
     "item-similarity",
+    "hybrid",
   ]) {
     await page.locator("#strategy").selectOption(strategy);
     await expect(page.locator("#recommendation-grid")).not.toContainText(name);
@@ -36,4 +37,21 @@ test("every offline strategy renders and excludes cart products", async ({
       page.locator("#recommendation-grid article").first(),
     ).toBeVisible();
   }
+});
+
+test("offline metrics render with localized context", async ({ page }) => {
+  await page.goto("/retail-recommendation-lab/en/");
+  await expect(
+    page.getByRole("heading", { name: "Offline strategy comparison" }),
+  ).toBeVisible();
+  await expect(page.locator("#strategy-comparison")).toContainText(
+    "Precision@3",
+  );
+  await page.goto("/retail-recommendation-lab/es/");
+  await expect(
+    page.getByRole("heading", { name: "Comparación offline de estrategias" }),
+  ).toBeVisible();
+  await expect(page.locator("#strategy-comparison")).toContainText(
+    "Precisión@3",
+  );
 });
