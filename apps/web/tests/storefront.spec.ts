@@ -1,5 +1,45 @@
 import { expect, test } from "@playwright/test";
 
+test("production metadata, public files and internal links are valid", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/retail-recommendation-lab/en/");
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    "https://sebastiangaray.github.io/retail-recommendation-lab/en/",
+  );
+  await expect(page.locator('link[hreflang="es"]')).toHaveAttribute(
+    "href",
+    "https://sebastiangaray.github.io/retail-recommendation-lab/es/",
+  );
+  await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
+    "content",
+    "https://sebastiangaray.github.io/retail-recommendation-lab/en/",
+  );
+
+  for (const path of ["favicon.svg", "robots.txt", "sitemap.xml"]) {
+    expect((await request.get(`/retail-recommendation-lab/${path}`)).ok()).toBe(
+      true,
+    );
+  }
+
+  const links = await page
+    .locator('a[href^="/"]')
+    .evaluateAll((anchors) =>
+      [...new Set(anchors.map((anchor) => anchor.getAttribute("href")))].filter(
+        (href): href is string => Boolean(href),
+      ),
+    );
+  for (const link of links) expect((await request.get(link)).ok()).toBe(true);
+
+  const missing = await request.get(
+    "/retail-recommendation-lab/not-a-real-page",
+  );
+  expect(missing.status()).toBe(404);
+  expect(await missing.text()).toContain("This page is outside the lab.");
+});
+
 test("localized routes, theme and keyboard navigation work", async ({
   page,
 }) => {

@@ -24,7 +24,7 @@ Python 3.12+, uv, Pydantic, PyArrow, PySpark, pytest, Ruff, Pyright, Astro, stri
 
 ## Setup and commands
 
-Requirements: Python 3.12+, uv, Java 17+, Node.js 20+, and npm. PySpark uses
+Requirements: Python 3.12+, uv, Java 17+, Node.js 22.12+, and npm. PySpark uses
 `JAVA_HOME`; point it to your JDK installation if your system does not configure it automatically.
 
 ```bash

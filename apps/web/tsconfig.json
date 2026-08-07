@@ -1,8 +1,14 @@
 {
-  "extends": "../../node_modules/astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "lib": ["DOM", "ES2022"],
-    "noUncheckedIndexedAccess": true
+    "lib": ["DOM", "ESNext"],
+    "noUncheckedIndexedAccess": true,
+    "types": ["node"]
   },
-  "include": [".astro/types.d.ts", "**/*"]
+  "include": [
+    ".astro/types.d.ts",
+    "src/**/*",
+    "playwright.config.ts",
+    "tests/**/*"
+  ]
 }

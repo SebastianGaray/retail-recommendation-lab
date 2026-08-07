@@ -13,9 +13,10 @@
     "build": "npm run build --workspace apps/web"
   },
   "overrides": {
-    "rollup": "4.40.2"
+    "rollup": "4.62.4",
+    "sharp": "0.35.3"
   },
   "devDependencies": {
-    "rollup": "4.40.2"
+    "rollup": "4.62.4"
   }
 }

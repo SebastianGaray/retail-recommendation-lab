@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sebastiangaray.github.io/retail-recommendation-lab/sitemap.xml

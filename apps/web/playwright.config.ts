@@ -3,7 +3,7 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./tests",
   webServer: {
-    command: "node ../../node_modules/astro/astro.js dev --host 127.0.0.1",
+    command: "astro preview --host 127.0.0.1",
     url: "http://127.0.0.1:4321/retail-recommendation-lab/en/",
     reuseExistingServer: true,
   },

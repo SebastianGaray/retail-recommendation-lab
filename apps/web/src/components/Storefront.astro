@@ -13,10 +13,14 @@ const copy = {
 }[locale];
 const otherLocale = locale === "en" ? "es" : "en";
 const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
+const canonical = new URL(`${base}${locale}/`, Astro.site);
+const alternateEn = new URL(`${base}en/`, Astro.site);
+const alternateEs = new URL(`${base}es/`, Astro.site);
+const socialLocale = locale === "en" ? "en_US" : "es_CL";
 ---
 <!doctype html>
 <html lang={locale}>
-  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={copy.intro} /><title>{copy.brand}</title><script is:inline>document.documentElement.dataset.theme=localStorage.getItem("rrl-theme")??"system";</script></head>
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={copy.intro} /><meta name="theme-color" content="#4338ca" /><link rel="canonical" href={canonical} /><link rel="alternate" hreflang="en" href={alternateEn} /><link rel="alternate" hreflang="es" href={alternateEs} /><link rel="alternate" hreflang="x-default" href={alternateEn} /><link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" /><meta property="og:type" content="website" /><meta property="og:site_name" content={copy.brand} /><meta property="og:title" content={copy.title} /><meta property="og:description" content={copy.intro} /><meta property="og:url" content={canonical} /><meta property="og:locale" content={socialLocale} /><meta property="og:locale:alternate" content={locale === "en" ? "es_CL" : "en_US"} /><meta name="twitter:card" content="summary" /><title>{copy.title} · {copy.brand}</title><script is:inline>document.documentElement.dataset.theme=localStorage.getItem("rrl-theme")??"system";</script></head>
   <body data-locale={locale} data-catalog-url={`${base}catalog.json`} data-artifact-base={base} data-evaluation-url={`${base}evaluation-summary.json`} data-copy={JSON.stringify(copy)}>
     <a class="skip-link" href="#catalog">{copy.skip}</a>
     <header class="site-header"><div class="header-inner"><a class="brand" href={`${base}${locale}/`}>{copy.brand}</a><nav aria-label={copy.menu}><a href="#methodology">{copy.methodologyNav}</a><a href={`${base}${otherLocale}/`} lang={otherLocale} aria-label={`${copy.language}: ${otherLocale.toUpperCase()}`}>{otherLocale.toUpperCase()}</a><label class="theme-control"><span class="sr-only">{copy.theme}</span><select id="theme"><option value="system">{copy.system}</option><option value="light">{copy.light}</option><option value="dark">{copy.dark}</option></select></label><button id="cart-open" class="icon-button" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" aria-label={copy.cartOpen}>{copy.cart} <span id="cart-count">0</span></button></nav></div></header>

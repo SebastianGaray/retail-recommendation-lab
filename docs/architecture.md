@@ -26,7 +26,7 @@ Evaluation reconstructs pre-cutoff customer context and scores held-out purchase
 
 ## Browser application
 
-Astro emits static EN and ES routes. Plain TypeScript validates loaded data, persists product IDs in `localStorage`, and ranks in-stock products by synthetic popularity while excluding cart items. No user state leaves the device.
+Astro emits static EN and ES routes. Plain TypeScript validates loaded data, persists quantity-aware cart state in `localStorage`, and consumes five compatible offline strategy artifacts while excluding unavailable and cart products. No user state leaves the device.
 
 ## Deployment and cost strategy
 
