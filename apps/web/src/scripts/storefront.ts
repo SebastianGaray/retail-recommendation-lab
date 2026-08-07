@@ -8,8 +8,8 @@ import {
   type Product,
   type Strategy,
 } from "../lib/catalog";
+import type { StorefrontMessages } from "../i18n/messages";
 
-type Copy = Record<string, string>;
 type Metric = {
   strategy: string;
   k: number;
@@ -29,7 +29,7 @@ if (
   !["en", "es"].includes(locale)
 )
   throw new Error("Storefront configuration is invalid");
-const copy = JSON.parse(rawCopy) as Copy;
+const copy = JSON.parse(rawCopy) as StorefrontMessages;
 const byId = <T extends HTMLElement>(id: string): T => {
   const value = document.getElementById(id);
   if (!value) throw new Error(`Missing #${id}`);

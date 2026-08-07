@@ -13,21 +13,61 @@ const canonical = new URL(`${base}404.html`, Astro.site);
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     <title>Page not found · Nexus Retail Lab</title>
     <style>
-      :root { font-family: Inter, system-ui, sans-serif; color-scheme: light dark; }
-      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: Canvas; color: CanvasText; }
-      main { width: min(36rem, calc(100% - 2rem)); }
-      p:first-child { font: 600 .75rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; color: #6366f1; }
-      h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1; margin: 1rem 0; }
-      p { line-height: 1.6; }
-      a { display: inline-block; margin-top: 1rem; padding: .8rem 1rem; border-radius: .5rem; background: #4338ca; color: white; font-weight: 700; text-decoration: none; }
-      a:focus-visible { outline: 3px solid #818cf8; outline-offset: 3px; }
+      :root {
+        font-family: Inter, system-ui, sans-serif;
+        color-scheme: light dark;
+      }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background: Canvas;
+        color: CanvasText;
+      }
+      main {
+        width: min(36rem, calc(100% - 2rem));
+      }
+      p:first-child {
+        font:
+          600 0.75rem ui-monospace,
+          monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #6366f1;
+      }
+      h1 {
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        line-height: 1;
+        margin: 1rem 0;
+      }
+      p {
+        line-height: 1.6;
+      }
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1rem;
+        border-radius: 0.5rem;
+        background: #4338ca;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      a:focus-visible {
+        outline: 3px solid #818cf8;
+        outline-offset: 3px;
+      }
     </style>
   </head>
   <body>
     <main>
       <p>404 / Not found</p>
       <h1>This page is outside the lab.</h1>
-      <p>The requested page does not exist. Return to the English storefront or switch to the Spanish experience from there.</p>
+      <p>
+        The requested page does not exist. Return to the English storefront or
+        switch to the Spanish experience from there.
+      </p>
       <a href={`${base}en/`}>Return to Nexus Retail Lab</a>
     </main>
   </body>

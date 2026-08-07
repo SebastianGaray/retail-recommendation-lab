@@ -1,111 +1,251 @@
 ---
 import "../styles/global.css";
 import type { Locale } from "../lib/catalog";
-interface Props { locale: Locale }
+import { getLocaleConfig } from "../i18n/config";
+import { getMessages } from "../i18n/messages";
+interface Props {
+  locale: Locale;
+}
 const { locale } = Astro.props;
-const copy = {
-  en: {
-    skip: "Skip to catalog", brand: "Nexus Retail Lab", methodologyNav: "Methodology", synthetic: "Synthetic data only · No visitor tracking", title: "Recommendation systems, made tangible.", intro: "Build a cart and compare five transparent strategies trained offline on fictional retail behavior.", catalog: "Explore the catalog", catalogHint: "Search, filter and inspect the products used by the recommendation lab.", search: "Search products", category: "Category", all: "All categories", sort: "Sort", featured: "Featured", priceLow: "Price: low to high", priceHigh: "Price: high to low", rating: "Rating", filters: "Filters", add: "Add to cart", details: "View details", soldOut: "Out of stock", cart: "Cart", empty: "Your cart is empty. Add a product to activate cart-aware recommendations.", remove: "Remove", decrease: "Decrease quantity", increase: "Increase quantity", reset: "Reset session", viewRecommendations: "View recommendations", analyze: "Analyze cart", recommendations: "Recommendations", recommendationHint: "Your cart shapes category, basket, similarity and hybrid candidates.", strategy: "Strategy", popularity: "Popularity", categoryPopularity: "Category popularity", frequentlyBoughtTogether: "Frequently bought together", itemSimilarity: "Item similarity", hybrid: "Hybrid", fallback: "Image unavailable", close: "Close", quantity: "Quantity", subtotal: "Synthetic subtotal", reasonTitle: "Why this result", global_popularity: "Popular across synthetic sessions.", category_popularity: "Popular in a category represented in your cart.", frequently_bought_together: "Frequently purchased with a cart item.", item_similarity: "Behaviorally similar to a cart item.", hybrid_ranker: "Selected by the transparent weighted hybrid.", cold_start_fallback: "Popularity fallback for a new or sparse session.", error: "Recommendation artifacts are temporarily unavailable.", comparison: "Strategy comparison", comparisonNote: "Held-out synthetic purchases after the chronological cutoff. Not a production benchmark.", precision: "Precision@3", recall: "Recall@3", hitRate: "Hit rate@3", coverage: "Coverage", metricPrecision: "Relevant purchases among the first three recommendations.", metricRecall: "Share of held-out purchases recovered in the first three.", metricHit: "Share of eligible customers with at least one hit.", metricCoverage: "Share of the small catalog recommended at least once.", methodology: "How the lab works", methodologyText: "PySpark builds static artifacts from pre-cutoff events. The browser generates candidates, applies inventory and cart exclusions, caps repeated categories, and ranks with stable ties.", architecture: "Static architecture", architectureText: "Synthetic Parquet → offline PySpark → versioned JSON → Astro on GitHub Pages. No backend, database, authentication or request-time training.", limitations: "Limitations", limitationsText: "The catalog and evaluation window are intentionally small. Results describe generated behavior only and do not imply performance with real shoppers.", theme: "Theme", system: "System", light: "Light", dark: "Dark", language: "Language", statusAdded: "added to cart", statusRemoved: "removed from cart", noResults: "No products match these filters.", cartOpen: "Open cart", menu: "Navigation",
-  },
-  es: {
-    skip: "Ir al catálogo", brand: "Nexus Retail Lab", methodologyNav: "Metodología", synthetic: "Solo datos sintéticos · Sin seguimiento de visitantes", title: "Sistemas de recomendación, hechos tangibles.", intro: "Arma un carrito y compara cinco estrategias transparentes entrenadas offline con comportamiento ficticio.", catalog: "Explora el catálogo", catalogHint: "Busca, filtra e inspecciona los productos del laboratorio.", search: "Buscar productos", category: "Categoría", all: "Todas las categorías", sort: "Ordenar", featured: "Destacados", priceLow: "Precio: menor a mayor", priceHigh: "Precio: mayor a menor", rating: "Calificación", filters: "Filtros", add: "Agregar al carrito", details: "Ver detalles", soldOut: "Sin stock", cart: "Carrito", empty: "Tu carrito está vacío. Agrega un producto para activar recomendaciones contextuales.", remove: "Quitar", decrease: "Disminuir cantidad", increase: "Aumentar cantidad", reset: "Reiniciar sesión", viewRecommendations: "Ver recomendaciones", analyze: "Analizar carrito", recommendations: "Recomendaciones", recommendationHint: "Tu carrito modifica las estrategias por categoría, cesta, similitud e híbrida.", strategy: "Estrategia", popularity: "Popularidad", categoryPopularity: "Popularidad por categoría", frequentlyBoughtTogether: "Comprados juntos", itemSimilarity: "Similitud de productos", hybrid: "Híbrida", fallback: "Imagen no disponible", close: "Cerrar", quantity: "Cantidad", subtotal: "Subtotal sintético", reasonTitle: "Por qué aparece", global_popularity: "Popular en sesiones sintéticas.", category_popularity: "Popular en una categoría presente en tu carrito.", frequently_bought_together: "Comprado frecuentemente con un producto del carrito.", item_similarity: "Comportamiento similar a un producto del carrito.", hybrid_ranker: "Seleccionado por la combinación ponderada transparente.", cold_start_fallback: "Popularidad de respaldo para una sesión nueva o dispersa.", error: "Los artefactos de recomendación no están disponibles temporalmente.", comparison: "Comparación de estrategias", comparisonNote: "Compras sintéticas retenidas después del corte cronológico. No es un benchmark de producción.", precision: "Precisión@3", recall: "Recall@3", hitRate: "Tasa de acierto@3", coverage: "Cobertura", metricPrecision: "Compras relevantes entre las primeras tres recomendaciones.", metricRecall: "Proporción de compras retenidas recuperadas entre las primeras tres.", metricHit: "Proporción de clientes elegibles con al menos un acierto.", metricCoverage: "Proporción del catálogo pequeño recomendada al menos una vez.", methodology: "Cómo funciona el laboratorio", methodologyText: "PySpark construye artefactos estáticos con eventos anteriores al corte. El navegador genera candidatos, excluye inventario y carrito, limita categorías repetidas y desempata de forma estable.", architecture: "Arquitectura estática", architectureText: "Parquet sintético → PySpark offline → JSON versionado → Astro en GitHub Pages. Sin backend, base de datos, autenticación ni entrenamiento por solicitud.", limitations: "Limitaciones", limitationsText: "El catálogo y la ventana de evaluación son pequeños a propósito. Los resultados describen datos generados y no implican rendimiento con compradores reales.", theme: "Tema", system: "Sistema", light: "Claro", dark: "Oscuro", language: "Idioma", statusAdded: "agregado al carrito", statusRemoved: "quitado del carrito", noResults: "Ningún producto coincide con los filtros.", cartOpen: "Abrir carrito", menu: "Navegación",
-  },
-}[locale];
-Object.assign(
-  copy,
-  locale === "en"
-    ? {
-        brand: "Retail Recommendation Lab",
-        synthetic: "Synthetic demo · No tracking",
-        title: "Try a retail recommender with a real cart.",
-        intro:
-          "Add a few products, then see how five recommendation strategies respond to what is in your cart.",
-        catalog: "Product catalog",
-        catalogHint: "Search, filter or open a product to see its details.",
-        recommendationHint:
-          "The results update from your cart. You can switch strategies to compare them.",
-        global_popularity: "Frequently chosen in the synthetic data.",
-        category_popularity: "Popular in a category that is in your cart.",
-        frequently_bought_together:
-          "Often appears in the same synthetic baskets as a cart item.",
-        item_similarity: "Has shopping patterns similar to a cart item.",
-        hybrid_ranker: "Selected using a fixed mix of the available signals.",
-        cold_start_fallback: "Uses overall popularity when the cart has little context.",
-        comparisonNote:
-          "Results from a small synthetic holdout set. They are included for inspection, not as a production benchmark.",
-        methodology: "What happens behind the page",
-        methodologyText:
-          "PySpark prepares static files from earlier synthetic events. The browser reads those files and removes products already in the cart or out of stock.",
-        architecture: "How it is built",
-        architectureText:
-          "Synthetic Parquet files are processed offline into JSON. Astro serves the site from GitHub Pages; there is no backend or login.",
-        limitationsText:
-          "The catalog and evaluation set are deliberately small. These results only describe generated data.",
-      }
-    : {
-        brand: "Laboratorio de Recomendaciones",
-        synthetic: "Demo sintética · Sin seguimiento",
-        title: "Prueba recomendaciones de retail con un carrito.",
-        intro:
-          "Agrega algunos productos y revisa cómo responden cinco estrategias según lo que tienes en el carrito.",
-        catalog: "Catálogo de productos",
-        catalogHint: "Busca, filtra o abre un producto para revisar sus detalles.",
-        recommendationHint:
-          "Los resultados cambian con el carrito. Puedes alternar estrategias para compararlas.",
-        global_popularity: "Elegido con frecuencia en los datos sintéticos.",
-        category_popularity: "Popular en una categoría presente en tu carrito.",
-        frequently_bought_together:
-          "Suele aparecer en las mismas canastas sintéticas que un producto del carrito.",
-        item_similarity: "Tiene patrones de compra similares a un producto del carrito.",
-        hybrid_ranker: "Seleccionado con una combinación fija de las señales disponibles.",
-        cold_start_fallback: "Usa popularidad general cuando el carrito tiene poco contexto.",
-        comparisonNote:
-          "Resultados de un conjunto sintético pequeño. Se muestran para revisarlos, no como benchmark de producción.",
-        methodology: "Qué ocurre detrás de la página",
-        methodologyText:
-          "PySpark prepara archivos estáticos a partir de eventos sintéticos anteriores. El navegador lee esos archivos y excluye productos del carrito o sin stock.",
-        architecture: "Cómo está construido",
-        architectureText:
-          "Los archivos Parquet sintéticos se procesan offline y generan JSON. Astro sirve el sitio desde GitHub Pages; no hay backend ni inicio de sesión.",
-        limitationsText:
-          "El catálogo y el conjunto de evaluación son pequeños a propósito. Los resultados sólo describen datos generados.",
-      },
-);
-const otherLocale = locale === "en" ? "es" : "en";
-const portfolioLabel = locale === "en" ? "Portfolio" : "Portafolio";
-const viewLabels =
-  locale === "en"
-    ? { home: "Home", catalog: "Catalog", recommendations: "Recommendations", evaluation: "Evaluation" }
-    : { home: "Inicio", catalog: "Catálogo", recommendations: "Recomendaciones", evaluation: "Evaluación" };
+const copy = getMessages(locale);
+const localeMetadata = getLocaleConfig(locale);
+const otherLocale = localeMetadata.alternate;
+const portfolioLabel = copy.portfolio;
+const viewLabels = {
+  home: copy.home,
+  catalog: copy.catalogNav,
+  recommendations: copy.recommendations,
+  evaluation: copy.evaluation,
+};
 const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
 const canonical = new URL(`${base}${locale}/`, Astro.site);
 const alternateEn = new URL(`${base}en/`, Astro.site);
 const alternateEs = new URL(`${base}es/`, Astro.site);
-const socialLocale = locale === "en" ? "en_US" : "es_CL";
+const socialLocale = localeMetadata.ogLocale;
 ---
+
 <!doctype html>
 <html lang={locale}>
-  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={copy.intro} /><meta name="theme-color" content="#4338ca" /><link rel="canonical" href={canonical} /><link rel="alternate" hreflang="en" href={alternateEn} /><link rel="alternate" hreflang="es" href={alternateEs} /><link rel="alternate" hreflang="x-default" href={alternateEn} /><link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" /><meta property="og:type" content="website" /><meta property="og:site_name" content={copy.brand} /><meta property="og:title" content={copy.title} /><meta property="og:description" content={copy.intro} /><meta property="og:url" content={canonical} /><meta property="og:locale" content={socialLocale} /><meta property="og:locale:alternate" content={locale === "en" ? "es_CL" : "en_US"} /><meta name="twitter:card" content="summary" /><title>{copy.title} · {copy.brand}</title><script is:inline>document.documentElement.dataset.theme=localStorage.getItem("rrl-theme")??"system";</script></head>
-  <body data-locale={locale} data-catalog-url={`${base}catalog.json`} data-artifact-base={base} data-evaluation-url={`${base}evaluation-summary.json`} data-copy={JSON.stringify(copy)}>
+  <head
+    ><meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width"
+    /><meta name="description" content={copy.intro} /><meta
+      name="theme-color"
+      content="#4338ca"
+    /><link rel="canonical" href={canonical} /><link
+      rel="alternate"
+      hreflang="en"
+      href={alternateEn}
+    /><link rel="alternate" hreflang="es" href={alternateEs} /><link
+      rel="alternate"
+      hreflang="x-default"
+      href={alternateEn}
+    /><link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" /><meta
+      property="og:type"
+      content="website"
+    /><meta property="og:site_name" content={copy.brand} /><meta
+      property="og:title"
+      content={copy.title}
+    /><meta property="og:description" content={copy.intro} /><meta
+      property="og:url"
+      content={canonical}
+    /><meta property="og:locale" content={socialLocale} /><meta
+      property="og:locale:alternate"
+      content={getLocaleConfig(otherLocale).ogLocale}
+    /><meta name="twitter:card" content="summary" /><title>
+      {copy.title} · {copy.brand}
+    </title><script is:inline>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("rrl-theme") ?? "system";
+    </script></head
+  >
+  <body
+    data-locale={locale}
+    data-catalog-url={`${base}catalog.json`}
+    data-artifact-base={base}
+    data-evaluation-url={`${base}evaluation-summary.json`}
+    data-copy={JSON.stringify(copy)}
+  >
     <a class="skip-link" href="#catalog">{copy.skip}</a>
-    <header class="site-header"><div class="header-inner"><a class="brand" href={`${base}${locale}/`}>{copy.brand}</a><nav aria-label={copy.menu}><a href="https://sebastiangaray.github.io/">{portfolioLabel}<span aria-hidden="true"> ↗</span></a><a href="#methodology">{copy.methodologyNav}</a><a href={`${base}${otherLocale}/`} lang={otherLocale} aria-label={`${copy.language}: ${otherLocale.toUpperCase()}`}>{otherLocale.toUpperCase()}</a><label class="theme-control"><span class="sr-only">{copy.theme}</span><select id="theme"><option value="system">{copy.system}</option><option value="light">{copy.light}</option><option value="dark">{copy.dark}</option></select></label><button id="cart-open" class="icon-button" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" aria-label={copy.cartOpen}>{copy.cart} <span id="cart-count">0</span></button></nav></div></header>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href={`${base}${locale}/`}>{copy.brand}</a><nav
+          aria-label={copy.menu}
+        >
+          <a href="https://sebastiangaray.github.io/"
+            >{portfolioLabel}<span aria-hidden="true"> ↗</span></a
+          ><a href="#methodology">{copy.methodologyNav}</a><a
+            href={`${base}${otherLocale}/`}
+            lang={otherLocale}
+            aria-label={`${copy.language}: ${otherLocale.toUpperCase()}`}
+            >{otherLocale.toUpperCase()}</a
+          ><label class="theme-control"
+            ><span class="sr-only">{copy.theme}</span><select id="theme"
+              ><option value="system">{copy.system}</option><option
+                value="light">{copy.light}</option
+              ><option value="dark">{copy.dark}</option></select
+            ></label
+          ><button
+            id="cart-open"
+            class="icon-button"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="cart-dialog"
+            aria-label={copy.cartOpen}
+            >{copy.cart} <span id="cart-count">0</span></button
+          >
+        </nav>
+      </div>
+    </header>
     <aside class="lab-sidebar" aria-label={copy.menu}>
       <a href="#home" data-lab-view="home">{viewLabels.home}</a>
       <a href="#catalog" data-lab-view="catalog">{viewLabels.catalog}</a>
-      <a href="#recommendations" data-lab-view="recommendations">{viewLabels.recommendations}</a>
-      <a href="#methodology" data-lab-view="methodology">{viewLabels.evaluation}</a>
+      <a href="#recommendations" data-lab-view="recommendations"
+        >{viewLabels.recommendations}</a
+      >
+      <a href="#methodology" data-lab-view="methodology"
+        >{viewLabels.evaluation}</a
+      >
     </aside>
     <main>
-      <section class="hero"><p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><p>{copy.intro}</p><a class="primary-action" href="#catalog">{copy.viewRecommendations}</a></section>
-      <section id="catalog" class="catalog-section" aria-labelledby="catalog-title"><div class="section-heading"><div><p class="kicker">01 / Catalog</p><h2 id="catalog-title">{copy.catalog}</h2></div><p>{copy.catalogHint}</p></div>
-        <div class="catalog-layout"><aside class="filters" aria-label={copy.filters}><div class="filter-field"><label for="search">{copy.search}</label><input id="search" type="search" autocomplete="off" /></div><div class="filter-field"><label for="category">{copy.category}</label><select id="category"><option value="">{copy.all}</option></select></div><div class="filter-field"><label for="sort">{copy.sort}</label><select id="sort"><option value="featured">{copy.featured}</option><option value="price-asc">{copy.priceLow}</option><option value="price-desc">{copy.priceHigh}</option><option value="rating">{copy.rating}</option></select></div><div class="model-note"><span class="status-dot"></span><strong>Offline model</strong><p>{copy.synthetic}</p></div></aside><div id="product-grid" class="product-grid" aria-busy="true"></div></div>
+      <section class="hero">
+        <p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><p>
+          {copy.intro}
+        </p><a class="primary-action" href="#catalog"
+          >{copy.viewRecommendations}</a
+        >
       </section>
-      <section id="recommendations" class="recommendations" aria-labelledby="recommendation-title"><div class="section-heading"><div><p class="kicker">02 / Ranking</p><h2 id="recommendation-title">{copy.recommendations}</h2></div><p>{copy.recommendationHint}</p></div><div class="strategy-bar"><label for="strategy">{copy.strategy}</label><select id="strategy"><option value="popularity">{copy.popularity}</option><option value="category-popularity">{copy.categoryPopularity}</option><option value="frequently-bought-together">{copy.frequentlyBoughtTogether}</option><option value="item-similarity">{copy.itemSimilarity}</option><option value="hybrid">{copy.hybrid}</option></select><button id="analyze-cart" type="button">{copy.analyze}</button></div><p id="artifact-error" class="error-state" hidden>{copy.error}</p><div id="recommendation-grid" class="recommendation-grid"></div></section>
-      <section id="methodology" class="methodology" aria-labelledby="methodology-title"><div class="section-heading"><div><p class="kicker">03 / Evaluation</p><h2 id="methodology-title">{copy.comparison}</h2></div><p>{copy.comparisonNote}</p></div><div id="strategy-comparison" class="metric-grid" aria-live="polite"></div><div class="technical-grid"><article><span>01</span><h3>{copy.methodology}</h3><p>{copy.methodologyText}</p></article><article><span>02</span><h3>{copy.architecture}</h3><p>{copy.architectureText}</p></article><article><span>03</span><h3>{copy.limitations}</h3><p>{copy.limitationsText}</p></article></div></section>
+      <section
+        id="catalog"
+        class="catalog-section"
+        aria-labelledby="catalog-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="kicker">{copy.catalogKicker}</p><h2 id="catalog-title">
+              {copy.catalog}
+            </h2>
+          </div><p>{copy.catalogHint}</p>
+        </div>
+        <div class="catalog-layout">
+          <aside class="filters" aria-label={copy.filters}>
+            <div class="filter-field">
+              <label for="search">{copy.search}</label><input
+                id="search"
+                type="search"
+                autocomplete="off"
+              />
+            </div><div class="filter-field">
+              <label for="category">{copy.category}</label><select id="category"
+                ><option value="">{copy.all}</option></select
+              >
+            </div><div class="filter-field">
+              <label for="sort">{copy.sort}</label><select id="sort"
+                ><option value="featured">{copy.featured}</option><option
+                  value="price-asc">{copy.priceLow}</option
+                ><option value="price-desc">{copy.priceHigh}</option><option
+                  value="rating">{copy.rating}</option
+                ></select
+              >
+            </div><div class="model-note">
+              <span class="status-dot"></span><strong
+                >{copy.offlineModel}</strong
+              ><p>{copy.synthetic}</p>
+            </div>
+          </aside><div id="product-grid" class="product-grid" aria-busy="true">
+          </div>
+        </div>
+      </section>
+      <section
+        id="recommendations"
+        class="recommendations"
+        aria-labelledby="recommendation-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="kicker">{copy.rankingKicker}</p><h2
+              id="recommendation-title"
+            >
+              {copy.recommendations}
+            </h2>
+          </div><p>{copy.recommendationHint}</p>
+        </div><div class="strategy-bar">
+          <label for="strategy">{copy.strategy}</label><select id="strategy"
+            ><option value="popularity">{copy.popularity}</option><option
+              value="category-popularity">{copy.categoryPopularity}</option
+            ><option value="frequently-bought-together"
+              >{copy.frequentlyBoughtTogether}</option
+            ><option value="item-similarity">{copy.itemSimilarity}</option
+            ><option value="hybrid">{copy.hybrid}</option></select
+          ><button id="analyze-cart" type="button">{copy.analyze}</button>
+        </div><p id="artifact-error" class="error-state" hidden>
+          {copy.error}
+        </p><div id="recommendation-grid" class="recommendation-grid"></div>
+      </section>
+      <section
+        id="methodology"
+        class="methodology"
+        aria-labelledby="methodology-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="kicker">{copy.evaluationKicker}</p><h2
+              id="methodology-title"
+            >
+              {copy.comparison}
+            </h2>
+          </div><p>{copy.comparisonNote}</p>
+        </div><div
+          id="strategy-comparison"
+          class="metric-grid"
+          aria-live="polite"
+        >
+        </div><div class="technical-grid">
+          <article>
+            <span>01</span><h3>{copy.methodology}</h3><p>
+              {copy.methodologyText}
+            </p>
+          </article><article>
+            <span>02</span><h3>{copy.architecture}</h3><p>
+              {copy.architectureText}
+            </p>
+          </article><article>
+            <span>03</span><h3>{copy.limitations}</h3><p>
+              {copy.limitationsText}
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer><strong>{copy.brand}</strong><span>{copy.synthetic}</span><a href="https://sebastiangaray.github.io/">{portfolioLabel} ↗</a><a href="https://github.com/SebastianGaray/retail-recommendation-lab">GitHub ↗</a></footer>
-    <dialog id="cart-dialog" class="drawer"><div class="drawer-head"><h2>{copy.cart}</h2><button type="button" data-close-cart aria-label={copy.close}>×</button></div><div id="cart-list"></div><div class="cart-summary"><span>{copy.subtotal}</span><strong id="cart-subtotal">$0.00</strong></div><a class="primary-action" href="#recommendations" data-close-cart>{copy.viewRecommendations}</a><button id="reset-session" type="button">{copy.reset}</button></dialog>
-    <dialog id="product-dialog" class="product-dialog"><button class="dialog-close" type="button" data-close-product aria-label={copy.close}>×</button><div id="product-detail"></div></dialog>
+    <footer>
+      <strong>{copy.brand}</strong><span>{copy.synthetic}</span><a
+        href="https://sebastiangaray.github.io/">{portfolioLabel} ↗</a
+      ><a href="https://github.com/SebastianGaray/retail-recommendation-lab"
+        >GitHub ↗</a
+      >
+    </footer>
+    <dialog id="cart-dialog" class="drawer">
+      <div class="drawer-head">
+        <h2>{copy.cart}</h2><button
+          type="button"
+          data-close-cart
+          aria-label={copy.close}>×</button
+        >
+      </div><div id="cart-list"></div><div class="cart-summary">
+        <span>{copy.subtotal}</span><strong id="cart-subtotal">$0.00</strong>
+      </div><a class="primary-action" href="#recommendations" data-close-cart
+        >{copy.viewRecommendations}</a
+      ><button id="reset-session" type="button">{copy.reset}</button>
+    </dialog>
+    <dialog id="product-dialog" class="product-dialog">
+      <button
+        class="dialog-close"
+        type="button"
+        data-close-product
+        aria-label={copy.close}>×</button
+      ><div id="product-detail"></div>
+    </dialog>
     <p id="cart-status" class="sr-only" aria-live="polite"></p>
     <script src="../scripts/storefront.ts"></script>
   </body>
