@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  filterAndSortProducts,
   popularityBaseline,
   recommendations,
   type Candidate,
@@ -28,6 +29,47 @@ const product = (
   image_url: "https://example.com/image",
   tags: [],
   popularity_score,
+});
+
+describe("filterAndSortProducts", () => {
+  const products = [
+    {
+      ...product("bottle", 20),
+      name: { en: "Glass Bottle", es: "Botella de vidrio" },
+      category: "home",
+      price: "18.00",
+      rating: 4.8,
+    },
+    {
+      ...product("board", 30),
+      name: { en: "Cutting Board", es: "Tabla de cortar" },
+      category: "kitchen",
+      price: "12.00",
+      rating: 4.3,
+    },
+  ];
+
+  it("searches localized names and filters categories", () => {
+    expect(
+      filterAndSortProducts(products, "botella", "", "featured", "es"),
+    ).toEqual([products[0]]);
+    expect(
+      filterAndSortProducts(products, "", "kitchen", "featured", "en"),
+    ).toEqual([products[1]]);
+  });
+
+  it("sorts deterministically by price and rating", () => {
+    expect(
+      filterAndSortProducts(products, "", "", "price-asc", "en").map(
+        ({ id }) => id,
+      ),
+    ).toEqual(["board", "bottle"]);
+    expect(
+      filterAndSortProducts(products, "", "", "rating", "en").map(
+        ({ id }) => id,
+      ),
+    ).toEqual(["bottle", "board"]);
+  });
 });
 
 describe("recommendations", () => {

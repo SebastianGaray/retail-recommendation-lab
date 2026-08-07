@@ -9,7 +9,8 @@ All catalog products, prices, inventory, ratings, reviews, popularity scores, an
 - Deterministic Python catalog generation with a validated Pydantic contract
 - Static JSON artifact shared at the pipeline/browser boundary
 - English and Spanish Astro storefronts
-- Browser-local persistent cart and explainable popularity recommendations
+- Searchable, filterable catalog with product details and quantity-aware cart
+- Browser-local persistent cart and five explainable recommendation strategies
 - Light, dark, and system themes with accessible responsive UI
 - Python, TypeScript, browser, build, and contract checks in CI
 
@@ -19,7 +20,7 @@ The Python pipeline generates and validates `artifacts/demo/catalog.json`, then 
 
 ## Stack
 
-Python 3.12+, uv, Pydantic, PyArrow, PySpark, pytest, Ruff, Pyright, Astro, strict TypeScript, Vitest, Playwright, npm, and GitHub Actions. PySpark and PyArrow are pinned as the planned offline processing stack but are intentionally not used in the first generator.
+Python 3.12+, uv, Pydantic, PyArrow, PySpark, pytest, Ruff, Pyright, Astro, strict TypeScript, Vitest, Playwright, npm, and GitHub Actions. PySpark and PyArrow power the deterministic offline artifact pipeline; the public site remains a static Astro application.
 
 ## Setup and commands
 
@@ -52,12 +53,13 @@ https://sebastiangaray.github.io/retail-recommendation-lab/
 
 In repository settings, select **GitHub Actions** as the Pages source.
 
-## Roadmap
+## Screenshots
 
-- Add deterministic event generation and PySpark transformations
-- Compare collaborative, content-based, and hybrid strategies
-- Export explanations and offline evaluation metrics
-- Add catalog search and category filters
+Run `npm run dev`, open the English or Spanish route, and use the browser's full-page capture at desktop and 390 px mobile widths. Capture both light and dark themes; do not add screenshots containing personal or real customer data.
+
+## Product documentation
+
+See the [design system](docs/design-system.md), [user flows](docs/user-flows.md), [architecture](docs/architecture.md), and [evaluation methodology](docs/evaluation.md).
 
 ## Limitations
 

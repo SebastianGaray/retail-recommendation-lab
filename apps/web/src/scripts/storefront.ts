@@ -1,4 +1,5 @@
 import {
+  filterAndSortProducts,
   isProduct,
   recommendations,
   type Artifact,
@@ -8,75 +9,55 @@ import {
   type Strategy,
 } from "../lib/catalog";
 
-type Copy = Record<
-  | "add"
-  | "remove"
-  | "soldOut"
-  | "empty"
-  | "fallback"
-  | "reason"
-  | "statusAdded"
-  | "statusRemoved"
-  | "error"
-  | "global_popularity"
-  | "category_popularity"
-  | "frequently_bought_together"
-  | "item_similarity"
-  | "hybrid_ranker"
-  | "cold_start_fallback"
-  | "precision"
-  | "recall"
-  | "hitRate"
-  | "coverage",
-  string
->;
-
+type Copy = Record<string, string>;
+type Metric = {
+  strategy: string;
+  k: number;
+  precision: number;
+  recall: number;
+  hit_rate: number;
+  catalog_coverage: number;
+};
 const body = document.body;
 const locale = body.dataset.locale as Locale;
-const catalogUrl = body.dataset.catalogUrl;
-const artifactBase = body.dataset.artifactBase;
-const evaluationUrl = body.dataset.evaluationUrl;
-const rawCopy = body.dataset.copy;
+const { catalogUrl, artifactBase, evaluationUrl, copy: rawCopy } = body.dataset;
 if (
   !catalogUrl ||
   !artifactBase ||
   !evaluationUrl ||
   !rawCopy ||
-  (locale !== "en" && locale !== "es")
-) {
+  !["en", "es"].includes(locale)
+)
   throw new Error("Storefront configuration is invalid");
-}
 const copy = JSON.parse(rawCopy) as Copy;
-const storageKey = "rrl-cart";
-const storedCart: unknown = JSON.parse(
-  localStorage.getItem(storageKey) ?? "[]",
-);
-const cart = new Set(
-  Array.isArray(storedCart)
-    ? storedCart.filter((id): id is string => typeof id === "string")
-    : [],
-);
+const byId = <T extends HTMLElement>(id: string): T => {
+  const value = document.getElementById(id);
+  if (!value) throw new Error(`Missing #${id}`);
+  return value as T;
+};
+const productGrid = byId("product-grid"),
+  cartList = byId("cart-list"),
+  cartCount = byId("cart-count"),
+  cartSubtotal = byId("cart-subtotal"),
+  recommendationGrid = byId("recommendation-grid"),
+  comparison = byId("strategy-comparison"),
+  artifactError = byId("artifact-error"),
+  status = byId("cart-status");
+const search = byId<HTMLInputElement>("search"),
+  category = byId<HTMLSelectElement>("category"),
+  sort = byId<HTMLSelectElement>("sort"),
+  strategy = byId<HTMLSelectElement>("strategy"),
+  theme = byId<HTMLSelectElement>("theme");
+const cartDialog = byId<HTMLDialogElement>("cart-dialog"),
+  productDialog = byId<HTMLDialogElement>("product-dialog"),
+  productDetail = byId("product-detail");
+const storageKey = "rrl-cart-v2";
 const currency = new Intl.NumberFormat(locale, {
   style: "currency",
   currency: "USD",
 });
-
-const requiredElement = <T extends HTMLElement>(id: string): T => {
-  const element = document.getElementById(id);
-  if (!element) throw new Error(`Missing #${id}`);
-  return element as T;
-};
-const productGrid = requiredElement("product-grid");
-const cartList = requiredElement("cart-list");
-const cartCount = requiredElement("cart-count");
-const recommendationGrid = requiredElement("recommendation-grid");
-const cartStatus = requiredElement("cart-status");
-const theme = requiredElement<HTMLSelectElement>("theme");
-const strategy = requiredElement<HTMLSelectElement>("strategy");
-const artifactError = requiredElement("artifact-error");
-const comparison = requiredElement("strategy-comparison");
-
 let products: Product[] = [];
+let metrics: Metric[] = [];
 const artifactNames: Strategy[] = [
   "popularity",
   "category-popularity",
@@ -89,72 +70,183 @@ let artifacts = {} as Record<
   Candidate[] | Record<string, Candidate[]>
 >;
 
+function restoreCart(): Map<string, number> {
+  try {
+    const parsed: unknown = JSON.parse(
+      localStorage.getItem(storageKey) ?? "{}",
+    );
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed))
+      return new Map();
+    return new Map(
+      Object.entries(parsed).filter(
+        (entry): entry is [string, number] =>
+          typeof entry[1] === "number" &&
+          Number.isInteger(entry[1]) &&
+          entry[1] > 0,
+      ),
+    );
+  } catch {
+    return new Map();
+  }
+}
+const cart = restoreCart();
+const cartIds = (): Set<string> => new Set(cart.keys());
+function persist(): void {
+  localStorage.setItem(
+    storageKey,
+    JSON.stringify(Object.fromEntries([...cart].sort())),
+  );
+}
 function image(product: Product): string {
-  const alt = `${product.name[locale]} — ${product.description[locale]}`;
-  return `<div class="product-image"><img src="${product.image_url}" alt="${alt}" width="640" height="480"><span aria-hidden="true">${copy.fallback}</span></div>`;
+  return `<div class="product-image"><img src="${product.image_url}" alt="${product.name[locale]} — ${product.description[locale]}" width="640" height="480" loading="lazy" decoding="async"><span aria-hidden="true">${copy.fallback}</span></div>`;
 }
-
-function productMarkup(product: Product): string {
+function card(product: Product): string {
   const disabled = product.in_stock ? "" : "disabled";
-  const label = product.in_stock ? copy.add : copy.soldOut;
-  return `<article>
-    ${image(product)}
-    <div class="product-meta"><p>${product.category}</p><p>★ ${product.rating.toFixed(1)}</p></div>
-    <h3>${product.name[locale]}</h3>
-    <p>${product.description[locale]}</p>
-    <div class="product-action"><strong>${currency.format(Number(product.price))}</strong>
-    <button type="button" data-add="${product.id}" ${disabled}>${label}</button></div>
-  </article>`;
+  return `<article class="product-card" data-product-card="${product.id}">${image(product)}<div class="product-body"><div class="product-meta"><span>${product.category}</span><span>★ ${product.rating.toFixed(1)}</span></div><h3>${product.name[locale]}</h3><p class="description">${product.description[locale]}</p><div class="product-action"><strong>${currency.format(Number(product.price))}</strong><div class="product-buttons"><button type="button" data-detail="${product.id}">${copy.details}</button><button type="button" data-add="${product.id}" ${disabled}>${product.in_stock ? copy.add : copy.soldOut}</button></div></div></div></article>`;
 }
 
-function render(): void {
-  productGrid.innerHTML = products.map(productMarkup).join("");
-  const cartProducts = products.filter((product) => cart.has(product.id));
-  cartCount.textContent = String(cartProducts.length);
-  cartList.innerHTML = cartProducts.length
-    ? cartProducts
+function renderCatalog(): void {
+  const visible = filterAndSortProducts(
+    products,
+    search.value,
+    category.value,
+    sort.value,
+    locale,
+  );
+  productGrid.innerHTML = visible.length
+    ? visible.map(card).join("")
+    : `<p class="error-state">${copy.noResults}</p>`;
+  productGrid.setAttribute("aria-busy", "false");
+}
+function renderCart(): void {
+  const rows = [...cart].flatMap(([id, quantity]) => {
+    const product = products.find((item) => item.id === id);
+    return product ? [{ product, quantity }] : [];
+  });
+  cartCount.textContent = String(
+    rows.reduce((sum, row) => sum + row.quantity, 0),
+  );
+  cartSubtotal.textContent = currency.format(
+    rows.reduce(
+      (sum, row) => sum + Number(row.product.price) * row.quantity,
+      0,
+    ),
+  );
+  cartList.innerHTML = rows.length
+    ? rows
         .map(
-          (product) =>
-            `<div class="cart-row"><span>${product.name[locale]}</span><button type="button" data-remove="${product.id}" aria-label="${copy.remove}: ${product.name[locale]}">${copy.remove}</button></div>`,
+          ({ product, quantity }) =>
+            `<article class="cart-row"><div><h3>${product.name[locale]}</h3><p>${currency.format(Number(product.price))}</p><div class="quantity-control"><button type="button" data-quantity="${product.id}" data-delta="-1" aria-label="${copy.decrease}: ${product.name[locale]}">−</button><span aria-label="${copy.quantity}">${quantity}</span><button type="button" data-quantity="${product.id}" data-delta="1" aria-label="${copy.increase}: ${product.name[locale]}">+</button></div></div><button type="button" class="remove-button" data-remove="${product.id}">${copy.remove}</button></article>`,
         )
         .join("")
-    : `<p class="empty">${copy.empty}</p>`;
-  recommendationGrid.innerHTML = recommendations(
+    : `<p>${copy.empty}</p>`;
+}
+function renderRecommendations(): void {
+  const rows = recommendations(
     products,
-    cart,
+    cartIds(),
     strategy.value as Strategy,
     artifacts,
-  )
+  );
+  recommendationGrid.innerHTML = rows
     .map(
       ({ product, reason }) =>
-        `<article>${image(product)}<div><h3>${product.name[locale]}</h3><p>${copy[reason]}</p><strong>${currency.format(Number(product.price))}</strong></div></article>`,
+        `<article class="recommendation-card">${image(product)}<span class="reason-badge">${copy[reason]}</span><h3>${product.name[locale]}</h3><p>${copy.reasonTitle}</p><div class="product-action"><strong>${currency.format(Number(product.price))}</strong><button type="button" data-add="${product.id}">${copy.add}</button></div></article>`,
     )
     .join("");
 }
-
-function updateCart(id: string, add: boolean): void {
-  const product = products.find((candidate) => candidate.id === id);
-  if (!product) return;
-  if (add) cart.add(id);
+function renderMetrics(): void {
+  const definitions = [
+    copy.metricPrecision,
+    copy.metricRecall,
+    copy.metricHit,
+    copy.metricCoverage,
+  ];
+  comparison.innerHTML = metrics
+    .filter((row) => row.k === 3)
+    .map(
+      (row) =>
+        `<article class="metric-card"><span class="metric-label">${row.strategy}</span><strong>${(row.hit_rate * 100).toFixed(1)}%</strong><p>${copy.hitRate}</p><details><summary>${copy.details}</summary><p>${copy.precision}: ${(row.precision * 100).toFixed(1)}% · ${copy.recall}: ${(row.recall * 100).toFixed(1)}% · ${copy.coverage}: ${(row.catalog_coverage * 100).toFixed(1)}%</p><p>${definitions.join(" ")}</p></details></article>`,
+    )
+    .join("");
+}
+function updateCart(id: string, delta: number): void {
+  const product = products.find((item) => item.id === id);
+  if (!product || !product.in_stock) return;
+  const next = Math.max(
+    0,
+    Math.min(product.inventory_quantity, (cart.get(id) ?? 0) + delta),
+  );
+  if (next) cart.set(id, next);
   else cart.delete(id);
-  localStorage.setItem(storageKey, JSON.stringify([...cart]));
-  cartStatus.textContent = `${product.name[locale]} ${add ? copy.statusAdded : copy.statusRemoved}`;
-  render();
+  persist();
+  renderCart();
+  renderRecommendations();
+  status.textContent = `${product.name[locale]} ${delta > 0 ? copy.statusAdded : copy.statusRemoved}`;
+}
+function showProduct(id: string): void {
+  const product = products.find((item) => item.id === id);
+  if (!product) return;
+  productDetail.innerHTML = `<div class="detail-layout">${image(product)}<div class="detail-copy"><span class="reason-badge">${product.category}</span><h2>${product.name[locale]}</h2><p class="product-meta">SKU: ${product.sku}</p><p class="price">${currency.format(Number(product.price))}</p><p>${product.description[locale]}</p><button type="button" data-add="${product.id}" ${product.in_stock ? "" : "disabled"}>${product.in_stock ? copy.add : copy.soldOut}</button><ul class="detail-specs"><li><span>${copy.rating}</span><strong>${product.rating.toFixed(1)} / 5</strong></li><li><span>${copy.quantity}</span><strong>${product.inventory_quantity}</strong></li><li><span>${copy.category}</span><strong>${product.category}</strong></li></ul></div></div>`;
+  productDialog.showModal();
 }
 
 document.addEventListener("click", (event) => {
-  if (!(event.target instanceof HTMLButtonElement)) return;
-  if (event.target.dataset.add) updateCart(event.target.dataset.add, true);
-  if (event.target.dataset.remove)
-    updateCart(event.target.dataset.remove, false);
+  const target =
+    event.target instanceof Element
+      ? event.target.closest<HTMLButtonElement | HTMLAnchorElement>("button,a")
+      : null;
+  if (!target) return;
+  if (target.dataset.add) updateCart(target.dataset.add, 1);
+  if (target.dataset.remove)
+    updateCart(target.dataset.remove, -(cart.get(target.dataset.remove) ?? 1));
+  if (target.dataset.quantity)
+    updateCart(target.dataset.quantity, Number(target.dataset.delta));
+  if (target.dataset.detail) showProduct(target.dataset.detail);
+  if (target.id === "cart-open") cartDialog.showModal();
+  if (target.hasAttribute("data-close-cart")) cartDialog.close();
+  if (target.hasAttribute("data-close-product")) productDialog.close();
 });
-
+byId("reset-session").addEventListener("click", () => {
+  cart.clear();
+  persist();
+  renderCart();
+  renderRecommendations();
+});
+byId("analyze-cart").addEventListener("click", () =>
+  recommendationGrid.scrollIntoView({ behavior: "smooth", block: "center" }),
+);
+for (const control of [search, category, sort])
+  control.addEventListener(
+    control === search ? "input" : "change",
+    renderCatalog,
+  );
+strategy.addEventListener("change", renderRecommendations);
 theme.value = document.documentElement.dataset.theme ?? "system";
 theme.addEventListener("change", () => {
   document.documentElement.dataset.theme = theme.value;
   localStorage.setItem("rrl-theme", theme.value);
 });
-strategy.addEventListener("change", render);
+for (const dialog of [cartDialog, productDialog])
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+document.addEventListener(
+  "load",
+  (event) => {
+    if (event.target instanceof HTMLImageElement)
+      event.target.parentElement?.classList.add("loaded");
+  },
+  true,
+);
+document.addEventListener(
+  "error",
+  (event) => {
+    if (event.target instanceof HTMLImageElement)
+      event.target.parentElement?.classList.add("failed");
+  },
+  true,
+);
 
 const response = await fetch(catalogUrl);
 if (!response.ok) throw new Error(`Catalog request failed: ${response.status}`);
@@ -162,14 +254,21 @@ const payload: unknown = await response.json();
 if (!Array.isArray(payload) || !payload.every(isProduct))
   throw new Error("Catalog contract is invalid");
 products = payload;
+for (const value of [...cart.keys()])
+  if (!products.some((product) => product.id === value)) cart.delete(value);
+persist();
+for (const value of [
+  ...new Set(products.map((product) => product.category)),
+].sort())
+  category.add(new Option(value, value));
 try {
   artifacts = Object.fromEntries(
     await Promise.all(
       artifactNames.map(async (name) => {
         const filename = name === "hybrid" ? "hybrid-recommendations" : name;
-        const artifactResponse = await fetch(`${artifactBase}${filename}.json`);
-        if (!artifactResponse.ok) throw new Error(name);
-        const artifact = (await artifactResponse.json()) as Artifact<
+        const result = await fetch(`${artifactBase}${filename}.json`);
+        if (!result.ok) throw new Error(name);
+        const artifact = (await result.json()) as Artifact<
           Candidate[] | Record<string, Candidate[]>
         >;
         return [name, artifact.data];
@@ -187,38 +286,14 @@ try {
   };
 }
 try {
-  const evaluationResponse = await fetch(evaluationUrl);
-  if (!evaluationResponse.ok) throw new Error("evaluation");
-  const evaluation = (await evaluationResponse.json()) as {
-    data: {
-      metrics: Array<{
-        strategy: string;
-        k: number;
-        precision: number;
-        recall: number;
-        hit_rate: number;
-        catalog_coverage: number;
-      }>;
-    };
-  };
-  comparison.innerHTML = evaluation.data.metrics
-    .filter((row) => row.k === 3)
-    .map(
-      (row) =>
-        `<article><h3>${row.strategy}</h3><p>${copy.precision}: ${(row.precision * 100).toFixed(1)}%</p><p>${copy.recall}: ${(row.recall * 100).toFixed(1)}%</p><p>${copy.hitRate}: ${(row.hit_rate * 100).toFixed(1)}%</p><p>${copy.coverage}: ${(row.catalog_coverage * 100).toFixed(1)}%</p></article>`,
-    )
-    .join("");
+  const result = await fetch(evaluationUrl);
+  if (!result.ok) throw new Error("evaluation");
+  metrics = ((await result.json()) as { data: { metrics: Metric[] } }).data
+    .metrics;
+  renderMetrics();
 } catch {
-  comparison.innerHTML = `<p class="notice">${copy.error}</p>`;
+  comparison.innerHTML = `<p class="error-state">${copy.error}</p>`;
 }
-productGrid.setAttribute("aria-busy", "false");
-render();
-
-document.addEventListener(
-  "error",
-  (event) => {
-    if (event.target instanceof HTMLImageElement)
-      event.target.parentElement?.classList.add("failed");
-  },
-  true,
-);
+renderCatalog();
+renderCart();
+renderRecommendations();

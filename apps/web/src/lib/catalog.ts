@@ -114,6 +114,36 @@ export function popularityBaseline(
     .slice(0, limit);
 }
 
+export function filterAndSortProducts(
+  products: Product[],
+  query: string,
+  category: string,
+  sort: string,
+  locale: Locale,
+): Product[] {
+  const normalized = query.trim().toLocaleLowerCase(locale);
+  return products
+    .filter(
+      (product) =>
+        (!category || product.category === category) &&
+        (!normalized ||
+          `${product.name[locale]} ${product.description[locale]} ${product.sku}`
+            .toLocaleLowerCase(locale)
+            .includes(normalized)),
+    )
+    .sort((a, b) => {
+      if (sort === "price-asc")
+        return Number(a.price) - Number(b.price) || a.id.localeCompare(b.id);
+      if (sort === "price-desc")
+        return Number(b.price) - Number(a.price) || a.id.localeCompare(b.id);
+      if (sort === "rating")
+        return b.rating - a.rating || a.id.localeCompare(b.id);
+      return (
+        b.popularity_score - a.popularity_score || a.id.localeCompare(b.id)
+      );
+    });
+}
+
 export function isProduct(value: unknown): value is Product {
   if (typeof value !== "object" || value === null) return false;
   const product = value as Partial<Product>;
