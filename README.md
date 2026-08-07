@@ -61,4 +61,4 @@ In repository settings, select **GitHub Actions** as the Pages source.
 
 ## Limitations
 
-The dataset is deliberately small and entirely synthetic. Offline associations do not imply production performance. PySpark never runs in the browser, no visitor behavior is collected, and cart data never leaves the device.
+The dataset is deliberately small and entirely synthetic. Chronological metrics compare five transparent strategies at K=3, 5, and 10; they are not production benchmarks. PySpark never runs in the browser, no visitor behavior is collected, and cart data never leaves the device. See [evaluation methodology](docs/evaluation.md).

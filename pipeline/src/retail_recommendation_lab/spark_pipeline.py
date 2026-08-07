@@ -9,6 +9,8 @@ from pyspark.sql import DataFrame, SparkSession, Window
 from pyspark.sql import functions as F
 
 from .catalog import ROOT, build_catalog
+from .evaluation import CUTOFF as EVALUATION_CUTOFF
+from .evaluation import HYBRID_CONFIGS, K_VALUES, SELECTED_CONFIG, evaluate
 from .schemas import CUSTOMER_SCHEMA, EVENT_SCHEMA, EVENT_TYPES, INTERACTION_WEIGHTS, PRODUCT_SCHEMA
 from .synthetic import RAW, write_raw
 
@@ -290,6 +292,29 @@ def run_pipeline() -> None:
             "shuffle_partitions": 4,
         }
         manifests.append(_write("pipeline-metadata", metadata))
+        evaluation = evaluate(recs, SEED)
+        evaluation_names = (
+            "evaluation-summary",
+            "evaluation-by-segment",
+            "strategy-comparison",
+            "hybrid-recommendations",
+            "recommendation-system-card",
+        )
+        for name, data in zip(evaluation_names, evaluation, strict=True):
+            manifests.append(_write(name, data))
+        manifests.append(
+            _write(
+                "hybrid-config",
+                {
+                    "selected": SELECTED_CONFIG,
+                    "weights": HYBRID_CONFIGS[SELECTED_CONFIG],
+                    "k_values": list(K_VALUES),
+                    "cutoff": EVALUATION_CUTOFF.isoformat(),
+                    "category_cap": 2,
+                    "score_definition": "weighted sum of normalized signals before business rules",
+                },
+            )
+        )
         ordered_manifests: list[dict[str, object]] = sorted(
             manifests, key=lambda item: str(item["name"])
         )

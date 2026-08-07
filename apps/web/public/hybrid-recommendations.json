@@ -1,0 +1,655 @@
+{
+  "data": {
+    "cold_start": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135255,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.099866,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.0
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.089678,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ],
+    "prd_auris_headphones": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.2
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.7,
+        "source_product_id": "prd_auris_headphones"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.04185080515693834
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.141717,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0012426636275017413
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.136497,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.0
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.089678,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_nexo_blender",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ],
+    "prd_brisa_kettle": [
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_nexo_blender",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.07367637232251859
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.323676,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.11163091465959663
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.201309,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135255,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.099866,
+        "source_product_id": null
+      }
+    ],
+    "prd_calma_diffuser": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.14192203134941292
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.4816,
+        "source_product_id": "prd_calma_diffuser"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_vento_backpack",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135255,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.04999016715830874
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.09999,
+        "source_product_id": null
+      }
+    ],
+    "prd_luma_lamp": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.2
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.7,
+        "source_product_id": "prd_luma_lamp"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.099866,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.04444326573632376
+        },
+        "product_id": "prd_vento_backpack",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.094443,
+        "source_product_id": "prd_luma_lamp"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.0
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.089678,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.020397848211291418
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.070398,
+        "source_product_id": null
+      }
+    ],
+    "prd_marea_bottle": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_nexo_blender",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": "prd_marea_bottle"
+      },
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.349866,
+        "source_product_id": "prd_marea_bottle"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.25,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135255,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0017984597219040368
+        },
+        "product_id": "prd_vento_backpack",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.051798,
+        "source_product_id": null
+      }
+    ],
+    "prd_nexo_blender": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.18685032813590072
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.526529,
+        "source_product_id": "prd_nexo_blender"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.06956723453537307
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.319567,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.0
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.135255,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.099866,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ],
+    "prd_senda_notebook": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.2
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.585255,
+        "source_product_id": "prd_senda_notebook"
+      },
+      {
+        "contributions": {
+          "basket": 0.09375,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.11102538051134048
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.254775,
+        "source_product_id": "prd_senda_notebook"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.0
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.099866,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.0
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.089678,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_nexo_blender",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ],
+    "prd_vento_backpack": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_senda_notebook",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.5,
+        "source_product_id": "prd_vento_backpack"
+      },
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.0,
+          "novelty": 0.028686327077747986,
+          "popularity": 0.10656836461126006,
+          "similarity": 0.019880095590074195
+        },
+        "product_id": "prd_luma_lamp",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.405135,
+        "source_product_id": "prd_vento_backpack"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.03753351206434317,
+          "popularity": 0.06233243967828418,
+          "similarity": 0.2
+        },
+        "product_id": "prd_calma_diffuser",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.299866,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0400804289544236,
+          "popularity": 0.049597855227882036,
+          "similarity": 0.13166282268596993
+        },
+        "product_id": "prd_marea_bottle",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.221341,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_auris_headphones",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ]
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

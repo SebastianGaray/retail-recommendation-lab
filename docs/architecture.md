@@ -18,6 +18,8 @@ flowchart LR
 
 The deterministic generator creates fictional customers, sessions, and behavior without personal data. PySpark reads explicit-schema Parquet, validates and quarantines rows, sessionizes with windows, aggregates weighted interactions, and exports popularity, category, co-purchase, and cosine-style item similarity results. A UTC training cutoff prevents later evaluation events from influencing artifacts.
 
+Evaluation reconstructs pre-cutoff customer context and scores held-out purchases after the cutoff. Candidate strategies implement a common interface. The hybrid normalizes popularity, category, basket, similarity, and novelty signals; inventory/cart/category rules are applied separately after model scoring.
+
 ## Artifact boundary
 
 `artifacts/demo` is canonical. Every recommendation artifact carries schema/dataset versions and seed; the manifest records checksums, sizes, and counts. Identical copies are published under `apps/web/public`. Raw events are never public.

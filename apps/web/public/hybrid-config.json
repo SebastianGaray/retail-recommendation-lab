@@ -1,0 +1,23 @@
+{
+  "data": {
+    "category_cap": 2,
+    "cutoff": "2026-07-06T00:00:00+00:00",
+    "k_values": [
+      3,
+      5,
+      10
+    ],
+    "score_definition": "weighted sum of normalized signals before business rules",
+    "selected": "balanced",
+    "weights": {
+      "basket": 0.25,
+      "category": 0.25,
+      "novelty": 0.05,
+      "popularity": 0.25,
+      "similarity": 0.2
+    }
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

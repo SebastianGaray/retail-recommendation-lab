@@ -1,0 +1,183 @@
+{
+  "data": {
+    "cold_start_user_count": 3,
+    "cutoff": "2026-07-06T00:00:00+00:00",
+    "eligible_user_count": 20,
+    "k_values": [
+      3,
+      5,
+      10
+    ],
+    "limitations": "Synthetic offline evaluation; not production performance.",
+    "metrics": [
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 3,
+        "mrr": 0.116667,
+        "popularity_bias": 0.402837,
+        "precision": 0.066667,
+        "recall": 0.133333,
+        "strategy": "category-popularity"
+      },
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 5,
+        "mrr": 0.116667,
+        "popularity_bias": 0.329189,
+        "precision": 0.04,
+        "recall": 0.133333,
+        "strategy": "category-popularity"
+      },
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 10,
+        "mrr": 0.116667,
+        "popularity_bias": 0.329189,
+        "precision": 0.02,
+        "recall": 0.133333,
+        "strategy": "category-popularity"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 3,
+        "mrr": 0.05,
+        "popularity_bias": 0.110567,
+        "precision": 0.016667,
+        "recall": 0.016667,
+        "strategy": "frequently-bought-together"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 5,
+        "mrr": 0.05,
+        "popularity_bias": 0.110567,
+        "precision": 0.01,
+        "recall": 0.016667,
+        "strategy": "frequently-bought-together"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 10,
+        "mrr": 0.05,
+        "popularity_bias": 0.110567,
+        "precision": 0.005,
+        "recall": 0.016667,
+        "strategy": "frequently-bought-together"
+      },
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 3,
+        "mrr": 0.116667,
+        "popularity_bias": 0.402837,
+        "precision": 0.066667,
+        "recall": 0.133333,
+        "strategy": "global-popularity"
+      },
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 5,
+        "mrr": 0.116667,
+        "popularity_bias": 0.329189,
+        "precision": 0.04,
+        "recall": 0.133333,
+        "strategy": "global-popularity"
+      },
+      {
+        "catalog_coverage": 0.625,
+        "diversity": 1.0,
+        "hit_rate": 0.15,
+        "k": 10,
+        "mrr": 0.116667,
+        "popularity_bias": 0.329189,
+        "precision": 0.02,
+        "recall": 0.133333,
+        "strategy": "global-popularity"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 1.0,
+        "hit_rate": 0.2,
+        "k": 3,
+        "mrr": 0.175,
+        "popularity_bias": 0.301072,
+        "precision": 0.083333,
+        "recall": 0.15,
+        "strategy": "hybrid"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 1.0,
+        "hit_rate": 0.2,
+        "k": 5,
+        "mrr": 0.175,
+        "popularity_bias": 0.261642,
+        "precision": 0.06,
+        "recall": 0.166667,
+        "strategy": "hybrid"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 1.0,
+        "hit_rate": 0.2,
+        "k": 10,
+        "mrr": 0.175,
+        "popularity_bias": 0.228247,
+        "precision": 0.03,
+        "recall": 0.166667,
+        "strategy": "hybrid"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 3,
+        "mrr": 0.05,
+        "popularity_bias": 0.113628,
+        "precision": 0.016667,
+        "recall": 0.016667,
+        "strategy": "item-similarity"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 5,
+        "mrr": 0.05,
+        "popularity_bias": 0.14391,
+        "precision": 0.01,
+        "recall": 0.016667,
+        "strategy": "item-similarity"
+      },
+      {
+        "catalog_coverage": 0.875,
+        "diversity": 0.85,
+        "hit_rate": 0.05,
+        "k": 10,
+        "mrr": 0.05,
+        "popularity_bias": 0.14391,
+        "precision": 0.005,
+        "recall": 0.016667,
+        "strategy": "item-similarity"
+      }
+    ]
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

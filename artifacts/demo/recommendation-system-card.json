@@ -1,0 +1,23 @@
+{
+  "data": {
+    "business_rules": [
+      "cart exclusion",
+      "inventory filtering",
+      "two-per-category cap",
+      "stable ID tie-breaking",
+      "popularity fallback"
+    ],
+    "intended_use": "Educational offline recommendation comparison on synthetic retail behavior.",
+    "limitations": [
+      "small synthetic catalog",
+      "short evaluation window",
+      "offline associations are not production performance"
+    ],
+    "non_intended_use": "Production decisions, personalization claims, or visitor profiling.",
+    "privacy": "No visitor events are collected; the deployed application is static.",
+    "training_cutoff": "2026-07-06T00:00:00+00:00"
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}

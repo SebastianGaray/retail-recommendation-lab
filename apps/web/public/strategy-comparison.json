@@ -1,0 +1,43 @@
+{
+  "data": {
+    "configs": [
+      {
+        "name": "balanced",
+        "selection_note": "Balanced signal mix selected for transparent tradeoffs; no automated tuning.",
+        "weights": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.25,
+          "similarity": 0.2
+        }
+      },
+      {
+        "name": "discovery",
+        "selection_note": "Balanced signal mix selected for transparent tradeoffs; no automated tuning.",
+        "weights": {
+          "basket": 0.2,
+          "category": 0.2,
+          "novelty": 0.2,
+          "popularity": 0.15,
+          "similarity": 0.25
+        }
+      },
+      {
+        "name": "basket-first",
+        "selection_note": "Balanced signal mix selected for transparent tradeoffs; no automated tuning.",
+        "weights": {
+          "basket": 0.4,
+          "category": 0.2,
+          "novelty": 0.05,
+          "popularity": 0.15,
+          "similarity": 0.2
+        }
+      }
+    ],
+    "selected": "balanced"
+  },
+  "dataset_version": "small-2026-08-01",
+  "schema_version": "1.0",
+  "seed": 20260801
+}
