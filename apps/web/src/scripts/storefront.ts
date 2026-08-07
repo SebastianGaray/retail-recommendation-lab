@@ -297,3 +297,43 @@ try {
 renderCatalog();
 renderCart();
 renderRecommendations();
+
+const labViews = new Map<string, HTMLElement>([
+  ["home", document.querySelector<HTMLElement>(".hero")!],
+  ["catalog", document.querySelector<HTMLElement>("#catalog")!],
+  ["recommendations", document.querySelector<HTMLElement>("#recommendations")!],
+  ["methodology", document.querySelector<HTMLElement>("#methodology")!],
+]);
+const labViewLinks = document.querySelectorAll<HTMLAnchorElement>(
+  '[data-lab-view], a[href="#catalog"], a[href="#recommendations"], a[href="#methodology"]',
+);
+
+function showLabView(name: string, updateHistory = true): void {
+  if (!labViews.has(name)) name = "home";
+  for (const [viewName, view] of labViews) view.hidden = viewName !== name;
+  document
+    .querySelectorAll<HTMLAnchorElement>("[data-lab-view]")
+    .forEach((link) => {
+      const active = link.dataset.labView === name;
+      link.classList.toggle("active", active);
+      if (active) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+  if (updateHistory) history.pushState({ labView: name }, "", `#${name}`);
+  window.scrollTo(0, 0);
+  labViews.get(name)?.focus({ preventScroll: true });
+}
+
+labViewLinks.forEach((link) => {
+  link.addEventListener("click", (event: MouseEvent) => {
+    const name = link.hash.slice(1);
+    if (!labViews.has(name)) return;
+    event.preventDefault();
+    showLabView(name);
+  });
+});
+window.addEventListener("popstate", () => {
+  showLabView(window.location.hash.slice(1) || "home", false);
+});
+for (const view of labViews.values()) view.tabIndex = -1;
+showLabView(window.location.hash.slice(1) || "home", false);

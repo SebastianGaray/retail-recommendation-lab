@@ -11,8 +11,72 @@ const copy = {
     skip: "Ir al catálogo", brand: "Nexus Retail Lab", methodologyNav: "Metodología", synthetic: "Solo datos sintéticos · Sin seguimiento de visitantes", title: "Sistemas de recomendación, hechos tangibles.", intro: "Arma un carrito y compara cinco estrategias transparentes entrenadas offline con comportamiento ficticio.", catalog: "Explora el catálogo", catalogHint: "Busca, filtra e inspecciona los productos del laboratorio.", search: "Buscar productos", category: "Categoría", all: "Todas las categorías", sort: "Ordenar", featured: "Destacados", priceLow: "Precio: menor a mayor", priceHigh: "Precio: mayor a menor", rating: "Calificación", filters: "Filtros", add: "Agregar al carrito", details: "Ver detalles", soldOut: "Sin stock", cart: "Carrito", empty: "Tu carrito está vacío. Agrega un producto para activar recomendaciones contextuales.", remove: "Quitar", decrease: "Disminuir cantidad", increase: "Aumentar cantidad", reset: "Reiniciar sesión", viewRecommendations: "Ver recomendaciones", analyze: "Analizar carrito", recommendations: "Recomendaciones", recommendationHint: "Tu carrito modifica las estrategias por categoría, cesta, similitud e híbrida.", strategy: "Estrategia", popularity: "Popularidad", categoryPopularity: "Popularidad por categoría", frequentlyBoughtTogether: "Comprados juntos", itemSimilarity: "Similitud de productos", hybrid: "Híbrida", fallback: "Imagen no disponible", close: "Cerrar", quantity: "Cantidad", subtotal: "Subtotal sintético", reasonTitle: "Por qué aparece", global_popularity: "Popular en sesiones sintéticas.", category_popularity: "Popular en una categoría presente en tu carrito.", frequently_bought_together: "Comprado frecuentemente con un producto del carrito.", item_similarity: "Comportamiento similar a un producto del carrito.", hybrid_ranker: "Seleccionado por la combinación ponderada transparente.", cold_start_fallback: "Popularidad de respaldo para una sesión nueva o dispersa.", error: "Los artefactos de recomendación no están disponibles temporalmente.", comparison: "Comparación de estrategias", comparisonNote: "Compras sintéticas retenidas después del corte cronológico. No es un benchmark de producción.", precision: "Precisión@3", recall: "Recall@3", hitRate: "Tasa de acierto@3", coverage: "Cobertura", metricPrecision: "Compras relevantes entre las primeras tres recomendaciones.", metricRecall: "Proporción de compras retenidas recuperadas entre las primeras tres.", metricHit: "Proporción de clientes elegibles con al menos un acierto.", metricCoverage: "Proporción del catálogo pequeño recomendada al menos una vez.", methodology: "Cómo funciona el laboratorio", methodologyText: "PySpark construye artefactos estáticos con eventos anteriores al corte. El navegador genera candidatos, excluye inventario y carrito, limita categorías repetidas y desempata de forma estable.", architecture: "Arquitectura estática", architectureText: "Parquet sintético → PySpark offline → JSON versionado → Astro en GitHub Pages. Sin backend, base de datos, autenticación ni entrenamiento por solicitud.", limitations: "Limitaciones", limitationsText: "El catálogo y la ventana de evaluación son pequeños a propósito. Los resultados describen datos generados y no implican rendimiento con compradores reales.", theme: "Tema", system: "Sistema", light: "Claro", dark: "Oscuro", language: "Idioma", statusAdded: "agregado al carrito", statusRemoved: "quitado del carrito", noResults: "Ningún producto coincide con los filtros.", cartOpen: "Abrir carrito", menu: "Navegación",
   },
 }[locale];
+Object.assign(
+  copy,
+  locale === "en"
+    ? {
+        brand: "Retail Recommendation Lab",
+        synthetic: "Synthetic demo · No tracking",
+        title: "Try a retail recommender with a real cart.",
+        intro:
+          "Add a few products, then see how five recommendation strategies respond to what is in your cart.",
+        catalog: "Product catalog",
+        catalogHint: "Search, filter or open a product to see its details.",
+        recommendationHint:
+          "The results update from your cart. You can switch strategies to compare them.",
+        global_popularity: "Frequently chosen in the synthetic data.",
+        category_popularity: "Popular in a category that is in your cart.",
+        frequently_bought_together:
+          "Often appears in the same synthetic baskets as a cart item.",
+        item_similarity: "Has shopping patterns similar to a cart item.",
+        hybrid_ranker: "Selected using a fixed mix of the available signals.",
+        cold_start_fallback: "Uses overall popularity when the cart has little context.",
+        comparisonNote:
+          "Results from a small synthetic holdout set. They are included for inspection, not as a production benchmark.",
+        methodology: "What happens behind the page",
+        methodologyText:
+          "PySpark prepares static files from earlier synthetic events. The browser reads those files and removes products already in the cart or out of stock.",
+        architecture: "How it is built",
+        architectureText:
+          "Synthetic Parquet files are processed offline into JSON. Astro serves the site from GitHub Pages; there is no backend or login.",
+        limitationsText:
+          "The catalog and evaluation set are deliberately small. These results only describe generated data.",
+      }
+    : {
+        brand: "Laboratorio de Recomendaciones",
+        synthetic: "Demo sintética · Sin seguimiento",
+        title: "Prueba recomendaciones de retail con un carrito.",
+        intro:
+          "Agrega algunos productos y revisa cómo responden cinco estrategias según lo que tienes en el carrito.",
+        catalog: "Catálogo de productos",
+        catalogHint: "Busca, filtra o abre un producto para revisar sus detalles.",
+        recommendationHint:
+          "Los resultados cambian con el carrito. Puedes alternar estrategias para compararlas.",
+        global_popularity: "Elegido con frecuencia en los datos sintéticos.",
+        category_popularity: "Popular en una categoría presente en tu carrito.",
+        frequently_bought_together:
+          "Suele aparecer en las mismas canastas sintéticas que un producto del carrito.",
+        item_similarity: "Tiene patrones de compra similares a un producto del carrito.",
+        hybrid_ranker: "Seleccionado con una combinación fija de las señales disponibles.",
+        cold_start_fallback: "Usa popularidad general cuando el carrito tiene poco contexto.",
+        comparisonNote:
+          "Resultados de un conjunto sintético pequeño. Se muestran para revisarlos, no como benchmark de producción.",
+        methodology: "Qué ocurre detrás de la página",
+        methodologyText:
+          "PySpark prepara archivos estáticos a partir de eventos sintéticos anteriores. El navegador lee esos archivos y excluye productos del carrito o sin stock.",
+        architecture: "Cómo está construido",
+        architectureText:
+          "Los archivos Parquet sintéticos se procesan offline y generan JSON. Astro sirve el sitio desde GitHub Pages; no hay backend ni inicio de sesión.",
+        limitationsText:
+          "El catálogo y el conjunto de evaluación son pequeños a propósito. Los resultados sólo describen datos generados.",
+      },
+);
 const otherLocale = locale === "en" ? "es" : "en";
 const portfolioLabel = locale === "en" ? "Portfolio" : "Portafolio";
+const viewLabels =
+  locale === "en"
+    ? { home: "Home", catalog: "Catalog", recommendations: "Recommendations", evaluation: "Evaluation" }
+    : { home: "Inicio", catalog: "Catálogo", recommendations: "Recomendaciones", evaluation: "Evaluación" };
 const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
 const canonical = new URL(`${base}${locale}/`, Astro.site);
 const alternateEn = new URL(`${base}en/`, Astro.site);
@@ -25,6 +89,12 @@ const socialLocale = locale === "en" ? "en_US" : "es_CL";
   <body data-locale={locale} data-catalog-url={`${base}catalog.json`} data-artifact-base={base} data-evaluation-url={`${base}evaluation-summary.json`} data-copy={JSON.stringify(copy)}>
     <a class="skip-link" href="#catalog">{copy.skip}</a>
     <header class="site-header"><div class="header-inner"><a class="brand" href={`${base}${locale}/`}>{copy.brand}</a><nav aria-label={copy.menu}><a href="https://sebastiangaray.github.io/">{portfolioLabel}<span aria-hidden="true"> ↗</span></a><a href="#methodology">{copy.methodologyNav}</a><a href={`${base}${otherLocale}/`} lang={otherLocale} aria-label={`${copy.language}: ${otherLocale.toUpperCase()}`}>{otherLocale.toUpperCase()}</a><label class="theme-control"><span class="sr-only">{copy.theme}</span><select id="theme"><option value="system">{copy.system}</option><option value="light">{copy.light}</option><option value="dark">{copy.dark}</option></select></label><button id="cart-open" class="icon-button" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" aria-label={copy.cartOpen}>{copy.cart} <span id="cart-count">0</span></button></nav></div></header>
+    <aside class="lab-sidebar" aria-label={copy.menu}>
+      <a href="#home" data-lab-view="home">{viewLabels.home}</a>
+      <a href="#catalog" data-lab-view="catalog">{viewLabels.catalog}</a>
+      <a href="#recommendations" data-lab-view="recommendations">{viewLabels.recommendations}</a>
+      <a href="#methodology" data-lab-view="methodology">{viewLabels.evaluation}</a>
+    </aside>
     <main>
       <section class="hero"><p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><p>{copy.intro}</p><a class="primary-action" href="#catalog">{copy.viewRecommendations}</a></section>
       <section id="catalog" class="catalog-section" aria-labelledby="catalog-title"><div class="section-heading"><div><p class="kicker">01 / Catalog</p><h2 id="catalog-title">{copy.catalog}</h2></div><p>{copy.catalogHint}</p></div>

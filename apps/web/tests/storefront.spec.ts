@@ -45,20 +45,28 @@ test("localized routes, theme and keyboard navigation work", async ({
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
   await expect(
-    page.getByRole("heading", { name: "Explore the catalog" }),
+    page.getByRole("heading", {
+      name: "Try a retail recommender with a real cart.",
+    }),
+  ).toBeVisible();
+  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Product catalog" }),
   ).toBeVisible();
   await page.locator("#theme").selectOption("dark");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await page.keyboard.press("Tab");
   await expect(page.locator(":focus")).toBeVisible();
   await page.getByRole("link", { name: "Language: ES" }).click();
+  await page.getByRole("link", { name: "Catálogo", exact: true }).click();
   await expect(
-    page.getByRole("heading", { name: "Explora el catálogo" }),
+    page.getByRole("heading", { name: "Catálogo de productos" }),
   ).toBeVisible();
 });
 
 test("search, category, sorting and product details work", async ({ page }) => {
   await page.goto("/retail-recommendation-lab/en/");
+  await page.getByRole("link", { name: "Catalog", exact: true }).click();
   await page.locator("#search").fill("blender");
   await expect(page.locator("#product-grid article")).toHaveCount(1);
   await page.locator("#search").fill("");
@@ -81,6 +89,7 @@ test("cart quantities persist, recover from bad storage and reset", async ({
     }
   });
   await page.goto("/retail-recommendation-lab/en/");
+  await page.getByRole("link", { name: "Catalog", exact: true }).click();
   await page.getByRole("button", { name: "Add to cart" }).first().click();
   await page.getByRole("button", { name: "Open cart" }).click();
   await page.getByRole("button", { name: "Increase quantity" }).click();
@@ -96,9 +105,13 @@ test("every strategy excludes cart products and renders metrics", async ({
   page,
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
+  await page.getByRole("link", { name: "Catalog", exact: true }).click();
   const product = page.locator("#product-grid article").first();
   const name = await product.locator("h3").innerText();
   await product.getByRole("button", { name: "Add to cart" }).click();
+  await page
+    .getByRole("link", { name: "Recommendations", exact: true })
+    .click();
   for (const strategy of [
     "popularity",
     "category-popularity",
@@ -112,6 +125,7 @@ test("every strategy excludes cart products and renders metrics", async ({
       page.locator("#recommendation-grid article").first(),
     ).toBeVisible();
   }
+  await page.getByRole("link", { name: "Evaluation", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Strategy comparison" }),
   ).toBeVisible();
@@ -128,7 +142,11 @@ test("image and recommendation artifact failures degrade gracefully", async ({
   );
   await page.route("**/hybrid-recommendations.json", (route) => route.abort());
   await page.goto("/retail-recommendation-lab/en/");
+  await page.getByRole("link", { name: "Catalog", exact: true }).click();
   await expect(page.getByText("Image unavailable").first()).toBeVisible();
+  await page
+    .getByRole("link", { name: "Recommendations", exact: true })
+    .click();
   await expect(
     page.getByText("Recommendation artifacts are temporarily unavailable."),
   ).toBeVisible();
@@ -141,6 +159,7 @@ test.describe("mobile", () => {
   test.use({ viewport: { width: 390, height: 844 } });
   test("filters and cart drawer remain usable", async ({ page }) => {
     await page.goto("/retail-recommendation-lab/en/");
+    await page.getByRole("link", { name: "Catalog", exact: true }).click();
     await page.locator("#search").fill("blender");
     await expect(page.locator("#product-grid article")).toHaveCount(1);
     await page

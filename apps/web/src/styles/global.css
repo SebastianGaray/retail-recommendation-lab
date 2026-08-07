@@ -188,6 +188,50 @@ main > section,
   margin: auto;
   padding: 80px 24px;
 }
+.lab-sidebar {
+  width: 13.5rem;
+  position: fixed;
+  z-index: 20;
+  top: 72px;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--surface-low);
+  border-right: 1px solid var(--line);
+}
+.lab-sidebar a {
+  min-height: 44px;
+  padding: 0.7rem 0.8rem;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid transparent;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.lab-sidebar a:hover {
+  background: var(--surface-high);
+  color: var(--text);
+}
+.lab-sidebar a.active {
+  background: var(--surface-high);
+  border-left-color: var(--primary);
+  color: var(--text);
+}
+main,
+footer {
+  margin-left: 13.5rem;
+}
+main > section[hidden] {
+  display: none;
+}
+main > section:not([hidden]) {
+  min-height: calc(100svh - 72px);
+}
 .hero {
   min-height: 520px;
   display: flex;
@@ -684,8 +728,34 @@ footer span {
   .header-inner {
     padding: 0 16px;
   }
-  nav > a:nth-child(2) {
+  nav > a:nth-child(-n + 2) {
     display: none;
+  }
+  .lab-sidebar {
+    width: 100%;
+    height: auto;
+    inset: 72px 0 auto;
+    padding: 0.45rem 1rem;
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .lab-sidebar a {
+    flex: 0 0 auto;
+    border-bottom: 2px solid transparent;
+    border-left: 0;
+  }
+  .lab-sidebar a.active {
+    border-bottom-color: var(--primary);
+    border-left: 0;
+  }
+  main,
+  footer {
+    margin-left: 0;
+  }
+  main {
+    padding-top: 3.5rem;
   }
   .brand {
     font-size: 1rem;
