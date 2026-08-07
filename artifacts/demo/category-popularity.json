@@ -1,34 +1,34 @@
 {
   "data": [
     {
-      "category": "electronics",
-      "product_id": "prd_auris_headphones",
-      "rank": 1,
-      "score": 113.0
-    },
-    {
       "category": "home",
-      "product_id": "prd_luma_lamp",
+      "product_id": "prd_family_photo_frame",
       "rank": 1,
-      "score": 272.0
+      "score": 233.0
     },
     {
-      "category": "office",
-      "product_id": "prd_senda_notebook",
+      "category": "kitchen",
+      "product_id": "prd_lunch_box",
       "rank": 1,
-      "score": 486.0
+      "score": 238.0
     },
     {
-      "category": "personal care",
-      "product_id": "prd_calma_diffuser",
-      "rank": 1,
-      "score": 206.0
+      "category": "kitchen",
+      "product_id": "prd_boxed_blender",
+      "rank": 2,
+      "score": 175.0
+    },
+    {
+      "category": "kitchen",
+      "product_id": "prd_spice_rack",
+      "rank": 3,
+      "score": 157.0
     },
     {
       "category": "sports",
-      "product_id": "prd_marea_bottle",
+      "product_id": "prd_volleyball",
       "rank": 1,
-      "score": 187.0
+      "score": 362.0
     }
   ],
   "dataset_version": "small-2026-08-01",

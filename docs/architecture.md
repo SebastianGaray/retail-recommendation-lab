@@ -30,4 +30,4 @@ Astro emits static EN and ES routes. Plain TypeScript validates loaded data, per
 
 ## Deployment and cost strategy
 
-GitHub Actions runs locked checks, generates artifacts, and builds static output. GitHub Pages hosts it without a permanent server, managed database, paid API, authentication, or secrets. Product images use a fake image endpoint and degrade to a local CSS fallback.
+GitHub Actions runs locked checks, generates artifacts, and builds static output. GitHub Pages hosts it without a permanent server, managed database, paid API, authentication, or secrets. Curated DummyJSON product records are pinned in the generator for reproducibility; only their CDN images load externally and degrade to a local CSS fallback.

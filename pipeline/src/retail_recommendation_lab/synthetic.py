@@ -50,10 +50,10 @@ def generate_rows(
             )
         )
     complements = {
-        "prd_auris_headphones": "prd_senda_notebook",
-        "prd_nexo_blender": "prd_marea_bottle",
-        "prd_luma_lamp": "prd_senda_notebook",
-        "prd_vento_backpack": "prd_marea_bottle",
+        "prd_table_lamp": "prd_family_photo_frame",
+        "prd_boxed_blender": "prd_lunch_box",
+        "prd_spice_rack": "prd_lunch_box",
+        "prd_tennis_racket": "prd_volleyball",
     }
     events: list[EventRow] = []
     event_number = 0

@@ -59,7 +59,7 @@ test("localized routes, theme and keyboard navigation work", async ({
 
 test("search, category, sorting and product details work", async ({ page }) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await page.locator("#search").fill("bottle");
+  await page.locator("#search").fill("blender");
   await expect(page.locator("#product-grid article")).toHaveCount(1);
   await page.locator("#search").fill("");
   await page.locator("#category").selectOption({ index: 1 });
@@ -123,7 +123,9 @@ test("every strategy excludes cart products and renders metrics", async ({
 test("image and recommendation artifact failures degrade gracefully", async ({
   page,
 }) => {
-  await page.route("https://dummyjson.com/image/**", (route) => route.abort());
+  await page.route("https://cdn.dummyjson.com/product-images/**", (route) =>
+    route.abort(),
+  );
   await page.route("**/hybrid-recommendations.json", (route) => route.abort());
   await page.goto("/retail-recommendation-lab/en/");
   await expect(page.getByText("Image unavailable").first()).toBeVisible();
@@ -139,7 +141,7 @@ test.describe("mobile", () => {
   test.use({ viewport: { width: 390, height: 844 } });
   test("filters and cart drawer remain usable", async ({ page }) => {
     await page.goto("/retail-recommendation-lab/en/");
-    await page.locator("#search").fill("bottle");
+    await page.locator("#search").fill("blender");
     await expect(page.locator("#product-grid article")).toHaveCount(1);
     await page
       .locator("#product-grid")

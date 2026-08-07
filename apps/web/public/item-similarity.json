@@ -1,179 +1,179 @@
 {
   "data": {
-    "prd_auris_headphones": [
+    "prd_boxed_blender": [
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_lunch_box",
         "rank": 1,
-        "score": 0.465553
+        "score": 0.424876
       },
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_white_backpack",
         "rank": 2,
-        "score": 0.192185
+        "score": 0.349475
       },
       {
-        "product_id": "prd_luma_lamp",
+        "product_id": "prd_spice_rack",
         "rank": 3,
-        "score": 0.121992
+        "score": 0.344842
       },
       {
-        "product_id": "prd_vento_backpack",
+        "product_id": "prd_tennis_racket",
         "rank": 4,
-        "score": 0.119844
+        "score": 0.251707
       }
     ],
-    "prd_brisa_kettle": [
+    "prd_family_photo_frame": [
       {
-        "product_id": "prd_nexo_blender",
+        "product_id": "prd_table_lamp",
         "rank": 1,
-        "score": 0.616078
+        "score": 0.56244
       },
       {
-        "product_id": "prd_marea_bottle",
+        "product_id": "prd_tennis_racket",
         "rank": 2,
-        "score": 0.390595
+        "score": 0.247431
       },
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_volleyball",
         "rank": 3,
-        "score": 0.29375
+        "score": 0.176018
       },
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_boxed_blender",
         "rank": 4,
-        "score": 0.105757
+        "score": 0.160325
       }
     ],
-    "prd_calma_diffuser": [
+    "prd_lunch_box": [
       {
-        "product_id": "prd_vento_backpack",
+        "product_id": "prd_spice_rack",
         "rank": 1,
-        "score": 0.451537
+        "score": 0.760385
       },
       {
-        "product_id": "prd_marea_bottle",
+        "product_id": "prd_boxed_blender",
         "rank": 2,
-        "score": 0.351126
+        "score": 0.424876
       },
       {
-        "product_id": "prd_auris_headphones",
+        "product_id": "prd_white_backpack",
         "rank": 3,
-        "score": 0.192185
+        "score": 0.280256
       },
       {
-        "product_id": "prd_brisa_kettle",
+        "product_id": "prd_volleyball",
         "rank": 4,
-        "score": 0.105757
+        "score": 0.238894
       }
     ],
-    "prd_luma_lamp": [
+    "prd_spice_rack": [
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_lunch_box",
         "rank": 1,
-        "score": 0.646829
+        "score": 0.760385
       },
       {
-        "product_id": "prd_vento_backpack",
+        "product_id": "prd_boxed_blender",
         "rank": 2,
-        "score": 0.192258
+        "score": 0.344842
       },
       {
-        "product_id": "prd_auris_headphones",
+        "product_id": "prd_white_backpack",
         "rank": 3,
-        "score": 0.121992
+        "score": 0.31904
       },
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_tennis_racket",
         "rank": 4,
-        "score": 0.062385
+        "score": 0.178521
       }
     ],
-    "prd_marea_bottle": [
+    "prd_table_lamp": [
       {
-        "product_id": "prd_nexo_blender",
+        "product_id": "prd_family_photo_frame",
         "rank": 1,
-        "score": 0.578098
+        "score": 0.56244
       },
       {
-        "product_id": "prd_brisa_kettle",
+        "product_id": "prd_tennis_racket",
         "rank": 2,
-        "score": 0.390595
+        "score": 0.435216
       },
       {
-        "product_id": "prd_vento_backpack",
+        "product_id": "prd_volleyball",
         "rank": 3,
-        "score": 0.353167
+        "score": 0.240712
       },
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_lunch_box",
         "rank": 4,
-        "score": 0.351126
+        "score": 0.170162
       }
     ],
-    "prd_nexo_blender": [
+    "prd_tennis_racket": [
       {
-        "product_id": "prd_brisa_kettle",
+        "product_id": "prd_volleyball",
         "rank": 1,
-        "score": 0.616078
+        "score": 0.676939
       },
       {
-        "product_id": "prd_marea_bottle",
+        "product_id": "prd_table_lamp",
         "rank": 2,
-        "score": 0.578098
+        "score": 0.435216
       },
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_boxed_blender",
         "rank": 3,
-        "score": 0.239351
+        "score": 0.251707
       },
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_family_photo_frame",
         "rank": 4,
-        "score": 0.038421
+        "score": 0.247431
       }
     ],
-    "prd_senda_notebook": [
+    "prd_volleyball": [
       {
-        "product_id": "prd_luma_lamp",
+        "product_id": "prd_tennis_racket",
         "rank": 1,
-        "score": 0.646829
+        "score": 0.676939
       },
       {
-        "product_id": "prd_auris_headphones",
+        "product_id": "prd_table_lamp",
         "rank": 2,
-        "score": 0.465553
+        "score": 0.240712
       },
       {
-        "product_id": "prd_brisa_kettle",
+        "product_id": "prd_lunch_box",
         "rank": 3,
-        "score": 0.29375
+        "score": 0.238894
       },
       {
-        "product_id": "prd_nexo_blender",
+        "product_id": "prd_white_backpack",
         "rank": 4,
-        "score": 0.239351
+        "score": 0.230951
       }
     ],
-    "prd_vento_backpack": [
+    "prd_white_backpack": [
       {
-        "product_id": "prd_calma_diffuser",
+        "product_id": "prd_boxed_blender",
         "rank": 1,
-        "score": 0.451537
+        "score": 0.349475
       },
       {
-        "product_id": "prd_marea_bottle",
+        "product_id": "prd_spice_rack",
         "rank": 2,
-        "score": 0.353167
+        "score": 0.31904
       },
       {
-        "product_id": "prd_luma_lamp",
+        "product_id": "prd_lunch_box",
         "rank": 3,
-        "score": 0.192258
+        "score": 0.280256
       },
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_volleyball",
         "rank": 4,
-        "score": 0.163641
+        "score": 0.230951
       }
     ]
   },

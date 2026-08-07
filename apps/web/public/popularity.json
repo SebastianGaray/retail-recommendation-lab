@@ -1,29 +1,29 @@
 {
   "data": [
     {
-      "product_id": "prd_senda_notebook",
+      "product_id": "prd_volleyball",
       "rank": 1,
-      "score": 486.0
+      "score": 362.0
     },
     {
-      "product_id": "prd_luma_lamp",
+      "product_id": "prd_lunch_box",
       "rank": 2,
-      "score": 272.0
+      "score": 238.0
     },
     {
-      "product_id": "prd_calma_diffuser",
+      "product_id": "prd_family_photo_frame",
       "rank": 3,
-      "score": 206.0
+      "score": 233.0
     },
     {
-      "product_id": "prd_marea_bottle",
+      "product_id": "prd_boxed_blender",
       "rank": 4,
-      "score": 187.0
+      "score": 175.0
     },
     {
-      "product_id": "prd_auris_headphones",
+      "product_id": "prd_spice_rack",
       "rank": 5,
-      "score": 113.0
+      "score": 157.0
     }
   ],
   "dataset_version": "small-2026-08-01",

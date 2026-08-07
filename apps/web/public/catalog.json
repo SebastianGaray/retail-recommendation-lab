@@ -1,209 +1,209 @@
 [
   {
-    "id": "prd_auris_headphones",
-    "sku": "ELC-1001",
+    "id": "prd_table_lamp",
+    "sku": "HOM-0047",
     "name": {
-      "en": "Auris Wireless Headphones",
-      "es": "Audífonos inalámbricos Auris"
+      "en": "Table Lamp",
+      "es": "Lámpara de mesa"
     },
     "description": {
-      "en": "Balanced sound for focused days.",
-      "es": "Sonido equilibrado para días de concentración."
+      "en": "A modern lamp that provides both ambient and task lighting.",
+      "es": "Una lámpara moderna que ofrece luz ambiental y de trabajo."
     },
-    "category": "electronics",
-    "subcategory": "audio",
-    "price": "89.00",
-    "original_price": null,
+    "category": "home",
+    "subcategory": "home-decoration",
+    "price": "49.99",
+    "original_price": "53.80",
     "in_stock": true,
-    "inventory_quantity": 24,
-    "rating": 4.7,
-    "review_count": 318,
-    "image_url": "https://dummyjson.com/image/640x480/d8e7e3/17201d?text=Auris%20Wireless%20Headphones",
+    "inventory_quantity": 9,
+    "rating": 3.55,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
     "tags": [
-      "wireless",
-      "audio"
+      "home decor",
+      "lighting"
     ],
     "popularity_score": 96
   },
   {
-    "id": "prd_marea_bottle",
-    "sku": "SPT-5001",
+    "id": "prd_boxed_blender",
+    "sku": "KIT-0051",
     "name": {
-      "en": "Marea Insulated Bottle",
-      "es": "Botella térmica Marea"
+      "en": "Boxed Blender",
+      "es": "Licuadora compacta"
     },
     "description": {
-      "en": "Cold drinks for 24 hours in a slim steel body.",
-      "es": "Bebidas frías por 24 horas en acero liviano."
+      "en": "A powerful compact blender for smoothies, shakes and everyday prep.",
+      "es": "Una licuadora compacta y potente para batidos y preparaciones diarias."
     },
-    "category": "sports",
-    "subcategory": "hydration",
-    "price": "28.00",
-    "original_price": null,
+    "category": "kitchen",
+    "subcategory": "kitchen-accessories",
+    "price": "39.99",
+    "original_price": "43.12",
     "in_stock": true,
-    "inventory_quantity": 47,
-    "rating": 4.7,
-    "review_count": 441,
-    "image_url": "https://dummyjson.com/image/640x480/bfd9df/17201d?text=Marea%20Insulated%20Bottle",
+    "inventory_quantity": 9,
+    "rating": 4.56,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/1.webp",
     "tags": [
-      "outdoors",
-      "steel"
+      "kitchen appliances",
+      "blenders"
     ],
     "popularity_score": 94
   },
   {
-    "id": "prd_luma_lamp",
-    "sku": "HOM-3001",
+    "id": "prd_family_photo_frame",
+    "sku": "HOM-0044",
     "name": {
-      "en": "Luma Desk Lamp",
-      "es": "Lámpara de escritorio Luma"
+      "en": "Family Tree Photo Frame",
+      "es": "Marco de fotos familiar"
     },
     "description": {
-      "en": "Warm, adjustable light with a small footprint.",
-      "es": "Luz cálida y regulable que ocupa poco espacio."
+      "en": "A decorative family-tree frame with multiple spaces for photographs.",
+      "es": "Un marco decorativo en forma de árbol con espacios para varias fotografías."
     },
     "category": "home",
-    "subcategory": "lighting",
-    "price": "42.00",
-    "original_price": null,
+    "subcategory": "home-decoration",
+    "price": "29.99",
+    "original_price": "35.23",
     "in_stock": true,
-    "inventory_quantity": 31,
-    "rating": 4.8,
-    "review_count": 256,
-    "image_url": "https://dummyjson.com/image/640x480/eadfbd/17201d?text=Luma%20Desk%20Lamp",
+    "inventory_quantity": 77,
+    "rating": 4.53,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp",
     "tags": [
-      "lighting",
-      "desk"
+      "home decor",
+      "photo frame"
     ],
     "popularity_score": 92
   },
   {
-    "id": "prd_vento_backpack",
-    "sku": "ACC-4001",
+    "id": "prd_lunch_box",
+    "sku": "KIT-0065",
     "name": {
-      "en": "Vento Travel Backpack",
-      "es": "Mochila de viaje Vento"
+      "en": "Lunch Box",
+      "es": "Lonchera con compartimentos"
     },
     "description": {
-      "en": "A weather-ready day pack with a laptop sleeve.",
-      "es": "Una mochila resistente con espacio para portátil."
+      "en": "A portable meal container with separate compartments for food.",
+      "es": "Un recipiente portátil con compartimentos separados para alimentos."
     },
-    "category": "accessories",
-    "subcategory": "bags",
-    "price": "72.00",
-    "original_price": "84.00",
+    "category": "kitchen",
+    "subcategory": "kitchen-accessories",
+    "price": "12.99",
+    "original_price": "14.49",
     "in_stock": true,
-    "inventory_quantity": 11,
-    "rating": 4.6,
-    "review_count": 203,
-    "image_url": "https://dummyjson.com/image/640x480/c9d5c8/17201d?text=Vento%20Travel%20Backpack",
+    "inventory_quantity": 94,
+    "rating": 4.93,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/1.webp",
     "tags": [
-      "travel",
-      "laptop"
+      "kitchen tools",
+      "storage"
     ],
     "popularity_score": 90
   },
   {
-    "id": "prd_nexo_blender",
-    "sku": "KIT-2001",
+    "id": "prd_spice_rack",
+    "sku": "KIT-0073",
     "name": {
-      "en": "Nexo Compact Blender",
-      "es": "Licuadora compacta Nexo"
+      "en": "Spice Rack",
+      "es": "Especiero organizador"
     },
     "description": {
-      "en": "A quiet blender sized for small kitchens.",
-      "es": "Una licuadora silenciosa para cocinas pequeñas."
+      "en": "A practical organizer that keeps spices visible and within reach.",
+      "es": "Un organizador práctico que mantiene las especias visibles y al alcance."
     },
     "category": "kitchen",
-    "subcategory": "appliances",
-    "price": "54.00",
-    "original_price": "69.00",
+    "subcategory": "kitchen-accessories",
+    "price": "19.99",
+    "original_price": "22.74",
     "in_stock": true,
-    "inventory_quantity": 16,
-    "rating": 4.5,
-    "review_count": 174,
-    "image_url": "https://dummyjson.com/image/640x480/f0d9c2/17201d?text=Nexo%20Compact%20Blender",
+    "inventory_quantity": 79,
+    "rating": 4.87,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/1.webp",
     "tags": [
-      "compact",
-      "kitchen"
+      "kitchen tools",
+      "organization"
     ],
     "popularity_score": 88
   },
   {
-    "id": "prd_calma_diffuser",
-    "sku": "HOM-3002",
+    "id": "prd_volleyball",
+    "sku": "SPT-0153",
     "name": {
-      "en": "Calma Aroma Diffuser",
-      "es": "Difusor de aromas Calma"
+      "en": "Volleyball",
+      "es": "Balón de voleibol"
     },
     "description": {
-      "en": "A compact diffuser with a soft ambient glow.",
-      "es": "Un difusor compacto con una luz ambiental suave."
+      "en": "A standard ball designed for passing, setting and spiking over the net.",
+      "es": "Un balón estándar diseñado para recibir, colocar y rematar sobre la red."
     },
-    "category": "personal care",
-    "subcategory": "wellness",
-    "price": "38.00",
-    "original_price": "45.00",
-    "in_stock": true,
-    "inventory_quantity": 19,
-    "rating": 4.5,
-    "review_count": 147,
-    "image_url": "https://dummyjson.com/image/640x480/d8d0e2/17201d?text=Calma%20Aroma%20Diffuser",
+    "category": "sports",
+    "subcategory": "sports-accessories",
+    "price": "11.99",
+    "original_price": "13.66",
+    "in_stock": false,
+    "inventory_quantity": 0,
+    "rating": 3.84,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/1.webp",
     "tags": [
-      "wellness",
-      "home"
+      "sports equipment",
+      "volleyball"
     ],
     "popularity_score": 82
   },
   {
-    "id": "prd_brisa_kettle",
-    "sku": "KIT-2002",
+    "id": "prd_tennis_racket",
+    "sku": "SPT-0152",
     "name": {
-      "en": "Brisa Ceramic Kettle",
-      "es": "Hervidor cerámico Brisa"
+      "en": "Tennis Racket",
+      "es": "Raqueta de tenis"
     },
     "description": {
-      "en": "A calm countertop kettle with auto shut-off.",
-      "es": "Un hervidor sereno con apagado automático."
+      "en": "A strung racket with a comfortable grip for recreational tennis.",
+      "es": "Una raqueta encordada con agarre cómodo para jugar tenis recreativo."
     },
-    "category": "kitchen",
-    "subcategory": "appliances",
-    "price": "61.00",
-    "original_price": null,
-    "in_stock": false,
-    "inventory_quantity": 0,
-    "rating": 4.4,
-    "review_count": 121,
-    "image_url": "https://dummyjson.com/image/640x480/d9c7ba/17201d?text=Brisa%20Ceramic%20Kettle",
+    "category": "sports",
+    "subcategory": "sports-accessories",
+    "price": "49.99",
+    "original_price": "62.18",
+    "in_stock": true,
+    "inventory_quantity": 6,
+    "rating": 4.03,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
     "tags": [
-      "tea",
-      "ceramic"
+      "sports equipment",
+      "tennis"
     ],
     "popularity_score": 75
   },
   {
-    "id": "prd_senda_notebook",
-    "sku": "OFF-6001",
+    "id": "prd_white_backpack",
+    "sku": "ACC-0175",
     "name": {
-      "en": "Senda Dotted Notebook",
-      "es": "Cuaderno punteado Senda"
+      "en": "White Faux Leather Backpack",
+      "es": "Mochila blanca de cuero sintético"
     },
     "description": {
-      "en": "Lay-flat pages for plans, notes and sketches.",
-      "es": "Páginas planas para planes, notas y bocetos."
+      "en": "A practical backpack with a clean design and generous storage space.",
+      "es": "Una mochila práctica de diseño limpio y amplio espacio de almacenamiento."
     },
-    "category": "office",
-    "subcategory": "stationery",
-    "price": "16.00",
-    "original_price": null,
+    "category": "accessories",
+    "subcategory": "bags",
+    "price": "39.99",
+    "original_price": "47.16",
     "in_stock": true,
-    "inventory_quantity": 63,
-    "rating": 4.3,
-    "review_count": 89,
-    "image_url": "https://dummyjson.com/image/640x480/e2d6cb/17201d?text=Senda%20Dotted%20Notebook",
+    "inventory_quantity": 39,
+    "rating": 3.36,
+    "review_count": 3,
+    "image_url": "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/1.webp",
     "tags": [
-      "paper",
-      "planning"
+      "fashion accessories",
+      "backpacks"
     ],
     "popularity_score": 68
   }

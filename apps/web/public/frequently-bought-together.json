@@ -1,76 +1,76 @@
 {
   "data": {
-    "prd_auris_headphones": [
+    "prd_boxed_blender": [
       {
-        "product_id": "prd_senda_notebook",
-        "rank": 1,
-        "score": 5.0
-      }
-    ],
-    "prd_calma_diffuser": [
-      {
-        "product_id": "prd_marea_bottle",
+        "product_id": "prd_lunch_box",
         "rank": 1,
         "score": 2.0
       }
     ],
-    "prd_luma_lamp": [
+    "prd_family_photo_frame": [
       {
-        "product_id": "prd_senda_notebook",
+        "product_id": "prd_table_lamp",
         "rank": 1,
-        "score": 10.0
-      },
-      {
-        "product_id": "prd_vento_backpack",
-        "rank": 2,
-        "score": 2.0
-      }
-    ],
-    "prd_marea_bottle": [
-      {
-        "product_id": "prd_nexo_blender",
-        "rank": 1,
-        "score": 2.0
-      },
-      {
-        "product_id": "prd_calma_diffuser",
-        "rank": 2,
-        "score": 2.0
-      }
-    ],
-    "prd_nexo_blender": [
-      {
-        "product_id": "prd_marea_bottle",
-        "rank": 1,
-        "score": 2.0
-      }
-    ],
-    "prd_senda_notebook": [
-      {
-        "product_id": "prd_luma_lamp",
-        "rank": 1,
-        "score": 10.0
-      },
-      {
-        "product_id": "prd_auris_headphones",
-        "rank": 2,
         "score": 5.0
       },
       {
-        "product_id": "prd_vento_backpack",
+        "product_id": "prd_volleyball",
+        "rank": 2,
+        "score": 2.0
+      }
+    ],
+    "prd_lunch_box": [
+      {
+        "product_id": "prd_spice_rack",
+        "rank": 1,
+        "score": 6.0
+      },
+      {
+        "product_id": "prd_volleyball",
+        "rank": 2,
+        "score": 2.0
+      },
+      {
+        "product_id": "prd_boxed_blender",
         "rank": 3,
         "score": 2.0
       }
     ],
-    "prd_vento_backpack": [
+    "prd_spice_rack": [
       {
-        "product_id": "prd_luma_lamp",
+        "product_id": "prd_lunch_box",
         "rank": 1,
+        "score": 6.0
+      }
+    ],
+    "prd_table_lamp": [
+      {
+        "product_id": "prd_family_photo_frame",
+        "rank": 1,
+        "score": 5.0
+      }
+    ],
+    "prd_tennis_racket": [
+      {
+        "product_id": "prd_volleyball",
+        "rank": 1,
+        "score": 7.0
+      }
+    ],
+    "prd_volleyball": [
+      {
+        "product_id": "prd_tennis_racket",
+        "rank": 1,
+        "score": 7.0
+      },
+      {
+        "product_id": "prd_lunch_box",
+        "rank": 2,
         "score": 2.0
       },
       {
-        "product_id": "prd_senda_notebook",
-        "rank": 2,
+        "product_id": "prd_family_photo_frame",
+        "rank": 3,
         "score": 2.0
       }
     ]

@@ -3,6 +3,7 @@
 An interactive, public portfolio demo showing how deterministic product recommendations react to a visitor's shopping cart. It is an educational system, not a production recommendation service.
 
 All catalog products, prices, inventory, ratings, reviews, popularity scores, and shopping behavior are synthetic.
+The curated product presentation is pinned from the [DummyJSON Products API](https://dummyjson.com/docs/products); the public app never fetches catalog records at runtime.
 
 ## Current scope
 
