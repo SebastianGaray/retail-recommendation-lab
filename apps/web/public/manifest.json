@@ -1,28 +1,28 @@
 {
   "data": [
     {
-      "bytes": 729,
+      "bytes": 4964,
       "name": "category-popularity.json",
-      "record_count": 5,
-      "sha256": "2b643975629fa039093c7df6d934a2764c743df85a7ee27a4237a2e74f8bc96d"
+      "record_count": 40,
+      "sha256": "fc7d461e114e3571b49f0b264b7ce3bcde089f2a52806950c926b97aabd40f7c"
     },
     {
-      "bytes": 18688,
+      "bytes": 18701,
       "name": "evaluation-by-segment.json",
       "record_count": 1,
-      "sha256": "cff75750ccc59d9d4b26c48b672039da40a3d9c90b68510872c2a9fa1f9d9400"
+      "sha256": "2390b7a5a882efb48ad87b8500b201420fe4ddf32db1ca8140b83706acc9a076"
     },
     {
-      "bytes": 4655,
+      "bytes": 4631,
       "name": "evaluation-summary.json",
       "record_count": 6,
-      "sha256": "064b3b59c9f2caa5083ef72b81a6a77829455d53bec122cc774125aa1f824a1d"
+      "sha256": "454e870b0ec4dbbae81dd7f10bcf9cfaaa52f2aa6cf027cf6b4d30e3f999d9c0"
     },
     {
-      "bytes": 2078,
+      "bytes": 5893,
       "name": "frequently-bought-together.json",
-      "record_count": 15,
-      "sha256": "4df6dbab030df9705a2e8fd947a09da2abf29d31428b53ea350093cfe3a47308"
+      "record_count": 40,
+      "sha256": "13ad6f85351d92b6f62c7791d708a839b6a4478f84738a57c347cde659b2a525"
     },
     {
       "bytes": 480,
@@ -31,16 +31,16 @@
       "sha256": "df0e213fbb78b8cd3b3a8a57b6d462e9ab942e6683831f0e31c89a91ea614f87"
     },
     {
-      "bytes": 76150,
+      "bytes": 75284,
       "name": "hybrid-recommendations.json",
       "record_count": 41,
-      "sha256": "fb63867f78f3c09cc76a5f0411dcc4c6c397fafcb4d5f544763a08e653bed1bd"
+      "sha256": "1cdec660516ea454fab0e51fbc663a6bd0c39aeed946363c07339ad5d56159ec"
     },
     {
-      "bytes": 17416,
+      "bytes": 17409,
       "name": "item-similarity.json",
       "record_count": 40,
-      "sha256": "775b176d9d104761553e3b56e87f2474bc57a7f67c5921f49656ecb213074769"
+      "sha256": "e03526793950df6889b1afbbb91451471e4988eb5b5bf7e713c5b9dced793529"
     },
     {
       "bytes": 439,
@@ -52,13 +52,13 @@
       "bytes": 547,
       "name": "popularity.json",
       "record_count": 5,
-      "sha256": "b8b1b00d02467b942f24d0e88c9ef54f952f2d9c4d0f404a8fefc5453e15493c"
+      "sha256": "cc79d486c59faafd936d8f97cfb0fdaae9b4688780c79a763e7ca94cea5cfea5"
     },
     {
       "bytes": 251,
       "name": "quality-report.json",
       "record_count": 6,
-      "sha256": "bffc4e8fd1a6c2b2455fb4dbcad3d76734e448d09be37ad17868f7dbca2362be"
+      "sha256": "b8f45d71528c63a36823a29ce74ab0e16520b75a07a64e061744b6da908f2eea"
     },
     {
       "bytes": 768,

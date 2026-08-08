@@ -49,17 +49,30 @@ def generate_rows(
                 round(rng.uniform(0.1, 0.8), 3),
             )
         )
-    complements = {
-        "prd_dummy_001": "prd_dummy_002",
-        "prd_dummy_006": "prd_dummy_007",
-        "prd_dummy_011": "prd_dummy_013",
-        "prd_dummy_016": "prd_dummy_019",
-        "prd_dummy_043": "prd_dummy_045",
-        "prd_dummy_048": "prd_dummy_050",
-        "prd_dummy_078": "prd_dummy_079",
-        "prd_dummy_083": "prd_dummy_085",
-        "prd_dummy_121": "prd_dummy_123",
-        "prd_dummy_138": "prd_dummy_139",
+    complement_pairs = (
+        ("prd_dummy_001", "prd_dummy_002"),
+        ("prd_dummy_003", "prd_dummy_004"),
+        ("prd_dummy_006", "prd_dummy_007"),
+        ("prd_dummy_008", "prd_dummy_009"),
+        ("prd_dummy_011", "prd_dummy_013"),
+        ("prd_dummy_012", "prd_dummy_014"),
+        ("prd_dummy_016", "prd_dummy_019"),
+        ("prd_dummy_017", "prd_dummy_018"),
+        ("prd_dummy_043", "prd_dummy_045"),
+        ("prd_dummy_044", "prd_dummy_046"),
+        ("prd_dummy_048", "prd_dummy_050"),
+        ("prd_dummy_049", "prd_dummy_051"),
+        ("prd_dummy_078", "prd_dummy_079"),
+        ("prd_dummy_080", "prd_dummy_081"),
+        ("prd_dummy_083", "prd_dummy_085"),
+        ("prd_dummy_084", "prd_dummy_086"),
+        ("prd_dummy_121", "prd_dummy_123"),
+        ("prd_dummy_122", "prd_dummy_124"),
+        ("prd_dummy_137", "prd_dummy_140"),
+        ("prd_dummy_138", "prd_dummy_139"),
+    )
+    complements = {left: right for left, right in complement_pairs} | {
+        right: left for left, right in complement_pairs
     }
     events: list[EventRow] = []
     event_number = 0
@@ -76,7 +89,7 @@ def generate_rows(
         ] or products
         primary = rng.choice(pool)
         choices = [primary]
-        if primary.id in complements and rng.random() < 0.68:
+        if primary.id in complements:
             choices.append(next(p for p in products if p.id == complements[primary.id]))
         if rng.random() < 0.25:
             choices.append(rng.choice(products))

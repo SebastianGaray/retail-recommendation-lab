@@ -9,7 +9,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 1,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -19,42 +19,42 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_137",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.07,
         "source_product_id": null
       },
       {
@@ -65,7 +65,7 @@
           "popularity": 0.0,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_001",
+        "product_id": "prd_dummy_002",
         "rank": 5,
         "reason_code": "hybrid_ranker",
         "score": 0.05,
@@ -75,7 +75,7 @@
     "prd_dummy_001": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -84,8 +84,8 @@
         "product_id": "prd_dummy_002",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_001"
       },
       {
         "contributions": {
@@ -93,12 +93,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.09974563768632039
+          "similarity": 0.10787507287613357
         },
-        "product_id": "prd_dummy_004",
+        "product_id": "prd_dummy_003",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.399746,
+        "score": 0.407875,
         "source_product_id": null
       },
       {
@@ -109,7 +109,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -119,45 +119,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
     "prd_dummy_002": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.2
         },
         "product_id": "prd_dummy_001",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.836667,
+        "source_product_id": "prd_dummy_002"
       },
       {
         "contributions": {
@@ -165,12 +165,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.15039896287446455
+          "similarity": 0.10342974992347667
         },
         "product_id": "prd_dummy_004",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.450399,
+        "score": 0.40343,
         "source_product_id": null
       },
       {
@@ -181,7 +181,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -191,35 +191,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
     "prd_dummy_003": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -228,21 +228,21 @@
         "product_id": "prd_dummy_004",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_003"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.07147300146539623
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.12229554875130706
         },
-        "product_id": "prd_dummy_002",
+        "product_id": "prd_dummy_001",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.371473,
+        "score": 0.508962,
         "source_product_id": null
       },
       {
@@ -253,7 +253,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -263,58 +263,58 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.08517847536959519
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_049",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.135178,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
     "prd_dummy_004": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_002",
+        "product_id": "prd_dummy_003",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_004"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.10937976695156437
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.11399694124527143
         },
         "product_id": "prd_dummy_001",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.40938,
+        "score": 0.500664,
         "source_product_id": null
       },
       {
@@ -325,7 +325,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -335,28 +335,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
@@ -381,12 +381,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.02709009041118676
+          "similarity": 0.07610353187435864
         },
-        "product_id": "prd_dummy_008",
+        "product_id": "prd_dummy_009",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.32709,
+        "score": 0.376104,
         "source_product_id": null
       },
       {
@@ -397,7 +397,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -407,28 +407,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -453,12 +453,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.02607359016235949
+          "similarity": 0.09690295384180961
         },
         "product_id": "prd_dummy_009",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.326074,
+        "score": 0.396903,
         "source_product_id": null
       },
       {
@@ -469,7 +469,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -479,72 +479,58 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_008": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.18467716852370233
-        },
-        "product_id": "prd_dummy_006",
-        "rank": 1,
-        "reason_code": "hybrid_ranker",
-        "score": 0.484677,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.0
-        },
-        "product_id": "prd_dummy_007",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.3,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_014",
-        "rank": 3,
+        "product_id": "prd_dummy_009",
+        "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.25,
+        "score": 0.75,
+        "source_product_id": "prd_dummy_008"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.05100460333906018
+        },
+        "product_id": "prd_dummy_006",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.351005,
         "source_product_id": null
       },
       {
@@ -555,8 +541,8 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
-        "rank": 4,
+        "product_id": "prd_dummy_140",
+        "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
         "source_product_id": null
@@ -565,31 +551,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.15,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_009": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_007",
+        "product_id": "prd_dummy_008",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_009"
       },
       {
         "contributions": {
@@ -597,12 +597,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.013675822537357963
+          "similarity": 0.11450721518675805
         },
-        "product_id": "prd_dummy_008",
+        "product_id": "prd_dummy_007",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.313676,
+        "score": 0.414507,
         "source_product_id": null
       },
       {
@@ -613,7 +613,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -623,28 +623,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -669,12 +669,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.19047069287246474
         },
-        "product_id": "prd_dummy_012",
+        "product_id": "prd_dummy_014",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.490471,
         "source_product_id": null
       },
       {
@@ -685,7 +685,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -695,35 +695,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_012": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -732,8 +732,8 @@
         "product_id": "prd_dummy_014",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_012"
       },
       {
         "contributions": {
@@ -741,12 +741,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.05614499714229938
         },
         "product_id": "prd_dummy_011",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.356145,
         "source_product_id": null
       },
       {
@@ -757,7 +757,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -767,28 +767,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -813,12 +813,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.14391707050179772
         },
-        "product_id": "prd_dummy_012",
+        "product_id": "prd_dummy_014",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.443917,
         "source_product_id": null
       },
       {
@@ -829,7 +829,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -839,35 +839,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_014": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -876,8 +876,8 @@
         "product_id": "prd_dummy_012",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_014"
       },
       {
         "contributions": {
@@ -885,12 +885,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.1813753182791341
         },
         "product_id": "prd_dummy_011",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.481375,
         "source_product_id": null
       },
       {
@@ -901,7 +901,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -911,28 +911,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.1388500718801688
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_048",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.18885,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -941,14 +941,14 @@
         "contributions": {
           "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
         "product_id": "prd_dummy_019",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.833582,
+        "score": 0.75,
         "source_product_id": "prd_dummy_016"
       },
       {
@@ -957,12 +957,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.054091609927819986
+          "similarity": 0.04364995828252358
         },
         "product_id": "prd_dummy_017",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.354092,
+        "score": 0.34365,
         "source_product_id": null
       },
       {
@@ -973,7 +973,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -983,45 +983,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_017": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_018",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.583582,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_017"
       },
       {
         "contributions": {
@@ -1029,12 +1029,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.10576480952278636
+          "similarity": 0.02228368844701914
         },
-        "product_id": "prd_dummy_016",
+        "product_id": "prd_dummy_019",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.405765,
+        "score": 0.322284,
         "source_product_id": null
       },
       {
@@ -1045,7 +1045,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1055,45 +1055,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.09443501428847688
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_011",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.144435,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_018": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_017",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.583582,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_018"
       },
       {
         "contributions": {
@@ -1101,12 +1101,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.09067382535849669
+          "similarity": 0.038611391715148526
         },
-        "product_id": "prd_dummy_016",
+        "product_id": "prd_dummy_019",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.390674,
+        "score": 0.338611,
         "source_product_id": null
       },
       {
@@ -1117,7 +1117,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1127,28 +1127,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -1173,12 +1173,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.139476379748485
+          "similarity": 0.0444908973805001
         },
-        "product_id": "prd_dummy_018",
+        "product_id": "prd_dummy_017",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.439476,
+        "score": 0.344491,
         "source_product_id": null
       },
       {
@@ -1189,7 +1189,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1199,28 +1199,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -1229,39 +1229,39 @@
         "contributions": {
           "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
-          "similarity": 0.19589656667586428
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
         },
         "product_id": "prd_dummy_045",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.829479,
+        "score": 0.75,
         "source_product_id": "prd_dummy_043"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.0
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0821599777219353
         },
         "product_id": "prd_dummy_044",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.48216,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.2
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_122",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1271,58 +1271,44 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0,
-          "popularity": 0.25,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.25,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
     "prd_dummy_044": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_046",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.583582,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.25,
-          "category": 0.0,
-          "novelty": 0.0,
-          "popularity": 0.25,
-          "similarity": 0.0
-        },
-        "product_id": "prd_dummy_139",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.5,
+        "score": 0.75,
         "source_product_id": "prd_dummy_044"
       },
       {
@@ -1331,40 +1317,54 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.11992091778540366
+          "similarity": 0.1109649946607368
         },
-        "product_id": "prd_dummy_046",
+        "product_id": "prd_dummy_045",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.410965,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.419921,
+        "score": 0.25,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
@@ -1375,26 +1375,26 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.13618178083681373
+          "similarity": 0.2
         },
         "product_id": "prd_dummy_043",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.686182,
+        "score": 0.75,
         "source_product_id": "prd_dummy_045"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.2
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.09643570503554261
         },
         "product_id": "prd_dummy_044",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
+        "score": 0.496436,
         "source_product_id": null
       },
       {
@@ -1405,7 +1405,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1415,45 +1415,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
     "prd_dummy_046": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_044",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.583582,
-        "source_product_id": null
+        "score": 0.85,
+        "source_product_id": "prd_dummy_046"
       },
       {
         "contributions": {
@@ -1461,12 +1461,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.18094112135165408
+          "similarity": 0.12049993369579631
         },
-        "product_id": "prd_dummy_044",
+        "product_id": "prd_dummy_045",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.480941,
+        "score": 0.4205,
         "source_product_id": null
       },
       {
@@ -1477,7 +1477,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1487,28 +1487,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_137",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.07,
         "source_product_id": null
       }
     ],
@@ -1517,14 +1517,14 @@
         "contributions": {
           "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.2
         },
         "product_id": "prd_dummy_050",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.76194,
+        "score": 0.75,
         "source_product_id": "prd_dummy_048"
       },
       {
@@ -1533,12 +1533,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.1027932227454737
+          "similarity": 0.1362242486910872
         },
         "product_id": "prd_dummy_051",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.402793,
+        "score": 0.436224,
         "source_product_id": null
       },
       {
@@ -1549,7 +1549,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1559,35 +1559,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_049": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -1596,21 +1596,21 @@
         "product_id": "prd_dummy_051",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_049"
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
-          "similarity": 0.0
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.14288665690293173
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_048",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.31194,
+        "score": 0.442887,
         "source_product_id": null
       },
       {
@@ -1621,7 +1621,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1631,28 +1631,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -1677,12 +1677,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.06964299409861346
+          "similarity": 0.09400152058784444
         },
         "product_id": "prd_dummy_051",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.369643,
+        "score": 0.394002,
         "source_product_id": null
       },
       {
@@ -1693,7 +1693,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1703,45 +1703,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_051": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_048",
+        "product_id": "prd_dummy_049",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_051"
       },
       {
         "contributions": {
@@ -1749,12 +1749,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.1509027621898978
+          "similarity": 0.14933172737323128
         },
-        "product_id": "prd_dummy_049",
+        "product_id": "prd_dummy_048",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.450903,
+        "score": 0.449332,
         "source_product_id": null
       },
       {
@@ -1765,7 +1765,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1775,45 +1775,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_078": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_081",
+        "product_id": "prd_dummy_079",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_078"
       },
       {
         "contributions": {
@@ -1821,12 +1821,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.07100249196372486
+          "similarity": 0.04567294836927066
         },
-        "product_id": "prd_dummy_079",
+        "product_id": "prd_dummy_080",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.371002,
+        "score": 0.345673,
         "source_product_id": null
       },
       {
@@ -1837,7 +1837,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1847,45 +1847,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_079": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_081",
+        "product_id": "prd_dummy_078",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_079"
       },
       {
         "contributions": {
@@ -1893,12 +1893,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.12786358405392792
+          "similarity": 0.027093558436338067
         },
-        "product_id": "prd_dummy_078",
+        "product_id": "prd_dummy_080",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.427864,
+        "score": 0.327094,
         "source_product_id": null
       },
       {
@@ -1909,7 +1909,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -1919,72 +1919,58 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_080": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.13744105495972955
-        },
-        "product_id": "prd_dummy_079",
-        "rank": 1,
-        "reason_code": "hybrid_ranker",
-        "score": 0.437441,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.03896423653131917
-        },
-        "product_id": "prd_dummy_081",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.338964,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_043",
-        "rank": 3,
+        "product_id": "prd_dummy_081",
+        "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.25,
+        "score": 0.75,
+        "source_product_id": "prd_dummy_080"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.03045358072977007
+        },
+        "product_id": "prd_dummy_078",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.330454,
         "source_product_id": null
       },
       {
@@ -1995,8 +1981,8 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
-        "rank": 4,
+        "product_id": "prd_dummy_140",
+        "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
         "source_product_id": null
@@ -2005,31 +1991,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.15,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_081": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_078",
+        "product_id": "prd_dummy_080",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_081"
       },
       {
         "contributions": {
@@ -2037,12 +2037,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.16601763129966216
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_079",
+        "product_id": "prd_dummy_078",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.466018,
+        "score": 0.3,
         "source_product_id": null
       },
       {
@@ -2053,7 +2053,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2063,28 +2063,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -2109,12 +2109,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0841418856313701
+          "similarity": 0.07768630928271426
         },
-        "product_id": "prd_dummy_086",
+        "product_id": "prd_dummy_084",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.384142,
+        "score": 0.377686,
         "source_product_id": null
       },
       {
@@ -2125,7 +2125,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2135,35 +2135,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_084": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -2172,8 +2172,8 @@
         "product_id": "prd_dummy_086",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_084"
       },
       {
         "contributions": {
@@ -2181,12 +2181,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0065884397188794635
+          "similarity": 0.09603650564707274
         },
         "product_id": "prd_dummy_085",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.306588,
+        "score": 0.396037,
         "source_product_id": null
       },
       {
@@ -2197,7 +2197,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2207,28 +2207,28 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
@@ -2253,12 +2253,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.11880181607401008
+          "similarity": 0.1043850983270094
         },
-        "product_id": "prd_dummy_086",
+        "product_id": "prd_dummy_084",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.418802,
+        "score": 0.404385,
         "source_product_id": null
       },
       {
@@ -2269,7 +2269,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2279,45 +2279,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_086": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_085",
+        "product_id": "prd_dummy_084",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_086"
       },
       {
         "contributions": {
@@ -2325,12 +2325,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.14356762722078217
+          "similarity": 0.05464789660928755
         },
-        "product_id": "prd_dummy_084",
+        "product_id": "prd_dummy_085",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.443568,
+        "score": 0.354648,
         "source_product_id": null
       },
       {
@@ -2341,7 +2341,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2351,35 +2351,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_121": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -2388,8 +2388,8 @@
         "product_id": "prd_dummy_123",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_121"
       },
       {
         "contributions": {
@@ -2397,12 +2397,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.10140622807534863
         },
         "product_id": "prd_dummy_122",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.401406,
         "source_product_id": null
       },
       {
@@ -2413,7 +2413,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2423,45 +2423,45 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_122": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.14624875224595732
+          "similarity": 0.14296603798880544
         },
         "product_id": "prd_dummy_124",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.446249,
-        "source_product_id": null
+        "score": 0.692966,
+        "source_product_id": "prd_dummy_122"
       },
       {
         "contributions": {
@@ -2469,26 +2469,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.045443915238285386
+          "similarity": 0.2
         },
         "product_id": "prd_dummy_123",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.345444,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.2
-        },
-        "product_id": "prd_dummy_043",
-        "rank": 3,
-        "reason_code": "hybrid_ranker",
-        "score": 0.25,
+        "score": 0.5,
         "source_product_id": null
       },
       {
@@ -2499,8 +2485,8 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
-        "rank": 4,
+        "product_id": "prd_dummy_140",
+        "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
         "source_product_id": null
@@ -2509,21 +2495,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.15,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_123": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -2532,8 +2532,8 @@
         "product_id": "prd_dummy_121",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_123"
       },
       {
         "contributions": {
@@ -2541,12 +2541,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.12255070159288087
+          "similarity": 0.13683844021776478
         },
         "product_id": "prd_dummy_122",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.422551,
+        "score": 0.436838,
         "source_product_id": null
       },
       {
@@ -2557,7 +2557,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2567,35 +2567,35 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_124": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
@@ -2604,8 +2604,8 @@
         "product_id": "prd_dummy_122",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
+        "score": 0.75,
+        "source_product_id": "prd_dummy_124"
       },
       {
         "contributions": {
@@ -2613,12 +2613,12 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.0
+          "similarity": 0.1339983280133759
         },
         "product_id": "prd_dummy_121",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.3,
+        "score": 0.433998,
         "source_product_id": null
       },
       {
@@ -2629,7 +2629,7 @@
           "popularity": 0.25,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 3,
         "reason_code": "hybrid_ranker",
         "score": 0.25,
@@ -2639,104 +2639,32 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
-          "similarity": 0.06993601345787148
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_044",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.203518,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_001",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       }
     ],
     "prd_dummy_137": [
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.25,
-          "novelty": 0.0,
-          "popularity": 0.25,
-          "similarity": 0.19016487966941698
-        },
-        "product_id": "prd_dummy_139",
-        "rank": 1,
-        "reason_code": "hybrid_ranker",
-        "score": 0.690165,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.2
-        },
-        "product_id": "prd_dummy_138",
-        "rank": 2,
-        "reason_code": "hybrid_ranker",
-        "score": 0.5,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
-          "similarity": 0.0
-        },
-        "product_id": "prd_dummy_019",
-        "rank": 3,
-        "reason_code": "hybrid_ranker",
-        "score": 0.133582,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
-          "similarity": 0.0
-        },
-        "product_id": "prd_dummy_045",
-        "rank": 4,
-        "reason_code": "hybrid_ranker",
-        "score": 0.133582,
-        "source_product_id": null
-      },
-      {
-        "contributions": {
-          "basket": 0.0,
-          "category": 0.0,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.012833980862426398
-        },
-        "product_id": "prd_dummy_017",
-        "rank": 5,
-        "reason_code": "hybrid_ranker",
-        "score": 0.062834,
-        "source_product_id": null
-      }
-    ],
-    "prd_dummy_138": [
       {
         "contributions": {
           "basket": 0.25,
@@ -2745,11 +2673,11 @@
           "popularity": 0.25,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_140",
         "rank": 1,
         "reason_code": "hybrid_ranker",
         "score": 0.95,
-        "source_product_id": "prd_dummy_138"
+        "source_product_id": "prd_dummy_137"
       },
       {
         "contributions": {
@@ -2757,40 +2685,40 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.17374042597838635
+          "similarity": 0.09075413821438452
         },
-        "product_id": "prd_dummy_137",
+        "product_id": "prd_dummy_139",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.47374,
+        "score": 0.390754,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
@@ -2799,12 +2727,84 @@
           "category": 0.0,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.016074627292757607
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_123",
+        "product_id": "prd_dummy_002",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.066075,
+        "score": 0.05,
+        "source_product_id": null
+      }
+    ],
+    "prd_dummy_138": [
+      {
+        "contributions": {
+          "basket": 0.25,
+          "category": 0.25,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.2
+        },
+        "product_id": "prd_dummy_139",
+        "rank": 1,
+        "reason_code": "hybrid_ranker",
+        "score": 0.75,
+        "source_product_id": "prd_dummy_138"
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.25,
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.055310798711186916
+        },
+        "product_id": "prd_dummy_140",
+        "rank": 2,
+        "reason_code": "hybrid_ranker",
+        "score": 0.555311,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.025,
+          "popularity": 0.125,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_044",
+        "rank": 3,
+        "reason_code": "hybrid_ranker",
+        "score": 0.15,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_001",
+        "rank": 4,
+        "reason_code": "hybrid_ranker",
+        "score": 0.136667,
+        "source_product_id": null
+      },
+      {
+        "contributions": {
+          "basket": 0.0,
+          "category": 0.0,
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
+        },
+        "product_id": "prd_dummy_002",
+        "rank": 5,
+        "reason_code": "hybrid_ranker",
+        "score": 0.05,
         "source_product_id": null
       }
     ],
@@ -2827,73 +2827,73 @@
         "contributions": {
           "basket": 0.0,
           "category": 0.25,
-          "novelty": 0.05,
-          "popularity": 0.0,
-          "similarity": 0.16015883733642008
+          "novelty": 0.0,
+          "popularity": 0.25,
+          "similarity": 0.08164304831334632
         },
-        "product_id": "prd_dummy_137",
+        "product_id": "prd_dummy_140",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.460159,
+        "score": 0.581643,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
+          "novelty": 0.05,
+          "popularity": 0.0,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_002",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.06194,
+        "score": 0.05,
         "source_product_id": null
       }
     ],
     "prd_dummy_140": [
       {
         "contributions": {
-          "basket": 0.0,
+          "basket": 0.25,
           "category": 0.25,
-          "novelty": 0.0,
-          "popularity": 0.25,
+          "novelty": 0.045000000000000005,
+          "popularity": 0.025,
           "similarity": 0.2
         },
-        "product_id": "prd_dummy_139",
+        "product_id": "prd_dummy_137",
         "rank": 1,
         "reason_code": "hybrid_ranker",
-        "score": 0.7,
-        "source_product_id": null
+        "score": 0.77,
+        "source_product_id": "prd_dummy_140"
       },
       {
         "contributions": {
@@ -2901,54 +2901,54 @@
           "category": 0.25,
           "novelty": 0.05,
           "popularity": 0.0,
-          "similarity": 0.05700977742838892
+          "similarity": 0.08498753935118598
         },
-        "product_id": "prd_dummy_137",
+        "product_id": "prd_dummy_139",
         "rank": 2,
         "reason_code": "hybrid_ranker",
-        "score": 0.35701,
+        "score": 0.384988,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.025,
+          "popularity": 0.125,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_019",
+        "product_id": "prd_dummy_044",
         "rank": 3,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.15,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.0291044776119403,
-          "popularity": 0.1044776119402985,
+          "novelty": 0.028333333333333335,
+          "popularity": 0.10833333333333334,
           "similarity": 0.0
         },
-        "product_id": "prd_dummy_045",
+        "product_id": "prd_dummy_001",
         "rank": 4,
         "reason_code": "hybrid_ranker",
-        "score": 0.133582,
+        "score": 0.136667,
         "source_product_id": null
       },
       {
         "contributions": {
           "basket": 0.0,
           "category": 0.0,
-          "novelty": 0.047014925373134335,
-          "popularity": 0.014925373134328358,
-          "similarity": 0.02600108092173145
+          "novelty": 0.05,
+          "popularity": 0.0,
+          "similarity": 0.0
         },
-        "product_id": "prd_dummy_050",
+        "product_id": "prd_dummy_002",
         "rank": 5,
         "reason_code": "hybrid_ranker",
-        "score": 0.087941,
+        "score": 0.05,
         "source_product_id": null
       }
     ]

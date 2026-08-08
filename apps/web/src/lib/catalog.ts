@@ -30,11 +30,14 @@ export type ReasonCode =
   | "frequently_bought_together"
   | "item_similarity"
   | "hybrid_ranker"
-  | "cold_start_fallback";
+  | "empty_cart_fallback"
+  | "strategy_coverage_fallback"
+  | "artifact_unavailable_fallback";
 export interface Candidate {
   product_id: string;
   score: number;
   rank: number;
+  category?: string;
 }
 export interface Artifact<T> {
   schema_version: string;
@@ -45,10 +48,11 @@ export interface Artifact<T> {
 
 export function recommendations(
   products: Product[],
-  cart: Set<string>,
+  cart: ReadonlyMap<string, number>,
   strategy: Strategy,
   artifacts: Record<Strategy, Candidate[] | Record<string, Candidate[]>>,
   limit = 3,
+  unavailableStrategies: ReadonlySet<Strategy> = new Set(),
 ): Array<{ product: Product; reason: ReasonCode }> {
   const byId = new Map(products.map((product) => [product.id, product]));
   let candidates: Candidate[] = [];
@@ -63,10 +67,22 @@ export function recommendations(
         Candidate & { category: string }
       >
     ).filter((row) => categories.has(row.category));
-  } else
-    candidates = [...cart].flatMap(
-      (id) => (artifacts[strategy] as Record<string, Candidate[]>)[id] ?? [],
-    );
+  } else {
+    const aggregated = new Map<string, Candidate>();
+    for (const [sourceId, quantity] of cart) {
+      for (const candidate of (
+        artifacts[strategy] as Record<string, Candidate[]>
+      )[sourceId] ?? []) {
+        const current = aggregated.get(candidate.product_id);
+        aggregated.set(candidate.product_id, {
+          product_id: candidate.product_id,
+          score: (current?.score ?? 0) + candidate.score * quantity,
+          rank: Math.min(current?.rank ?? candidate.rank, candidate.rank),
+        });
+      }
+    }
+    candidates = [...aggregated.values()];
+  }
   const codes: Record<Strategy, ReasonCode> = {
     popularity: "global_popularity",
     "category-popularity": "category_popularity",
@@ -92,12 +108,21 @@ export function recommendations(
       return [{ product, reason: codes[strategy] }];
     })
     .slice(0, limit);
-  return selected.length
-    ? selected
-    : popularityBaseline(products, cart, limit).map((product) => ({
-        product,
-        reason: "cold_start_fallback",
-      }));
+  const fallbackReason: ReasonCode = unavailableStrategies.has(strategy)
+    ? "artifact_unavailable_fallback"
+    : strategy !== "popularity" && cart.size === 0
+      ? "empty_cart_fallback"
+      : "strategy_coverage_fallback";
+  const excluded = new Set([
+    ...cart.keys(),
+    ...selected.map(({ product }) => product.id),
+  ]);
+  const fallback = popularityBaseline(
+    products,
+    excluded,
+    limit - selected.length,
+  ).map((product) => ({ product, reason: fallbackReason }));
+  return [...selected, ...fallback];
 }
 
 export function popularityBaseline(

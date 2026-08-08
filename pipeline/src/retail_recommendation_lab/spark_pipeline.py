@@ -146,19 +146,16 @@ def build_recommendations(
     events: DataFrame, strengths: DataFrame, products: DataFrame
 ) -> dict[str, Mapping[str, object] | Sequence[object]]:
     training = events.filter(F.col("event_timestamp") < F.lit(CUTOFF.replace(tzinfo=None)))
-    popularity = _ranked(
-        training.groupBy("product_id").agg(
-            F.sum(
-                F.when(F.col("event_type") == "purchase", 6)
-                .when(F.col("event_type") == "add_to_cart", 3)
-                .otherwise(1)
-            ).alias("score")
-        ),
-        None,
-        "score",
+    product_scores = training.groupBy("product_id").agg(
+        F.sum(
+            F.when(F.col("event_type") == "purchase", 6)
+            .when(F.col("event_type") == "add_to_cart", 3)
+            .otherwise(1)
+        ).alias("score")
     )
+    popularity = _ranked(product_scores, None, "score")
     category = _ranked(
-        popularity.join(products, "product_id").select("category", "product_id", "score"),
+        product_scores.join(products, "product_id").select("category", "product_id", "score"),
         "category",
         "score",
     )
@@ -337,6 +334,18 @@ def validate_artifacts() -> None:
         total += path.stat().st_size
     if total > 3_000_000:
         raise ValueError("Recommendation artifacts exceed 3 MB")
+
+    catalog = json.loads((PUBLIC_DIR / "catalog.json").read_text())
+    catalog_ids = {product["id"] for product in catalog}
+    catalog_categories = {product["category"] for product in catalog}
+    category_rows = json.loads((ARTIFACT_DIR / "category-popularity.json").read_text())["data"]
+    if {row["category"] for row in category_rows} != catalog_categories:
+        raise ValueError("Category popularity does not cover the catalog")
+    basket_sources = set(
+        json.loads((ARTIFACT_DIR / "frequently-bought-together.json").read_text())["data"]
+    )
+    if basket_sources != catalog_ids:
+        raise ValueError("Basket recommendations do not cover the catalog")
 
 
 def pipeline() -> None:

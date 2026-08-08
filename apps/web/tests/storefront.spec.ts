@@ -144,7 +144,7 @@ test("every strategy excludes cart products and renders metrics", async ({
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
   await page.getByRole("link", { name: "Catalog", exact: true }).click();
-  const product = page.locator("#product-grid article").first();
+  const product = page.locator('[data-product-card="prd_dummy_001"]');
   const name = await product.locator("h3").innerText();
   await product.getByRole("button", { name: "Add to cart" }).click();
   await page.getByRole("link", { name: "View recommendations" }).last().click();
@@ -161,6 +161,15 @@ test("every strategy excludes cart products and renders metrics", async ({
       page.locator("#recommendation-grid article").first(),
     ).toBeVisible();
   }
+  await page.locator("#strategy").selectOption("category-popularity");
+  await expect(page.locator("#recommendation-grid")).toContainText(
+    "Popular in a category that is in your cart.",
+  );
+  await page.locator("#strategy").selectOption("frequently-bought-together");
+  await expect(page.locator("#recommendation-grid")).toContainText(
+    "Often appears in the same synthetic baskets as a cart item.",
+  );
+  await page.locator("#strategy").selectOption("hybrid");
   await expect(page.locator("#hybrid-signals")).toBeVisible();
   await expect(page.locator("#hybrid-signals")).toContainText(
     "Products bought together: 25%",
@@ -188,8 +197,18 @@ test("image and recommendation artifact failures degrade gracefully", async ({
     .getByRole("link", { name: "Recommendations", exact: true })
     .click();
   await expect(
-    page.getByText("Recommendation artifacts are temporarily unavailable."),
+    page.getByText(
+      "One or more recommendation strategies are temporarily unavailable.",
+    ),
   ).toBeVisible();
+  await page.locator("#strategy").selectOption("hybrid");
+  await expect(page.locator("#recommendation-grid")).toContainText(
+    "This strategy's artifact is unavailable",
+  );
+  await page.locator("#strategy").selectOption("item-similarity");
+  await expect(page.locator("#recommendation-grid")).not.toContainText(
+    "artifact is unavailable",
+  );
   await expect(
     page.locator("#recommendation-grid article").first(),
   ).toBeVisible();
