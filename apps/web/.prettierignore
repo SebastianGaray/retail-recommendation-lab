@@ -1,4 +1,5 @@
 .astro/
+coverage/
 dist/
 playwright-report/
 public/catalog.json

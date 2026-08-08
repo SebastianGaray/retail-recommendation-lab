@@ -1,4 +1,4 @@
-# Design
+# Implementation plan
 
 ## Offline pipeline
 
@@ -20,3 +20,8 @@ Python tests cover generation, schemas, ranking rules, hybrid contributions, and
 Vitest covers localized catalog behavior and fallback ranking. Playwright exercises production-preview
 flows, mobile behavior, invalid artifacts, and axe accessibility checks. CI adds coverage thresholds,
 reproducibility checks, dependency audits, CodeQL, pinned actions, and Pages deployment.
+
+## Repository presentation
+
+The README keeps English and Spanish in one rendered document. Its sections match the Demand
+Intelligence project where useful while retaining recommendation-specific data and runtime details.

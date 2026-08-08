@@ -11,3 +11,4 @@
 - [x] Add Python, Vitest, Playwright, mobile, failure-recovery, coverage, and axe checks.
 - [x] Add dependency auditing, Dependabot, CodeQL, pinned actions, security policy, and MIT license.
 - [x] Deploy validated static output to GitHub Pages with least-privilege permissions.
+- [x] Standardize the SDD file names and align the bilingual README structure.
