@@ -16,6 +16,7 @@ const viewLabels = {
   catalog: copy.catalogNav,
   recommendations: copy.recommendations,
   evaluation: copy.evaluation,
+  engineering: copy.engineering,
 };
 const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
 const canonical = new URL(`${base}${locale}/`, Astro.site);
@@ -107,6 +108,9 @@ const socialLocale = localeMetadata.ogLocale;
       >
       <a href="#methodology" data-lab-view="methodology"
         >{viewLabels.evaluation}</a
+      >
+      <a href="#engineering" data-lab-view="engineering"
+        >{viewLabels.engineering}</a
       >
     </aside>
     <main>
@@ -226,6 +230,64 @@ const socialLocale = localeMetadata.ogLocale;
             </p>
           </article>
         </div>
+      </section>
+      <section
+        id="engineering"
+        class="engineering"
+        aria-labelledby="engineering-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="kicker">{copy.engineeringKicker}</p><h1
+              id="engineering-title"
+            >
+              {copy.engineeringTitle}
+            </h1>
+          </div><p>{copy.engineeringIntro}</p>
+        </div>
+        <div class="process-grid">
+          <article>
+            <span>01</span><h2>{copy.processSpecification}</h2><p>
+              {copy.processSpecificationText}
+            </p>
+          </article><article>
+            <span>02</span><h2>{copy.processAi}</h2><p>
+              {copy.processAiText}
+            </p>
+          </article><article>
+            <span>03</span><h2>{copy.processHuman}</h2><p>
+              {copy.processHumanText}
+            </p>
+          </article><article>
+            <span>04</span><h2>{copy.processEvidence}</h2><p>
+              {copy.processEvidenceText}
+            </p>
+          </article>
+        </div>
+        <div class="process-detail-grid">
+          <article>
+            <h2>{copy.processExample}</h2><p>
+              {copy.processExampleText}
+            </p>
+          </article><article>
+            <h2>{copy.processBenefits}</h2><p>
+              {copy.processBenefitsText}
+            </p>
+          </article>
+        </div>
+        <p class="process-boundary">{copy.processBoundary}</p>
+        <nav class="process-documents" aria-label={copy.processDocuments}>
+          <strong>{copy.processDocuments}</strong><a
+            href="https://github.com/SebastianGaray/retail-recommendation-lab/blob/main/sdd/spec.md"
+            >{copy.processSpec}<span aria-hidden="true"> ↗</span></a
+          ><a
+            href="https://github.com/SebastianGaray/retail-recommendation-lab/blob/main/sdd/plan.md"
+            >{copy.processPlan}<span aria-hidden="true"> ↗</span></a
+          ><a
+            href="https://github.com/SebastianGaray/retail-recommendation-lab/blob/main/sdd/tasks.md"
+            >{copy.processTasks}<span aria-hidden="true"> ↗</span></a
+          >
+        </nav>
       </section>
     </main>
     <footer>

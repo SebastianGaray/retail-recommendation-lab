@@ -99,6 +99,35 @@ const en = {
   signalBasket: "Products bought together",
   signalSimilarity: "Item similarity",
   signalNovelty: "Novelty",
+  engineering: "Engineering process",
+  engineeringKicker: "04 / Process",
+  engineeringTitle: "How SDD and AI assistance were used",
+  engineeringIntro:
+    "A traceable workflow connected product requirements, implementation support, human review, and automated evidence.",
+  processSpecification: "Specification",
+  processSpecificationText:
+    "SDD defined artifact contracts, recommendation behavior, failure recovery, accessibility, and acceptance checks before implementation.",
+  processAi: "AI assistance",
+  processAiText:
+    "AI-assisted tools helped explore designs, implement scoped changes, review code and copy, and propose unit, integration, and browser tests.",
+  processHuman: "Human decisions",
+  processHumanText:
+    "Product scope, ranking signals, metric interpretation, limitations, and final acceptance remained human responsibilities.",
+  processEvidence: "Validation evidence",
+  processEvidenceText:
+    "Reproducible PySpark artifacts, schema checks, Ruff, Pyright, Vitest, Playwright, accessibility tests, audits, and CodeQL verified the result.",
+  processExample: "Example: explainable hybrid ranking",
+  processExampleText:
+    "The specification required visible signals and fixed weights. AI assistance helped review ranking and fallback cases. Human review approved the signals and wording. Artifact tests and browser flows verified the public behavior.",
+  processBenefits: "What this added",
+  processBenefitsText:
+    "Clearer scope, more systematic edge cases, explicit accountability, and traceability from a requirement to the code and check that supports it.",
+  processBoundary:
+    "AI output was treated as a proposal, not as evidence. Only reviewed changes with passing checks were accepted.",
+  processDocuments: "Versioned SDD documents",
+  processSpec: "Specification",
+  processPlan: "Implementation plan",
+  processTasks: "Completed tasks",
 } as const;
 
 export type StorefrontMessages = { [Key in keyof typeof en]: string };
@@ -207,6 +236,35 @@ const es = {
   signalBasket: "Productos comprados juntos",
   signalSimilarity: "Similitud entre productos",
   signalNovelty: "Novedad",
+  engineering: "Proceso de ingeniería",
+  engineeringKicker: "04 / Proceso",
+  engineeringTitle: "Cómo se usaron SDD y la asistencia de IA",
+  engineeringIntro:
+    "Un flujo trazable conectó requisitos de producto, apoyo de implementación, revisión humana y evidencia automatizada.",
+  processSpecification: "Especificación",
+  processSpecificationText:
+    "SDD definió contratos de artefactos, comportamiento de recomendaciones, recuperación ante fallos, accesibilidad y controles de aceptación.",
+  processAi: "Asistencia de IA",
+  processAiText:
+    "Las herramientas de IA ayudaron a explorar diseños, implementar cambios acotados, revisar código y textos, y proponer pruebas unitarias, de integración y navegador.",
+  processHuman: "Decisiones humanas",
+  processHumanText:
+    "El alcance, las señales del ranking, la interpretación de métricas, las limitaciones y la aceptación final permanecieron bajo responsabilidad humana.",
+  processEvidence: "Evidencia de validación",
+  processEvidenceText:
+    "Los artefactos PySpark reproducibles, esquemas, Ruff, Pyright, Vitest, Playwright, accesibilidad, auditorías y CodeQL verificaron el resultado.",
+  processExample: "Ejemplo: ranking híbrido explicable",
+  processExampleText:
+    "La especificación exigió señales visibles y pesos fijos. La IA ayudó a revisar casos de ranking y fallback. La revisión humana aprobó señales y textos. Las pruebas verificaron el comportamiento público.",
+  processBenefits: "Qué aportó",
+  processBenefitsText:
+    "Alcance más claro, casos borde más sistemáticos, responsabilidad explícita y trazabilidad desde un requisito hasta el código y control que lo respaldan.",
+  processBoundary:
+    "La salida de IA se trató como una propuesta, no como evidencia. Solo se aceptaron cambios revisados con todos los controles aprobados.",
+  processDocuments: "Documentos SDD versionados",
+  processSpec: "Especificación",
+  processPlan: "Plan de implementación",
+  processTasks: "Tareas terminadas",
 } satisfies StorefrontMessages;
 
 const catalogs: Record<Locale, StorefrontMessages> = { en, es };

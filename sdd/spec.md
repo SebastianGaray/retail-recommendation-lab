@@ -8,6 +8,9 @@
 - Provide popularity, category, co-occurrence, similarity, and hybrid recommendation strategies.
 - Explain every result and expose the normalized signals and weights used by the hybrid strategy.
 - Provide desktop and mobile navigation, System/Light/Dark themes, and accessible controls.
+- Provide a dedicated bilingual engineering process view in the application navigation.
+- Explain how SDD structured the work, where AI-assisted tools helped, what remained a human
+  responsibility, and which automated checks supplied evidence.
 
 ## Data and artifacts
 
@@ -24,3 +27,4 @@
 - Deploy only validated pushes to `main` with least-privilege Pages permissions.
 - Maintain dependencies with Dependabot and scan Python and TypeScript with CodeQL.
 - Provide a bilingual README with a table of contents and the same core structure as related projects.
+- Link the public process explanation to the versioned specification, plan, and task documents.

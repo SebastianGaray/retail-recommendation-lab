@@ -76,6 +76,32 @@ test("English and Spanish storefronts have no detectable accessibility violation
   }
 });
 
+test("engineering process is localized and links to versioned SDD evidence", async ({
+  page,
+}) => {
+  await page.goto("/retail-recommendation-lab/en/");
+  await page.getByRole("link", { name: "Engineering process" }).click();
+  await expect(
+    page.getByRole("heading", { name: "How SDD and AI assistance were used" }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("AI output was treated as a proposal"),
+  ).toBeVisible();
+  const accessibility = await new AxeBuilder({ page }).analyze();
+  expect(accessibility.violations).toEqual([]);
+  await expect(
+    page.getByRole("link", { name: /Specification/ }),
+  ).toHaveAttribute("href", /sdd\/spec\.md$/);
+
+  await page.getByRole("link", { name: "Language: ES" }).click();
+  await page.getByRole("link", { name: "Proceso de ingeniería" }).click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Cómo se usaron SDD y la asistencia de IA",
+    }),
+  ).toBeVisible();
+});
+
 test("search, category, sorting and product details work", async ({ page }) => {
   await page.goto("/retail-recommendation-lab/en/");
   await page.getByRole("link", { name: "Catalog", exact: true }).click();
@@ -184,5 +210,15 @@ test.describe("mobile", () => {
     await expect(
       page.getByRole("link", { name: "View recommendations" }).last(),
     ).toBeVisible();
+  });
+
+  test("engineering process remains readable", async ({ page }) => {
+    await page.goto("/retail-recommendation-lab/en/#engineering");
+    await expect(
+      page.getByRole("heading", {
+        name: "How SDD and AI assistance were used",
+      }),
+    ).toBeVisible();
+    await expect(page.locator(".process-grid article")).toHaveCount(4);
   });
 });

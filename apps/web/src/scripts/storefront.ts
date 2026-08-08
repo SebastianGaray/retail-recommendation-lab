@@ -351,9 +351,10 @@ const labViews = new Map<string, HTMLElement>([
   ["catalog", document.querySelector<HTMLElement>("#catalog")!],
   ["recommendations", document.querySelector<HTMLElement>("#recommendations")!],
   ["methodology", document.querySelector<HTMLElement>("#methodology")!],
+  ["engineering", document.querySelector<HTMLElement>("#engineering")!],
 ]);
 const labViewLinks = document.querySelectorAll<HTMLAnchorElement>(
-  '[data-lab-view], a[href="#catalog"], a[href="#recommendations"], a[href="#methodology"]',
+  '[data-lab-view], a[href="#catalog"], a[href="#recommendations"], a[href="#methodology"], a[href="#engineering"]',
 );
 
 function showLabView(name: string, updateHistory = true): void {
