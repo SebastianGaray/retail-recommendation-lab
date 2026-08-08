@@ -79,6 +79,7 @@ let artifacts = {} as Record<
   Strategy,
   Candidate[] | Record<string, Candidate[]>
 >;
+const unavailableStrategies = new Set<Strategy>();
 
 function restoreCart(): Map<string, number> {
   try {
@@ -100,7 +101,6 @@ function restoreCart(): Map<string, number> {
   }
 }
 const cart = restoreCart();
-const cartIds = (): Set<string> => new Set(cart.keys());
 function persist(): void {
   localStorage.setItem(
     storageKey,
@@ -154,9 +154,11 @@ function renderCart(): void {
 function renderRecommendations(): void {
   const rows = recommendations(
     products,
-    cartIds(),
+    cart,
     strategy.value as Strategy,
     artifacts,
+    3,
+    unavailableStrategies,
   );
   recommendationGrid.innerHTML = rows
     .map(
@@ -298,30 +300,29 @@ for (const value of [
   ...new Set(products.map((product) => product.category)),
 ].sort())
   category.add(new Option(value, value));
-try {
-  artifacts = Object.fromEntries(
-    await Promise.all(
-      artifactNames.map(async (name) => {
+artifacts = Object.fromEntries(
+  await Promise.all(
+    artifactNames.map(async (name) => {
+      const empty = ["popularity", "category-popularity"].includes(name)
+        ? []
+        : {};
+      try {
         const filename = name === "hybrid" ? "hybrid-recommendations" : name;
         const result = await fetch(`${artifactBase}${filename}.json`);
         if (!result.ok) throw new Error(name);
         const artifact = (await result.json()) as Artifact<
           Candidate[] | Record<string, Candidate[]>
         >;
+        if (!("data" in artifact)) throw new Error(name);
         return [name, artifact.data];
-      }),
-    ),
-  ) as typeof artifacts;
-} catch {
-  artifactError.hidden = false;
-  artifacts = {
-    popularity: [],
-    "category-popularity": [],
-    "frequently-bought-together": {},
-    "item-similarity": {},
-    hybrid: {},
-  };
-}
+      } catch {
+        unavailableStrategies.add(name);
+        return [name, empty];
+      }
+    }),
+  ),
+) as typeof artifacts;
+artifactError.hidden = unavailableStrategies.size === 0;
 try {
   const result = await fetch(hybridUrl);
   if (!result.ok) throw new Error("hybrid config");

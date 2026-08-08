@@ -1,29 +1,29 @@
 {
   "data": [
     {
-      "product_id": "prd_dummy_139",
+      "product_id": "prd_dummy_140",
       "rank": 1,
-      "score": 291.0
+      "score": 381.0
+    },
+    {
+      "product_id": "prd_dummy_044",
+      "rank": 2,
+      "score": 366.0
+    },
+    {
+      "product_id": "prd_dummy_001",
+      "rank": 3,
+      "score": 364.0
+    },
+    {
+      "product_id": "prd_dummy_137",
+      "rank": 4,
+      "score": 354.0
     },
     {
       "product_id": "prd_dummy_019",
-      "rank": 2,
-      "score": 252.0
-    },
-    {
-      "product_id": "prd_dummy_045",
-      "rank": 3,
-      "score": 252.0
-    },
-    {
-      "product_id": "prd_dummy_050",
-      "rank": 4,
-      "score": 228.0
-    },
-    {
-      "product_id": "prd_dummy_085",
       "rank": 5,
-      "score": 224.0
+      "score": 351.0
     }
   ],
   "dataset_version": "small-2026-08-06",

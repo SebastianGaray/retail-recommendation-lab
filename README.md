@@ -32,7 +32,8 @@ This is an educational technical demo, not a production store. It has no checkou
 - Versioned, bounded JSON artifacts with checksums and dataset compatibility checks.
 - A static Astro storefront with English and Spanish routes.
 - Search, category filters, sorting, product details, cart quantities, persistence, and session reset.
-- Explainable, cart-aware recommendations with deterministic fallbacks.
+- Explainable, cart-aware recommendations that use product quantities as signal weights.
+- Deterministic popularity fills only missing positions, with distinct explanations for an empty cart, sparse learned coverage, or an unavailable strategy artifact.
 - Responsive and accessible light, dark, and system themes.
 - GitHub Actions validation and deployment to GitHub Pages with no paid runtime infrastructure.
 
@@ -237,7 +238,8 @@ Es una demostración técnica educativa, no una tienda de producción. No incluy
 - Artefactos JSON versionados y acotados, con checksums y compatibilidad de dataset.
 - Una tienda estática en Astro con rutas en inglés y español.
 - Búsqueda, filtros, ordenamiento, detalle de producto, cantidades, persistencia del carrito y reinicio de sesión.
-- Recomendaciones explicables basadas en el carrito y fallbacks deterministas.
+- Recomendaciones explicables basadas en el carrito que usan las cantidades como pesos de las señales.
+- La popularidad determinista completa solo las posiciones faltantes y distingue entre un carrito vacío, cobertura aprendida insuficiente y un artefacto no disponible.
 - Temas claro, oscuro y del sistema, con diseño responsive y accesible.
 - Validación en GitHub Actions y despliegue en GitHub Pages sin infraestructura pagada en runtime.
 

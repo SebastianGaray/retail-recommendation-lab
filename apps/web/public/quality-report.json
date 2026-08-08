@@ -1,11 +1,11 @@
 {
   "data": {
     "customers": 120,
-    "events": 4107,
-    "interactions": 650,
+    "events": 6821,
+    "interactions": 854,
     "quarantined_events": 0,
     "sessions": 1200,
-    "valid_events": 4107
+    "valid_events": 6821
   },
   "dataset_version": "small-2026-08-06",
   "schema_version": "1.0",

@@ -51,9 +51,12 @@ const en = {
     "Often appears in the same synthetic baskets as a cart item.",
   item_similarity: "Has shopping patterns similar to a cart item.",
   hybrid_ranker: "Selected using a fixed mix of the available signals.",
-  cold_start_fallback:
-    "Uses overall popularity when the cart has little context.",
-  error: "Recommendation artifacts are temporarily unavailable.",
+  empty_cart_fallback: "Add products to the cart to activate this strategy.",
+  strategy_coverage_fallback:
+    "No learned relationship covers this cart item, so popularity fills this position.",
+  artifact_unavailable_fallback:
+    "This strategy's artifact is unavailable, so popularity fills this position.",
+  error: "One or more recommendation strategies are temporarily unavailable.",
   comparison: "Strategy comparison",
   comparisonNote:
     "Results from a small synthetic holdout set. They are included for inspection, not as a production benchmark.",
@@ -94,6 +97,8 @@ const en = {
   offlineModel: "Offline model",
   hybridSignalsLabel: "Hybrid signals",
   hybridSignalsIntro: "The hybrid score combines these normalized signals:",
+  cartContextNote:
+    "Each distinct product adds context. Quantities also weight cart-aware recommendation signals.",
   signalPopularity: "Overall popularity",
   signalCategory: "Categories in the cart",
   signalBasket: "Products bought together",
@@ -185,9 +190,14 @@ const es = {
     "Tiene patrones de compra similares a un producto del carrito.",
   hybrid_ranker:
     "Seleccionado con una combinación fija de las señales disponibles.",
-  cold_start_fallback:
-    "Usa popularidad general cuando el carrito tiene poco contexto.",
-  error: "Los artefactos de recomendación no están disponibles temporalmente.",
+  empty_cart_fallback:
+    "Agrega productos al carrito para activar esta estrategia.",
+  strategy_coverage_fallback:
+    "No hay una relación aprendida para este producto, por lo que la popularidad completa esta posición.",
+  artifact_unavailable_fallback:
+    "El artefacto de esta estrategia no está disponible, por lo que la popularidad completa esta posición.",
+  error:
+    "Una o más estrategias de recomendación no están disponibles temporalmente.",
   comparison: "Comparación de estrategias",
   comparisonNote:
     "Resultados de un conjunto sintético pequeño. Se muestran para revisarlos, no como benchmark de producción.",
@@ -231,6 +241,8 @@ const es = {
   offlineModel: "Modelo offline",
   hybridSignalsLabel: "Señales del modo híbrido",
   hybridSignalsIntro: "El puntaje híbrido combina estas señales normalizadas:",
+  cartContextNote:
+    "Cada producto distinto agrega contexto. Las cantidades también ponderan las señales que usan el carrito.",
   signalPopularity: "Popularidad general",
   signalCategory: "Categorías del carrito",
   signalBasket: "Productos comprados juntos",

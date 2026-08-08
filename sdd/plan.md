@@ -14,6 +14,17 @@ versioned JSON artifacts, keeps cart state locally, calculates cart-aware rankin
 safe fallbacks when images or artifacts are unavailable. The deployed application has no compute
 service or customer-data dependency.
 
+Mapped strategies aggregate candidate scores across cart products and multiply each source score by
+its cart quantity. Valid strategy candidates retain their reason code. If fewer than three survive,
+the browser fills only the remaining positions from deterministic popularity and labels why. Artifact
+files load independently so one unavailable strategy does not disable the others.
+
+## Recommendation coverage
+
+Category popularity starts from unbounded product interaction totals and ranks within each category.
+The synthetic generator defines two stable complementary pairs per four-product category. Repeated
+seeded sessions provide purchase co-occurrence coverage without lowering the minimum support rule.
+
 ## Verification
 
 Python tests cover generation, schemas, ranking rules, hybrid contributions, and artifact parity.

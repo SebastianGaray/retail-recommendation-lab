@@ -15,3 +15,9 @@
 - [x] Add the bilingual engineering process view to the application navigation.
 - [x] Explain SDD, AI assistance, human ownership, and validation evidence in the README.
 - [x] Test localized navigation, responsive behavior, and accessibility for the new view.
+- [x] Correct category-popularity ranking before regenerating artifacts.
+- [x] Expand deterministic complementary purchase pairs across the small catalog.
+- [x] Aggregate mapped recommendation scores using cart quantities.
+- [x] Add partial fallback results with explicit empty-cart, sparse-coverage, and artifact-error reasons.
+- [x] Load strategy artifacts independently and preserve healthy strategies after one failure.
+- [x] Regenerate, validate, and test all public artifacts and storefront flows.

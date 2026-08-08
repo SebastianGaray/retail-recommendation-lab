@@ -1,34 +1,244 @@
 {
   "data": [
     {
+      "category": "beauty",
+      "product_id": "prd_dummy_001",
+      "rank": 1,
+      "score": 364.0
+    },
+    {
+      "category": "beauty",
+      "product_id": "prd_dummy_002",
+      "rank": 2,
+      "score": 344.0
+    },
+    {
+      "category": "beauty",
+      "product_id": "prd_dummy_004",
+      "rank": 3,
+      "score": 296.0
+    },
+    {
+      "category": "beauty",
+      "product_id": "prd_dummy_003",
+      "rank": 4,
+      "score": 269.0
+    },
+    {
+      "category": "fragrances",
+      "product_id": "prd_dummy_006",
+      "rank": 1,
+      "score": 258.0
+    },
+    {
+      "category": "fragrances",
+      "product_id": "prd_dummy_007",
+      "rank": 2,
+      "score": 223.0
+    },
+    {
+      "category": "fragrances",
+      "product_id": "prd_dummy_009",
+      "rank": 3,
+      "score": 197.0
+    },
+    {
+      "category": "fragrances",
+      "product_id": "prd_dummy_008",
+      "rank": 4,
+      "score": 193.0
+    },
+    {
+      "category": "furniture",
+      "product_id": "prd_dummy_014",
+      "rank": 1,
+      "score": 220.0
+    },
+    {
+      "category": "furniture",
+      "product_id": "prd_dummy_012",
+      "rank": 2,
+      "score": 217.0
+    },
+    {
+      "category": "furniture",
+      "product_id": "prd_dummy_013",
+      "rank": 3,
+      "score": 153.0
+    },
+    {
+      "category": "furniture",
+      "product_id": "prd_dummy_011",
+      "rank": 4,
+      "score": 150.0
+    },
+    {
       "category": "groceries",
       "product_id": "prd_dummy_019",
       "rank": 1,
-      "score": 252.0
+      "score": 351.0
+    },
+    {
+      "category": "groceries",
+      "product_id": "prd_dummy_018",
+      "rank": 2,
+      "score": 304.0
+    },
+    {
+      "category": "groceries",
+      "product_id": "prd_dummy_017",
+      "rank": 3,
+      "score": 299.0
+    },
+    {
+      "category": "groceries",
+      "product_id": "prd_dummy_016",
+      "rank": 4,
+      "score": 283.0
+    },
+    {
+      "category": "home-decoration",
+      "product_id": "prd_dummy_044",
+      "rank": 1,
+      "score": 366.0
+    },
+    {
+      "category": "home-decoration",
+      "product_id": "prd_dummy_046",
+      "rank": 2,
+      "score": 330.0
+    },
+    {
+      "category": "home-decoration",
+      "product_id": "prd_dummy_043",
+      "rank": 3,
+      "score": 262.0
     },
     {
       "category": "home-decoration",
       "product_id": "prd_dummy_045",
-      "rank": 1,
+      "rank": 4,
       "score": 252.0
     },
     {
       "category": "kitchen-accessories",
-      "product_id": "prd_dummy_050",
+      "product_id": "prd_dummy_048",
       "rank": 1,
-      "score": 228.0
+      "score": 281.0
+    },
+    {
+      "category": "kitchen-accessories",
+      "product_id": "prd_dummy_050",
+      "rank": 2,
+      "score": 280.0
+    },
+    {
+      "category": "kitchen-accessories",
+      "product_id": "prd_dummy_051",
+      "rank": 3,
+      "score": 239.0
+    },
+    {
+      "category": "kitchen-accessories",
+      "product_id": "prd_dummy_049",
+      "rank": 4,
+      "score": 230.0
+    },
+    {
+      "category": "laptops",
+      "product_id": "prd_dummy_080",
+      "rank": 1,
+      "score": 147.0
+    },
+    {
+      "category": "laptops",
+      "product_id": "prd_dummy_079",
+      "rank": 2,
+      "score": 129.0
+    },
+    {
+      "category": "laptops",
+      "product_id": "prd_dummy_081",
+      "rank": 3,
+      "score": 114.0
+    },
+    {
+      "category": "laptops",
+      "product_id": "prd_dummy_078",
+      "rank": 4,
+      "score": 77.0
     },
     {
       "category": "mens-shirts",
       "product_id": "prd_dummy_085",
       "rank": 1,
-      "score": 224.0
+      "score": 241.0
+    },
+    {
+      "category": "mens-shirts",
+      "product_id": "prd_dummy_086",
+      "rank": 2,
+      "score": 241.0
+    },
+    {
+      "category": "mens-shirts",
+      "product_id": "prd_dummy_083",
+      "rank": 3,
+      "score": 216.0
+    },
+    {
+      "category": "mens-shirts",
+      "product_id": "prd_dummy_084",
+      "rank": 4,
+      "score": 199.0
+    },
+    {
+      "category": "smartphones",
+      "product_id": "prd_dummy_124",
+      "rank": 1,
+      "score": 123.0
+    },
+    {
+      "category": "smartphones",
+      "product_id": "prd_dummy_122",
+      "rank": 2,
+      "score": 109.0
+    },
+    {
+      "category": "smartphones",
+      "product_id": "prd_dummy_123",
+      "rank": 3,
+      "score": 82.0
+    },
+    {
+      "category": "smartphones",
+      "product_id": "prd_dummy_121",
+      "rank": 4,
+      "score": 80.0
+    },
+    {
+      "category": "sports-accessories",
+      "product_id": "prd_dummy_140",
+      "rank": 1,
+      "score": 381.0
+    },
+    {
+      "category": "sports-accessories",
+      "product_id": "prd_dummy_137",
+      "rank": 2,
+      "score": 354.0
+    },
+    {
+      "category": "sports-accessories",
+      "product_id": "prd_dummy_138",
+      "rank": 3,
+      "score": 320.0
     },
     {
       "category": "sports-accessories",
       "product_id": "prd_dummy_139",
-      "rank": 1,
-      "score": 291.0
+      "rank": 4,
+      "score": 267.0
     }
   ],
   "dataset_version": "small-2026-08-06",

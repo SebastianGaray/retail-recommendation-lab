@@ -98,22 +98,107 @@ describe("recommendations", () => {
     expect(
       recommendations(
         products,
-        new Set(["cart"]),
+        new Map([["cart", 1]]),
         "frequently-bought-together",
         artifacts,
       ),
     ).toEqual([{ product: products[1], reason: "frequently_bought_together" }]);
   });
 
+  it("selects category popularity for categories represented in the cart", () => {
+    const categoryArtifacts = {
+      ...artifacts,
+      "category-popularity": [
+        { product_id: "match", score: 8, rank: 1, category: "test" },
+      ],
+    } as Record<Strategy, Candidate[] | Record<string, Candidate[]>>;
+
+    expect(
+      recommendations(
+        products,
+        new Map([["cart", 1]]),
+        "category-popularity",
+        categoryArtifacts,
+      )[0]?.reason,
+    ).toBe("category_popularity");
+  });
+
   it("falls back deterministically for sparse mappings", () => {
     expect(
       recommendations(
         products,
-        new Set(["cart"]),
+        new Map([["cart", 1]]),
         "item-similarity",
         artifacts,
       )[0],
-    ).toEqual({ product: products[1], reason: "cold_start_fallback" });
+    ).toEqual({ product: products[1], reason: "strategy_coverage_fallback" });
+  });
+
+  it("distinguishes empty carts from unavailable artifacts", () => {
+    expect(
+      recommendations(products, new Map(), "item-similarity", artifacts)[0]
+        ?.reason,
+    ).toBe("empty_cart_fallback");
+    expect(
+      recommendations(
+        products,
+        new Map([["cart", 1]]),
+        "item-similarity",
+        artifacts,
+        3,
+        new Set(["item-similarity"]),
+      )[0]?.reason,
+    ).toBe("artifact_unavailable_fallback");
+  });
+
+  it("keeps learned results and fills only missing positions", () => {
+    const expanded = [...products, product("fallback", 40)];
+    const result = recommendations(
+      expanded,
+      new Map([["cart", 1]]),
+      "frequently-bought-together",
+      artifacts,
+      2,
+    );
+
+    expect(
+      result.map(({ product: item, reason }) => [item.id, reason]),
+    ).toEqual([
+      ["match", "frequently_bought_together"],
+      ["fallback", "strategy_coverage_fallback"],
+    ]);
+  });
+
+  it("weights mapped recommendation scores by cart quantity", () => {
+    const weightedProducts = [
+      product("source-a", 10),
+      product("source-b", 9),
+      product("candidate-a", 8),
+      product("candidate-b", 7),
+    ];
+    const weightedArtifacts = {
+      ...artifacts,
+      hybrid: {
+        "source-a": [{ product_id: "candidate-a", score: 0.6, rank: 1 }],
+        "source-b": [{ product_id: "candidate-b", score: 0.9, rank: 1 }],
+      },
+    };
+
+    const result = recommendations(
+      weightedProducts,
+      new Map([
+        ["source-a", 2],
+        ["source-b", 1],
+      ]),
+      "hybrid",
+      weightedArtifacts,
+      2,
+    );
+
+    expect(result.map(({ product: item }) => item.id)).toEqual([
+      "candidate-a",
+      "candidate-b",
+    ]);
   });
 });
 
