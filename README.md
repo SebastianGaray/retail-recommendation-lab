@@ -178,10 +178,18 @@ pipeline/         Python package, PySpark pipeline, and tests
 ### Development approach
 
 Work is guided by [`sdd/spec.md`](sdd/spec.md), [`sdd/plan.md`](sdd/plan.md), and
-[`sdd/tasks.md`](sdd/tasks.md). AI-assisted tools supported implementation, review, data curation, and
-test generation. Product decisions, modeling constraints, acceptance criteria, and final approval
-remained human responsibilities. Generated changes were accepted only after deterministic
-regeneration, static analysis, and production-preview tests passed.
+[`sdd/tasks.md`](sdd/tasks.md). The documents connect visitor behavior and artifact requirements to
+implementation decisions and completed validation.
+
+| Stage           | How it was used                                                                                             |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| Specification   | Defined artifact contracts, ranking behavior, failure recovery, accessibility, and acceptance evidence.     |
+| AI assistance   | Supported design exploration, scoped implementation, review, documentation, and test-case generation.       |
+| Human decisions | Set product scope, ranking signals, metric interpretation, limitations, and final approval.                 |
+| Evidence        | Reproducibility checks, schemas, Ruff, Pyright, Vitest, Playwright, audits, and CodeQL verified the result. |
+
+AI output was treated as a proposal, not as evidence. The live application includes an **Engineering
+process** view with a concrete example based on the explainable hybrid ranker.
 
 ### Documentation
 
@@ -375,11 +383,18 @@ pipeline/         Paquete Python, pipeline PySpark y pruebas
 ### Forma de trabajo
 
 El trabajo se guía mediante [`sdd/spec.md`](sdd/spec.md), [`sdd/plan.md`](sdd/plan.md) y
-[`sdd/tasks.md`](sdd/tasks.md). Se usaron herramientas de IA como apoyo para implementar, revisar,
-curar datos y generar pruebas. Las decisiones de producto, las restricciones del modelo, los criterios
-de aceptación y la revisión final permanecieron bajo responsabilidad humana. Todo cambio generado
-tuvo que superar la regeneración determinista, el análisis estático y las pruebas del preview de
-producción.
+[`sdd/tasks.md`](sdd/tasks.md). Los documentos conectan el comportamiento público y los requisitos de
+artefactos con decisiones de implementación y validaciones terminadas.
+
+| Etapa              | Cómo se utilizó                                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Especificación     | Definió contratos, ranking, recuperación ante fallos, accesibilidad y evidencia de aceptación.               |
+| Asistencia de IA   | Apoyó la exploración, implementación acotada, revisión, documentación y generación de pruebas.               |
+| Decisiones humanas | Definieron alcance, señales, interpretación de métricas, limitaciones y aprobación final.                    |
+| Evidencia          | Reproducibilidad, esquemas, Ruff, Pyright, Vitest, Playwright, auditorías y CodeQL verificaron el resultado. |
+
+La salida de IA se trató como una propuesta, no como evidencia. La aplicación incluye una vista
+**Proceso de ingeniería** con un ejemplo concreto basado en el ranking híbrido explicable.
 
 ### Documentación
 

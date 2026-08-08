@@ -297,6 +297,7 @@ main > section:not([hidden]) {
   padding-bottom: 16px;
   border-bottom: 1px solid var(--line);
 }
+.section-heading h1,
 .section-heading h2 {
   margin: 0.2rem 0 0;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -467,7 +468,8 @@ main > section:not([hidden]) {
   color: var(--on-primary);
 }
 .recommendations,
-.methodology {
+.methodology,
+.engineering {
   border-top: 1px solid var(--line);
 }
 .strategy-bar {
@@ -582,6 +584,54 @@ main > section:not([hidden]) {
 .technical-grid p {
   margin: 0;
   color: var(--muted);
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.process-grid article,
+.process-detail-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.process-grid span {
+  color: var(--primary);
+  font:
+    700 0.78rem "JetBrains Mono",
+    monospace;
+}
+.process-grid h2,
+.process-detail-grid h2 {
+  margin: 12px 0;
+}
+.process-grid p,
+.process-detail-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+.process-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.process-boundary {
+  margin: 16px 0;
+  padding: 16px;
+  border-left: 3px solid var(--primary);
+  background: var(--surface-low);
+}
+.process-documents {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+}
+.process-documents a {
+  color: var(--primary);
 }
 footer {
   display: flex;
@@ -748,6 +798,9 @@ footer span {
   .technical-grid {
     grid-template-columns: 1fr;
   }
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .catalog-layout {
     grid-template-columns: 220px 1fr;
   }
@@ -822,8 +875,14 @@ footer span {
   }
   .product-grid,
   .recommendation-grid,
-  .metric-grid {
+  .metric-grid,
+  .process-grid,
+  .process-detail-grid {
     grid-template-columns: 1fr;
+  }
+  .process-documents {
+    align-items: flex-start;
+    flex-direction: column;
   }
   .strategy-bar {
     align-items: stretch;

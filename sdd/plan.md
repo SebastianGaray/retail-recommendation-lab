@@ -25,3 +25,11 @@ reproducibility checks, dependency audits, CodeQL, pinned actions, and Pages dep
 
 The README keeps English and Spanish in one rendered document. Its sections match the Demand
 Intelligence project where useful while retaining recommendation-specific data and runtime details.
+
+## Engineering process view
+
+The static application adds a fourth content view to its existing sidebar navigation. The view
+connects specification, AI assistance, human decisions, and validation evidence using concrete
+examples from artifact contracts, hybrid ranking, failure recovery, and production-preview tests.
+Repository links point to the versioned SDD documents. The view uses the existing locale catalog,
+responsive layout, focus handling, and hash-based navigation without introducing runtime services.

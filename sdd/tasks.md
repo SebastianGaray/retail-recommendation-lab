@@ -12,3 +12,6 @@
 - [x] Add dependency auditing, Dependabot, CodeQL, pinned actions, security policy, and MIT license.
 - [x] Deploy validated static output to GitHub Pages with least-privilege permissions.
 - [x] Standardize the SDD file names and align the bilingual README structure.
+- [x] Add the bilingual engineering process view to the application navigation.
+- [x] Explain SDD, AI assistance, human ownership, and validation evidence in the README.
+- [x] Test localized navigation, responsive behavior, and accessibility for the new view.
