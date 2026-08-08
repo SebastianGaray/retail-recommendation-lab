@@ -1,4 +1,4 @@
-# Requirements
+# Specification
 
 ## Visitor experience
 
@@ -23,3 +23,4 @@
   production output, reproducibility, and dependency safety.
 - Deploy only validated pushes to `main` with least-privilege Pages permissions.
 - Maintain dependencies with Dependabot and scan Python and TypeScript with CodeQL.
+- Provide a bilingual README with a table of contents and the same core structure as related projects.

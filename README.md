@@ -6,14 +6,20 @@
 
 Retail Recommendation Lab is a bilingual, interactive portfolio project that makes an offline recommendation system observable from end to end. Visitors can browse a fictional catalog, build a local cart, compare five recommendation strategies, inspect why each product was selected, and review synthetic offline evaluation metrics.
 
-### Development approach
+### Contents
 
-The project follows a spec-driven workflow. Functional requirements, artifact contracts, architecture,
-and completed validation tasks are maintained under [`sdd/`](sdd/README.md) and evolve with the code.
-
-AI-assisted development supported implementation, review, data curation, and test generation. Product
-decisions, modeling constraints, and acceptance remained human-directed; generated changes were
-accepted only after deterministic regeneration, static analysis, and production-preview tests passed.
+- [What it demonstrates](#what-it-demonstrates)
+- [Data](#data)
+- [Architecture](#architecture)
+- [Technology](#technology)
+- [Quick start](#quick-start)
+- [Common workflows](#common-workflows)
+- [Testing](#testing)
+- [Repository structure](#repository-structure)
+- [Limitations](#limitations)
+- [Development approach](#development-approach)
+- [Documentation](#documentation)
+- [Contributing and license](#contributing-and-license)
 
 This is an educational technical demo, not a production store. It has no checkout, payments, accounts, backend, visitor tracking, or request-time model training.
 
@@ -30,7 +36,7 @@ This is an educational technical demo, not a production store. It has no checkou
 - Responsive and accessible light, dark, and system themes.
 - GitHub Actions validation and deployment to GitHub Pages with no paid runtime infrastructure.
 
-### Data sources
+### Data
 
 The project uses two clearly separated types of fictional data:
 
@@ -55,7 +61,7 @@ flowchart LR
     G --> H["GitHub Pages"]
 ```
 
-`artifacts/demo` is the canonical artifact set. Identical public copies are written to `apps/web/public`. The browser consumes only bounded JSON files; Spark and Python never run in production.
+`artifacts/demo` is the canonical artifact set. Identical public copies are written to `apps/web/public`. The browser consumes only bounded JSON files. Spark and Python never run in production.
 
 More detail: [architecture](docs/architecture.md), [data contracts](docs/data-contracts.md), [evaluation](docs/evaluation.md), and [recommendation system card](docs/recommendation-system-card.md).
 
@@ -66,18 +72,18 @@ More detail: [architecture](docs/architecture.md), [data contracts](docs/data-co
 - pytest, Ruff, Pyright, Vitest, Playwright, Prettier, and pre-commit.
 - GitHub Actions and GitHub Pages.
 
-### Requirements
+### Quick start
 
 - Git.
 - Python 3.12 or newer.
 - [uv](https://docs.astral.sh/uv/).
 - Java 17 or newer for PySpark.
 - Node.js 22.12 or newer and npm.
-- GNU Make is optional; every command also has a direct equivalent.
+- GNU Make is optional. Every command also has a direct equivalent.
 
-On Windows, the storefront and Python tests run normally in PowerShell. For the complete local Spark pipeline, WSL/Linux is recommended; native Windows may additionally require compatible Hadoop `winutils.exe` configuration through `HADOOP_HOME`.
+On Windows, the storefront and Python tests run normally in PowerShell. WSL or Linux is recommended for the complete local Spark pipeline. Native Windows may also require a compatible Hadoop `winutils.exe` configuration through `HADOOP_HOME`.
 
-### Installation
+#### Installation
 
 ```bash
 git clone https://github.com/SebastianGaray/retail-recommendation-lab.git
@@ -94,7 +100,7 @@ java -version
 
 If Java is installed but not detected, set `JAVA_HOME` to the JDK directory and add its `bin` directory to `PATH`.
 
-### Run the storefront
+### Common workflows
 
 ```bash
 npm run dev
@@ -128,7 +134,7 @@ make validate-artifacts
 
 The pipeline uses dataset version `small-2026-08-06` and seed `20260801`. Running it again must reproduce the committed small-profile artifacts exactly.
 
-### Tests and quality checks
+### Testing
 
 ```bash
 uv run --project pipeline ruff check pipeline
@@ -153,25 +159,41 @@ Playwright runs against the production preview using the real `/retail-recommend
 ```text
 apps/web/         Static Astro application and public artifact copies
 artifacts/demo/   Canonical generated recommendation artifacts
-data/             Local raw/processed pipeline data; raw events are not published
+data/             Local pipeline data. Raw events are not published
 docs/             Architecture, contracts, evaluation, decisions, and UX notes
 pipeline/         Python package, PySpark pipeline, and tests
 ```
 
-### Privacy, cost, and limitations
+### Limitations
 
 - No personal or real customer data is used.
 - Cart state stays in the browser's `localStorage`.
 - There are no analytics, cookies for tracking, authentication, or secrets in the web app.
 - The deployed site requires no database, Spark cluster, Python service, or paid API.
 - The catalog and evaluation population are deliberately small.
-- Offline metrics describe generated behavior only and are not production-performance claims.
+- Offline metrics describe generated behavior only. They are not production-performance claims.
 - Product images depend on the external DummyJSON CDN but have a local visual fallback.
 - Recommendations update only when versioned artifacts are regenerated and deployed.
 
-### License and attribution
+### Development approach
 
-This project is available under the project-level MIT License. Report security issues privately as described in `SECURITY.md`.
+Work is guided by [`sdd/spec.md`](sdd/spec.md), [`sdd/plan.md`](sdd/plan.md), and
+[`sdd/tasks.md`](sdd/tasks.md). AI-assisted tools supported implementation, review, data curation, and
+test generation. Product decisions, modeling constraints, acceptance criteria, and final approval
+remained human responsibilities. Generated changes were accepted only after deterministic
+regeneration, static analysis, and production-preview tests passed.
+
+### Documentation
+
+- [Architecture](docs/architecture.md)
+- [Data contracts](docs/data-contracts.md)
+- [Offline evaluation](docs/evaluation.md)
+- [Recommendation system card](docs/recommendation-system-card.md)
+
+### Contributing and license
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Report security issues privately
+as described in [SECURITY.md](SECURITY.md). The project is available under the [MIT License](LICENSE).
 
 DummyJSON's source project is distributed under the [MIT License](https://github.com/Ovi/DummyJSON/blob/master/LICENSE) and is used here as a fictional product-data source for a technical demo. Product records are attributed to [DummyJSON](https://dummyjson.com/). Third-party dependencies and externally hosted assets remain subject to their respective licenses and terms.
 
@@ -181,16 +203,20 @@ DummyJSON's source project is distributed under the [MIT License](https://github
 
 Retail Recommendation Lab es un proyecto de portafolio bilingüe e interactivo que permite observar de principio a fin un sistema de recomendaciones offline. Las personas pueden explorar un catálogo ficticio, armar un carrito local, comparar cinco estrategias, entender por qué se eligió cada producto y revisar métricas sintéticas de evaluación offline.
 
-### Enfoque de desarrollo
+### Contenidos
 
-El proyecto sigue un flujo guiado por especificaciones. Los requisitos funcionales, contratos de
-artefactos, decisiones de arquitectura y tareas de validación terminadas se mantienen en
-[`sdd/`](sdd/README.md) y evolucionan junto con el código.
-
-Se utilizó desarrollo asistido por IA para apoyar la implementación, revisión, curación de datos y
-generación de pruebas. Las decisiones de producto, restricciones de modelado y aceptación se
-mantuvieron bajo dirección humana; los cambios generados se aceptaron únicamente después de superar
-la regeneración determinista, el análisis estático y las pruebas del preview de producción.
+- [Qué demuestra](#qué-demuestra)
+- [Datos](#datos)
+- [Arquitectura](#arquitectura-1)
+- [Tecnologías](#tecnologías)
+- [Inicio rápido](#inicio-rápido)
+- [Flujos habituales](#flujos-habituales)
+- [Pruebas](#pruebas)
+- [Estructura del repositorio](#estructura-del-repositorio)
+- [Limitaciones](#limitaciones-1)
+- [Forma de trabajo](#forma-de-trabajo)
+- [Documentación](#documentación)
+- [Contribución y licencia](#contribución-y-licencia)
 
 Es una demostración técnica educativa, no una tienda de producción. No incluye checkout, pagos, cuentas, backend, seguimiento de visitantes ni entrenamiento del modelo durante una solicitud.
 
@@ -207,7 +233,7 @@ Es una demostración técnica educativa, no una tienda de producción. No incluy
 - Temas claro, oscuro y del sistema, con diseño responsive y accesible.
 - Validación en GitHub Actions y despliegue en GitHub Pages sin infraestructura pagada en runtime.
 
-### Origen de los datos
+### Datos
 
 El proyecto utiliza dos tipos de datos ficticios claramente separados:
 
@@ -232,7 +258,7 @@ flowchart LR
     G --> H["GitHub Pages"]
 ```
 
-`artifacts/demo` contiene los artefactos canónicos. Se generan copias públicas idénticas en `apps/web/public`. El navegador consume solamente archivos JSON acotados; Spark y Python nunca se ejecutan en producción.
+`artifacts/demo` contiene los artefactos canónicos. Se generan copias públicas idénticas en `apps/web/public`. El navegador consume solamente archivos JSON acotados. Spark y Python nunca se ejecutan en producción.
 
 Más información: [arquitectura](docs/architecture.md), [contratos de datos](docs/data-contracts.md), [evaluación](docs/evaluation.md) y [ficha del sistema de recomendaciones](docs/recommendation-system-card.md).
 
@@ -243,18 +269,18 @@ Más información: [arquitectura](docs/architecture.md), [contratos de datos](do
 - pytest, Ruff, Pyright, Vitest, Playwright, Prettier y pre-commit.
 - GitHub Actions y GitHub Pages.
 
-### Requisitos
+### Inicio rápido
 
 - Git.
 - Python 3.12 o superior.
 - [uv](https://docs.astral.sh/uv/).
 - Java 17 o superior para PySpark.
 - Node.js 22.12 o superior y npm.
-- GNU Make es opcional; todos los comandos tienen un equivalente directo.
+- GNU Make es opcional. Todos los comandos tienen un equivalente directo.
 
-En Windows, la aplicación web y las pruebas Python funcionan normalmente desde PowerShell. Para ejecutar todo el pipeline Spark localmente se recomienda WSL/Linux; una instalación nativa de Windows puede necesitar además una versión compatible de Hadoop `winutils.exe` configurada mediante `HADOOP_HOME`.
+En Windows, la aplicación web y las pruebas Python funcionan normalmente desde PowerShell. Para ejecutar todo el pipeline Spark localmente se recomienda WSL o Linux. Una instalación nativa de Windows también puede necesitar una versión compatible de Hadoop `winutils.exe` configurada mediante `HADOOP_HOME`.
 
-### Instalación
+#### Instalación
 
 ```bash
 git clone https://github.com/SebastianGaray/retail-recommendation-lab.git
@@ -271,7 +297,7 @@ java -version
 
 Si Java está instalado pero no se detecta, define `JAVA_HOME` con la ruta del JDK y agrega su directorio `bin` a `PATH`.
 
-### Ejecutar la aplicación
+### Flujos habituales
 
 ```bash
 npm run dev
@@ -305,7 +331,7 @@ make validate-artifacts
 
 El pipeline utiliza la versión de dataset `small-2026-08-06` y la semilla `20260801`. Al ejecutarlo nuevamente debe reproducir exactamente los artefactos del perfil pequeño incluidos en el repositorio.
 
-### Pruebas y controles de calidad
+### Pruebas
 
 ```bash
 uv run --project pipeline ruff check pipeline
@@ -330,24 +356,42 @@ Playwright utiliza el preview de producción con la ruta base real `/retail-reco
 ```text
 apps/web/         Aplicación Astro estática y copias públicas de artefactos
 artifacts/demo/   Artefactos canónicos generados por el recomendador
-data/             Datos locales del pipeline; los eventos crudos no se publican
+data/             Datos locales del pipeline. Los eventos crudos no se publican
 docs/             Arquitectura, contratos, evaluación, decisiones y notas UX
 pipeline/         Paquete Python, pipeline PySpark y pruebas
 ```
 
-### Privacidad, costo y limitaciones
+### Limitaciones
 
 - No se utilizan datos personales ni clientes reales.
 - El carrito permanece en `localStorage` dentro del navegador.
 - La aplicación no contiene analítica, cookies de seguimiento, autenticación ni secretos.
 - El sitio publicado no requiere base de datos, clúster Spark, servicio Python ni API pagada.
 - El catálogo y la población de evaluación son deliberadamente pequeños.
-- Las métricas offline describen comportamiento generado; no son afirmaciones de rendimiento en producción.
+- Las métricas offline describen comportamiento generado. No son afirmaciones de rendimiento en producción.
 - Las imágenes dependen del CDN externo de DummyJSON, pero cuentan con un fallback visual local.
 - Las recomendaciones cambian únicamente cuando se regeneran y despliegan los artefactos versionados.
 
-### Licencia y atribución
+### Forma de trabajo
 
-Este proyecto se distribuye bajo la licencia MIT incluida en el repositorio. Los problemas de seguridad deben reportarse de forma privada siguiendo `SECURITY.md`.
+El trabajo se guía mediante [`sdd/spec.md`](sdd/spec.md), [`sdd/plan.md`](sdd/plan.md) y
+[`sdd/tasks.md`](sdd/tasks.md). Se usaron herramientas de IA como apoyo para implementar, revisar,
+curar datos y generar pruebas. Las decisiones de producto, las restricciones del modelo, los criterios
+de aceptación y la revisión final permanecieron bajo responsabilidad humana. Todo cambio generado
+tuvo que superar la regeneración determinista, el análisis estático y las pruebas del preview de
+producción.
+
+### Documentación
+
+- [Arquitectura](docs/architecture.md)
+- [Contratos de datos](docs/data-contracts.md)
+- [Evaluación offline](docs/evaluation.md)
+- [Ficha del sistema de recomendaciones](docs/recommendation-system-card.md)
+
+### Contribución y licencia
+
+Revisa [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir un pull request. Los problemas de seguridad
+deben reportarse de forma privada siguiendo [SECURITY.md](SECURITY.md). El proyecto se distribuye bajo
+la [licencia MIT](LICENSE).
 
 El proyecto fuente de DummyJSON se distribuye bajo la [licencia MIT](https://github.com/Ovi/DummyJSON/blob/master/LICENSE) y aquí se utiliza como fuente ficticia de productos para una demostración técnica. Los registros se atribuyen a [DummyJSON](https://dummyjson.com/). Las dependencias y recursos externos conservan sus respectivas licencias y condiciones.
