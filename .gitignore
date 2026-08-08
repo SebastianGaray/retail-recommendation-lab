@@ -7,6 +7,9 @@ node_modules/
 dist/
 playwright-report/
 test-results/
+.coverage
+coverage.xml
+apps/web/coverage/
 data/raw/
 data/validated/
 data/curated/

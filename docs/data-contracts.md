@@ -25,4 +25,4 @@ Breaking changes require a documented contract version and coordinated pipeline/
 
 Customers contain only synthetic IDs, segment, category preferences, price sensitivity, activity, and repeat tendency. Events use UTC timestamps and the types `product_view`, `add_to_cart`, `remove_from_cart`, `checkout_started`, and `purchase`; keys and categorical fields are non-null except product references before quarantine.
 
-The demo weights are view `1`, cart add `3`, removal `-1`, checkout `4`, and purchase `6`; negative aggregate strengths are clipped to zero intentionally. Recommendation JSON uses schema `1.0`, bounded candidate lists, stable score/ID ordering, and a `small-2026-08-01` dataset version.
+The demo weights are view `1`, cart add `3`, removal `-1`, checkout `4`, and purchase `6`; negative aggregate strengths are clipped to zero intentionally. Recommendation JSON uses schema `1.0`, bounded candidate lists, stable score/ID ordering, and a `small-2026-08-06` dataset version.

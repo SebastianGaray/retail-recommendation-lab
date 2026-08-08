@@ -6,6 +6,15 @@
 
 Retail Recommendation Lab is a bilingual, interactive portfolio project that makes an offline recommendation system observable from end to end. Visitors can browse a fictional catalog, build a local cart, compare five recommendation strategies, inspect why each product was selected, and review synthetic offline evaluation metrics.
 
+### Development approach
+
+The project follows a spec-driven workflow. Functional requirements, artifact contracts, architecture,
+and completed validation tasks are maintained under [`sdd/`](sdd/README.md) and evolve with the code.
+
+AI-assisted development supported implementation, review, data curation, and test generation. Product
+decisions, modeling constraints, and acceptance remained human-directed; generated changes were
+accepted only after deterministic regeneration, static analysis, and production-preview tests passed.
+
 This is an educational technical demo, not a production store. It has no checkout, payments, accounts, backend, visitor tracking, or request-time model training.
 
 ### What it demonstrates
@@ -117,7 +126,7 @@ make pipeline
 make validate-artifacts
 ```
 
-The pipeline uses dataset version `small-2026-08-01` and seed `20260801`. Running it again must reproduce the committed small-profile artifacts exactly.
+The pipeline uses dataset version `small-2026-08-06` and seed `20260801`. Running it again must reproduce the committed small-profile artifacts exactly.
 
 ### Tests and quality checks
 
@@ -162,7 +171,7 @@ pipeline/         Python package, PySpark pipeline, and tests
 
 ### License and attribution
 
-This repository currently has **no project-level `LICENSE` file**. Copyright remains with the repository owner, and public availability alone does not grant permission to copy, modify, or redistribute the project. Add an explicit license before treating it as open-source software.
+This project is available under the project-level MIT License. Report security issues privately as described in `SECURITY.md`.
 
 DummyJSON's source project is distributed under the [MIT License](https://github.com/Ovi/DummyJSON/blob/master/LICENSE) and is used here as a fictional product-data source for a technical demo. Product records are attributed to [DummyJSON](https://dummyjson.com/). Third-party dependencies and externally hosted assets remain subject to their respective licenses and terms.
 
@@ -171,6 +180,17 @@ DummyJSON's source project is distributed under the [MIT License](https://github
 ## Español
 
 Retail Recommendation Lab es un proyecto de portafolio bilingüe e interactivo que permite observar de principio a fin un sistema de recomendaciones offline. Las personas pueden explorar un catálogo ficticio, armar un carrito local, comparar cinco estrategias, entender por qué se eligió cada producto y revisar métricas sintéticas de evaluación offline.
+
+### Enfoque de desarrollo
+
+El proyecto sigue un flujo guiado por especificaciones. Los requisitos funcionales, contratos de
+artefactos, decisiones de arquitectura y tareas de validación terminadas se mantienen en
+[`sdd/`](sdd/README.md) y evolucionan junto con el código.
+
+Se utilizó desarrollo asistido por IA para apoyar la implementación, revisión, curación de datos y
+generación de pruebas. Las decisiones de producto, restricciones de modelado y aceptación se
+mantuvieron bajo dirección humana; los cambios generados se aceptaron únicamente después de superar
+la regeneración determinista, el análisis estático y las pruebas del preview de producción.
 
 Es una demostración técnica educativa, no una tienda de producción. No incluye checkout, pagos, cuentas, backend, seguimiento de visitantes ni entrenamiento del modelo durante una solicitud.
 
@@ -283,7 +303,7 @@ make pipeline
 make validate-artifacts
 ```
 
-El pipeline utiliza la versión de dataset `small-2026-08-01` y la semilla `20260801`. Al ejecutarlo nuevamente debe reproducir exactamente los artefactos del perfil pequeño incluidos en el repositorio.
+El pipeline utiliza la versión de dataset `small-2026-08-06` y la semilla `20260801`. Al ejecutarlo nuevamente debe reproducir exactamente los artefactos del perfil pequeño incluidos en el repositorio.
 
 ### Pruebas y controles de calidad
 
@@ -328,6 +348,6 @@ pipeline/         Paquete Python, pipeline PySpark y pruebas
 
 ### Licencia y atribución
 
-Este repositorio **no contiene actualmente un archivo `LICENSE` propio**. Los derechos de autor permanecen con el propietario y el hecho de que el código sea visible públicamente no concede permiso para copiarlo, modificarlo o redistribuirlo. Se debe agregar una licencia explícita antes de considerar el proyecto como software de código abierto.
+Este proyecto se distribuye bajo la licencia MIT incluida en el repositorio. Los problemas de seguridad deben reportarse de forma privada siguiendo `SECURITY.md`.
 
 El proyecto fuente de DummyJSON se distribuye bajo la [licencia MIT](https://github.com/Ovi/DummyJSON/blob/master/LICENSE) y aquí se utiliza como fuente ficticia de productos para una demostración técnica. Los registros se atribuyen a [DummyJSON](https://dummyjson.com/). Las dependencias y recursos externos conservan sus respectivas licencias y condiciones.

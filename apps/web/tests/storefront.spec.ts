@@ -1,3 +1,4 @@
+import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
 test("production metadata, public files and internal links are valid", async ({
@@ -63,6 +64,16 @@ test("localized routes, theme and keyboard navigation work", async ({
   await expect(
     page.getByRole("heading", { name: "Catálogo de productos" }),
   ).toBeVisible();
+});
+
+test("English and Spanish storefronts have no detectable accessibility violations", async ({
+  page,
+}) => {
+  for (const locale of ["en", "es"]) {
+    await page.goto(`/retail-recommendation-lab/${locale}/`);
+    const results = await new AxeBuilder({ page }).analyze();
+    expect(results.violations).toEqual([]);
+  }
 });
 
 test("search, category, sorting and product details work", async ({ page }) => {

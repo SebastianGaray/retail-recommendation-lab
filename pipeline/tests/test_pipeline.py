@@ -1,4 +1,4 @@
-from datetime import UTC
+from datetime import UTC, timedelta
 
 from retail_recommendation_lab.schemas import (
     CUSTOMER_SCHEMA,
@@ -16,7 +16,7 @@ def test_generation_is_deterministic_and_contractual() -> None:
     assert len(customers) == 120
     assert len(events) > 1_200
     assert {row[1] for row in events} <= EVENT_TYPES
-    assert all(row[2].replace(tzinfo=UTC).utcoffset().total_seconds() == 0 for row in events)
+    assert all(row[2].replace(tzinfo=UTC).utcoffset() == timedelta(0) for row in events)
     assert all(row[7] >= 0 and row[6] >= 0 for row in events)
 
 

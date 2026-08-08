@@ -1,4 +1,4 @@
-.PHONY: install generate generate-events pipeline validate validate-artifacts dev test-python test-pipeline test-web test-e2e lint typecheck build
+.PHONY: install generate generate-events pipeline validate validate-artifacts dev test-python test-pipeline test-web test-e2e coverage audit lint typecheck build
 
 install:
 	uv sync --project pipeline --dev
@@ -33,6 +33,14 @@ test-web:
 
 test-e2e:
 	npm run test:e2e
+
+coverage:
+	uv run --project pipeline pytest --cov=retail_recommendation_lab --cov-config=pipeline/pyproject.toml --cov-report=term-missing --cov-report=xml --cov-fail-under=70
+	npm run test:coverage --workspace apps/web
+
+audit:
+	uv run --project pipeline pip-audit
+	npm audit --audit-level=high
 
 lint:
 	uv run --project pipeline ruff check pipeline
