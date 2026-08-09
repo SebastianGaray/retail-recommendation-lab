@@ -3,6 +3,7 @@ import "../styles/global.css";
 import type { Locale } from "../lib/catalog";
 import { getLocaleConfig } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
+import ThemeControl from "./ThemeControl.astro";
 interface Props {
   locale: Locale;
 }
@@ -77,18 +78,20 @@ const socialLocale = localeMetadata.ogLocale;
         >
           <a href="https://sebastiangaray.github.io/"
             >{portfolioLabel}<span aria-hidden="true"> ↗</span></a
-          ><a href="#methodology">{copy.methodologyNav}</a><a
+          ><a href="#methodology">{copy.methodologyNav}</a><ThemeControl
+            copy={copy}
+          /><a
+            class="language-switch"
+            data-global-control="language"
             href={`${base}${otherLocale}/`}
             lang={otherLocale}
+            hreflang={otherLocale}
             aria-label={`${copy.language}: ${otherLocale.toUpperCase()}`}
-            >{otherLocale.toUpperCase()}</a
-          ><label class="theme-control"
-            ><span class="sr-only">{copy.theme}</span><select id="theme"
-              ><option value="system">{copy.system}</option><option
-                value="light">{copy.light}</option
-              ><option value="dark">{copy.dark}</option></select
-            ></label
-          ><button
+          >
+            <span class:list={[locale === "en" && "active"]}>EN</span>
+            <span aria-hidden="true">/</span>
+            <span class:list={[locale === "es" && "active"]}>ES</span>
+          </a><button
             id="cart-open"
             class="icon-button"
             type="button"

@@ -55,7 +55,12 @@ test("localized routes, theme and keyboard navigation work", async ({
   await expect(
     page.getByRole("heading", { name: "Product catalog" }),
   ).toBeVisible();
-  await page.locator("#theme").selectOption("dark");
+  await expect(page.locator('[data-global-control="theme"]')).toBeVisible();
+  await expect(page.locator('[data-global-control="language"]')).toBeVisible();
+  await page.locator("[data-theme-control] summary").click();
+  await page.getByRole("button", { name: "Dark" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await page.keyboard.press("Tab");
   await expect(page.locator(":focus")).toBeVisible();

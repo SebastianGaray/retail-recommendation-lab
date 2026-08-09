@@ -55,8 +55,15 @@ const productGrid = byId("product-grid"),
 const search = byId<HTMLInputElement>("search"),
   category = byId<HTMLSelectElement>("category"),
   sort = byId<HTMLSelectElement>("sort"),
-  strategy = byId<HTMLSelectElement>("strategy"),
-  theme = byId<HTMLSelectElement>("theme");
+  strategy = byId<HTMLSelectElement>("strategy");
+const themeControl = document.querySelector<HTMLDetailsElement>(
+  "[data-theme-control]",
+);
+const themeCurrent = themeControl?.querySelector<HTMLElement>(
+  "[data-theme-current]",
+);
+const themeButtons =
+  themeControl?.querySelectorAll<HTMLButtonElement>("[data-theme-value]");
 const cartDialog = byId<HTMLDialogElement>("cart-dialog"),
   productDialog = byId<HTMLDialogElement>("product-dialog"),
   productDetail = byId("product-detail");
@@ -261,11 +268,24 @@ strategy.addEventListener("change", () => {
   renderRecommendations();
   renderHybridSignals();
 });
-theme.value = document.documentElement.dataset.theme ?? "system";
-theme.addEventListener("change", () => {
-  document.documentElement.dataset.theme = theme.value;
-  localStorage.setItem("rrl-theme", theme.value);
-});
+const applyTheme = (value: string) => {
+  document.documentElement.dataset.theme = value;
+  if (value === "system") localStorage.removeItem("rrl-theme");
+  else localStorage.setItem("rrl-theme", value);
+  themeButtons?.forEach((button) => {
+    const selected = button.dataset.themeValue === value;
+    button.setAttribute("aria-pressed", String(selected));
+    if (selected && themeCurrent)
+      themeCurrent.textContent = button.textContent?.trim() ?? "";
+  });
+};
+themeButtons?.forEach((button) =>
+  button.addEventListener("click", () => {
+    applyTheme(button.dataset.themeValue ?? "system");
+    themeControl?.removeAttribute("open");
+  }),
+);
+applyTheme(document.documentElement.dataset.theme ?? "system");
 for (const dialog of [cartDialog, productDialog])
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();

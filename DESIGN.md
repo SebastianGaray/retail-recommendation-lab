@@ -33,7 +33,7 @@ Warm neutral canvases, slate/warm-neutral accent, Source Serif 4 headings, Inter
 
 ## 4. Theme mapping
 
-Light and Dark use the exact canonical background, surface, text, border, accent, focus, success and warning values. System remains the default and follows `prefers-color-scheme`; explicit selection persists under `rrl-theme`. Product imagery remains naturally colored while its frame and fallback inherit the active theme.
+Light and Dark use the exact canonical background, surface, text, border, accent, focus, success and warning values. System remains the default and follows `prefers-color-scheme`; explicit selection persists under `rrl-theme`. The sticky header uses the canonical compact theme disclosure with System, Light, and Dark buttons, selected-state semantics, and the shared focus treatment. Product imagery remains naturally colored while its frame and fallback inherit the active theme.
 
 ## 5. Typography mapping
 
@@ -53,7 +53,7 @@ The retail shell keeps its task-appropriate `1280px` maximum width, `24px` deskt
 
 ## 9. Navigation and attribution
 
-The sticky 72px header contains project identity, Portfolio return, methodology, language, theme and cart access. Footer attribution repeats Portfolio and GitHub external links. The public portfolio return target is `https://sebastiangaray.github.io/`.
+The sticky 72px header contains project identity, Portfolio return, methodology, the canonical theme disclosure, the `EN / ES` language switch, and cart access in that order. Theme and language remain header-owned stateful controls; the footer only repeats attribution and external navigation. The public portfolio return target is `https://sebastiangaray.github.io/`.
 
 ## 10. Local component patterns
 
