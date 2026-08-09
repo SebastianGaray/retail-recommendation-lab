@@ -252,9 +252,6 @@ button:disabled {
 .theme-menu button[aria-pressed="true"]::after {
   content: "✓";
 }
-.icon-button {
-  font-family: "JetBrains Mono", monospace;
-}
 .header-actions {
   margin-left: 0.25rem;
   padding-left: 0.75rem;
@@ -263,16 +260,46 @@ button:disabled {
   gap: 0.5rem;
   border-left: 1px solid var(--line);
 }
-.icon-button span {
+.cart-button {
+  min-height: 44px;
+  padding: 0.45rem 0.6rem;
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  border-color: transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+.cart-button:hover:not(:disabled) {
+  border-color: transparent;
+  background: var(--surface-high);
+  color: var(--text);
+}
+.cart-button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+.cart-count {
   display: inline-grid;
-  min-width: 22px;
-  min-height: 22px;
-  margin-left: 6px;
+  min-width: 1.45rem;
+  min-height: 1.45rem;
+  padding-inline: 0.3rem;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 999px;
   background: var(--primary-2);
   color: var(--on-primary);
-  font-size: 0.72rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
 }
 main > section,
 .catalog-section {
@@ -1025,7 +1052,7 @@ footer span {
     overflow: hidden;
     clip-path: inset(50%);
   }
-  .icon-button {
+  .cart-button {
     min-width: 44px;
     padding-inline: 0.45rem;
   }
