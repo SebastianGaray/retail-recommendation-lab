@@ -20,6 +20,7 @@ Retail Recommendation Lab is a bilingual, interactive portfolio project that mak
 - [Development approach](#development-approach)
 - [Documentation](#documentation)
 - [Contributing and license](#contributing-and-license)
+- [Changelog](CHANGELOG.md)
 
 This is an educational technical demo, not a production store. It has no checkout, payments, accounts, backend, visitor tracking, or request-time model training.
 
@@ -226,6 +227,7 @@ Retail Recommendation Lab es un proyecto de portafolio bilingüe e interactivo q
 - [Forma de trabajo](#forma-de-trabajo)
 - [Documentación](#documentación)
 - [Contribución y licencia](#contribución-y-licencia)
+- [Historial de cambios](CHANGELOG.md)
 
 Es una demostración técnica educativa, no una tienda de producción. No incluye checkout, pagos, cuentas, backend, seguimiento de visitantes ni entrenamiento del modelo durante una solicitud.
 

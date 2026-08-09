@@ -10,6 +10,7 @@ test-results/
 .coverage
 coverage.xml
 apps/web/coverage/
+/references/
 data/raw/
 data/validated/
 data/curated/

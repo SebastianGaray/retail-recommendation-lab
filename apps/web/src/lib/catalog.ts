@@ -46,6 +46,20 @@ export interface Artifact<T> {
   data: T;
 }
 
+export function escapeHtml(value: string | number): string {
+  return String(value).replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[character]!,
+  );
+}
+
 export function recommendations(
   products: Product[],
   cart: ReadonlyMap<string, number>,

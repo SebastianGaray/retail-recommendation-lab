@@ -1,8 +1,9 @@
 [project]
 name = "retail-recommendation-lab"
-version = "0.1.0"
+version = "1.0.0"
 description = "Synthetic retail catalog pipeline"
 requires-python = ">=3.12"
+license = "MIT"
 dependencies = [
   "pydantic>=2.11,<3",
   "pyarrow>=23.0.1,<25",
