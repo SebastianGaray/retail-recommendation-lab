@@ -6,19 +6,21 @@ async function navigateTo(page: Page, label: string): Promise<void> {
   await page.getByRole("link", { name: label, exact: true }).click();
 }
 
-test("keeps a localized portfolio return in the header", async ({ page }) => {
+test("keeps a localized portfolio return in the navigation menu", async ({
+  page,
+}) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await expect(page.locator("[data-portfolio-return]")).toHaveText(
-    "← Portfolio",
-  );
+  await page.locator(".project-menu summary").click();
+  await expect(page.locator("[data-portfolio-return]")).toHaveText("Portfolio");
   await expect(page.locator("[data-portfolio-return]")).toHaveAttribute(
     "href",
     "https://sebastiangaray.github.io/",
   );
   await expect(page.locator(".project-menu [data-lab-view]")).toHaveCount(5);
   await page.goto("/retail-recommendation-lab/es/");
+  await page.locator(".project-menu summary").click();
   await expect(page.locator("[data-portfolio-return]")).toHaveText(
-    "← Portafolio",
+    "Portafolio",
   );
 });
 
@@ -249,8 +251,10 @@ test.describe("mobile", () => {
           document.documentElement.clientWidth,
       ),
     ).toBe(true);
-    await expect(page.locator("[data-portfolio-return]")).toBeVisible();
     await expect(page.locator(".project-menu summary")).toBeVisible();
+    await page.locator(".project-menu summary").click();
+    await expect(page.locator("[data-portfolio-return]")).toBeVisible();
+    await page.locator(".project-menu summary").click();
     await navigateTo(page, "Catalog");
     await page.locator("#search").fill("blender");
     await expect(page.locator("#product-grid article")).toHaveCount(1);

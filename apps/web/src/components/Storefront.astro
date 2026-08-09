@@ -89,40 +89,39 @@ const socialLocale = localeMetadata.ogLocale;
             <span class:list={[locale === "en" && "active"]}>EN</span>
             <span aria-hidden="true">/</span>
             <span class:list={[locale === "es" && "active"]}>ES</span>
-          </a><a
-            class="portfolio-return"
-            data-portfolio-return
-            href="https://sebastiangaray.github.io/"
-            aria-label={locale === "en"
-              ? "Return to portfolio"
-              : "Volver al portafolio"}
-            ><span aria-hidden="true">← </span>{portfolioLabel}</a
-          ><button
-            id="cart-open"
-            class="icon-button"
-            type="button"
-            aria-haspopup="dialog"
-            aria-controls="cart-dialog"
-            aria-label={copy.cartOpen}
-            ><span class="cart-label">{copy.cart}</span>
-            <span id="cart-count">0</span></button
-          ><details class="project-menu">
-            <summary>{copy.menuLabel}</summary>
-            <div>
-              <a href="#home" data-lab-view="home">{viewLabels.home}</a>
-              <a href="#catalog" data-lab-view="catalog">{viewLabels.catalog}</a
-              >
-              <a href="#recommendations" data-lab-view="recommendations"
-                >{viewLabels.recommendations}</a
-              >
-              <a href="#methodology" data-lab-view="methodology"
-                >{viewLabels.evaluation}</a
-              >
-              <a href="#engineering" data-lab-view="engineering"
-                >{viewLabels.engineering}</a
-              >
-            </div>
-          </details>
+          </a><div class="header-actions">
+            <button
+              id="cart-open"
+              class="icon-button"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="cart-dialog"
+              aria-label={copy.cartOpen}
+              ><span class="cart-label">{copy.cart}</span>
+              <span id="cart-count">0</span></button
+            ><details class="project-menu">
+              <summary>{copy.menuLabel}</summary>
+              <div>
+                <a href="#home" data-lab-view="home">{viewLabels.home}</a>
+                <a href="#catalog" data-lab-view="catalog"
+                  >{viewLabels.catalog}</a
+                >
+                <a href="#recommendations" data-lab-view="recommendations"
+                  >{viewLabels.recommendations}</a
+                >
+                <a href="#methodology" data-lab-view="methodology"
+                  >{viewLabels.evaluation}</a
+                >
+                <a href="#engineering" data-lab-view="engineering"
+                  >{viewLabels.engineering}</a
+                >
+                <a
+                  data-portfolio-return
+                  href="https://sebastiangaray.github.io/">{portfolioLabel}</a
+                >
+              </div>
+            </details>
+          </div>
         </nav>
       </div>
     </header>
@@ -299,8 +298,7 @@ const socialLocale = localeMetadata.ogLocale;
     </main>
     <footer>
       <strong>{copy.brand}</strong><span>{copy.synthetic}</span><a
-        href="https://sebastiangaray.github.io/">{portfolioLabel} ↗</a
-      ><a href="https://github.com/SebastianGaray/retail-recommendation-lab"
+        href="https://github.com/SebastianGaray/retail-recommendation-lab"
         >GitHub ↗</a
       >
     </footer>
