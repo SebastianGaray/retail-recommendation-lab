@@ -87,6 +87,9 @@ h3,
 .brand {
   font-family: "Source Serif 4", Georgia, serif;
 }
+.brand-short {
+  display: none;
+}
 body:has(dialog[open]) {
   overflow: hidden;
 }
@@ -156,12 +159,12 @@ button:disabled {
   text-decoration: none;
   letter-spacing: -0.04em;
 }
-nav {
+.header-utilities {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-nav > a {
+.header-utilities > a {
   text-decoration: none;
   font-size: 0.85rem;
 }
@@ -269,43 +272,49 @@ main > section,
   margin: auto;
   padding: 80px 24px;
 }
-.lab-sidebar {
-  width: 13.5rem;
-  position: fixed;
-  z-index: 20;
-  top: 72px;
-  bottom: 0;
-  left: 0;
-  padding: 1.5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  background: var(--surface-low);
-  border-right: 1px solid var(--line);
+.project-menu {
+  position: relative;
 }
-.lab-sidebar a {
+.project-menu summary {
   min-height: 44px;
-  padding: 0.7rem 0.8rem;
+  padding-inline: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  list-style: none;
+}
+.project-menu summary::-webkit-details-marker {
+  display: none;
+}
+.project-menu > div {
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  width: 13rem;
+  padding: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.project-menu a {
+  min-height: 44px;
+  padding: 0.65rem 0.75rem;
   display: flex;
   align-items: center;
-  border-left: 3px solid transparent;
-  color: var(--muted);
-  font-size: 0.86rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
 }
-.lab-sidebar a:hover {
+.project-menu a:hover,
+.project-menu a.active {
   background: var(--surface-high);
   color: var(--text);
-}
-.lab-sidebar a.active {
-  background: var(--surface-high);
-  border-left-color: var(--primary);
-  color: var(--text);
-}
-main,
-footer {
-  margin-left: 13.5rem;
 }
 main > section[hidden] {
   display: none;
@@ -899,40 +908,24 @@ footer span {
   .header-inner {
     padding: 0 16px;
   }
-  nav > a:nth-child(-n + 2) {
-    display: none;
-  }
-  .lab-sidebar {
-    width: 100%;
-    height: auto;
-    inset: 72px 0 auto;
-    padding: 0.45rem 1rem;
-    flex-direction: row;
-    overflow-x: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .lab-sidebar a {
-    flex: 0 0 auto;
-    border-bottom: 2px solid transparent;
-    border-left: 0;
-  }
-  .lab-sidebar a.active {
-    border-bottom-color: var(--primary);
-    border-left: 0;
-  }
-  main,
-  footer {
-    margin-left: 0;
-  }
-  main {
-    padding-top: 3.5rem;
-  }
   .brand {
     font-size: 1rem;
   }
-  nav {
+  .brand-long {
+    display: none;
+  }
+  .brand-short {
+    display: inline;
+  }
+  .header-utilities {
     gap: 0.5rem;
+  }
+  .project-menu > div {
+    position: fixed;
+    top: 4.75rem;
+    right: 1rem;
+    left: 1rem;
+    width: auto;
   }
   .language-switch .active,
   .language-switch span[aria-hidden="true"] {
@@ -1006,6 +999,33 @@ footer span {
   }
   .drawer {
     padding: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .header-utilities {
+    gap: 0;
+  }
+  .cart-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .icon-button {
+    min-width: 44px;
+    padding-inline: 0.45rem;
+  }
+  .project-menu summary {
+    padding-inline: 0.4rem;
+  }
+}
+@media (max-width: 340px) {
+  .header-utilities > .portfolio-return {
+    font-size: 0;
+  }
+  .header-utilities > .portfolio-return span {
+    font-size: 1rem;
   }
 }
 @media (max-width: 420px) {

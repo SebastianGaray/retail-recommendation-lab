@@ -400,6 +400,7 @@ labViewLinks.forEach((link) => {
     if (!labViews.has(name)) return;
     event.preventDefault();
     showLabView(name);
+    link.closest("details")?.removeAttribute("open");
   });
 });
 window.addEventListener("popstate", () => {
