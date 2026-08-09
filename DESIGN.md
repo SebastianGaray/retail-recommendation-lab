@@ -10,26 +10,26 @@ Warm neutral canvases, slate/warm-neutral accent, Source Serif 4 headings, Inter
 
 ## 3. Exact palette mapping
 
-| Role | Canonical Light / Dark | Local token | Mapping |
-|---|---|---|---|
-| Background | `#fdf8f8` / `#1b1918` | `--bg` | Exact |
-| Surface | `#ffffff` / `#292624` | `--surface` | Exact |
-| Subtle surface | `#f7f3f2` / `#23201f` | `--surface-low` | Exact |
-| Elevated surface | `#ebe7e6` / `#312d2a` | `--surface-high` | Exact |
-| Text | `#1c1b1b` / `#f1ece7` | `--text` | Exact |
-| Secondary text | `#444748` / `#c9c0b8` | `--text-secondary` | Exact |
-| Muted text | `#515f74` / `#aaa098` | `--muted` | Exact |
-| Border | `#c4c7c7` / `#48423e` | `--line` | Exact |
-| Strong border | `#8d9292` / `#6a615b` | `--line-strong` | Exact |
-| Accent | `#334155` / `#d8cec5` | `--primary` | Exact |
-| Accent hover | `#475569` / `#eee6df` | `--primary-hover` | Exact |
-| Accent active / primary fill | `#000000` / `#e3dad2` | `--primary-2` | Adapted from canonical primary button fill |
-| Accent contrast | `#ffffff` / `#211e1c` | `--on-primary` | Exact button pairing |
-| Focus | `#64748b` / `#c5a98f` | `--focus` | Exact |
-| Success | `#2f6b4f` / `#79aa8d` | `--success` | Exact |
-| Warning | `#8a5b16` / `#d5ad6c` | `--warning` | Exact |
-| Danger | Not defined | `--error: #ba1a1a / #ffb4ab` | Adapted for error semantics and contrast |
-| Info | Not defined | `--info` = shared accent | Adapted; informational emphasis remains in-family |
+| Role                         | Canonical Light / Dark | Local token                  | Mapping                                           |
+| ---------------------------- | ---------------------- | ---------------------------- | ------------------------------------------------- |
+| Background                   | `#fdf8f8` / `#1b1918`  | `--bg`                       | Exact                                             |
+| Surface                      | `#ffffff` / `#292624`  | `--surface`                  | Exact                                             |
+| Subtle surface               | `#f7f3f2` / `#23201f`  | `--surface-low`              | Exact                                             |
+| Elevated surface             | `#ebe7e6` / `#312d2a`  | `--surface-high`             | Exact                                             |
+| Text                         | `#1c1b1b` / `#f1ece7`  | `--text`                     | Exact                                             |
+| Secondary text               | `#444748` / `#c9c0b8`  | `--text-secondary`           | Exact                                             |
+| Muted text                   | `#515f74` / `#aaa098`  | `--muted`                    | Exact                                             |
+| Border                       | `#c4c7c7` / `#48423e`  | `--line`                     | Exact                                             |
+| Strong border                | `#8d9292` / `#6a615b`  | `--line-strong`              | Exact                                             |
+| Accent                       | `#334155` / `#d8cec5`  | `--primary`                  | Exact                                             |
+| Accent hover                 | `#475569` / `#eee6df`  | `--primary-hover`            | Exact                                             |
+| Accent active / primary fill | `#000000` / `#e3dad2`  | `--primary-2`                | Adapted from canonical primary button fill        |
+| Accent contrast              | `#ffffff` / `#211e1c`  | `--on-primary`               | Exact button pairing                              |
+| Focus                        | `#64748b` / `#c5a98f`  | `--focus`                    | Exact                                             |
+| Success                      | `#2f6b4f` / `#79aa8d`  | `--success`                  | Exact                                             |
+| Warning                      | `#8a5b16` / `#d5ad6c`  | `--warning`                  | Exact                                             |
+| Danger                       | Not defined            | `--error: #ba1a1a / #ffb4ab` | Adapted for error semantics and contrast          |
+| Info                         | Not defined            | `--info` = shared accent     | Adapted; informational emphasis remains in-family |
 
 ## 4. Theme mapping
 
@@ -41,7 +41,7 @@ Source Serif 4 (600/700) is used for headings and the project brand. Inter (400/
 
 ## 6. Button and link mapping
 
-Add to cart, Analyze cart and View recommendations use the canonical filled primary family: black/warm-light fill, contrasting label, four-pixel radius and `0.75rem 1.2rem`-scale padding. Product details, reset and quantity controls are bordered secondary actions. Remove is a danger-colored text action. External Portfolio and GitHub links carry `↗`. All controls share a `2px` focus outline with `4px` offset; disabled controls remain visible at 50% opacity and suppress the pointer cursor.
+Add to cart, Analyze cart and View recommendations use the canonical filled primary family: black/warm-light fill, contrasting label, four-pixel radius and `0.75rem 1.2rem`-scale padding. Product details, reset and quantity controls are bordered secondary actions. Remove is a danger-colored text action. The header Portfolio return carries `←`; footer external links carry `↗`. All controls share a `2px` focus outline with `4px` offset; disabled controls remain visible at 50% opacity and suppress the pointer cursor.
 
 ## 7. Border, radius and shadow mapping
 

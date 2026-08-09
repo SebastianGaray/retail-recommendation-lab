@@ -76,8 +76,13 @@ const socialLocale = localeMetadata.ogLocale;
         <a class="brand" href={`${base}${locale}/`}>{copy.brand}</a><nav
           aria-label={copy.menu}
         >
-          <a href="https://sebastiangaray.github.io/"
-            >{portfolioLabel}<span aria-hidden="true"> ↗</span></a
+          <a
+            data-portfolio-return
+            href="https://sebastiangaray.github.io/"
+            aria-label={locale === "en"
+              ? "Return to portfolio"
+              : "Volver al portafolio"}
+            ><span aria-hidden="true">← </span>{portfolioLabel}</a
           ><a href="#methodology">{copy.methodologyNav}</a><ThemeControl
             copy={copy}
           /><a

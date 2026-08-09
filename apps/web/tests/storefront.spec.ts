@@ -1,6 +1,21 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
+test("keeps a localized portfolio return in the header", async ({ page }) => {
+  await page.goto("/retail-recommendation-lab/en/");
+  await expect(page.locator("[data-portfolio-return]")).toHaveText(
+    "← Portfolio",
+  );
+  await expect(page.locator("[data-portfolio-return]")).toHaveAttribute(
+    "href",
+    "https://sebastiangaray.github.io/",
+  );
+  await page.goto("/retail-recommendation-lab/es/");
+  await expect(page.locator("[data-portfolio-return]")).toHaveText(
+    "← Portafolio",
+  );
+});
+
 test("production metadata, public files and internal links are valid", async ({
   page,
   request,
