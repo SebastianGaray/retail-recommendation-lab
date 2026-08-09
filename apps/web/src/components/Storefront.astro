@@ -16,7 +16,7 @@ const viewLabels = {
   catalog: copy.catalogNav,
   recommendations: copy.recommendations,
   evaluation: copy.evaluation,
-  engineering: copy.engineering,
+  engineering: copy.engineeringNav,
 };
 const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
 const canonical = new URL(`${base}${locale}/`, Astro.site);
@@ -76,7 +76,16 @@ const socialLocale = localeMetadata.ogLocale;
           ><span class="brand-long">{copy.brand}</span><span class="brand-short"
             >Retail Lab</span
           ></a
-        ><nav class="header-utilities" aria-label={copy.menu}>
+        ><nav class="desktop-nav" aria-label={copy.menu}>
+          <a href="#catalog" data-lab-view="catalog">{viewLabels.catalog}</a>
+          <a href="#recommendations" data-lab-view="recommendations"
+            >{viewLabels.recommendations}</a
+          ><a href="#methodology" data-lab-view="methodology"
+            >{viewLabels.evaluation}</a
+          ><a href="#engineering" data-lab-view="engineering"
+            >{viewLabels.engineering}</a
+          >
+        </nav><div class="header-utilities">
           <ThemeControl copy={copy} /><a
             class="language-switch"
             data-global-control="language"
@@ -88,6 +97,16 @@ const socialLocale = localeMetadata.ogLocale;
             <span class:list={[locale === "en" && "active"]}>EN</span>
             <span aria-hidden="true">/</span>
             <span class:list={[locale === "es" && "active"]}>ES</span>
+          </a><a
+            class="github-mark"
+            href="https://github.com/SebastianGaray/retail-recommendation-lab"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.7 17.7 3 12l5.7-5.7 1.4 1.4L5.8 12l4.3 4.3-1.4 1.4Zm6.6 0-1.4-1.4 4.3-4.3-4.3-4.3 1.4-1.4L21 12l-5.7 5.7Z"
+              ></path>
+            </svg>
           </a><div class="header-actions">
             <button
               id="cart-open"
@@ -126,7 +145,7 @@ const socialLocale = localeMetadata.ogLocale;
               </div>
             </details>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -294,11 +313,21 @@ const socialLocale = localeMetadata.ogLocale;
         </nav>
       </section>
     </main>
-    <footer>
-      <strong>{copy.brand}</strong><span>{copy.synthetic}</span><a
-        href="https://github.com/SebastianGaray/retail-recommendation-lab"
-        >GitHub ↗</a
-      >
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div>
+          <strong class="footer-brand">{copy.brand}</strong>
+          <small>© {new Date().getFullYear()} Sebastian Garay</small>
+        </div>
+        <nav aria-label={copy.footerContact}>
+          <a href="https://github.com/SebastianGaray/retail-recommendation-lab"
+            >GitHub</a
+          ><a href="https://www.linkedin.com/in/sebastián-garay-b28610195/"
+            >LinkedIn</a
+          ><a href="mailto:sebastiangarayperez2@gmail.com">{copy.email}</a>
+        </nav>
+        <small>{copy.builtWith}</small>
+      </div>
     </footer>
     <dialog id="cart-dialog" class="drawer">
       <div class="drawer-head">
