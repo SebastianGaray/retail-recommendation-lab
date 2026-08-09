@@ -1,0 +1,2 @@
+# Published pipeline artifacts use the canonical Python serializer format.
+apps/web/public/*.json
