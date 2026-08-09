@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 - 2026-08-09
+
+### Changed
+
+- Reworked the header cart control with a clear cart icon, an unobtrusive label, and a compact quantity badge.
+- Removed the boxed button treatment while retaining keyboard focus, dialog semantics, and mobile touch sizing.
+
 ## 1.0.0 - 2026-08-09
 
 First stable release of Retail Recommendation Lab.

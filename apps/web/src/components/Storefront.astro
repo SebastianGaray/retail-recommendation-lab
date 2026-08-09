@@ -92,13 +92,19 @@ const socialLocale = localeMetadata.ogLocale;
           </a><div class="header-actions">
             <button
               id="cart-open"
-              class="icon-button"
+              class="cart-button"
               type="button"
               aria-haspopup="dialog"
               aria-controls="cart-dialog"
               aria-label={copy.cartOpen}
-              ><span class="cart-label">{copy.cart}</span>
-              <span id="cart-count">0</span></button
+              ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.3 8H6.1"
+                ></path>
+                <circle cx="10" cy="20" r="1"></circle>
+                <circle cx="17" cy="20" r="1"></circle>
+              </svg><span class="cart-label">{copy.cart}</span>
+              <span id="cart-count" class="cart-count">0</span></button
             ><details class="project-menu">
               <summary>{copy.menuLabel}</summary>
               <div>
