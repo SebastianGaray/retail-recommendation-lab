@@ -20,7 +20,7 @@
   --error: #ba1a1a;
   --info: #334155;
   --radius: 4px;
-  --max: 1280px;
+  --max: 70rem;
   --shadow: 0 1rem 2.5rem rgb(28 27 27 / 0.12);
 }
 :root[data-theme="dark"] {
@@ -159,6 +159,32 @@ button:disabled {
   text-decoration: none;
   letter-spacing: -0.04em;
 }
+.desktop-nav {
+  display: none;
+}
+.desktop-nav a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.desktop-nav a.active {
+  color: var(--text);
+  font-weight: 700;
+}
+.desktop-nav a::after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: var(--text);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 160ms ease;
+}
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .header-utilities {
   display: flex;
   align-items: center;
@@ -204,6 +230,14 @@ button:disabled {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+.github-mark {
+  display: none;
+  color: var(--text-secondary);
+}
+.github-mark svg {
+  width: 1.45rem;
+  fill: currentColor;
 }
 .theme-control svg {
   width: 1rem;
@@ -253,12 +287,9 @@ button:disabled {
   content: "✓";
 }
 .header-actions {
-  margin-left: 0.25rem;
-  padding-left: 0.75rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border-left: 1px solid var(--line);
 }
 .cart-button {
   min-height: 44px;
@@ -748,19 +779,36 @@ main > section:not([hidden]) {
 .process-documents a {
   color: var(--primary);
 }
-footer {
-  display: flex;
-  max-width: var(--max);
-  margin: auto;
-  padding: 28px 24px;
-  align-items: center;
-  gap: 24px;
+.site-footer {
+  padding-block: 2.25rem;
+  background: var(--surface-low);
   border-top: 1px solid var(--line);
-  font-size: 0.8rem;
 }
-footer span {
-  margin-left: auto;
+.footer-shell,
+.footer-shell > div,
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-shell {
+  width: min(calc(100% - 3rem), var(--max));
+  margin-inline: auto;
+  justify-content: space-between;
+}
+.footer-brand {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.2rem;
+}
+.footer-shell small {
   color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
+.site-footer nav a {
+  color: var(--primary);
+  font-size: 0.75rem;
 }
 .drawer,
 .product-dialog {
@@ -900,6 +948,36 @@ footer span {
   white-space: nowrap;
   border: 0;
 }
+@media (min-width: 48rem) {
+  .theme-control summary > span {
+    width: auto;
+    height: auto;
+    position: static;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+  }
+  .github-mark {
+    display: inline-flex;
+  }
+}
+@media (min-width: 64rem) {
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+  }
+  .project-menu {
+    display: none;
+  }
+}
+@media (min-width: 43.751rem) and (max-width: 79.999rem) {
+  .brand-long {
+    display: none;
+  }
+  .brand-short {
+    display: inline;
+  }
+}
 @media (max-width: 960px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -997,12 +1075,10 @@ footer span {
   .detail-copy {
     padding: 8px 0;
   }
-  footer {
+  .footer-shell {
+    width: min(calc(100% - 2rem), var(--max));
     align-items: flex-start;
     flex-direction: column;
-  }
-  footer span {
-    margin: 0;
   }
   .product-buttons {
     flex-direction: column;
@@ -1019,8 +1095,6 @@ footer span {
     gap: 0.35rem;
   }
   .header-actions {
-    margin-left: 0;
-    padding-left: 0.5rem;
     gap: 0.35rem;
   }
   .cart-label {

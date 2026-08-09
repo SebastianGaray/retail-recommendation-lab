@@ -2,6 +2,13 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
 async function navigateTo(page: Page, label: string): Promise<void> {
+  const desktopLink = page
+    .locator(".desktop-nav")
+    .getByRole("link", { name: label, exact: true });
+  if (await desktopLink.isVisible()) {
+    await desktopLink.click();
+    return;
+  }
   await page.locator(".project-menu summary").click();
   await page.getByRole("link", { name: label, exact: true }).click();
 }
@@ -9,6 +16,7 @@ async function navigateTo(page: Page, label: string): Promise<void> {
 test("keeps a localized portfolio return in the navigation menu", async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 800, height: 800 });
   await page.goto("/retail-recommendation-lab/en/");
   await page.locator(".project-menu summary").click();
   await expect(page.locator("[data-portfolio-return]")).toHaveText("Portfolio");
@@ -29,6 +37,13 @@ test("production metadata, public files and internal links are valid", async ({
   request,
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
+  await expect(page.locator(".desktop-nav")).toBeVisible();
+  await expect(page.locator(".desktop-nav [data-lab-view]")).toHaveCount(4);
+  await expect(page.locator(".github-mark")).toBeVisible();
+  await expect(page.locator("[data-theme-current]")).toHaveText("System");
+  await expect(page.locator("[data-theme-current]")).toBeVisible();
+  await expect(page.locator(".site-footer nav a")).toHaveCount(3);
+  await expect(page.locator(".site-footer")).toContainText("Built with Astro.");
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     "href",
     "https://sebastiangaray.github.io/retail-recommendation-lab/en/",
@@ -72,10 +87,9 @@ test("localized routes, theme and keyboard navigation work", async ({
     page.getByRole("heading", { name: "Product catalog", level: 1 }),
   ).toBeVisible();
   await expect(page.locator("main > section:focus")).toHaveCount(0);
-  await expect(page.locator('[data-lab-view="catalog"]')).toHaveAttribute(
-    "aria-current",
-    "page",
-  );
+  await expect(
+    page.locator('.desktop-nav [data-lab-view="catalog"]'),
+  ).toHaveAttribute("aria-current", "page");
   await expect(page.locator("#product-grid article")).toHaveCount(40);
   await expect(
     page.getByRole("heading", { name: "Product catalog" }),
@@ -110,7 +124,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
   page,
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await navigateTo(page, "Engineering process");
+  await navigateTo(page, "Engineering");
   await expect(
     page.getByRole("heading", { name: "How SDD and AI assistance were used" }),
   ).toBeVisible();
@@ -124,7 +138,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
   ).toHaveAttribute("href", /sdd\/spec\.md$/);
 
   await page.getByRole("link", { name: "Language: ES" }).click();
-  await navigateTo(page, "Proceso de ingeniería");
+  await navigateTo(page, "Ingeniería");
   await expect(
     page.getByRole("heading", {
       name: "Cómo se usaron SDD y la asistencia de IA",
@@ -246,6 +260,13 @@ test.describe("mobile", () => {
   test.use({ viewport: { width: 390, height: 844 } });
   test("filters and cart drawer remain usable", async ({ page }) => {
     await page.goto("/retail-recommendation-lab/en/");
+    await expect(page.locator(".desktop-nav")).toBeHidden();
+    await expect(page.locator(".project-menu")).toBeVisible();
+    expect(
+      await page
+        .locator("[data-theme-current]")
+        .evaluate((element) => getComputedStyle(element).position),
+    ).toBe("absolute");
     expect(
       await page.evaluate(
         () =>
