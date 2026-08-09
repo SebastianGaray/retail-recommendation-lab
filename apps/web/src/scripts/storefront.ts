@@ -120,7 +120,7 @@ function image(product: Product): string {
 }
 function card(product: Product): string {
   const disabled = product.in_stock ? "" : "disabled";
-  return `<article class="product-card" data-product-card="${escapeHtml(product.id)}">${image(product)}<div class="product-body"><div class="product-meta"><span>${escapeHtml(product.category)}</span><span>★ ${product.rating.toFixed(1)}</span></div><h3>${escapeHtml(product.name[locale])}</h3><p class="description">${escapeHtml(product.description[locale])}</p><div class="product-action"><strong>${escapeHtml(currency.format(Number(product.price)))}</strong><div class="product-buttons"><button type="button" data-detail="${escapeHtml(product.id)}">${escapeHtml(copy.details)}</button><button type="button" data-add="${escapeHtml(product.id)}" ${disabled}>${escapeHtml(product.in_stock ? copy.add : copy.soldOut)}</button></div></div></div></article>`;
+  return `<article class="product-card" data-product-card="${escapeHtml(product.id)}">${image(product)}<div class="product-body"><div class="product-meta"><span>${escapeHtml(product.category)}</span><span>★ ${product.rating.toFixed(1)}</span></div><h2>${escapeHtml(product.name[locale])}</h2><p class="description">${escapeHtml(product.description[locale])}</p><div class="product-action"><strong>${escapeHtml(currency.format(Number(product.price)))}</strong><div class="product-buttons"><button type="button" data-detail="${escapeHtml(product.id)}">${escapeHtml(copy.details)}</button><button type="button" data-add="${escapeHtml(product.id)}" ${disabled}>${escapeHtml(product.in_stock ? copy.add : copy.soldOut)}</button></div></div></div></article>`;
 }
 
 function renderCatalog(): void {
@@ -369,7 +369,6 @@ renderCart();
 renderRecommendations();
 
 const labViews = new Map<string, HTMLElement>([
-  ["home", document.querySelector<HTMLElement>(".hero")!],
   ["catalog", document.querySelector<HTMLElement>("#catalog")!],
   ["recommendations", document.querySelector<HTMLElement>("#recommendations")!],
   ["methodology", document.querySelector<HTMLElement>("#methodology")!],
@@ -380,7 +379,7 @@ const labViewLinks = document.querySelectorAll<HTMLAnchorElement>(
 );
 
 function showLabView(name: string, updateHistory = true): void {
-  if (!labViews.has(name)) name = "home";
+  if (!labViews.has(name)) name = "catalog";
   for (const [viewName, view] of labViews) view.hidden = viewName !== name;
   document
     .querySelectorAll<HTMLAnchorElement>("[data-lab-view]")
@@ -392,7 +391,7 @@ function showLabView(name: string, updateHistory = true): void {
     });
   if (updateHistory) history.pushState({ labView: name }, "", `#${name}`);
   window.scrollTo(0, 0);
-  labViews.get(name)?.focus({ preventScroll: true });
+  if (updateHistory) labViews.get(name)?.focus({ preventScroll: true });
 }
 
 labViewLinks.forEach((link) => {
@@ -405,7 +404,7 @@ labViewLinks.forEach((link) => {
   });
 });
 window.addEventListener("popstate", () => {
-  showLabView(window.location.hash.slice(1) || "home", false);
+  showLabView(window.location.hash.slice(1) || "catalog", false);
 });
 for (const view of labViews.values()) view.tabIndex = -1;
-showLabView(window.location.hash.slice(1) || "home", false);
+showLabView(window.location.hash.slice(1) || "catalog", false);

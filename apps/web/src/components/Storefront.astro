@@ -13,7 +13,6 @@ const localeMetadata = getLocaleConfig(locale);
 const otherLocale = localeMetadata.alternate;
 const portfolioLabel = copy.portfolio;
 const viewLabels = {
-  home: copy.home,
   catalog: copy.catalogNav,
   recommendations: copy.recommendations,
   evaluation: copy.evaluation,
@@ -108,7 +107,6 @@ const socialLocale = localeMetadata.ogLocale;
             ><details class="project-menu">
               <summary>{copy.menuLabel}</summary>
               <div>
-                <a href="#home" data-lab-view="home">{viewLabels.home}</a>
                 <a href="#catalog" data-lab-view="catalog"
                   >{viewLabels.catalog}</a
                 >
@@ -132,12 +130,6 @@ const socialLocale = localeMetadata.ogLocale;
       </div>
     </header>
     <main>
-      <section class="hero">
-        <p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><a
-          class="primary-action"
-          href="#catalog">{copy.viewRecommendations}</a
-        >
-      </section>
       <section
         id="catalog"
         class="catalog-section"
@@ -145,9 +137,9 @@ const socialLocale = localeMetadata.ogLocale;
       >
         <div class="section-heading">
           <div>
-            <p class="kicker">{copy.catalogKicker}</p><h2 id="catalog-title">
+            <p class="kicker">{copy.catalogKicker}</p><h1 id="catalog-title">
               {copy.catalog}
-            </h2>
+            </h1>
           </div>
         </div>
         <div class="catalog-layout">
