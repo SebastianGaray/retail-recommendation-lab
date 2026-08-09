@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  escapeHtml,
   filterAndSortProducts,
   popularityBaseline,
   recommendations,
@@ -8,6 +9,12 @@ import {
   type Product,
   type Strategy,
 } from "./catalog";
+
+it("escapes catalog content before HTML rendering", () => {
+  expect(escapeHtml(`<img src=x onerror="alert('xss')">`)).toBe(
+    "&lt;img src=x onerror=&quot;alert(&#39;xss&#39;)&quot;&gt;",
+  );
+});
 
 const product = (
   id: string,

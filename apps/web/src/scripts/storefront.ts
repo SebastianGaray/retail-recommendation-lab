@@ -1,5 +1,6 @@
 import {
   filterAndSortProducts,
+  escapeHtml,
   isProduct,
   recommendations,
   type Artifact,
@@ -115,11 +116,11 @@ function persist(): void {
   );
 }
 function image(product: Product): string {
-  return `<div class="product-image"><img src="${product.image_url}" alt="${product.name[locale]} — ${product.description[locale]}" width="640" height="480" loading="lazy" decoding="async"><span aria-hidden="true">${copy.fallback}</span></div>`;
+  return `<div class="product-image"><img src="${escapeHtml(product.image_url)}" alt="${escapeHtml(product.name[locale])} — ${escapeHtml(product.description[locale])}" width="640" height="480" loading="lazy" decoding="async"><span aria-hidden="true">${escapeHtml(copy.fallback)}</span></div>`;
 }
 function card(product: Product): string {
   const disabled = product.in_stock ? "" : "disabled";
-  return `<article class="product-card" data-product-card="${product.id}">${image(product)}<div class="product-body"><div class="product-meta"><span>${product.category}</span><span>★ ${product.rating.toFixed(1)}</span></div><h3>${product.name[locale]}</h3><p class="description">${product.description[locale]}</p><div class="product-action"><strong>${currency.format(Number(product.price))}</strong><div class="product-buttons"><button type="button" data-detail="${product.id}">${copy.details}</button><button type="button" data-add="${product.id}" ${disabled}>${product.in_stock ? copy.add : copy.soldOut}</button></div></div></div></article>`;
+  return `<article class="product-card" data-product-card="${escapeHtml(product.id)}">${image(product)}<div class="product-body"><div class="product-meta"><span>${escapeHtml(product.category)}</span><span>★ ${product.rating.toFixed(1)}</span></div><h3>${escapeHtml(product.name[locale])}</h3><p class="description">${escapeHtml(product.description[locale])}</p><div class="product-action"><strong>${escapeHtml(currency.format(Number(product.price)))}</strong><div class="product-buttons"><button type="button" data-detail="${escapeHtml(product.id)}">${escapeHtml(copy.details)}</button><button type="button" data-add="${escapeHtml(product.id)}" ${disabled}>${escapeHtml(product.in_stock ? copy.add : copy.soldOut)}</button></div></div></div></article>`;
 }
 
 function renderCatalog(): void {
@@ -132,7 +133,7 @@ function renderCatalog(): void {
   );
   productGrid.innerHTML = visible.length
     ? visible.map(card).join("")
-    : `<p class="error-state">${copy.noResults}</p>`;
+    : `<p class="error-state">${escapeHtml(copy.noResults)}</p>`;
   productGrid.setAttribute("aria-busy", "false");
 }
 function renderCart(): void {
@@ -153,10 +154,10 @@ function renderCart(): void {
     ? rows
         .map(
           ({ product, quantity }) =>
-            `<article class="cart-row"><div><h3>${product.name[locale]}</h3><p>${currency.format(Number(product.price))}</p><div class="quantity-control"><button type="button" data-quantity="${product.id}" data-delta="-1" aria-label="${copy.decrease}: ${product.name[locale]}">−</button><span aria-label="${copy.quantity}">${quantity}</span><button type="button" data-quantity="${product.id}" data-delta="1" aria-label="${copy.increase}: ${product.name[locale]}">+</button></div></div><button type="button" class="remove-button" data-remove="${product.id}">${copy.remove}</button></article>`,
+            `<article class="cart-row"><div><h3>${escapeHtml(product.name[locale])}</h3><p>${escapeHtml(currency.format(Number(product.price)))}</p><div class="quantity-control"><button type="button" data-quantity="${escapeHtml(product.id)}" data-delta="-1" aria-label="${escapeHtml(copy.decrease)}: ${escapeHtml(product.name[locale])}">−</button><span aria-label="${escapeHtml(copy.quantity)}">${quantity}</span><button type="button" data-quantity="${escapeHtml(product.id)}" data-delta="1" aria-label="${escapeHtml(copy.increase)}: ${escapeHtml(product.name[locale])}">+</button></div></div><button type="button" class="remove-button" data-remove="${escapeHtml(product.id)}">${escapeHtml(copy.remove)}</button></article>`,
         )
         .join("")
-    : `<p>${copy.empty}</p>`;
+    : `<p>${escapeHtml(copy.empty)}</p>`;
 }
 function renderRecommendations(): void {
   const rows = recommendations(
@@ -170,7 +171,7 @@ function renderRecommendations(): void {
   recommendationGrid.innerHTML = rows
     .map(
       ({ product, reason }) =>
-        `<article class="recommendation-card">${image(product)}<span class="reason-badge">${copy[reason]}</span><h3>${product.name[locale]}</h3><p>${copy.reasonTitle}</p><div class="product-action"><strong>${currency.format(Number(product.price))}</strong><button type="button" data-add="${product.id}">${copy.add}</button></div></article>`,
+        `<article class="recommendation-card">${image(product)}<span class="reason-badge">${escapeHtml(copy[reason])}</span><h3>${escapeHtml(product.name[locale])}</h3><p>${escapeHtml(copy.reasonTitle)}</p><div class="product-action"><strong>${escapeHtml(currency.format(Number(product.price)))}</strong><button type="button" data-add="${escapeHtml(product.id)}">${escapeHtml(copy.add)}</button></div></article>`,
     )
     .join("");
 }
@@ -185,7 +186,7 @@ function renderMetrics(): void {
     .filter((row) => row.k === 3)
     .map(
       (row) =>
-        `<article class="metric-card"><span class="metric-label">${row.strategy}</span><strong>${(row.hit_rate * 100).toFixed(1)}%</strong><p>${copy.hitRate}</p><details><summary>${copy.details}</summary><p>${copy.precision}: ${(row.precision * 100).toFixed(1)}% · ${copy.recall}: ${(row.recall * 100).toFixed(1)}% · ${copy.coverage}: ${(row.catalog_coverage * 100).toFixed(1)}%</p><p>${definitions.join(" ")}</p></details></article>`,
+        `<article class="metric-card"><span class="metric-label">${escapeHtml(row.strategy)}</span><strong>${(row.hit_rate * 100).toFixed(1)}%</strong><p>${escapeHtml(copy.hitRate)}</p><details><summary>${escapeHtml(copy.details)}</summary><p>${escapeHtml(copy.precision)}: ${(row.precision * 100).toFixed(1)}% · ${escapeHtml(copy.recall)}: ${(row.recall * 100).toFixed(1)}% · ${escapeHtml(copy.coverage)}: ${(row.catalog_coverage * 100).toFixed(1)}%</p><p>${escapeHtml(definitions.join(" "))}</p></details></article>`,
     )
     .join("");
 }
@@ -220,14 +221,14 @@ function renderHybridSignals(): void {
   hybridSignalList.innerHTML = Object.entries(labels)
     .map(
       ([signal, label]) =>
-        `<li>${label}: ${Math.round((hybridWeights[signal] ?? 0) * 100)}%</li>`,
+        `<li>${escapeHtml(label)}: ${Math.round((hybridWeights[signal] ?? 0) * 100)}%</li>`,
     )
     .join("");
 }
 function showProduct(id: string): void {
   const product = products.find((item) => item.id === id);
   if (!product) return;
-  productDetail.innerHTML = `<div class="detail-layout">${image(product)}<div class="detail-copy"><span class="reason-badge">${product.category}</span><h2>${product.name[locale]}</h2><p class="product-meta">SKU: ${product.sku}</p><p class="price">${currency.format(Number(product.price))}</p><p>${product.description[locale]}</p><button type="button" data-add="${product.id}" ${product.in_stock ? "" : "disabled"}>${product.in_stock ? copy.add : copy.soldOut}</button><ul class="detail-specs"><li><span>${copy.rating}</span><strong>${product.rating.toFixed(1)} / 5</strong></li><li><span>${copy.quantity}</span><strong>${product.inventory_quantity}</strong></li><li><span>${copy.category}</span><strong>${product.category}</strong></li></ul></div></div>`;
+  productDetail.innerHTML = `<div class="detail-layout">${image(product)}<div class="detail-copy"><span class="reason-badge">${escapeHtml(product.category)}</span><h2>${escapeHtml(product.name[locale])}</h2><p class="product-meta">SKU: ${escapeHtml(product.sku)}</p><p class="price">${escapeHtml(currency.format(Number(product.price)))}</p><p>${escapeHtml(product.description[locale])}</p><button type="button" data-add="${escapeHtml(product.id)}" ${product.in_stock ? "" : "disabled"}>${escapeHtml(product.in_stock ? copy.add : copy.soldOut)}</button><ul class="detail-specs"><li><span>${escapeHtml(copy.rating)}</span><strong>${product.rating.toFixed(1)} / 5</strong></li><li><span>${escapeHtml(copy.quantity)}</span><strong>${product.inventory_quantity}</strong></li><li><span>${escapeHtml(copy.category)}</span><strong>${escapeHtml(product.category)}</strong></li></ul></div></div>`;
   productDialog.showModal();
 }
 
@@ -361,7 +362,7 @@ try {
     .metrics;
   renderMetrics();
 } catch {
-  comparison.innerHTML = `<p class="error-state">${copy.error}</p>`;
+  comparison.innerHTML = `<p class="error-state">${escapeHtml(copy.error)}</p>`;
 }
 renderCatalog();
 renderCart();
