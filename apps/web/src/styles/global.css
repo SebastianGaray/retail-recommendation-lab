@@ -165,8 +165,89 @@ nav > a {
   text-decoration: none;
   font-size: 0.85rem;
 }
-.theme-control select {
-  width: 100px;
+.language-switch {
+  display: inline-flex;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.language-switch .active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+.theme-control {
+  position: relative;
+}
+.theme-control summary {
+  min-height: 44px;
+  padding-inline: 0.5rem;
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.72rem;
+  list-style: none;
+}
+.theme-control summary::-webkit-details-marker {
+  display: none;
+}
+.theme-control summary > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.theme-control svg {
+  width: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+.theme-control summary svg path {
+  fill: currentColor;
+  stroke: none;
+}
+.theme-menu {
+  width: 10rem;
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  padding: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.theme-menu button {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.7rem;
+  display: grid;
+  grid-template-columns: 1.25rem 1fr auto;
+  gap: 0.55rem;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  text-align: left;
+}
+.theme-menu button:hover,
+.theme-menu button[aria-pressed="true"] {
+  background: var(--surface-high);
+}
+.theme-menu button[aria-pressed="true"] {
+  font-weight: 700;
+}
+.theme-menu button[aria-pressed="true"]::after {
+  content: "✓";
 }
 .icon-button {
   font-family: "JetBrains Mono", monospace;
@@ -847,8 +928,12 @@ footer span {
   .brand {
     font-size: 1rem;
   }
-  .theme-control select {
-    width: 82px;
+  nav {
+    gap: 0.5rem;
+  }
+  .language-switch .active,
+  .language-switch span[aria-hidden="true"] {
+    display: none;
   }
   main > section,
   .catalog-section {
