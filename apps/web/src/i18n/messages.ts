@@ -5,11 +5,10 @@ const en = {
   brand: "Retail Recommendation Lab",
   methodologyNav: "Methodology",
   synthetic: "Synthetic demo · No tracking",
-  title: "Try a retail recommender with a real cart.",
+  title: "Retail recommendation strategies with a cart.",
   intro:
-    "Add a few products, then see how five recommendation strategies respond to what is in your cart.",
+    "Compare five recommendation strategies using synthetic shopping data.",
   catalog: "Product catalog",
-  catalogHint: "Search, filter or open a product to see its details.",
   search: "Search products",
   category: "Category",
   all: "All categories",
@@ -32,8 +31,6 @@ const en = {
   viewRecommendations: "View recommendations",
   analyze: "Analyze cart",
   recommendations: "Recommendations",
-  recommendationHint:
-    "The results update from your cart. You can switch strategies to compare them.",
   strategy: "Strategy",
   popularity: "Popularity",
   categoryPopularity: "Category popularity",
@@ -58,8 +55,6 @@ const en = {
     "This strategy's artifact is unavailable, so popularity fills this position.",
   error: "One or more recommendation strategies are temporarily unavailable.",
   comparison: "Strategy comparison",
-  comparisonNote:
-    "Results from a small synthetic holdout set. They are included for inspection, not as a production benchmark.",
   precision: "Precision@3",
   recall: "Recall@3",
   hitRate: "Hit rate@3",
@@ -107,8 +102,6 @@ const en = {
   engineering: "Engineering process",
   engineeringKicker: "04 / Process",
   engineeringTitle: "How SDD and AI assistance were used",
-  engineeringIntro:
-    "A traceable workflow connected product requirements, implementation support, human review, and automated evidence.",
   processSpecification: "Specification",
   processSpecificationText:
     "SDD defined artifact contracts, recommendation behavior, failure recovery, accessibility, and acceptance checks before implementation.",
@@ -124,11 +117,6 @@ const en = {
   processExample: "Example: explainable hybrid ranking",
   processExampleText:
     "The specification required visible signals and fixed weights. AI assistance helped review ranking and fallback cases. Human review approved the signals and wording. Artifact tests and browser flows verified the public behavior.",
-  processBenefits: "What this added",
-  processBenefitsText:
-    "Clearer scope, more systematic edge cases, explicit accountability, and traceability from a requirement to the code and check that supports it.",
-  processBoundary:
-    "AI output was treated as a proposal, not as evidence. Only reviewed changes with passing checks were accepted.",
   processDocuments: "Versioned SDD documents",
   processSpec: "Specification",
   processPlan: "Implementation plan",
@@ -142,11 +130,10 @@ const es = {
   brand: "Laboratorio de Recomendaciones",
   methodologyNav: "Metodología",
   synthetic: "Demo sintética · Sin seguimiento",
-  title: "Prueba recomendaciones de retail con un carrito.",
+  title: "Estrategias de recomendación de retail con un carrito.",
   intro:
-    "Agrega algunos productos y revisa cómo responden cinco estrategias según lo que tienes en el carrito.",
+    "Compara cinco estrategias de recomendación con datos de compra sintéticos.",
   catalog: "Catálogo de productos",
-  catalogHint: "Busca, filtra o abre un producto para revisar sus detalles.",
   search: "Buscar productos",
   category: "Categoría",
   all: "Todas las categorías",
@@ -169,8 +156,6 @@ const es = {
   viewRecommendations: "Ver recomendaciones",
   analyze: "Analizar carrito",
   recommendations: "Recomendaciones",
-  recommendationHint:
-    "Los resultados cambian con el carrito. Puedes alternar estrategias para compararlas.",
   strategy: "Estrategia",
   popularity: "Popularidad",
   categoryPopularity: "Popularidad por categoría",
@@ -199,8 +184,6 @@ const es = {
   error:
     "Una o más estrategias de recomendación no están disponibles temporalmente.",
   comparison: "Comparación de estrategias",
-  comparisonNote:
-    "Resultados de un conjunto sintético pequeño. Se muestran para revisarlos, no como benchmark de producción.",
   precision: "Precisión@3",
   recall: "Recall@3",
   hitRate: "Tasa de acierto@3",
@@ -251,8 +234,6 @@ const es = {
   engineering: "Proceso de ingeniería",
   engineeringKicker: "04 / Proceso",
   engineeringTitle: "Cómo se usaron SDD y la asistencia de IA",
-  engineeringIntro:
-    "Un flujo trazable conectó requisitos de producto, apoyo de implementación, revisión humana y evidencia automatizada.",
   processSpecification: "Especificación",
   processSpecificationText:
     "SDD definió contratos de artefactos, comportamiento de recomendaciones, recuperación ante fallos, accesibilidad y controles de aceptación.",
@@ -268,11 +249,6 @@ const es = {
   processExample: "Ejemplo: ranking híbrido explicable",
   processExampleText:
     "La especificación exigió señales visibles y pesos fijos. La IA ayudó a revisar casos de ranking y fallback. La revisión humana aprobó señales y textos. Las pruebas verificaron el comportamiento público.",
-  processBenefits: "Qué aportó",
-  processBenefitsText:
-    "Alcance más claro, casos borde más sistemáticos, responsabilidad explícita y trazabilidad desde un requisito hasta el código y control que lo respaldan.",
-  processBoundary:
-    "La salida de IA se trató como una propuesta, no como evidencia. Solo se aceptaron cambios revisados con todos los controles aprobados.",
   processDocuments: "Documentos SDD versionados",
   processSpec: "Especificación",
   processPlan: "Plan de implementación",

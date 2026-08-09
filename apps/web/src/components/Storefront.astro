@@ -118,10 +118,9 @@ const socialLocale = localeMetadata.ogLocale;
     </aside>
     <main>
       <section class="hero">
-        <p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><p>
-          {copy.intro}
-        </p><a class="primary-action" href="#catalog"
-          >{copy.viewRecommendations}</a
+        <p class="disclosure">{copy.synthetic}</p><h1>{copy.title}</h1><a
+          class="primary-action"
+          href="#catalog">{copy.viewRecommendations}</a
         >
       </section>
       <section
@@ -134,7 +133,7 @@ const socialLocale = localeMetadata.ogLocale;
             <p class="kicker">{copy.catalogKicker}</p><h2 id="catalog-title">
               {copy.catalog}
             </h2>
-          </div><p>{copy.catalogHint}</p>
+          </div>
         </div>
         <div class="catalog-layout">
           <aside class="filters" aria-label={copy.filters}>
@@ -159,7 +158,7 @@ const socialLocale = localeMetadata.ogLocale;
             </div><div class="model-note">
               <span class="status-dot"></span><strong
                 >{copy.offlineModel}</strong
-              ><p>{copy.synthetic}</p>
+              >
             </div>
           </aside><div id="product-grid" class="product-grid" aria-busy="true">
           </div>
@@ -177,7 +176,7 @@ const socialLocale = localeMetadata.ogLocale;
             >
               {copy.recommendations}
             </h2>
-          </div><p>{copy.recommendationHint}</p>
+          </div>
         </div><div class="strategy-bar">
           <label for="strategy">{copy.strategy}</label><select id="strategy"
             ><option value="popularity">{copy.popularity}</option><option
@@ -212,7 +211,7 @@ const socialLocale = localeMetadata.ogLocale;
             >
               {copy.comparison}
             </h2>
-          </div><p>{copy.comparisonNote}</p>
+          </div>
         </div><div
           id="strategy-comparison"
           class="metric-grid"
@@ -246,7 +245,7 @@ const socialLocale = localeMetadata.ogLocale;
             >
               {copy.engineeringTitle}
             </h1>
-          </div><p>{copy.engineeringIntro}</p>
+          </div>
         </div>
         <div class="process-grid">
           <article>
@@ -267,18 +266,13 @@ const socialLocale = localeMetadata.ogLocale;
             </p>
           </article>
         </div>
-        <div class="process-detail-grid">
+        <div class="process-detail-grid process-detail-single">
           <article>
             <h2>{copy.processExample}</h2><p>
               {copy.processExampleText}
             </p>
-          </article><article>
-            <h2>{copy.processBenefits}</h2><p>
-              {copy.processBenefitsText}
-            </p>
           </article>
         </div>
-        <p class="process-boundary">{copy.processBoundary}</p>
         <nav class="process-documents" aria-label={copy.processDocuments}>
           <strong>{copy.processDocuments}</strong><a
             href="https://github.com/SebastianGaray/retail-recommendation-lab/blob/main/sdd/spec.md"

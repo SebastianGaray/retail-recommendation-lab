@@ -704,6 +704,9 @@ main > section:not([hidden]) {
   gap: 16px;
   margin-top: 16px;
 }
+.process-detail-grid.process-detail-single {
+  grid-template-columns: 1fr;
+}
 .process-boundary {
   margin: 16px 0;
   padding: 16px;
