@@ -53,7 +53,7 @@ The retail shell keeps its task-appropriate `1280px` maximum width, `24px` deskt
 
 ## 9. Navigation and attribution
 
-The sticky 72px header contains project identity, Portfolio return, methodology, the canonical theme disclosure, the `EN / ES` language switch, and cart access in that order. Theme and language remain header-owned stateful controls; the footer only repeats attribution and external navigation. The public portfolio return target is `https://sebastiangaray.github.io/`.
+The sticky 72px header contains project identity and an ordered utility group: the canonical theme disclosure, the `EN / ES` language switch, Portfolio return, cart access, and a Menu disclosure. Menu replaces the former persistent sidebar and owns the five application views. Theme and language remain header-owned stateful controls; the footer only repeats attribution and external navigation. The public portfolio return target is `https://sebastiangaray.github.io/`.
 
 ## 10. Local component patterns
 

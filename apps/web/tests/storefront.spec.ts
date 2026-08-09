@@ -1,5 +1,10 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+async function navigateTo(page: Page, label: string): Promise<void> {
+  await page.locator(".project-menu summary").click();
+  await page.getByRole("link", { name: label, exact: true }).click();
+}
 
 test("keeps a localized portfolio return in the header", async ({ page }) => {
   await page.goto("/retail-recommendation-lab/en/");
@@ -10,6 +15,7 @@ test("keeps a localized portfolio return in the header", async ({ page }) => {
     "href",
     "https://sebastiangaray.github.io/",
   );
+  await expect(page.locator(".project-menu [data-lab-view]")).toHaveCount(5);
   await page.goto("/retail-recommendation-lab/es/");
   await expect(page.locator("[data-portfolio-return]")).toHaveText(
     "← Portafolio",
@@ -65,7 +71,7 @@ test("localized routes, theme and keyboard navigation work", async ({
       name: "Retail recommendation strategies with a cart.",
     }),
   ).toBeVisible();
-  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await navigateTo(page, "Catalog");
   await expect(page.locator("#product-grid article")).toHaveCount(40);
   await expect(
     page.getByRole("heading", { name: "Product catalog" }),
@@ -80,7 +86,7 @@ test("localized routes, theme and keyboard navigation work", async ({
   await page.keyboard.press("Tab");
   await expect(page.locator(":focus")).toBeVisible();
   await page.getByRole("link", { name: "Language: ES" }).click();
-  await page.getByRole("link", { name: "Catálogo", exact: true }).click();
+  await navigateTo(page, "Catálogo");
   await expect(
     page.getByRole("heading", { name: "Catálogo de productos" }),
   ).toBeVisible();
@@ -100,7 +106,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
   page,
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await page.getByRole("link", { name: "Engineering process" }).click();
+  await navigateTo(page, "Engineering process");
   await expect(
     page.getByRole("heading", { name: "How SDD and AI assistance were used" }),
   ).toBeVisible();
@@ -114,7 +120,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
   ).toHaveAttribute("href", /sdd\/spec\.md$/);
 
   await page.getByRole("link", { name: "Language: ES" }).click();
-  await page.getByRole("link", { name: "Proceso de ingeniería" }).click();
+  await navigateTo(page, "Proceso de ingeniería");
   await expect(
     page.getByRole("heading", {
       name: "Cómo se usaron SDD y la asistencia de IA",
@@ -124,7 +130,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
 
 test("search, category, sorting and product details work", async ({ page }) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await navigateTo(page, "Catalog");
   await page.locator("#search").fill("blender");
   await expect(page.locator("#product-grid article")).toHaveCount(1);
   await page.locator("#search").fill("");
@@ -147,7 +153,7 @@ test("cart quantities persist, recover from bad storage and reset", async ({
     }
   });
   await page.goto("/retail-recommendation-lab/en/");
-  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await navigateTo(page, "Catalog");
   await page.getByRole("button", { name: "Add to cart" }).first().click();
   await expect(page.locator("#cart-dialog")).toBeVisible();
   await page.getByRole("button", { name: "Increase quantity" }).click();
@@ -163,7 +169,7 @@ test("every strategy excludes cart products and renders metrics", async ({
   page,
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
-  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await navigateTo(page, "Catalog");
   const product = page.locator('[data-product-card="prd_dummy_001"]');
   const name = await product.locator("h3").innerText();
   await product.getByRole("button", { name: "Add to cart" }).click();
@@ -194,7 +200,7 @@ test("every strategy excludes cart products and renders metrics", async ({
   await expect(page.locator("#hybrid-signals")).toContainText(
     "Products bought together: 25%",
   );
-  await page.getByRole("link", { name: "Evaluation", exact: true }).click();
+  await navigateTo(page, "Evaluation");
   await expect(
     page.getByRole("heading", { name: "Strategy comparison" }),
   ).toBeVisible();
@@ -211,11 +217,9 @@ test("image and recommendation artifact failures degrade gracefully", async ({
   );
   await page.route("**/hybrid-recommendations.json", (route) => route.abort());
   await page.goto("/retail-recommendation-lab/en/");
-  await page.getByRole("link", { name: "Catalog", exact: true }).click();
+  await navigateTo(page, "Catalog");
   await expect(page.getByText("Image unavailable").first()).toBeVisible();
-  await page
-    .getByRole("link", { name: "Recommendations", exact: true })
-    .click();
+  await navigateTo(page, "Recommendations");
   await expect(
     page.getByText(
       "One or more recommendation strategies are temporarily unavailable.",
@@ -238,7 +242,16 @@ test.describe("mobile", () => {
   test.use({ viewport: { width: 390, height: 844 } });
   test("filters and cart drawer remain usable", async ({ page }) => {
     await page.goto("/retail-recommendation-lab/en/");
-    await page.getByRole("link", { name: "Catalog", exact: true }).click();
+    expect(
+      await page.evaluate(
+        () =>
+          document.documentElement.scrollWidth <=
+          document.documentElement.clientWidth,
+      ),
+    ).toBe(true);
+    await expect(page.locator("[data-portfolio-return]")).toBeVisible();
+    await expect(page.locator(".project-menu summary")).toBeVisible();
+    await navigateTo(page, "Catalog");
     await page.locator("#search").fill("blender");
     await expect(page.locator("#product-grid article")).toHaveCount(1);
     await page
