@@ -47,7 +47,7 @@ test("localized routes, theme and keyboard navigation work", async ({
   await page.goto("/retail-recommendation-lab/en/");
   await expect(
     page.getByRole("heading", {
-      name: "Try a retail recommender with a real cart.",
+      name: "Retail recommendation strategies with a cart.",
     }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Catalog", exact: true }).click();
@@ -90,7 +90,7 @@ test("engineering process is localized and links to versioned SDD evidence", asy
     page.getByRole("heading", { name: "How SDD and AI assistance were used" }),
   ).toBeVisible();
   await expect(
-    page.getByText("AI output was treated as a proposal"),
+    page.getByRole("heading", { name: "Example: explainable hybrid ranking" }),
   ).toBeVisible();
   const accessibility = await new AxeBuilder({ page }).analyze();
   expect(accessibility.violations).toEqual([]);
