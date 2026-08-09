@@ -16,7 +16,7 @@ test("keeps a localized portfolio return in the navigation menu", async ({
     "href",
     "https://sebastiangaray.github.io/",
   );
-  await expect(page.locator(".project-menu [data-lab-view]")).toHaveCount(5);
+  await expect(page.locator(".project-menu [data-lab-view]")).toHaveCount(4);
   await page.goto("/retail-recommendation-lab/es/");
   await page.locator(".project-menu summary").click();
   await expect(page.locator("[data-portfolio-return]")).toHaveText(
@@ -69,11 +69,13 @@ test("localized routes, theme and keyboard navigation work", async ({
 }) => {
   await page.goto("/retail-recommendation-lab/en/");
   await expect(
-    page.getByRole("heading", {
-      name: "Retail recommendation strategies with a cart.",
-    }),
+    page.getByRole("heading", { name: "Product catalog", level: 1 }),
   ).toBeVisible();
-  await navigateTo(page, "Catalog");
+  await expect(page.locator("main > section:focus")).toHaveCount(0);
+  await expect(page.locator('[data-lab-view="catalog"]')).toHaveAttribute(
+    "aria-current",
+    "page",
+  );
   await expect(page.locator("#product-grid article")).toHaveCount(40);
   await expect(
     page.getByRole("heading", { name: "Product catalog" }),
@@ -173,7 +175,7 @@ test("every strategy excludes cart products and renders metrics", async ({
   await page.goto("/retail-recommendation-lab/en/");
   await navigateTo(page, "Catalog");
   const product = page.locator('[data-product-card="prd_dummy_001"]');
-  const name = await product.locator("h3").innerText();
+  const name = await product.locator("h2").innerText();
   await product.getByRole("button", { name: "Add to cart" }).click();
   await page.getByRole("link", { name: "View recommendations" }).last().click();
   for (const strategy of [

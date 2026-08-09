@@ -357,25 +357,6 @@ main > section[hidden] {
 main > section:not([hidden]) {
   min-height: calc(100svh - 72px);
 }
-.hero {
-  min-height: 520px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.hero h1 {
-  max-width: 900px;
-  margin: 18px 0;
-  font-size: clamp(2.8rem, 7vw, 5.7rem);
-  line-height: 0.98;
-  letter-spacing: -0.06em;
-}
-.hero > p:not(.disclosure) {
-  max-width: 680px;
-  color: var(--muted);
-  font-size: 1.15rem;
-}
 .disclosure,
 .kicker,
 .filter-field label,
@@ -559,7 +540,7 @@ main > section:not([hidden]) {
   justify-content: space-between;
   color: var(--muted);
 }
-.product-card h3,
+.product-card h2,
 .recommendation-card h3 {
   margin: 0.75rem 0 0.35rem;
   font-size: 1.12rem;
@@ -969,9 +950,6 @@ footer span {
   main > section,
   .catalog-section {
     padding: 56px 16px;
-  }
-  .hero {
-    min-height: 440px;
   }
   .section-heading {
     display: block;

@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.2 - 2026-08-09
+
+### Fixed
+
+- Removed the programmatic focus that drew a full-section outline on initial load.
+
+### Changed
+
+- Removed the redundant Home view and made the product catalog the default entry point.
+
 ## 1.0.1 - 2026-08-09
 
 ### Changed
