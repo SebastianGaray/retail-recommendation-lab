@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3 - 2026-08-09
+
+- Expanded the desktop project navigation while retaining the compact mobile menu.
+- Added the active theme label and a direct GitHub shortcut to the header.
+- Aligned the responsive footer and shared application chrome with the main portfolio.
+- Added desktop and mobile regression coverage for the updated navigation.
+
 ## 1.0.2 - 2026-08-09
 
 ### Fixed
